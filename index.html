@@ -79,6 +79,9 @@ section{margin-top:26px}
   color:#fff;font:700 13px/1 system-ui;font-variant-numeric:tabular-nums;min-width:38px;transition:width .6s cubic-bezier(.2,.7,.2,1)}
 .fn .pct{position:absolute;right:9px;top:50%;transform:translateY(-50%);
   font:600 12px/1 ui-monospace,Menlo;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.fn .bar.split{position:relative;padding:0;overflow:hidden}
+.fn .bar.split .seg{position:absolute;top:0;left:0;bottom:0;background:var(--f2)}
+.fn .bar.split .txt{position:relative;z-index:1;padding:0 10px;white-space:nowrap}
 .fn .drop{font:600 11px/1 ui-monospace,Menlo;color:var(--crit-text);margin-left:8px}
 /* stalled bars */
 .bars{display:flex;flex-direction:column;gap:11px}
@@ -100,6 +103,12 @@ tr:last-child td{border-bottom:0}
 .pill.win{color:var(--good-text);background:color-mix(in srgb,var(--good) 15%,transparent)}
 .pill.mid{color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent)}
 .pill.bad{color:var(--crit-text);background:color-mix(in srgb,var(--crit) 14%,transparent)}
+/* heatmap día × hora */
+.hm{display:grid;grid-template-columns:36px repeat(24,minmax(16px,1fr));gap:3px;min-width:560px}
+.hm .lblc{font:600 10px/18px ui-monospace,Menlo;color:var(--ink-3);text-align:center}
+.hm .lblr{font:600 10px/18px ui-monospace,Menlo;color:var(--ink-2)}
+.hm .cell{height:18px;border-radius:3px;background:var(--track);
+  font:600 10px/18px ui-monospace,Menlo;text-align:center;color:var(--ink)}
 /* day chart */
 .days{width:100%;height:130px;display:block}
 .days .bar{fill:var(--f1)}
@@ -157,8 +166,16 @@ tr:last-child td{border-bottom:0}
   </section>
 
   <section id="sec-hours" hidden>
-    <p class="sub">A qué hora escriben (hora Chile)</p>
-    <div class="card"><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
+    <p class="sub">Cuándo escriben (hora Chile)</p>
+    <div class="panels">
+      <div class="card"><h3>Por hora del día</h3><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
+      <div class="card" id="card-dow" hidden><h3>Por día de la semana</h3><svg class="days" id="dow" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por día de la semana"></svg></div>
+    </div>
+    <div class="card" id="card-hxd" hidden style="margin-top:16px">
+      <h3>Día × hora</h3>
+      <p class="hint">Cada celda = leads que escribieron ese día de la semana a esa hora.</p>
+      <div style="overflow-x:auto"><div class="hm" id="hxd"></div></div>
+    </div>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -209,7 +226,10 @@ const SAMPLE = {
   ],
   byDay: [3,2,4,5,3,1,2,6,4,3,5,4,3,3].map(n=>({d:"",n})),  // últimos 14 días
   adFunnels: null,   // se llena en vivo (filas 'adfun')
-  byHour: null       // se llena en vivo (filas 'hora')
+  byHour: null,      // se llena en vivo (filas 'hora')
+  presu: null,       // se llena en vivo (filas 'presu': califica/no_califica)
+  byDow: null,       // se llena en vivo (filas 'dsem': Lun..Dom)
+  byHxD: null        // se llena en vivo (filas 'hxd': cruce día × hora)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -230,15 +250,23 @@ function render(d){
     `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls||""}">${k.val}</div><div class="sub2">${k.sub}</div></div>`
   ).join("");
 
-  // Funnel
+  // Funnel (la barra de presupuesto se abre en califica/no califica si hay filas 'presu')
   const top = d.funnel[0].count || 1;
   document.getElementById("funnel").innerHTML = d.funnel.map((s,i)=>{
     const w = Math.max(6, s.count/top*100);
     const p = pct(s.count, top);
     const drop = i>0 ? d.funnel[i-1].count - s.count : 0;
+    let bar;
+    if(i===1 && d.presu && s.count>0){
+      const wc = d.presu.califica/s.count*100;
+      bar = `<div class="bar split" style="width:${w}%;background:var(--ink-3)" title="${d.presu.califica} califican · ${d.presu.no} no califican">
+        <div class="seg" style="width:${wc}%"></div>
+        <span class="txt">${d.presu.califica} califica · ${d.presu.no} no</span></div>`;
+    } else {
+      bar = `<div class="bar" style="width:${w}%;background:${s.color}">${s.count}</div>`;
+    }
     return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
-      <div class="barwrap"><div class="bar" style="width:${w}%;background:${s.color}">${s.count}</div>
-      <span class="pct">${p}%</span></div></div>`;
+      <div class="barwrap">${bar}<span class="pct">${p}%</span></div></div>`;
   }).join("");
 
   // Stalled
@@ -277,12 +305,34 @@ function render(d){
   // Day chart (con fecha bajo cada barra)
   barChart("days", d.byDay.map(v=>({lbl:v.d?v.d.slice(8,10)+"/"+v.d.slice(5,7):"", n:v.n, tip:(v.d||"")+": "+v.n+" leads"})), true);
 
-  // Hour chart
+  // Hour + day-of-week charts
   const secH = document.getElementById("sec-hours");
   if (d.byHour){
     secH.hidden = false;
     barChart("hours", d.byHour.map((n,h)=>({lbl:h%2===0?String(h):"", n, tip:h+":00 → "+n+" leads"})), false);
   } else secH.hidden = true;
+  const cardDow = document.getElementById("card-dow");
+  if (d.byDow){
+    cardDow.hidden = false;
+    barChart("dow", d.byDow.map(x=>({lbl:x.lbl, n:x.n, tip:x.lbl+": "+x.n+" leads"})), true);
+  } else cardDow.hidden = true;
+
+  // Heatmap día × hora
+  const cardHxd = document.getElementById("card-hxd");
+  if (d.byHxD){
+    cardHxd.hidden = false;
+    const DOW=["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
+    const hmax = Math.max(...d.byHxD.flat(), 1);
+    let html = `<div></div>` + Array.from({length:24},(_,h)=>`<div class="lblc">${h%2===0?h:""}</div>`).join("");
+    d.byHxD.forEach((fila,dow)=>{
+      html += `<div class="lblr">${DOW[dow]}</div>` + fila.map((n,h)=>{
+        const op = n ? Math.max(18, Math.round(n/hmax*100)) : 0;
+        const bg = n ? `background:color-mix(in srgb, var(--f1) ${op}%, var(--track))` : "";
+        return `<div class="cell" style="${bg}" title="${DOW[dow]} ${h}:00 → ${n} leads">${n||""}</div>`;
+      }).join("");
+    });
+    document.getElementById("hxd").innerHTML = html;
+  } else cardHxd.hidden = true;
 }
 
 function barChart(id, items, showCounts){
@@ -329,6 +379,20 @@ function fromRows(rows){
   const adFunnels=Object.values(afMap);
   let byHour=Array(24).fill(0), hasHours=false;
   of("hora").forEach(r=>{const h=parseInt(g(r,"clave"),10); if(h>=0&&h<24){byHour[h]=nu(r,"n"); hasHours=true;}});
+  const presuRows=of("presu");
+  const presu=presuRows.length?{
+    califica: nu(presuRows.find(r=>g(r,"clave")==="califica")||[],"n"),
+    no: nu(presuRows.find(r=>g(r,"clave")==="no_califica")||[],"n")
+  }:null;
+  const dsemRows=of("dsem");
+  const byDow=dsemRows.length?dsemRows.map(r=>({lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")})):null;
+  let byHxD=null;
+  of("hxd").forEach(r=>{
+    const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
+    const dow=+m[1], h=+m[2]; if(dow>6||h>23) return;
+    byHxD=byHxD||Array.from({length:7},()=>Array(24).fill(0));
+    byHxD[dow][h]=nu(r,"n");
+  });
   const kpi=Object.fromEntries(of("kpi").map(r=>[g(r,"clave"),nu(r,"n")]));
   return {
     totalLeads: kpi.leads || (funnel[0]?funnel[0].count:0),
@@ -336,7 +400,8 @@ function fromRows(rows){
     spendTotal: kpi.spend_total || ads.reduce((s,a)=>s+a.spend,0),
     ads, byDay: byDay.length?byDay:[{d:"",n:0}],
     adFunnels: adFunnels.length?adFunnels:null,
-    byHour: hasHours?byHour:null
+    byHour: hasHours?byHour:null,
+    presu, byDow, byHxD
   };
 }
 async function fetchLive(){
