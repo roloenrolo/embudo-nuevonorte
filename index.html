@@ -144,6 +144,10 @@ tr:last-child td{border-bottom:0}
   <section id="sec-meta" hidden>
     <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
     <div class="kpis" id="metakpis"></div>
+    <div class="tblwrap" id="metaadswrap" hidden style="margin-top:16px"><table id="metaads">
+      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
   </section>
 
   <section class="panels">
@@ -243,7 +247,8 @@ const SAMPLE = {
   byDow: null,       // se llena en vivo (filas 'dsem': Lun..Dom)
   byHxD: null,       // se llena en vivo (filas 'hxd': cruce día × hora)
   versiones: null,   // se llena en vivo (filas 'ver': Antonia v2 n8n vs flujo antiguo Make)
-  metaKpis: null     // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones)
+  metaKpis: null,    // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones)
+  metaAds: null      // se llena en vivo (filas 'metaad': KPIs Meta por anuncio)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -361,6 +366,18 @@ function render(d){
     document.getElementById("metakpis").innerHTML = cards.map(k=>
       `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
     ).join("");
+    // Tabla por anuncio
+    const wrap = document.getElementById("metaadswrap");
+    if (d.metaAds && d.metaAds.length){
+      wrap.hidden = false;
+      document.querySelector("#metaads tbody").innerHTML = d.metaAds.map(a=>{
+        const actr = a.imp ? (a.cl/a.imp*100).toFixed(2)+"%" : "—";
+        const acpc = a.cl ? fmtUSD(a.spend/a.cl) : "—";
+        const acxc = a.convs ? fmtUSD(a.spend/a.convs) : "—";
+        return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${fmtN(a.imp)}</td><td>${fmtN(a.cl)}</td>
+          <td>${actr}</td><td>${acpc}</td><td>${fmtN(a.rch)}</td><td>${fmtN(a.convs)}</td><td>${acxc}</td></tr>`;
+      }).join("");
+    } else wrap.hidden = true;
   } else { btnMeta.hidden = true; document.getElementById("sec-meta").hidden = true; }
 
   // Heatmap día × hora
@@ -436,6 +453,10 @@ function fromRows(rows){
   const versiones=verRows.length?verRows.map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta"),n:nu(r,"n")})):null;
   const metaRows=of("meta");
   const metaKpis=metaRows.length?Object.fromEntries(metaRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
+  const metaAds=of("metaad").map(r=>{
+    const p=g(r,"extra1").split("|").map(x=>parseFloat(x)||0);
+    return {ad:g(r,"etiqueta")||g(r,"clave"),spend:nu(r,"n"),imp:p[0]||0,cl:p[1]||0,lnk:p[2]||0,rch:p[3]||0,convs:nu(r,"extra2")};
+  });
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -451,7 +472,8 @@ function fromRows(rows){
     ads, byDay: byDay.length?byDay:[{d:"",n:0}],
     adFunnels: adFunnels.length?adFunnels:null,
     byHour: hasHours?byHour:null,
-    presu, byDow, byHxD, versiones, metaKpis
+    presu, byDow, byHxD, versiones, metaKpis,
+    metaAds: metaAds.length?metaAds:null
   };
 }
 async function fetchLive(){
