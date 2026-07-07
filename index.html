@@ -90,6 +90,8 @@ section{margin-top:26px}
 /* stalled bars */
 .bars{display:flex;flex-direction:column;gap:11px}
 .bars .row{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;font-size:13px}
+.bars.wide .row{grid-template-columns:160px 1fr 92px}
+.bars .n small{color:var(--ink-3);font-weight:600}
 .bars .name{color:var(--ink-2);font-weight:600}
 .bars .track{background:var(--track);border-radius:6px;height:14px;overflow:hidden}
 .bars .fill{height:100%;border-radius:6px;background:var(--accent);transition:width .6s}
@@ -171,6 +173,23 @@ tr:last-child td{border-bottom:0}
     </table></div>
   </section>
 
+  <section id="sec-calif" hidden>
+    <p class="sub">Calificación de leads — el pilar de Antonia</p>
+    <div class="panels">
+      <div class="card">
+        <h3>Resultado de la calificación</h3>
+        <p class="hint">Todo lead que declara renta desde $1.6M califica y pasa a agendamiento.</p>
+        <div class="bars wide" id="califres"></div>
+        <p class="hint" id="califnote" style="margin:14px 0 0"></p>
+      </div>
+      <div class="card">
+        <h3>Tramo de renta declarado</h3>
+        <p class="hint">Distribución de los que respondieron la pregunta de presupuesto.</p>
+        <div class="bars wide" id="rentas"></div>
+      </div>
+    </div>
+  </section>
+
   <section id="sec-adfun" hidden>
     <p class="sub">Dónde se caen, por anuncio</p>
     <div class="panels" id="adfun" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"></div>
@@ -248,7 +267,9 @@ const SAMPLE = {
   byHxD: null,       // se llena en vivo (filas 'hxd': cruce día × hora)
   versiones: null,   // se llena en vivo (filas 'ver': Antonia v2 n8n vs flujo antiguo Make)
   metaKpis: null,    // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones)
-  metaAds: null      // se llena en vivo (filas 'metaad': KPIs Meta por anuncio)
+  metaAds: null,     // se llena en vivo (filas 'metaad': KPIs Meta por anuncio)
+  calif: null,       // se llena en vivo (filas 'calif': calificados/no_califica/sin_declarar + destino de calificados)
+  rentas: null       // se llena en vivo (filas 'renta': distribución por tramo declarado)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -310,6 +331,33 @@ function render(d){
     return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
       <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td></tr>`;
   }).join("");
+
+  // Calificación (el pilar)
+  const secC = document.getElementById("sec-calif");
+  if (d.calif){
+    secC.hidden = false;
+    const c = d.calif, tt = (c.calificados + c.no_califica + c.sin_declarar) || 1;
+    const rows = [
+      { lbl:"Calificados",   n:c.calificados,  color:"var(--f2)" },
+      { lbl:"No califican",  n:c.no_califica,  color:"var(--ink-3)" },
+      { lbl:"Sin declarar",  n:c.sin_declarar, color:"var(--warn)" }
+    ];
+    const cmx = Math.max(...rows.map(r=>r.n),1);
+    document.getElementById("califres").innerHTML = rows.map(r=>
+      `<div class="row"><div class="name">${r.lbl}</div>
+       <div class="track"><div class="fill" style="width:${r.n/cmx*100}%;background:${r.color}"></div></div>
+       <div class="n">${r.n} <small>· ${pct(r.n,tt)}%</small></div></div>`).join("");
+    document.getElementById("califnote").innerHTML = c.calificados
+      ? `De los <strong>${c.calificados}</strong> calificados: <strong>${c.calif_horario||0}</strong> eligieron horario y <strong>${c.calif_agendo||0}</strong> agendaron (${pct(c.calif_agendo||0,c.calificados)}% de conversión calificado→cita).`
+      : "Aún no hay leads calificados en el período.";
+    if (d.rentas && d.rentas.length){
+      const rmx = Math.max(...d.rentas.map(r=>r.n),1);
+      document.getElementById("rentas").innerHTML = d.rentas.map(r=>
+        `<div class="row"><div class="name">${r.lbl}</div>
+         <div class="track"><div class="fill" style="width:${r.n/rmx*100}%;${r.k.includes("800")?"background:var(--ink-3)":"background:var(--f2)"}"></div></div>
+         <div class="n">${r.n} <small>· ${pct(r.n,c.calificados+c.no_califica||1)}%</small></div></div>`).join("");
+    }
+  } else secC.hidden = true;
 
   // Ad funnels (dónde se caen, por anuncio)
   const secAF = document.getElementById("sec-adfun");
@@ -457,6 +505,9 @@ function fromRows(rows){
     const p=g(r,"extra1").split("|").map(x=>parseFloat(x)||0);
     return {ad:g(r,"etiqueta")||g(r,"clave"),spend:nu(r,"n"),imp:p[0]||0,cl:p[1]||0,lnk:p[2]||0,rch:p[3]||0,convs:nu(r,"extra2")};
   });
+  const califRows=of("calif");
+  const calif=califRows.length?Object.fromEntries(califRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
+  const rentas=of("renta").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -473,7 +524,8 @@ function fromRows(rows){
     adFunnels: adFunnels.length?adFunnels:null,
     byHour: hasHours?byHour:null,
     presu, byDow, byHxD, versiones, metaKpis,
-    metaAds: metaAds.length?metaAds:null
+    metaAds: metaAds.length?metaAds:null,
+    calif, rentas: rentas.length?rentas:null
   };
 }
 async function fetchLive(){
