@@ -146,9 +146,19 @@ tr:last-child td{border-bottom:0}
     </table></div>
   </section>
 
+  <section id="sec-adfun" hidden>
+    <p class="sub">Dónde se caen, por anuncio</p>
+    <div class="panels" id="adfun" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"></div>
+  </section>
+
   <section>
     <p class="sub">Volumen de leads por día</p>
-    <div class="card"><svg class="days" id="days" viewBox="0 0 700 130" preserveAspectRatio="none" role="img" aria-label="Leads por día"></svg></div>
+    <div class="card"><svg class="days" id="days" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por día"></svg></div>
+  </section>
+
+  <section id="sec-hours" hidden>
+    <p class="sub">A qué hora escriben (hora Chile)</p>
+    <div class="card"><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -169,7 +179,9 @@ const TAB      = "embudo";
 //   funnel  | 1..4 |        | Escribieron / Presupuesto / Horario / Agendó | conteo |        |
 //   paso    | 1..N | id_paso| Bienvenida / Presupuesto / ... / No califica  | conteo |        |
 //   anuncio |      | ad_id  | nombre del anuncio | agendados | gasto_usd | conversaciones
+//   adfun   | 1..4 | ad_id  | etapa del funnel   | conteo    | nombre del anuncio |
 //   dia     | 1..N | fecha  |                    | leads     |           |
+//   hora    | 1..24| 0..23  |                    | leads     |           |
 //   kpi     |      | leads | spend_total | valor  |        |     (claves: leads, spend_total)
 // Este tab lo escribe n8n ya AGREGADO (sin teléfonos ni nombres). Ver guía del workflow.
 
@@ -195,7 +207,9 @@ const SAMPLE = {
     { ad:"Cyber-Copia",  spend:18, convs:8,  booked:1 },
     { ad:"Cyber",        spend:12, convs:6,  booked:0 }
   ],
-  byDay: [3,2,4,5,3,1,2,6,4,3,5,4,3,3]  // últimos 14 días
+  byDay: [3,2,4,5,3,1,2,6,4,3,5,4,3,3].map(n=>({d:"",n})),  // últimos 14 días
+  adFunnels: null,   // se llena en vivo (filas 'adfun')
+  byHour: null       // se llena en vivo (filas 'hora')
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -243,16 +257,45 @@ function render(d){
       <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td></tr>`;
   }).join("");
 
-  // Day chart
-  const days = d.byDay, n = days.length, dmax = Math.max(...days,1);
-  const W=700, H=130, pad=18, bw=(W-pad*2)/n*0.64, gap=(W-pad*2)/n;
+  // Ad funnels (dónde se caen, por anuncio)
+  const secAF = document.getElementById("sec-adfun");
+  if (d.adFunnels && d.adFunnels.length){
+    secAF.hidden = false;
+    const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
+    document.getElementById("adfun").innerHTML = d.adFunnels.map(a=>{
+      const base = a.steps[0] ? a.steps[0].count : 0, b = base||1;
+      return `<div class="card"><h3>${a.name}</h3><p class="hint">${base} leads de este anuncio</p><div class="fn">`+
+        a.steps.map((s,i)=>{
+          const w=Math.max(6,s.count/b*100), drop=i>0?a.steps[i-1].count-s.count:0;
+          return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+            <div class="barwrap"><div class="bar" style="width:${w}%;background:${col[i]||col[3]}">${s.count}</div>
+            <span class="pct">${pct(s.count,b)}%</span></div></div>`;
+        }).join("")+`</div></div>`;
+    }).join("");
+  } else secAF.hidden = true;
+
+  // Day chart (con fecha bajo cada barra)
+  barChart("days", d.byDay.map(v=>({lbl:v.d?v.d.slice(8,10)+"/"+v.d.slice(5,7):"", n:v.n, tip:(v.d||"")+": "+v.n+" leads"})), true);
+
+  // Hour chart
+  const secH = document.getElementById("sec-hours");
+  if (d.byHour){
+    secH.hidden = false;
+    barChart("hours", d.byHour.map((n,h)=>({lbl:h%2===0?String(h):"", n, tip:h+":00 → "+n+" leads"})), false);
+  } else secH.hidden = true;
+}
+
+function barChart(id, items, showCounts){
+  const n=items.length, dmax=Math.max(...items.map(x=>x.n),1);
+  const W=700, H=150, pad=18, gap=(W-pad*2)/n, bw=gap*0.64;
   let svg="";
-  days.forEach((v,i)=>{
-    const bh=(v/dmax)*(H-34), x=pad+i*gap+(gap-bw)/2, y=H-20-bh;
-    svg+=`<rect class="bar" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="2"><title>${v} leads</title></rect>`;
-    svg+=`<text class="lbl" x="${(x+bw/2).toFixed(1)}" y="${H-6}" text-anchor="middle">${v}</text>`;
+  items.forEach((v,i)=>{
+    const bh=(v.n/dmax)*(H-52), x=pad+i*gap+(gap-bw)/2, y=H-32-bh, cx=(x+bw/2).toFixed(1);
+    svg+=`<rect class="bar" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(bh,1).toFixed(1)}" rx="2"><title>${v.tip}</title></rect>`;
+    if(showCounts||v.n) svg+=`<text class="lbl" x="${cx}" y="${(y-5).toFixed(1)}" text-anchor="middle">${v.n}</text>`;
+    if(v.lbl) svg+=`<text class="lbl" x="${cx}" y="${H-14}" text-anchor="middle">${v.lbl}</text>`;
   });
-  document.getElementById("days").innerHTML = svg;
+  document.getElementById(id).innerHTML = svg;
 }
 
 // --- CSV → objeto (lee el layout largo documentado arriba) ---
@@ -279,13 +322,21 @@ function fromRows(rows){
   const funnel=of("funnel").map((r,i)=>({name:g(r,"etiqueta"),count:nu(r,"n"),color:col[i]||"var(--f4)"}));
   const stalled=of("paso").map(r=>({step:g(r,"etiqueta")||g(r,"clave"),count:nu(r,"n")}));
   const ads=of("anuncio").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),booked:nu(r,"n"),spend:nu(r,"extra1"),convs:nu(r,"extra2")}));
-  const byDay=of("dia").map(r=>nu(r,"n"));
+  const byDay=of("dia").map(r=>({d:g(r,"clave"),n:nu(r,"n")}));
+  const afMap={};
+  of("adfun").forEach(r=>{const id=g(r,"clave");
+    (afMap[id]=afMap[id]||{id,name:g(r,"extra1")||id,steps:[]}).steps.push({name:g(r,"etiqueta"),count:nu(r,"n")});});
+  const adFunnels=Object.values(afMap);
+  let byHour=Array(24).fill(0), hasHours=false;
+  of("hora").forEach(r=>{const h=parseInt(g(r,"clave"),10); if(h>=0&&h<24){byHour[h]=nu(r,"n"); hasHours=true;}});
   const kpi=Object.fromEntries(of("kpi").map(r=>[g(r,"clave"),nu(r,"n")]));
   return {
     totalLeads: kpi.leads || (funnel[0]?funnel[0].count:0),
     funnel, stalled,
     spendTotal: kpi.spend_total || ads.reduce((s,a)=>s+a.spend,0),
-    ads, byDay: byDay.length?byDay:[0]
+    ads, byDay: byDay.length?byDay:[{d:"",n:0}],
+    adFunnels: adFunnels.length?adFunnels:null,
+    byHour: hasHours?byHour:null
   };
 }
 async function fetchLive(){
