@@ -53,6 +53,10 @@ h1{font-size:clamp(24px,3.4vw,32px);line-height:1.12;letter-spacing:-.018em;font
 .status{font:600 12px/1.4 ui-monospace,Menlo,monospace;color:var(--ink-3);text-align:right}
 .status .live{color:var(--good-text)}
 .status .demo{color:var(--warn)}
+.btnmeta{margin-top:8px;font:700 12px/1 ui-monospace,Menlo,monospace;padding:8px 14px;border-radius:9px;
+  border:1px solid var(--hair-2);background:var(--card);color:var(--accent-ink);cursor:pointer}
+.btnmeta:hover{border-color:var(--accent)}
+.btnmeta[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
 section{margin-top:26px}
 .sub{font:700 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;
   color:var(--ink-3);margin:0 0 12px;display:flex;align-items:center;gap:8px}
@@ -127,11 +131,19 @@ tr:last-child td{border-bottom:0}
       <span class="eyebrow">domo IA · Antonia v2 · Nuevo Norte</span>
       <h1>Embudo de leads — dashboard en vivo</h1>
     </div>
-    <div class="status" id="status">…</div>
+    <div style="text-align:right">
+      <div class="status" id="status">…</div>
+      <button class="btnmeta" id="btnMeta" hidden aria-pressed="false">▦ KPIs Meta</button>
+    </div>
   </div>
 
   <section>
     <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section id="sec-meta" hidden>
+    <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
+    <div class="kpis" id="metakpis"></div>
   </section>
 
   <section class="panels">
@@ -230,7 +242,8 @@ const SAMPLE = {
   presu: null,       // se llena en vivo (filas 'presu': califica/no_califica)
   byDow: null,       // se llena en vivo (filas 'dsem': Lun..Dom)
   byHxD: null,       // se llena en vivo (filas 'hxd': cruce día × hora)
-  versiones: null    // se llena en vivo (filas 'ver': Antonia v2 n8n vs flujo antiguo Make)
+  versiones: null,   // se llena en vivo (filas 'ver': Antonia v2 n8n vs flujo antiguo Make)
+  metaKpis: null     // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -325,6 +338,31 @@ function render(d){
     barChart("dow", d.byDow.map(x=>({lbl:x.lbl, n:x.n, tip:x.lbl+": "+x.n+" leads"})), true);
   } else cardDow.hidden = true;
 
+  // KPIs Meta (botón toggle arriba a la derecha)
+  const btnMeta = document.getElementById("btnMeta");
+  if (d.metaKpis){
+    btnMeta.hidden = false;
+    const m = d.metaKpis;
+    const fmtN = n => (n==null||isNaN(n)) ? "—" : Math.round(n).toLocaleString("es-CL");
+    const ctr = m.impresiones ? (m.clics/m.impresiones*100).toFixed(2)+"%" : "—";
+    const cpc = m.clics ? fmtUSD(m.gasto/m.clics) : "—";
+    const cpm = m.impresiones ? fmtUSD(m.gasto/m.impresiones*1000) : "—";
+    const cxc = m.conversaciones ? fmtUSD(m.gasto/m.conversaciones) : "—";
+    const cards = [
+      { lbl:"Gasto", val:fmtUSD(m.gasto), sub:"últimos 30 días" },
+      { lbl:"Conversaciones WA", val:fmtN(m.conversaciones), sub:"iniciadas desde anuncios" },
+      { lbl:"Costo / conversación", val:cxc, sub:"gasto ÷ conversaciones" },
+      { lbl:"CTR", val:ctr, sub:fmtN(m.clics)+" clics / "+fmtN(m.impresiones)+" impresiones" },
+      { lbl:"Impresiones", val:fmtN(m.impresiones), sub:"veces mostrado" },
+      { lbl:"Alcance", val:fmtN(m.alcance), sub:"personas únicas (aprox.)" },
+      { lbl:"CPC", val:cpc, sub:"costo por clic" },
+      { lbl:"CPM", val:cpm, sub:"costo por mil impresiones" }
+    ];
+    document.getElementById("metakpis").innerHTML = cards.map(k=>
+      `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+    ).join("");
+  } else { btnMeta.hidden = true; document.getElementById("sec-meta").hidden = true; }
+
   // Heatmap día × hora
   const cardHxd = document.getElementById("card-hxd");
   if (d.byHxD){
@@ -396,6 +434,8 @@ function fromRows(rows){
   const byDow=dsemRows.length?dsemRows.map(r=>({lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")})):null;
   const verRows=of("ver");
   const versiones=verRows.length?verRows.map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta"),n:nu(r,"n")})):null;
+  const metaRows=of("meta");
+  const metaKpis=metaRows.length?Object.fromEntries(metaRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -411,7 +451,7 @@ function fromRows(rows){
     ads, byDay: byDay.length?byDay:[{d:"",n:0}],
     adFunnels: adFunnels.length?adFunnels:null,
     byHour: hasHours?byHour:null,
-    presu, byDow, byHxD, versiones
+    presu, byDow, byHxD, versiones, metaKpis
   };
 }
 async function fetchLive(){
@@ -424,6 +464,13 @@ async function fetchLive(){
   if(!d.funnel.length) throw new Error("faltan filas 'funnel' en el tab");
   return d;
 }
+
+document.getElementById("btnMeta").addEventListener("click", () => {
+  const sec = document.getElementById("sec-meta"), btn = document.getElementById("btnMeta");
+  sec.hidden = !sec.hidden;
+  btn.setAttribute("aria-pressed", String(!sec.hidden));
+  if (!sec.hidden) sec.scrollIntoView({ behavior:"smooth", block:"nearest" });
+});
 
 (async function(){
   const st = document.getElementById("status");
