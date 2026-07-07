@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Antonia · Embudo v2 — dashboard en vivo</title>
+<style>
+:root{
+  --plane:#f2f4f6; --surface:#fcfcfb; --card:#ffffff;
+  --ink:#141d26; --ink-2:#4c5966; --ink-3:#7d8894;
+  --hair:#dde2e7; --hair-2:#c8cfd6;
+  --accent:#a8532c; --accent-ink:#8f4523; --accent-soft:rgba(168,83,44,.09);
+  --good:#0ca30c; --good-text:#0a7d0a; --warn:#e08e00; --crit:#d03b3b; --crit-text:#a32626;
+  --track:#e7ebef;
+  --f1:#2a78d6; --f2:#1baf7a; --f3:#eda100; --f4:#008300;
+}
+@media (prefers-color-scheme:dark){:root{
+  --plane:#0e1317; --surface:#1a1a19; --card:#171d23;
+  --ink:#eceff2; --ink-2:#aab5bf; --ink-3:#79848f;
+  --hair:#2a3138; --hair-2:#39424b;
+  --accent:#e08a5c; --accent-ink:#e59a72; --accent-soft:rgba(224,138,92,.12);
+  --good:#3fbf3f; --good-text:#5fd05f; --warn:#e0a53a; --crit:#e05252; --crit-text:#ef8686;
+  --track:#232a31;
+  --f1:#3987e5; --f2:#22c58c; --f3:#c98500; --f4:#37a637;
+}}
+:root[data-theme="dark"]{
+  --plane:#0e1317; --surface:#1a1a19; --card:#171d23;
+  --ink:#eceff2; --ink-2:#aab5bf; --ink-3:#79848f;
+  --hair:#2a3138; --hair-2:#39424b;
+  --accent:#e08a5c; --accent-ink:#e59a72; --accent-soft:rgba(224,138,92,.12);
+  --good:#3fbf3f; --good-text:#5fd05f; --warn:#e0a53a; --crit:#e05252; --crit-text:#ef8686;
+  --track:#232a31;
+  --f1:#3987e5; --f2:#22c58c; --f3:#c98500; --f4:#37a637;
+}
+:root[data-theme="light"]{
+  --plane:#f2f4f6; --surface:#fcfcfb; --card:#ffffff;
+  --ink:#141d26; --ink-2:#4c5966; --ink-3:#7d8894;
+  --hair:#dde2e7; --hair-2:#c8cfd6;
+  --accent:#a8532c; --accent-ink:#8f4523; --accent-soft:rgba(168,83,44,.09);
+  --good:#0ca30c; --good-text:#0a7d0a; --warn:#e08e00; --crit:#d03b3b; --crit-text:#a32626;
+  --track:#e7ebef;
+  --f1:#2a78d6; --f2:#1baf7a; --f3:#eda100; --f4:#008300;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:6px}
+.eyebrow{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+h1{font-size:clamp(24px,3.4vw,32px);line-height:1.12;letter-spacing:-.018em;font-weight:750;margin:.28em 0 0}
+.status{font:600 12px/1.4 ui-monospace,Menlo,monospace;color:var(--ink-3);text-align:right}
+.status .live{color:var(--good-text)}
+.status .demo{color:var(--warn)}
+section{margin-top:26px}
+.sub{font:700 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.sub::after{content:"";flex:1;height:1px;background:var(--hair)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:720px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:15px 16px}
+.kpi .lbl{font-size:11.5px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em}
+.kpi .val{font:750 30px/1 system-ui,sans-serif;letter-spacing:-.02em;margin-top:9px;
+  font-variant-numeric:tabular-nums}
+.kpi .sub2{font-size:12px;color:var(--ink-2);margin-top:6px}
+.kpi .val.good{color:var(--good-text)} .kpi .val.warn{color:var(--warn)} .kpi .val.crit{color:var(--crit-text)}
+.panels{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+@media(max-width:820px){.panels{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px}
+.card h3{margin:0 0 4px;font-size:15px;font-weight:700}
+.card .hint{margin:0 0 14px;font-size:12.5px;color:var(--ink-3)}
+/* funnel */
+.fn{display:flex;flex-direction:column;gap:9px}
+.fn .row{display:grid;grid-template-columns:130px 1fr;gap:10px;align-items:center}
+.fn .name{font-size:13px;font-weight:600;color:var(--ink-2)}
+.fn .barwrap{position:relative;background:var(--track);border-radius:7px;height:34px;overflow:hidden}
+.fn .bar{height:100%;border-radius:7px;display:flex;align-items:center;padding:0 10px;
+  color:#fff;font:700 13px/1 system-ui;font-variant-numeric:tabular-nums;min-width:38px;transition:width .6s cubic-bezier(.2,.7,.2,1)}
+.fn .pct{position:absolute;right:9px;top:50%;transform:translateY(-50%);
+  font:600 12px/1 ui-monospace,Menlo;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.fn .drop{font:600 11px/1 ui-monospace,Menlo;color:var(--crit-text);margin-left:8px}
+/* stalled bars */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bars .row{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;font-size:13px}
+.bars .name{color:var(--ink-2);font-weight:600}
+.bars .track{background:var(--track);border-radius:6px;height:14px;overflow:hidden}
+.bars .fill{height:100%;border-radius:6px;background:var(--accent);transition:width .6s}
+.bars .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:650;color:var(--ink)}
+/* table */
+.tblwrap{overflow-x:auto;border:1px solid var(--hair);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th{font:700 10.5px/1.3 ui-monospace,Menlo;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);
+  text-align:right;padding:10px 12px;border-bottom:1px solid var(--hair-2)}
+th:first-child{text-align:left}
+td{padding:10px 12px;border-bottom:1px solid var(--hair);text-align:right;font-variant-numeric:tabular-nums}
+td:first-child{text-align:left;font-weight:650}
+tr:last-child td{border-bottom:0}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font:700 11px/1.5 ui-monospace,Menlo}
+.pill.win{color:var(--good-text);background:color-mix(in srgb,var(--good) 15%,transparent)}
+.pill.mid{color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent)}
+.pill.bad{color:var(--crit-text);background:color-mix(in srgb,var(--crit) 14%,transparent)}
+/* day chart */
+.days{width:100%;height:130px;display:block}
+.days .bar{fill:var(--f1)}
+.days .lbl{fill:var(--ink-3);font:10px ui-monospace,Menlo}
+.foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--hair);font-size:12px;color:var(--ink-3)}
+.foot code{background:var(--accent-soft);border:1px solid var(--hair);border-radius:4px;padding:1px 5px;
+  font:11.5px ui-monospace,Menlo;color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <span class="eyebrow">domo IA · Antonia v2 · Nuevo Norte</span>
+      <h1>Embudo de leads — dashboard en vivo</h1>
+    </div>
+    <div class="status" id="status">…</div>
+  </div>
+
+  <section>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section class="panels">
+    <div class="card">
+      <h3>El embudo</h3>
+      <p class="hint">De cada lead que escribe, cuántos avanzan a cada etapa.</p>
+      <div class="fn" id="funnel"></div>
+    </div>
+    <div class="card">
+      <h3>Dónde se caen</h3>
+      <p class="hint">Leads que quedaron detenidos en cada paso (no agendaron ni fueron descartados).</p>
+      <div class="bars" id="stalled"></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="sub">Costo por agendamiento, por anuncio</p>
+    <div class="tblwrap"><table id="ads">
+      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <p class="sub">Volumen de leads por día</p>
+    <div class="card"><svg class="days" id="days" viewBox="0 0 700 130" preserveAspectRatio="none" role="img" aria-label="Leads por día"></svg></div>
+  </section>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+// ============================================================================
+// CONFIG — modo en vivo
+// Deja CSV_URL vacío para ver el diseño con datos de ejemplo.
+// Para conectar en vivo: publicar SOLO el tab AGREGADO (Archivo → Compartir →
+// Publicar en la web → ese tab → CSV) y pegar aquí la URL 2PACX resultante.
+// ⚠️ No publicar la Hoja 1 del CRM: tiene PII. Solo el tab de métricas agregadas.
+// ============================================================================
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT37zYih55JXCvAO49PhlSCDQGRk0SSOnVvzuVU_NNGE70-PKjXWHs3MYxjTaNc10daPLJVJCYIzpZM/pub?gid=144104198&single=true&output=csv";
+const TAB      = "embudo";
+// Layout esperado del tab (formato largo, 1ª fila = encabezados EXACTOS):
+//   tipo | orden | clave | etiqueta | n | extra1 | extra2
+//   funnel  | 1..4 |        | Escribieron / Presupuesto / Horario / Agendó | conteo |        |
+//   paso    | 1..N | id_paso| Bienvenida / Presupuesto / ... / No califica  | conteo |        |
+//   anuncio |      | ad_id  | nombre del anuncio | agendados | gasto_usd | conversaciones
+//   dia     | 1..N | fecha  |                    | leads     |           |
+//   kpi     |      | leads | spend_total | valor  |        |     (claves: leads, spend_total)
+// Este tab lo escribe n8n ya AGREGADO (sin teléfonos ni nombres). Ver guía del workflow.
+
+// Datos de EJEMPLO (ilustrativos, basados en el orden de magnitud real del piloto)
+const SAMPLE = {
+  totalLeads: 48,
+  funnel: [
+    { name:"Escribieron",       count:48, color:"var(--f1)" },
+    { name:"Declaró presupuesto",count:14, color:"var(--f2)" },
+    { name:"Eligió horario",    count:8,  color:"var(--f3)" },
+    { name:"Agendó",            count:5,  color:"var(--f4)" }
+  ],
+  stalled: [
+    { step:"Bienvenida",  count:18 },
+    { step:"Presupuesto", count:6 },
+    { step:"Horario",     count:3 },
+    { step:"Email",       count:2 },
+    { step:"No califica", count:9 }
+  ],
+  spendTotal: 65,      // USD
+  ads: [
+    { ad:"Ventas junio", spend:35, convs:33, booked:4 },
+    { ad:"Cyber-Copia",  spend:18, convs:8,  booked:1 },
+    { ad:"Cyber",        spend:12, convs:6,  booked:0 }
+  ],
+  byDay: [3,2,4,5,3,1,2,6,4,3,5,4,3,3]  // últimos 14 días
+};
+
+const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
+const pct = (a,b) => b ? Math.round(a/b*100) : 0;
+
+function render(d){
+  // KPIs
+  const kAgend = pct(d.funnel[3].count, d.totalLeads);
+  const kCalif = pct(d.funnel[1].count, d.totalLeads);
+  const cpa = d.funnel[3].count ? d.spendTotal / d.funnel[3].count : null;
+  const kpis = [
+    { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período" },
+    { lbl:"Llegó a presupuesto", val:kCalif+"%", cls:kCalif<40?"crit":"warn", sub:d.funnel[1].count+" de "+d.totalLeads+" leads" },
+    { lbl:"Agendó",             val:kAgend+"%", cls:kAgend>=8?"good":"warn", sub:d.funnel[3].count+" reuniones creadas" },
+    { lbl:"Costo / agendamiento", val:fmtUSD(cpa), sub:"gasto total ÷ agendados" }
+  ];
+  document.getElementById("kpis").innerHTML = kpis.map(k=>
+    `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls||""}">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+  ).join("");
+
+  // Funnel
+  const top = d.funnel[0].count || 1;
+  document.getElementById("funnel").innerHTML = d.funnel.map((s,i)=>{
+    const w = Math.max(6, s.count/top*100);
+    const p = pct(s.count, top);
+    const drop = i>0 ? d.funnel[i-1].count - s.count : 0;
+    return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+      <div class="barwrap"><div class="bar" style="width:${w}%;background:${s.color}">${s.count}</div>
+      <span class="pct">${p}%</span></div></div>`;
+  }).join("");
+
+  // Stalled
+  const smax = Math.max(...d.stalled.map(s=>s.count),1);
+  document.getElementById("stalled").innerHTML = d.stalled.map(s=>
+    `<div class="row"><div class="name">${s.step}</div>
+     <div class="track"><div class="fill" style="width:${s.count/smax*100}%;${s.step==="No califica"?"background:var(--ink-3)":""}"></div></div>
+     <div class="n">${s.count}</div></div>`
+  ).join("");
+
+  // Ads table
+  document.querySelector("#ads tbody").innerHTML = d.ads.map(a=>{
+    const cpb = a.booked ? a.spend/a.booked : null;
+    const cls = cpb==null ? "bad" : cpb<=10 ? "win" : cpb<=16 ? "mid" : "bad";
+    return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
+      <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td></tr>`;
+  }).join("");
+
+  // Day chart
+  const days = d.byDay, n = days.length, dmax = Math.max(...days,1);
+  const W=700, H=130, pad=18, bw=(W-pad*2)/n*0.64, gap=(W-pad*2)/n;
+  let svg="";
+  days.forEach((v,i)=>{
+    const bh=(v/dmax)*(H-34), x=pad+i*gap+(gap-bw)/2, y=H-20-bh;
+    svg+=`<rect class="bar" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="2"><title>${v} leads</title></rect>`;
+    svg+=`<text class="lbl" x="${(x+bw/2).toFixed(1)}" y="${H-6}" text-anchor="middle">${v}</text>`;
+  });
+  document.getElementById("days").innerHTML = svg;
+}
+
+// --- CSV → objeto (lee el layout largo documentado arriba) ---
+function parseCSV(text){
+  const rows=[]; let row=[],cur="",q=false;
+  for(let i=0;i<text.length;i++){const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){cur+='"';i++} else q=false } else cur+=c }
+    else if(c==='"') q=true;
+    else if(c===',') { row.push(cur); cur=""; }
+    else if(c==='\n'){ row.push(cur); rows.push(row); row=[]; cur=""; }
+    else if(c!=='\r') cur+=c;
+  }
+  if(cur.length||row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+function fromRows(rows){
+  const H=rows[0].map(s=>s.trim().toLowerCase());
+  const ix=k=>H.indexOf(k);
+  const g=(r,k)=>{const i=ix(k);return i>=0&&r[i]!=null?String(r[i]).trim():"";};
+  const nu=(r,k)=>{const v=parseFloat(g(r,k).replace(/[^0-9.\-]/g,""));return isNaN(v)?0:v;};
+  const body=rows.slice(1).filter(r=>r.length>1&&g(r,"tipo"));
+  const of=t=>body.filter(r=>g(r,"tipo")===t).sort((a,b)=>nu(a,"orden")-nu(b,"orden"));
+  const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
+  const funnel=of("funnel").map((r,i)=>({name:g(r,"etiqueta"),count:nu(r,"n"),color:col[i]||"var(--f4)"}));
+  const stalled=of("paso").map(r=>({step:g(r,"etiqueta")||g(r,"clave"),count:nu(r,"n")}));
+  const ads=of("anuncio").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),booked:nu(r,"n"),spend:nu(r,"extra1"),convs:nu(r,"extra2")}));
+  const byDay=of("dia").map(r=>nu(r,"n"));
+  const kpi=Object.fromEntries(of("kpi").map(r=>[g(r,"clave"),nu(r,"n")]));
+  return {
+    totalLeads: kpi.leads || (funnel[0]?funnel[0].count:0),
+    funnel, stalled,
+    spendTotal: kpi.spend_total || ads.reduce((s,a)=>s+a.spend,0),
+    ads, byDay: byDay.length?byDay:[0]
+  };
+}
+async function fetchLive(){
+  const url=CSV_URL+(CSV_URL.includes("?")?"&":"?")+"_ts="+Date.now(); // cache-buster: pub CSV se cachea minutos
+  const res=await fetch(url,{cache:"no-store"});
+  if(!res.ok) throw new Error("http "+res.status);
+  const rows=parseCSV(await res.text());
+  if(rows.length<2) throw new Error("tab vacío");
+  const d=fromRows(rows);
+  if(!d.funnel.length) throw new Error("faltan filas 'funnel' en el tab");
+  return d;
+}
+
+(async function(){
+  const st = document.getElementById("status");
+  let data = SAMPLE, live = false;
+  if(CSV_URL){
+    try { data = await fetchLive(); live = true; } catch(e){ data = SAMPLE; }
+  }
+  render(data);
+  const now = new Date();
+  st.innerHTML = live
+    ? `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`
+    : `<span class="demo">◐ DATOS DE EJEMPLO</span><br>configura CSV_URL para datos en vivo`;
+  document.getElementById("foot").innerHTML =
+    `Fuente: tab agregado <code>${TAB}</code> de la planilla (publicado como CSV, sin API key). `+
+    `⚠️ No conectar a la Hoja 1 del CRM (tiene teléfonos/nombres); usar solo un tab de métricas agregadas. `+
+    (live ? "Recarga la página para refrescar." : "Ahora mismo se muestran datos de ejemplo.");
+  if(live) setInterval(async()=>{ try{ render(await fetchLive()); }catch(e){} }, 5*60*1000);
+})();
+</script>
+</body>
+</html>
