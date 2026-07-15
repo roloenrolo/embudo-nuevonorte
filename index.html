@@ -143,6 +143,16 @@ tr:last-child td{border-bottom:0}
     <div class="kpis" id="kpis"></div>
   </section>
 
+  <section id="sec-form" hidden>
+    <p class="sub">Campañas con formulario — carril propio</p>
+    <div class="kpis" id="formkpis" style="grid-template-columns:repeat(3,1fr)"></div>
+    <div class="tblwrap" style="margin-top:12px"><table id="formads">
+      <thead><tr><th>Anuncio</th><th>Leads</th><th>Gasto</th><th>Costo / lead</th><th>Estado</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <p class="hint" style="margin:10px 2px 0">Estos leads llegan por formulario de Meta y <strong>no pasan por Antonia</strong> (por eso van en carril aparte y no se suman al embudo de WhatsApp: las personas pueden solaparse). Los mismos anuncios también generan conversaciones de WhatsApp, así que el gasto es compartido y el costo por lead no es aislado.</p>
+  </section>
+
   <section id="sec-meta" hidden>
     <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
     <div class="kpis" id="metakpis"></div>
@@ -241,6 +251,8 @@ const TAB      = "embudo";
 //   anuncio |      | ad_id  | nombre del anuncio | agendados | gasto_usd | conversaciones
 //   adfun   | 1..4 | ad_id  | etapa del funnel   | conteo    | nombre del anuncio |
 //   anunciofecha | orden | ad_id | nombre anuncio | días publicado | fecha_inicio (YYYY-MM-DD) | estado (ACTIVE/PAUSED/...)
+//   formad  | 1..N | ad_id  | nombre anuncio     | leads formulario (lead_grouped) | gasto_usd | estado
+//   formtot | 1    | total  | Leads de formulario| total leads     | gasto_usd |
 //   dia     | 1..N | fecha  |                    | leads     |           |
 //   hora    | 1..24| 0..23  |                    | leads     |           |
 //   kpi     |      | leads | spend_total | valor  |        |     (claves: leads, spend_total)
@@ -279,7 +291,9 @@ const SAMPLE = {
   metaAds: null,     // se llena en vivo (filas 'metaad': KPIs Meta por anuncio)
   calif: null,       // se llena en vivo (filas 'calif': calificados/no_califica/sin_declarar + destino de calificados)
   rentas: null,      // se llena en vivo (filas 'renta': distribución por tramo declarado)
-  fechas: null       // se llena en vivo (filas 'anunciofecha': fecha de inicio + días publicado por anuncio)
+  fechas: null,      // se llena en vivo (filas 'anunciofecha': fecha de inicio + días publicado por anuncio)
+  formAds: null,     // se llena en vivo (filas 'formad': leads de formulario por anuncio)
+  formTot: null      // se llena en vivo (fila 'formtot': total leads de formulario + gasto)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -299,6 +313,32 @@ function render(d){
   document.getElementById("kpis").innerHTML = kpis.map(k=>
     `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls||""}">${k.val}</div><div class="sub2">${k.sub}</div></div>`
   ).join("");
+
+  // Campañas con formulario (carril propio, primero — estos leads no pasan por Antonia)
+  const secForm = document.getElementById("sec-form");
+  if (d.formAds && d.formAds.length){
+    secForm.hidden = false;
+    const ft = d.formTot || {
+      leads: d.formAds.reduce((s,a)=>s+a.leads,0),
+      spend: d.formAds.reduce((s,a)=>s+a.spend,0)
+    };
+    const cpl = ft.leads ? ft.spend/ft.leads : null;
+    document.getElementById("formkpis").innerHTML = [
+      { lbl:"Leads de formulario", val:ft.leads, sub:"últimos 30 días" },
+      { lbl:"Gasto", val:fmtUSD(ft.spend), sub:"anuncios con formulario" },
+      { lbl:"Costo / lead", val:fmtUSD(cpl), sub:"gasto compartido con conv. WA" }
+    ].map(k=>
+      `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+    ).join("");
+    document.querySelector("#formads tbody").innerHTML = d.formAds.map(a=>{
+      const c = a.leads ? a.spend/a.leads : null;
+      const cls = c==null ? "bad" : c<=2 ? "win" : c<=4 ? "mid" : "bad";
+      const ecls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
+      return `<tr><td>${a.ad}</td><td>${a.leads}</td><td>${fmtUSD(a.spend)}</td>
+        <td><span class="pill ${cls}">${c==null?"—":fmtUSD(c)}</span></td>
+        <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+    }).join("");
+  } else secForm.hidden = true;
 
   // Versión del flujo bajo el título del funnel
   if (d.versiones){
@@ -538,6 +578,9 @@ function fromRows(rows){
   const calif=califRows.length?Object.fromEntries(califRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
   const rentas=of("renta").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
   const fechas=of("anunciofecha").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),dias:nu(r,"n"),inicio:g(r,"extra1"),estado:g(r,"extra2")}));
+  const formAds=of("formad").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),leads:nu(r,"n"),spend:nu(r,"extra1"),estado:g(r,"extra2")}));
+  const ftRow=of("formtot")[0];
+  const formTot=ftRow?{leads:nu(ftRow,"n"),spend:nu(ftRow,"extra1")}:null;
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -556,7 +599,9 @@ function fromRows(rows){
     presu, byDow, byHxD, versiones, metaKpis,
     metaAds: metaAds.length?metaAds:null,
     calif, rentas: rentas.length?rentas:null,
-    fechas: fechas.length?fechas:null
+    fechas: fechas.length?fechas:null,
+    formAds: formAds.length?formAds:null,
+    formTot
   };
 }
 async function fetchLive(){
