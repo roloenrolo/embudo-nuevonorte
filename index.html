@@ -200,6 +200,23 @@ tr:last-child td{border-bottom:0}
     </div>
   </section>
 
+  <section id="sec-reun" hidden>
+    <p class="sub">Reuniones — cierre y resultados</p>
+    <div class="panels">
+      <div class="card">
+        <h3>Estado de las reuniones</h3>
+        <p class="hint">Cada reunión agendada se cierra la misma noche con dos datos: ¿asistió? y ¿resultado?</p>
+        <div class="bars wide" id="reunbars"></div>
+        <p class="hint" id="reunnote" style="margin:14px 0 0"></p>
+      </div>
+      <div class="card">
+        <h3>Resultado comercial</h3>
+        <p class="hint">Qué pasó con las reuniones realizadas, según registro del vendedor.</p>
+        <div class="bars wide" id="reunresbars"></div>
+      </div>
+    </div>
+  </section>
+
   <section id="sec-fechas" hidden>
     <p class="sub">Anuncios — fecha de inicio y días publicados</p>
     <div class="tblwrap"><table id="fechas">
@@ -253,6 +270,8 @@ const TAB      = "embudo";
 //   anunciofecha | orden | ad_id | nombre anuncio | días publicado | fecha_inicio (YYYY-MM-DD) | estado (ACTIVE/PAUSED/...)
 //   formad  | 1..N | ad_id  | nombre anuncio     | leads formulario (lead_grouped) | gasto_usd | estado
 //   formtot | 1    | total  | Leads de formulario| total leads     | gasto_usd |
+//   reun    | 1..5 | agendadas/realizadas/no_asistio/proximas/pendientes | etiqueta | conteo | |
+//   reunres | 1..N | reservo/cerro/en_curso/perdido/no_asistio | etiqueta | conteo | |
 //   dia     | 1..N | fecha  |                    | leads     |           |
 //   hora    | 1..24| 0..23  |                    | leads     |           |
 //   kpi     |      | leads | spend_total | valor  |        |     (claves: leads, spend_total)
@@ -293,7 +312,9 @@ const SAMPLE = {
   rentas: null,      // se llena en vivo (filas 'renta': distribución por tramo declarado)
   fechas: null,      // se llena en vivo (filas 'anunciofecha': fecha de inicio + días publicado por anuncio)
   formAds: null,     // se llena en vivo (filas 'formad': leads de formulario por anuncio)
-  formTot: null      // se llena en vivo (fila 'formtot': total leads de formulario + gasto)
+  formTot: null,     // se llena en vivo (fila 'formtot': total leads de formulario + gasto)
+  reun: null,        // se llena en vivo (filas 'reun': agendadas/realizadas/no_asistio/proximas/pendientes)
+  reunRes: null      // se llena en vivo (filas 'reunres': resultado comercial de las realizadas)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -408,6 +429,38 @@ function render(d){
          <div class="n">${r.n} <small>· ${pct(r.n,c.calificados+c.no_califica||1)}%</small></div></div>`).join("");
     }
   } else secC.hidden = true;
+
+  // Reuniones — cierre y resultados
+  const secR = document.getElementById("sec-reun");
+  if (d.reun){
+    secR.hidden = false;
+    const q = d.reun;
+    const rrows = [
+      { lbl:"Realizadas", n:q.realizadas||0, color:"var(--f2)" },
+      { lbl:"No asistió", n:q.no_asistio||0, color:"var(--ink-3)" },
+      { lbl:"Próximas",   n:q.proximas||0,   color:"var(--f3)" },
+      { lbl:"Sin cierre", n:q.pendientes||0, color:"var(--warn)" }
+    ];
+    const rrmx = Math.max(...rrows.map(r=>r.n),1);
+    document.getElementById("reunbars").innerHTML = rrows.map(r=>
+      `<div class="row"><div class="name">${r.lbl}</div>
+       <div class="track"><div class="fill" style="width:${r.n/rrmx*100}%;background:${r.color}"></div></div>
+       <div class="n">${r.n}</div></div>`).join("");
+    const cerradas = (q.realizadas||0)+(q.no_asistio||0);
+    document.getElementById("reunnote").innerHTML =
+      `<strong>${q.agendadas||0}</strong> reuniones agendadas en total` +
+      (cerradas ? ` · asistencia <strong>${pct(q.realizadas||0,cerradas)}%</strong> sobre las cerradas` : "") +
+      ((q.pendientes||0) ? ` · ${q.pendientes} histórica${q.pendientes===1?"":"s"} sin dato de cierre` : "") + ".";
+    const resEl = document.getElementById("reunresbars");
+    if (d.reunRes && d.reunRes.length){
+      const colr = { reservo:"var(--f2)", cerro:"var(--f4)", en_curso:"var(--f3)", perdido:"var(--ink-3)", no_asistio:"var(--ink-3)" };
+      const rmx2 = Math.max(...d.reunRes.map(r=>r.n),1);
+      resEl.innerHTML = d.reunRes.map(r=>
+        `<div class="row"><div class="name">${r.lbl}</div>
+         <div class="track"><div class="fill" style="width:${r.n/rmx2*100}%;background:${colr[r.k]||"var(--f3)"}"></div></div>
+         <div class="n">${r.n}</div></div>`).join("");
+    } else resEl.innerHTML = `<div class="row"><div class="name" style="opacity:.6">Aún sin resultados registrados</div></div>`;
+  } else secR.hidden = true;
 
   // Ad funnels (dónde se caen, por anuncio)
   const secAF = document.getElementById("sec-adfun");
@@ -581,6 +634,9 @@ function fromRows(rows){
   const formAds=of("formad").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),leads:nu(r,"n"),spend:nu(r,"extra1"),estado:g(r,"extra2")}));
   const ftRow=of("formtot")[0];
   const formTot=ftRow?{leads:nu(ftRow,"n"),spend:nu(ftRow,"extra1")}:null;
+  const reunRows=of("reun");
+  const reun=reunRows.length?Object.fromEntries(reunRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
+  const reunResRows=of("reunres").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -601,7 +657,8 @@ function fromRows(rows){
     calif, rentas: rentas.length?rentas:null,
     fechas: fechas.length?fechas:null,
     formAds: formAds.length?formAds:null,
-    formTot
+    formTot,
+    reun, reunRes: reunResRows.length?reunResRows:null
   };
 }
 async function fetchLive(){
