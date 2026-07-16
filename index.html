@@ -314,7 +314,8 @@ const SAMPLE = {
   formAds: null,     // se llena en vivo (filas 'formad': leads de formulario por anuncio)
   formTot: null,     // se llena en vivo (fila 'formtot': total leads de formulario + gasto)
   reun: null,        // se llena en vivo (filas 'reun': agendadas/realizadas/no_asistio/proximas/pendientes)
-  reunRes: null      // se llena en vivo (filas 'reunres': resultado comercial de las realizadas)
+  reunRes: null,     // se llena en vivo (filas 'reunres': resultado comercial de las realizadas)
+  reunOrig: null     // se llena en vivo (filas 'reunorig': vía Antonia vs directas de Rodolfo)
 };
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
@@ -449,6 +450,7 @@ function render(d){
     const cerradas = (q.realizadas||0)+(q.no_asistio||0);
     document.getElementById("reunnote").innerHTML =
       `<strong>${q.agendadas||0}</strong> reuniones agendadas en total` +
+      (d.reunOrig ? ` (${d.reunOrig.antonia||0} vía Antonia · ${d.reunOrig.rodolfo||0} directa${(d.reunOrig.rodolfo||0)===1?"":"s"} del vendedor)` : "") +
       (cerradas ? ` · asistencia <strong>${pct(q.realizadas||0,cerradas)}%</strong> sobre las cerradas` : "") +
       ((q.pendientes||0) ? ` · ${q.pendientes} histórica${q.pendientes===1?"":"s"} sin dato de cierre` : "") + ".";
     const resEl = document.getElementById("reunresbars");
@@ -637,6 +639,8 @@ function fromRows(rows){
   const reunRows=of("reun");
   const reun=reunRows.length?Object.fromEntries(reunRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
   const reunResRows=of("reunres").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
+  const reunOrigRows=of("reunorig");
+  const reunOrig=reunOrigRows.length?Object.fromEntries(reunOrigRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -658,7 +662,7 @@ function fromRows(rows){
     fechas: fechas.length?fechas:null,
     formAds: formAds.length?formAds:null,
     formTot,
-    reun, reunRes: reunResRows.length?reunResRows:null
+    reun, reunRes: reunResRows.length?reunResRows:null, reunOrig
   };
 }
 async function fetchLive(){
