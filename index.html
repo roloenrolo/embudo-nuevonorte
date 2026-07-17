@@ -123,6 +123,12 @@ tr:last-child td{border-bottom:0}
 .foot code{background:var(--accent-soft);border:1px solid var(--hair);border-radius:4px;padding:1px 5px;
   font:11.5px ui-monospace,Menlo;color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* pestañas */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 6px}
+.tab{font:700 13px/1 system-ui;padding:10px 16px;border-radius:11px;border:1px solid var(--hair-2);background:var(--card);color:var(--ink-2);cursor:pointer}
+.tab:hover{border-color:var(--accent)}
+.tab[aria-selected="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+[data-grp].tab-off{display:none!important}
 </style>
 
 </head>
@@ -135,16 +141,31 @@ tr:last-child td{border-bottom:0}
     </div>
     <div style="text-align:right">
       <div class="status" id="status">…</div>
-      <button class="btnmeta" id="btnMeta" hidden aria-pressed="false">▦ KPIs Meta</button>
-      <a class="btnmeta" href="https://convers-ia.app.n8n.cloud/webhook/antonia-agenda" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;margin-left:8px" title="Requiere clave — vista privada con datos del lead">🗓️ Agenda de reuniones</a>
     </div>
   </div>
 
-  <section>
+  <nav class="tabs" role="tablist" aria-label="Vistas del dashboard">
+    <button class="tab" data-target="antonia" aria-selected="true">🤖 Antonia y embudo</button>
+    <button class="tab" data-target="meta" aria-selected="false">📣 Meta y anuncios</button>
+    <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
+  </nav>
+
+  <section data-grp="agenda">
+    <p class="sub">Agenda y calendario</p>
+    <div class="card" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+      <div>
+        <h3 style="margin:0 0 4px">Calendario de reuniones</h3>
+        <p class="hint" style="margin:0">Vista privada con el detalle de cada reunión: lead, estado de la negociación y score V-E-N-D-E. Requiere clave.</p>
+      </div>
+      <a class="btnmeta" href="https://convers-ia.app.n8n.cloud/webhook/antonia-agenda" target="_blank" rel="noopener" style="text-decoration:none;white-space:nowrap">🗓️ Abrir agenda →</a>
+    </div>
+  </section>
+
+  <section data-grp="antonia">
     <div class="kpis" id="kpis"></div>
   </section>
 
-  <section id="sec-form" hidden>
+  <section id="sec-form" data-grp="meta" hidden>
     <p class="sub">Campañas con formulario — carril propio</p>
     <div class="kpis" id="formkpis" style="grid-template-columns:repeat(3,1fr)"></div>
     <div class="tblwrap" style="margin-top:12px"><table id="formads">
@@ -154,7 +175,7 @@ tr:last-child td{border-bottom:0}
     <p class="hint" style="margin:10px 2px 0">Estos leads llegan por formulario de Meta y <strong>no pasan por Antonia</strong> (por eso van en carril aparte y no se suman al embudo de WhatsApp: las personas pueden solaparse). Los mismos anuncios también generan conversaciones de WhatsApp, así que el gasto es compartido y el costo por lead no es aislado.</p>
   </section>
 
-  <section id="sec-meta" hidden>
+  <section id="sec-meta" data-grp="meta" hidden>
     <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
     <div class="kpis" id="metakpis"></div>
     <div class="tblwrap" id="metaadswrap" hidden style="margin-top:16px"><table id="metaads">
@@ -163,7 +184,7 @@ tr:last-child td{border-bottom:0}
     </table></div>
   </section>
 
-  <section class="panels">
+  <section class="panels" data-grp="antonia">
     <div class="card">
       <h3>El embudo</h3>
       <p class="hint" id="fnhint">De cada lead que escribe, cuántos avanzan a cada etapa.</p>
@@ -176,7 +197,7 @@ tr:last-child td{border-bottom:0}
     </div>
   </section>
 
-  <section>
+  <section data-grp="meta">
     <p class="sub">Costo por agendamiento, por anuncio</p>
     <div class="tblwrap"><table id="ads">
       <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th></tr></thead>
@@ -184,7 +205,7 @@ tr:last-child td{border-bottom:0}
     </table></div>
   </section>
 
-  <section id="sec-calif" hidden>
+  <section id="sec-calif" data-grp="antonia" hidden>
     <p class="sub">Calificación de leads — el pilar de Antonia</p>
     <div class="panels">
       <div class="card">
@@ -201,7 +222,7 @@ tr:last-child td{border-bottom:0}
     </div>
   </section>
 
-  <section id="sec-reun" hidden>
+  <section id="sec-reun" data-grp="agenda" hidden>
     <p class="sub">Reuniones — cierre y resultados</p>
     <div class="panels">
       <div class="card">
@@ -218,7 +239,7 @@ tr:last-child td{border-bottom:0}
     </div>
   </section>
 
-  <section id="sec-fechas" hidden>
+  <section id="sec-fechas" data-grp="meta" hidden>
     <p class="sub">Anuncios — fecha de inicio y días publicados</p>
     <div class="tblwrap"><table id="fechas">
       <thead><tr><th>Anuncio</th><th>Inicio</th><th>Días activo</th><th>Estado</th></tr></thead>
@@ -226,17 +247,17 @@ tr:last-child td{border-bottom:0}
     </table></div>
   </section>
 
-  <section id="sec-adfun" hidden>
+  <section id="sec-adfun" data-grp="meta" hidden>
     <p class="sub">Dónde se caen, por anuncio</p>
     <div class="panels" id="adfun" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"></div>
   </section>
 
-  <section>
+  <section data-grp="antonia">
     <p class="sub">Volumen de leads por día</p>
     <div class="card"><svg class="days" id="days" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por día"></svg></div>
   </section>
 
-  <section id="sec-hours" hidden>
+  <section id="sec-hours" data-grp="antonia" hidden>
     <p class="sub">Cuándo escriben (hora Chile)</p>
     <div class="panels">
       <div class="card"><h3>Por hora del día</h3><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
@@ -497,10 +518,10 @@ function render(d){
     barChart("dow", d.byDow.map(x=>({lbl:x.lbl, n:x.n, tip:x.lbl+": "+x.n+" leads"})), true);
   } else cardDow.hidden = true;
 
-  // KPIs Meta (botón toggle arriba a la derecha)
-  const btnMeta = document.getElementById("btnMeta");
+  // KPIs Meta (viven en la pestaña "Meta y anuncios")
+  const secMeta = document.getElementById("sec-meta");
   if (d.metaKpis){
-    btnMeta.hidden = false;
+    secMeta.hidden = false;
     const m = d.metaKpis;
     const fmtN = n => (n==null||isNaN(n)) ? "—" : Math.round(n).toLocaleString("es-CL");
     const ctr = m.impresiones ? (m.clics/m.impresiones*100).toFixed(2)+"%" : "—";
@@ -532,7 +553,7 @@ function render(d){
           <td>${actr}</td><td>${acpc}</td><td>${fmtN(a.rch)}</td><td>${fmtN(a.convs)}</td><td>${acxc}</td></tr>`;
       }).join("");
     } else wrap.hidden = true;
-  } else { btnMeta.hidden = true; document.getElementById("sec-meta").hidden = true; }
+  } else { document.getElementById("sec-meta").hidden = true; }
 
   // Fechas de inicio de anuncios (días publicados en Meta)
   const secF = document.getElementById("sec-fechas");
@@ -677,12 +698,13 @@ async function fetchLive(){
   return d;
 }
 
-document.getElementById("btnMeta").addEventListener("click", () => {
-  const sec = document.getElementById("sec-meta"), btn = document.getElementById("btnMeta");
-  sec.hidden = !sec.hidden;
-  btn.setAttribute("aria-pressed", String(!sec.hidden));
-  if (!sec.hidden) sec.scrollIntoView({ behavior:"smooth", block:"nearest" });
-});
+// Pestañas: muestra solo el grupo activo (las secciones sin datos siguen auto-ocultándose por su propio 'hidden')
+function switchTab(grp){
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", String(b.dataset.target===grp)));
+  document.querySelectorAll("[data-grp]").forEach(el => el.classList.toggle("tab-off", el.getAttribute("data-grp")!==grp));
+  window.scrollTo({ top:0, behavior:"smooth" });
+}
+document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.target)));
 
 (async function(){
   const st = document.getElementById("status");
@@ -691,6 +713,7 @@ document.getElementById("btnMeta").addEventListener("click", () => {
     try { data = await fetchLive(); live = true; } catch(e){ data = SAMPLE; }
   }
   render(data);
+  switchTab("antonia");   // pestaña por defecto
   const now = new Date();
   st.innerHTML = live
     ? `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`
