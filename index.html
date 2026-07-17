@@ -145,8 +145,8 @@ tr:last-child td{border-bottom:0}
   </div>
 
   <nav class="tabs" role="tablist" aria-label="Vistas del dashboard">
-    <button class="tab" data-target="antonia" aria-selected="true">🤖 Antonia y embudo</button>
-    <button class="tab" data-target="meta" aria-selected="false">📣 Meta y anuncios</button>
+    <button class="tab" data-target="meta" aria-selected="true">📣 Meta y anuncios</button>
+    <button class="tab" data-target="antonia" aria-selected="false">🤖 Antonia y embudo</button>
     <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
   </nav>
 
@@ -713,7 +713,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     try { data = await fetchLive(); live = true; } catch(e){ data = SAMPLE; }
   }
   render(data);
-  switchTab("antonia");   // pestaña por defecto
+  switchTab("meta");   // pestaña por defecto
   const now = new Date();
   st.innerHTML = live
     ? `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`
