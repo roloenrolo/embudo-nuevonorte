@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-21T12:16:08+00:00",
+ "generado": "2026-07-21T13:10:47+00:00",
  "horizonte": 14,
  "serie": [
   {
@@ -40,7 +40,7 @@
   },
   {
    "fecha": "2026-07-17",
-   "leads": 17
+   "leads": 16
   },
   {
    "fecha": "2026-07-18",
@@ -56,120 +56,154 @@
   },
   {
    "fecha": "2026-07-21",
-   "leads": 3
+   "leads": 4
   }
  ],
  "pron": [
   {
    "fecha": "2026-07-22",
    "p10": 0.0,
-   "p50": 8.6,
-   "p90": 18.1
+   "p50": 9.7,
+   "p90": 18.8
   },
   {
    "fecha": "2026-07-23",
-   "p10": 0.0,
-   "p50": 11.1,
-   "p90": 20.9
+   "p10": 1.7,
+   "p50": 12.5,
+   "p90": 21.8
   },
   {
    "fecha": "2026-07-24",
-   "p10": 3.7,
-   "p50": 15.4,
-   "p90": 25.0
+   "p10": 5.0,
+   "p50": 16.1,
+   "p90": 25.1
   },
   {
    "fecha": "2026-07-25",
-   "p10": 4.2,
-   "p50": 16.1,
+   "p10": 5.3,
+   "p50": 16.6,
    "p90": 25.3
   },
   {
    "fecha": "2026-07-26",
-   "p10": 5.0,
-   "p50": 17.1,
-   "p90": 26.5
+   "p10": 5.7,
+   "p50": 17.2,
+   "p90": 26.1
   },
   {
    "fecha": "2026-07-27",
-   "p10": 4.8,
-   "p50": 17.1,
-   "p90": 26.5
-  },
-  {
-   "fecha": "2026-07-28",
-   "p10": 4.4,
-   "p50": 16.8,
+   "p10": 5.3,
+   "p50": 17.0,
    "p90": 25.9
   },
   {
+   "fecha": "2026-07-28",
+   "p10": 5.2,
+   "p50": 17.0,
+   "p90": 25.7
+  },
+  {
    "fecha": "2026-07-29",
-   "p10": 4.6,
-   "p50": 17.2,
-   "p90": 26.7
+   "p10": 5.3,
+   "p50": 17.3,
+   "p90": 26.4
   },
   {
    "fecha": "2026-07-30",
-   "p10": 5.9,
-   "p50": 18.8,
-   "p90": 28.5
+   "p10": 6.3,
+   "p50": 18.4,
+   "p90": 27.7
   },
   {
    "fecha": "2026-07-31",
-   "p10": 5.2,
-   "p50": 18.4,
-   "p90": 28.3
-  },
-  {
-   "fecha": "2026-08-01",
-   "p10": 4.9,
+   "p10": 5.6,
    "p50": 18.0,
-   "p90": 28.1
-  },
-  {
-   "fecha": "2026-08-02",
-   "p10": 3.7,
-   "p50": 17.1,
-   "p90": 27.4
-  },
-  {
-   "fecha": "2026-08-03",
-   "p10": 3.6,
-   "p50": 17.0,
    "p90": 27.5
   },
   {
-   "fecha": "2026-08-04",
-   "p10": 4.2,
+   "fecha": "2026-08-01",
+   "p10": 5.3,
    "p50": 17.5,
-   "p90": 27.9
+   "p90": 27.1
+  },
+  {
+   "fecha": "2026-08-02",
+   "p10": 4.3,
+   "p50": 16.8,
+   "p90": 26.7
+  },
+  {
+   "fecha": "2026-08-03",
+   "p10": 4.2,
+   "p50": 16.7,
+   "p90": 26.7
+  },
+  {
+   "fecha": "2026-08-04",
+   "p10": 4.8,
+   "p50": 17.1,
+   "p90": 27.1
   }
  ],
  "tot": {
-  "p10": 54,
-  "p50": 226,
-  "p90": 362
+  "p10": 63,
+  "p50": 227,
+  "p90": 357
  },
  "agendas": {
-  "media": 5.9,
+  "media": 6.0,
   "p10": 2,
   "p90": 10
  },
  "cierres": {
-  "esperados": 0.88,
-  "p0": 0.454,
-  "p1": 0.546,
-  "p2": 0.221
+  "esperados": 0.89,
+  "p0": 0.452,
+  "p1": 0.548,
+  "p2": 0.223
  },
+ "palancas": [
+  {
+   "clave": "riesgo_asistencia",
+   "nombre": "Sin recordatorios (asistencia real 25%)",
+   "segun": "Clara",
+   "detalle": "1 de 4 reuniones resueltas asistió; el 60% del caso base ASUME confirmación+recordatorio funcionando",
+   "cierres_esperados": 0.37,
+   "p1": 0.3
+  },
+  {
+   "clave": "palanca_agendamiento",
+   "nombre": "Agendamiento 4,5% → 10%",
+   "segun": "Antonia",
+   "detalle": "botón Hoy + link por WhatsApp + proyectos en el chat (el plan original asumía 20%)",
+   "cierres_esperados": 1.84,
+   "p1": 0.783
+  },
+  {
+   "clave": "palanca_angulos",
+   "nombre": "Mezcla de ángulos: calificación 55% → 65%",
+   "segun": "Matías",
+   "detalle": "sin_pie concentra 99,5% del gasto histórico y atrae 89% renta baja; test inversion_rentabilidad/asesoria_datos en curso",
+   "cierres_esperados": 1.03,
+   "p1": 0.597
+  },
+  {
+   "clave": "todas",
+   "nombre": "Las 3 palancas juntas",
+   "segun": "Antonia + Matías + Clara",
+   "detalle": "agendamiento 10% + calificación 65% + asistencia 60% protegida",
+   "cierres_esperados": 2.17,
+   "p1": 0.826
+  }
+ ],
  "tasas": [
   {
    "nombre": "contactabilidad",
-   "valor": 0.5556,
+   "valor": 0.5579,
    "origen": "calibrada"
   },
   {
    "nombre": "tasa de agendamiento",
-   "valor": 0.0484,
+   "valor": 0.0482,
    "origen": "calibrada"
   },
   {
