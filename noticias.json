@@ -1,0 +1,78 @@
+{
+  "fecha": "2026-07-21",
+  "generado": "2026-07-21T09:19:22-04:00",
+  "inmobiliario": [
+    {
+      "titulo": "Tasas hipotecarias se mantienen bajo el 4%, ¿es un buen momento para comprar una vivienda?",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/servicios/explicado/2026/07/08/tasas-hipotecarias-se-mantienen-bajo-el-4-es-un-buen-momento-para-comprar-una-vivienda.shtml",
+      "impacto": "alto",
+      "porque": "Tasas hipotecarias bajo 4% (mínimo desde 2021) son un argumento de venta directo para reactivar cotizaciones y cierres."
+    },
+    {
+      "titulo": "Con tasas en mínimos desde 2021: Altos precios de viviendas siguen limitando acceso a la casa propia",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/tu-bolsillo/2026/07/07/con-tasas-en-minimos-desde-2021-altos-precios-de-viviendas-siguen-limitando-el-acceso-a-casa-propia.shtml",
+      "impacto": "medio",
+      "porque": "Explica por qué la baja de tasas no se traduce aún en más ventas: precios altos siguen siendo la barrera principal para el cliente final."
+    },
+    {
+      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/13/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+      "impacto": "medio",
+      "porque": "Llamado abierto hasta el 7 de agosto: dato útil para asesorar a leads que evalúan arriendo vs. compra."
+    },
+    {
+      "titulo": "Subsidio del MINVU para mejorar o ampliar tu vivienda: hasta 120 UF, quiénes pueden postular",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/09/subsidio-mejoramiento-ampliacion-vivienda-minvu-2026-requisitos-monto/",
+      "impacto": "bajo",
+      "porque": "Beneficio de remodelación, no de compra directa, pero puede servir como gancho de contenido o remarketing a base actual."
+    },
+    {
+      "titulo": "Permisos para viviendas crecen después de ocho años, pero rubro inmobiliario ve con cautela impacto en recuperación",
+      "fuente": "Emol",
+      "url": "https://www.emol.com/noticias/Economia/2026/05/05/1199091/permisos-vivienda-crecen.html",
+      "impacto": "medio",
+      "porque": "Más permisos de edificación anticipan mayor oferta futura; relevante para planificar lanzamientos y stock disponible."
+    }
+  ],
+  "ia": [
+    {
+      "titulo": "WhatsApp ya tiene agentes con IA: así puede automatizar ventas y atención al cliente",
+      "fuente": "LaFM",
+      "url": "https://www.lafm.com.co/sociedad/whatsapp-business-agente-inteligencia-artificial-funcionamiento-costos-404960",
+      "impacto": "alto",
+      "porque": "Meta Business Agent en WhatsApp automatiza calificación de leads y venta conversacional, el canal donde hoy se cierra gran parte de las cotizaciones."
+    },
+    {
+      "titulo": "Nuevos Agentes de IA automatizan ventas y cobranza en economía de creadores de contenido",
+      "fuente": "DPL News",
+      "url": "https://dplnews.com/agentes-ia-automatizan-ventas-cobranza-economia-creadores/",
+      "impacto": "medio",
+      "porque": "Caso de uso (Hotmart) de agentes de venta y cobro operando a escala; referencia directa para automatizar seguimiento de pagos y cuotas."
+    },
+    {
+      "titulo": "CNM 2026: IA, ventas y marketing, la fórmula para multiplicar resultados en los negocios",
+      "fuente": "Merca20",
+      "url": "https://www.merca20.com/cnm-2026-ia-ventas-y-marketing-la-formula-para-multiplicar-resultados-en-los-negocios/",
+      "impacto": "medio",
+      "porque": "Resume cómo equipos comerciales están combinando IA en marketing y ventas para mejorar conversión, aplicable a la estrategia comercial propia."
+    },
+    {
+      "titulo": "Agente de IA: cómo revoluciona ventas y automatización en 2026",
+      "fuente": "El Ibérico",
+      "url": "https://www.eliberico.com/agente-de-ia-como-esta-revolucionando-las-ventas-y-la-automatizacion-en-el-2026/",
+      "impacto": "bajo",
+      "porque": "Panorama general de adopción de agentes de IA en ventas, útil como contexto de tendencia pero sin dato accionable inmediato."
+    },
+    {
+      "titulo": "Inteligencia artificial en marketing: las habilidades que necesitas para seguir siendo competitivo en 2026",
+      "fuente": "Merca20",
+      "url": "https://www.merca20.com/inteligencia-artificial-en-marketing-las-habilidades-que-necesitas-para-seguir-siendo-competitivo-en-2026/",
+      "impacto": "bajo",
+      "porque": "Orienta sobre capacidades de equipo a desarrollar; relevante para planificación de capacitación más que para acción inmediata."
+    }
+  ]
+}
