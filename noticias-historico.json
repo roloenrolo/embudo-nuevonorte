@@ -1,0 +1,105 @@
+{
+ "actualizado": "2026-07-21",
+ "items": [
+  {
+   "captura": "2026-07-21",
+   "area": "inmobiliario",
+   "titulo": "Tasas hipotecarias se mantienen bajo el 4%, ¿es un buen momento para comprar una vivienda?",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/servicios/explicado/2026/07/08/tasas-hipotecarias-se-mantienen-bajo-el-4-es-un-buen-momento-para-comprar-una-vivienda.shtml",
+   "fecha": "2026-07-08",
+   "impacto": "alto",
+   "porque": "Tasas hipotecarias bajo 4% (mínimo desde 2021) son un argumento de venta directo para reactivar cotizaciones y cierres."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "inmobiliario",
+   "titulo": "Con tasas en mínimos desde 2021: Altos precios de viviendas siguen limitando acceso a la casa propia",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/tu-bolsillo/2026/07/07/con-tasas-en-minimos-desde-2021-altos-precios-de-viviendas-siguen-limitando-el-acceso-a-casa-propia.shtml",
+   "fecha": "2026-07-07",
+   "impacto": "medio",
+   "porque": "Explica por qué la baja de tasas no se traduce aún en más ventas: precios altos siguen siendo la barrera principal para el cliente final."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "inmobiliario",
+   "titulo": "Ministerio de Vivienda vuelve a postergar definición sobre cambios urbanos con que Hacienda busca reactivar negocio inmobiliario",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/construccion/ministerio-de-vivienda-vuelve-a-postergar-definicion-sobre-cambios-urbanos",
+   "fecha": "2026-07-10",
+   "impacto": "medio",
+   "porque": "Nueva prórroga (hasta el 24 de julio) de la modificación a la OGUC que busca destrabar densidad y reactivar inversión inmobiliaria: retrasa certezas regulatorias para nuevos proyectos."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/13/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+   "fecha": "2026-07-13",
+   "impacto": "medio",
+   "porque": "Llamado abierto hasta el 7 de agosto (170 UF de subsidio total): dato útil para asesorar a leads que evalúan arriendo vs. compra."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: Requisitos, montos y cómo postular online al beneficio del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/18/abren-las-postulaciones-del-subsidio-de-arriendo-2026-podrias-perderlo-por-este-olvido-comun/",
+   "fecha": "2026-07-18",
+   "impacto": "bajo",
+   "porque": "Detalle práctico de postulación (Clave Única, presencial en Serviu) que sirve como gancho de contenido o remarketing a base de leads de arriendo."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "ia",
+   "titulo": "Accenture Edge and Google Cloud Bring Scalable Agentic AI Solutions to Mid-Market Companies",
+   "fuente": "Google Cloud Press Corner",
+   "url": "https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies",
+   "fecha": "2026-07-07",
+   "impacto": "alto",
+   "porque": "Suite de agentes preconstruidos (Gemini Enterprise) para empresas de tamaño medio, con foco en crecimiento comercial y experiencia de cliente: referencia directa de lo que ya se ofrece al segmento donde compite domo IA."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "ia",
+   "titulo": "OpenAI publicará este jueves GPT-5.6, su modelo más potente",
+   "fuente": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/openai-lanzara-gpt-56-su-modelo-mas-potente-nid08072026/",
+   "fecha": "2026-07-08",
+   "impacto": "medio",
+   "porque": "GPT-5.6 trae ChatGPT Work, un agente que ejecuta procesos completos conectado a Gmail, Drive, Slack y Microsoft 365: sube la vara de lo que un cliente esperará de un agente comercial propio."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "ia",
+   "titulo": "Mercado Libre IA: Claves para el Futuro del Retail 2026",
+   "fuente": "ITseller Chile",
+   "url": "https://www.itseller.cl/2026/07/16/mercado-libre-ia-claves-para-el-futuro-del-retail-2026/",
+   "fecha": "2026-07-16",
+   "impacto": "medio",
+   "porque": "Más del 50% de las interacciones de soporte de vendedores ya se resuelven solas con IA: benchmark concreto de automatización de atención aplicable a ventas inmobiliarias."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "ia",
+   "titulo": "China lanza Kimi K3, el modelo de IA de código abierto más grande, y desafía a EE.UU.",
+   "fuente": "Merca2",
+   "url": "https://www.merca2.es/2026/07/20/kimi-k3-ia-codigo-abierto-china-2420779/",
+   "fecha": "2026-07-20",
+   "impacto": "bajo",
+   "porque": "Modelo abierto (licencia tipo Apache 2.0) de gran capacidad sin costo de licencia: abarata a mediano plazo construir agentes propios en vez de depender de un solo proveedor."
+  },
+  {
+   "captura": "2026-07-21",
+   "area": "ia",
+   "titulo": "AI Agents Directory Daily Brief: OpenAI, Meta, Microsoft, Anthropic Updates",
+   "fuente": "AI Agents Directory",
+   "url": "https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-july-8-2026",
+   "fecha": "2026-07-08",
+   "impacto": "bajo",
+   "porque": "Resumen diario de movimientos de los grandes proveedores de agentes IA: útil para monitorear hacia dónde se mueve el estándar del mercado."
+  }
+ ]
+}
