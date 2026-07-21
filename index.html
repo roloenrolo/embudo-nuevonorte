@@ -311,6 +311,8 @@ tr:last-child td{border-bottom:0}
       <div class="card"><h3 style="margin:0 0 8px">🤖 IA &amp; negocio</h3><div id="not-ia"></div></div>
     </div>
     <p class="hint" id="not-gen" style="margin:12px 2px 0"></p>
+    <button id="not-hist-btn" class="tab" style="margin-top:10px">📚 Ver histórico</button>
+    <div id="not-hist" hidden style="margin-top:12px"></div>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -844,13 +846,15 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     const m={alto:["#c0392b","alto"],medio:["#b8860b","medio"],bajo:["#7f8bac","bajo"]}[String(imp||"").toLowerCase()]||["",""];
     return m[1] ? `<span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#fff;background:${m[0]};border-radius:8px;padding:1px 6px;margin-left:6px">${m[1]}</span>` : "";
   };
-  const render = arr => ((Array.isArray(arr)?arr:[]).slice(0,6).map(x=>{
+  const item = x => {
     const t = esc(x.titulo);
     const link = x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" style="color:var(--accent-ink);text-decoration:none;font-weight:600">${t} ↗</a>` : `<b>${t}</b>`;
+    const meta = [esc(x.fuente||""), x.fecha?esc(x.fecha):""].filter(Boolean).join(" · ");
     return `<div style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)">${link}${badge(x.impacto)}`+
       (x.porque?`<div class="hint" style="margin:3px 0 0">${esc(x.porque)}</div>`:"")+
-      (x.fuente?`<div class="hint" style="margin:2px 0 0;opacity:.7">${esc(x.fuente)}</div>`:"")+`</div>`;
-  }).join("")) || '<p class="hint">Sin datos hoy.</p>';
+      (meta?`<div class="hint" style="margin:2px 0 0;opacity:.7">${meta}</div>`:"")+`</div>`;
+  };
+  const render = arr => ((Array.isArray(arr)?arr:[]).slice(0,6).map(item).join("")) || '<p class="hint">Sin datos hoy.</p>';
   try{
     const r = await fetch("./noticias.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin noticias.json");
@@ -860,9 +864,32 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     document.getElementById("not-ia").innerHTML=render(j.ia);
     const gen=new Date(j.generado||j.fecha);
     document.getElementById("not-gen").innerHTML = isNaN(gen)?"" :
-      `Actualizado el ${gen.toLocaleDateString("es-CL")} por Chucao. Cada titular enlaza a su fuente.`;
+      `Actualizado el ${gen.toLocaleDateString("es-CL")} por Chucao. Cada titular enlaza a su fuente. Ventana: últimos ~10 días.`;
     const sec=document.getElementById("sec-noticias"); sec.hidden=false; sec.classList.add("tab-off");
     document.getElementById("tab-noticias").hidden=false;
+
+    // Histórico navegable: botón que carga noticias-historico.json y lo agrupa por fecha de captura (colapsable).
+    const btn=document.getElementById("not-hist-btn"), box=document.getElementById("not-hist");
+    if(btn) btn.addEventListener("click", async ()=>{
+      if(!box.hidden){ box.hidden=true; btn.textContent="📚 Ver histórico"; return; }
+      btn.textContent="Cargando…";
+      try{
+        const h=await (await fetch("./noticias-historico.json?_ts="+Date.now(),{cache:"no-store"})).json();
+        const items=Array.isArray(h.items)?h.items:[];
+        const dias=[...new Set(items.map(x=>x.captura))].sort().reverse();
+        box.innerHTML = dias.map(d=>{
+          const dd=items.filter(x=>x.captura===d);
+          const inmo=dd.filter(x=>x.area==="inmobiliario"), ia=dd.filter(x=>x.area==="ia");
+          const dObj=new Date(d);
+          return `<details style="margin-bottom:8px"><summary style="cursor:pointer;font-weight:700;color:var(--accent-ink)">${isNaN(dObj)?esc(d):dObj.toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})} · ${dd.length} noticias</summary>`+
+            `<div style="padding:6px 0 0 10px">`+
+            (inmo.length?`<div class="hint" style="font-weight:700;margin:6px 0 2px">🏢 Inmobiliario</div>`+inmo.map(item).join(""):"")+
+            (ia.length?`<div class="hint" style="font-weight:700;margin:10px 0 2px">🤖 IA</div>`+ia.map(item).join(""):"")+
+            `</div></details>`;
+        }).join("") || '<p class="hint">Aún no hay histórico acumulado.</p>';
+        box.hidden=false; btn.textContent="📚 Ocultar histórico";
+      }catch(e){ box.innerHTML='<p class="hint">Histórico no disponible todavía (se acumula desde hoy).</p>'; box.hidden=false; btn.textContent="📚 Ver histórico"; }
+    });
   }catch(e){ /* sin noticias válidas: el tab no aparece; el resto del dashboard sigue igual */ }
 })();
 </script>
