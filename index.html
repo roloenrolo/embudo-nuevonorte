@@ -148,6 +148,7 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="meta" aria-selected="true">📣 Meta y anuncios</button>
     <button class="tab" data-target="antonia" aria-selected="false">🤖 Antonia y embudo</button>
     <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
+    <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
   </nav>
 
   <section data-grp="agenda">
@@ -268,6 +269,29 @@ tr:last-child td{border-bottom:0}
       <p class="hint">Cada celda = leads que escribieron ese día de la semana a esa hora.</p>
       <div style="overflow-x:auto"><div class="hm" id="hxd"></div></div>
     </div>
+  </section>
+
+  <!-- Pronóstico (14 días): forecast.json generado por forecast_timesfm.py (TimesFM + embudo Monte Carlo).
+       El tab entero se revela solo si el JSON carga y valida; si falta, el resto del dashboard ni se entera. -->
+  <section id="sec-fc" data-grp="forecast" hidden>
+    <p class="sub">Pronóstico próximos 14 días — TimesFM + simulación del embudo</p>
+    <div class="kpis" id="fc-kpis"></div>
+    <p class="hint" id="fc-gen" style="margin:10px 2px 0"></p>
+  </section>
+  <section id="sec-fc-chart" data-grp="forecast" hidden>
+    <p class="sub">Leads por día: observado y pronóstico</p>
+    <div class="card">
+      <p class="hint" id="fc-leyenda"></p>
+      <svg class="days" id="fc-svg" viewBox="0 0 700 190" preserveAspectRatio="none" role="img" aria-label="Leads observados y pronóstico con banda P10–P90"></svg>
+    </div>
+  </section>
+  <section id="sec-fc-tasas" data-grp="forecast" hidden>
+    <p class="sub">Tasas usadas en la simulación</p>
+    <div class="tblwrap"><table id="fc-tasas">
+      <thead><tr><th style="text-align:left">Etapa</th><th>Tasa</th><th>Origen</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <p class="hint" id="fc-nota" style="margin:10px 2px 0"></p>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -723,6 +747,66 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     `⚠️ No conectar a la Hoja 1 del CRM (tiene teléfonos/nombres); usar solo un tab de métricas agregadas. `+
     (live ? "Recarga la página para refrescar." : "Ahora mismo se muestran datos de ejemplo.");
   if(live) setInterval(async()=>{ try{ render(await fetchLive()); }catch(e){} }, 5*60*1000);
+})();
+
+// ---- Tab Pronóstico: forecast.json (generado por forecast_timesfm.py) ----
+// Carga AISLADA del loader principal: si el JSON falta o viene malo, el botón del
+// tab ni aparece y las otras pestañas siguen intactas. Cache-bust igual que el CSV.
+(async function(){
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
+  try{
+    const r = await fetch("./forecast.json?_ts="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("sin forecast.json");
+    const j = await r.json();
+    if(!Array.isArray(j.serie) || j.serie.length<2 || !Array.isArray(j.pron) || !j.pron.length) throw new Error("forecast vacío");
+    const tot=j.tot||{}, ag=j.agendas||{}, ci=j.cierres||{};
+    if([tot.p10,tot.p50,tot.p90,ag.media,ci.p1,ci.esperados].some(v=>fin(v)==null)) throw new Error("forecast incompleto");
+
+    const pct = v => fin(v)==null ? "—" : Math.round(v*100)+"%";
+    document.getElementById("fc-kpis").innerHTML = [
+      {lbl:"Leads esperados (14 días)", val:tot.p50, sub:`rango probable ${tot.p10}–${tot.p90}`},
+      {lbl:"Reuniones agendadas", val:ag.media, sub:`rango probable ${fin(ag.p10)??"—"}–${fin(ag.p90)??"—"}`},
+      {lbl:"Prob. de ≥1 cierre", val:pct(ci.p1), sub:`prob. de ≥2: ${pct(ci.p2)}`},
+      {lbl:"Cierres esperados", val:ci.esperados, sub:"simulación del embudo"}
+    ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+
+    const gen = new Date(j.generado);
+    const dias = isNaN(gen) ? null : Math.floor((Date.now()-gen.getTime())/86400000);
+    document.getElementById("fc-gen").innerHTML = isNaN(gen) ? "" :
+      `Pronóstico generado el ${gen.toLocaleDateString("es-CL")} con la serie real de leads del dashboard.`+
+      (dias>7 ? ` <b style="color:var(--warn)">Tiene ${dias} días — regenerar.</b>` : "");
+
+    // Chart: línea observada + banda P10–P90 + mediana punteada del pronóstico
+    const W=700,H=190,PAD=10,BOT=8;
+    const serie=j.serie.map(p=>fin(p.leads)??0), pron=j.pron;
+    const n=serie.length+pron.length;
+    const maxY=Math.max(...serie, ...pron.map(p=>fin(p.p90)??0), 1)*1.15;
+    const X=i=>PAD+(W-2*PAD)*i/(n-1), Y=v=>H-BOT-(H-BOT-PAD)*(v/maxY);
+    const pt=(i,v)=>`${X(i).toFixed(1)},${Y(v).toFixed(1)}`;
+    const off=serie.length-1;
+    const bandTop=[pt(off,serie[off]),...pron.map((p,i)=>pt(off+1+i,fin(p.p90)??0))];
+    const bandBot=[...pron.map((p,i)=>pt(off+1+i,fin(p.p10)??0)).reverse(),pt(off,serie[off])];
+    let svg=`<polygon points="${bandTop.join(" ")} ${bandBot.join(" ")}" fill="var(--accent)" opacity=".16"/>`;
+    svg+=`<polyline points="${serie.map((v,i)=>pt(i,v)).join(" ")}" fill="none" stroke="var(--f1)" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+    svg+=`<polyline points="${[pt(off,serie[off]),...pron.map((p,i)=>pt(off+1+i,fin(p.p50)??0))].join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4" vector-effect="non-scaling-stroke"/>`;
+    j.serie.forEach((p,i)=>{svg+=`<circle cx="${X(i).toFixed(1)}" cy="${Y(fin(p.leads)??0).toFixed(1)}" r="3.5" fill="var(--f1)"><title>${esc(p.fecha)}: ${fin(p.leads)??"?"} leads</title></circle>`;});
+    pron.forEach((p,i)=>{svg+=`<circle cx="${X(off+1+i).toFixed(1)}" cy="${Y(fin(p.p50)??0).toFixed(1)}" r="3.5" fill="var(--accent)"><title>${esc(p.fecha)}: mediana ${p.p50} (P10 ${p.p10} · P90 ${p.p90})</title></circle>`;});
+    document.getElementById("fc-svg").innerHTML=svg;
+    document.getElementById("fc-leyenda").innerHTML =
+      `<span style="color:var(--f1);font-weight:700">— observado</span> · <span style="color:var(--accent-ink);font-weight:700">╌ pronóstico (mediana)</span> · <span style="color:var(--accent-ink)">▉</span> banda P10–P90 · ${esc(j.serie[0].fecha)} → ${esc(pron[pron.length-1].fecha)}`;
+
+    document.querySelector("#fc-tasas tbody").innerHTML=(j.tasas||[]).map(t=>{
+      const cal=t.origen==="calibrada";
+      return `<tr><td style="text-align:left">${esc(t.nombre)}</td><td>${fin(t.valor)==null?"—":(t.valor*100).toFixed(1)+"%"}</td>`+
+        `<td><span style="color:${cal?"var(--good-text)":"var(--warn)"};font-weight:700">${cal?"calibrada con datos":"supuesto declarado"}</span></td></tr>`;
+    }).join("");
+    document.getElementById("fc-nota").textContent=String(j.nota||"");
+
+    // Todo validado → activar secciones (tab-off las mantiene ocultas hasta el clic) y revelar el botón
+    ["sec-fc","sec-fc-chart","sec-fc-tasas"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
+    document.getElementById("tab-forecast").hidden=false;
+  }catch(e){ /* sin forecast válido: el tab no existe; el resto del dashboard sigue igual */ }
 })();
 </script>
 </body>

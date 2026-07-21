@@ -1,0 +1,187 @@
+{
+ "generado": "2026-07-21T11:48:36+00:00",
+ "horizonte": 14,
+ "serie": [
+  {
+   "fecha": "2026-07-07",
+   "leads": 13
+  },
+  {
+   "fecha": "2026-07-08",
+   "leads": 23
+  },
+  {
+   "fecha": "2026-07-09",
+   "leads": 19
+  },
+  {
+   "fecha": "2026-07-10",
+   "leads": 14
+  },
+  {
+   "fecha": "2026-07-11",
+   "leads": 15
+  },
+  {
+   "fecha": "2026-07-12",
+   "leads": 17
+  },
+  {
+   "fecha": "2026-07-13",
+   "leads": 22
+  },
+  {
+   "fecha": "2026-07-14",
+   "leads": 23
+  },
+  {
+   "fecha": "2026-07-15",
+   "leads": 12
+  },
+  {
+   "fecha": "2026-07-16",
+   "leads": 15
+  },
+  {
+   "fecha": "2026-07-17",
+   "leads": 17
+  },
+  {
+   "fecha": "2026-07-18",
+   "leads": 25
+  },
+  {
+   "fecha": "2026-07-19",
+   "leads": 22
+  },
+  {
+   "fecha": "2026-07-20",
+   "leads": 17
+  }
+ ],
+ "pron": [
+  {
+   "fecha": "2026-07-21",
+   "p10": 12.0,
+   "p50": 17.9,
+   "p90": 23.9
+  },
+  {
+   "fecha": "2026-07-22",
+   "p10": 12.2,
+   "p50": 18.2,
+   "p90": 24.7
+  },
+  {
+   "fecha": "2026-07-23",
+   "p10": 12.2,
+   "p50": 18.4,
+   "p90": 25.1
+  },
+  {
+   "fecha": "2026-07-24",
+   "p10": 12.3,
+   "p50": 18.6,
+   "p90": 25.4
+  },
+  {
+   "fecha": "2026-07-25",
+   "p10": 11.2,
+   "p50": 17.7,
+   "p90": 24.7
+  },
+  {
+   "fecha": "2026-07-26",
+   "p10": 11.4,
+   "p50": 18.0,
+   "p90": 25.0
+  },
+  {
+   "fecha": "2026-07-27",
+   "p10": 11.0,
+   "p50": 17.7,
+   "p90": 24.8
+  },
+  {
+   "fecha": "2026-07-28",
+   "p10": 12.2,
+   "p50": 18.8,
+   "p90": 26.0
+  },
+  {
+   "fecha": "2026-07-29",
+   "p10": 11.7,
+   "p50": 18.4,
+   "p90": 25.6
+  },
+  {
+   "fecha": "2026-07-30",
+   "p10": 11.2,
+   "p50": 18.0,
+   "p90": 25.3
+  },
+  {
+   "fecha": "2026-07-31",
+   "p10": 11.0,
+   "p50": 17.7,
+   "p90": 24.9
+  },
+  {
+   "fecha": "2026-08-01",
+   "p10": 11.4,
+   "p50": 18.0,
+   "p90": 25.2
+  },
+  {
+   "fecha": "2026-08-02",
+   "p10": 11.9,
+   "p50": 18.6,
+   "p90": 25.8
+  },
+  {
+   "fecha": "2026-08-03",
+   "p10": 11.7,
+   "p50": 18.4,
+   "p90": 25.6
+  }
+ ],
+ "tot": {
+  "p10": 163,
+  "p50": 254,
+  "p90": 352
+ },
+ "agendas": {
+  "media": 6.3,
+  "p10": 3,
+  "p90": 10
+ },
+ "cierres": {
+  "esperados": 0.94,
+  "p0": 0.432,
+  "p1": 0.568,
+  "p2": 0.24
+ },
+ "tasas": [
+  {
+   "nombre": "contactabilidad",
+   "valor": 0.5535,
+   "origen": "calibrada"
+  },
+  {
+   "nombre": "tasa de agendamiento",
+   "valor": 0.0447,
+   "origen": "calibrada"
+  },
+  {
+   "nombre": "asistencia a reunión",
+   "valor": 0.6,
+   "origen": "prior"
+  },
+  {
+   "nombre": "tasa de cierre",
+   "valor": 0.25,
+   "origen": "prior"
+  }
+ ],
+ "nota": "Leads pronosticados con TimesFM sobre la serie diaria real; reuniones y cierres simulados con las tasas del embudo (asistencia y cierre son supuestos declarados, aún sin cierres observados)."
+}
