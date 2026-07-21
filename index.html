@@ -149,6 +149,7 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="antonia" aria-selected="false">🤖 Antonia y embudo</button>
     <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
     <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
+    <button class="tab" data-target="noticias" id="tab-noticias" aria-selected="false" hidden>📰 Noticias del día</button>
   </nav>
 
   <section data-grp="agenda">
@@ -292,6 +293,16 @@ tr:last-child td{border-bottom:0}
       <tbody></tbody>
     </table></div>
     <p class="hint" id="fc-nota" style="margin:10px 2px 0"></p>
+  </section>
+
+  <!-- Noticias del día: noticias.json generado por Chucao (mini) cada mañana. Mismo patrón que forecast: el tab se revela solo si el JSON carga y valida. -->
+  <section id="sec-noticias" data-grp="noticias" hidden>
+    <p class="sub">Noticias relevantes de hoy — para decidir con contexto</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+      <div class="card"><h3 style="margin:0 0 8px">🏢 Mercado inmobiliario</h3><div id="not-inmo"></div></div>
+      <div class="card"><h3 style="margin:0 0 8px">🤖 IA &amp; negocio</h3><div id="not-ia"></div></div>
+    </div>
+    <p class="hint" id="not-gen" style="margin:12px 2px 0"></p>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -807,6 +818,36 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     ["sec-fc","sec-fc-chart","sec-fc-tasas"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
     document.getElementById("tab-forecast").hidden=false;
   }catch(e){ /* sin forecast válido: el tab no existe; el resto del dashboard sigue igual */ }
+})();
+
+// ---- Tab Noticias: noticias.json (generado por Chucao cada mañana en el mini) ----
+// Carga AISLADA igual que el forecast: sin JSON válido, el botón del tab no aparece.
+(async function(){
+  const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const badge = imp => {
+    const m={alto:["#c0392b","alto"],medio:["#b8860b","medio"],bajo:["#7f8bac","bajo"]}[String(imp||"").toLowerCase()]||["",""];
+    return m[1] ? `<span style="font-size:10px;font-weight:700;text-transform:uppercase;color:#fff;background:${m[0]};border-radius:8px;padding:1px 6px;margin-left:6px">${m[1]}</span>` : "";
+  };
+  const render = arr => ((Array.isArray(arr)?arr:[]).slice(0,6).map(x=>{
+    const t = esc(x.titulo);
+    const link = x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" style="color:var(--accent-ink);text-decoration:none;font-weight:600">${t} ↗</a>` : `<b>${t}</b>`;
+    return `<div style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)">${link}${badge(x.impacto)}`+
+      (x.porque?`<div class="hint" style="margin:3px 0 0">${esc(x.porque)}</div>`:"")+
+      (x.fuente?`<div class="hint" style="margin:2px 0 0;opacity:.7">${esc(x.fuente)}</div>`:"")+`</div>`;
+  }).join("")) || '<p class="hint">Sin datos hoy.</p>';
+  try{
+    const r = await fetch("./noticias.json?_ts="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("sin noticias.json");
+    const j = await r.json();
+    if(!Array.isArray(j.inmobiliario) && !Array.isArray(j.ia)) throw new Error("noticias vacío");
+    document.getElementById("not-inmo").innerHTML=render(j.inmobiliario);
+    document.getElementById("not-ia").innerHTML=render(j.ia);
+    const gen=new Date(j.generado||j.fecha);
+    document.getElementById("not-gen").innerHTML = isNaN(gen)?"" :
+      `Actualizado el ${gen.toLocaleDateString("es-CL")} por Chucao. Cada titular enlaza a su fuente.`;
+    const sec=document.getElementById("sec-noticias"); sec.hidden=false; sec.classList.add("tab-off");
+    document.getElementById("tab-noticias").hidden=false;
+  }catch(e){ /* sin noticias válidas: el tab no aparece; el resto del dashboard sigue igual */ }
 })();
 </script>
 </body>
