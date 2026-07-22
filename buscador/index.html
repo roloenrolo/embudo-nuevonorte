@@ -143,10 +143,10 @@ textarea{width:100%;height:120px;font-family:Menlo,monospace;font-size:11px}
 <div><!-- ==================== COLUMNA DERECHA ==================== -->
 
   <div class="tasaBar" id="tasaBar">
-    <span>📉 Tasa anual (afecta capacidad y proyectos):</span>
-    <button class="stepbtn" onclick="stepTasa(-0.25)">− 0,25</button>
-    <b id="tasaVal">—</b>
-    <button class="stepbtn" onclick="stepTasa(0.25)">+ 0,25</button>
+    <span>📉 Tasa anual % (edítala o usa ± · afecta capacidad y proyectos):</span>
+    <button class="stepbtn" onclick="stepTasa(-0.25)">−</button>
+    <input type="number" id="tasaInput" step="0.01" min="0" oninput="setTasa(this.value)" style="width:80px;text-align:center;font-weight:700;font-size:15px;padding:5px 6px;border:1px solid var(--azul);border-radius:8px">
+    <button class="stepbtn" onclick="stepTasa(0.25)">+</button>
   </div>
   <div class="cap" id="capTiles"></div>
 
@@ -627,7 +627,8 @@ function simCalc(){
     else cmp.innerHTML=`<div class="scorecard" style="background:#c0392b"><b>No alcanza por ${fmtCLP(-dif)}/mes.</b> Se necesita renta liquida de ${fmtCLP(rentaMin)} y hay ${fmtCLP(rentaDisp)}.</div>`;
   } else cmp.innerHTML='';
 }
-function renderTasaBar(){ const e=document.getElementById('tasaVal'); if(e) e.textContent=P.tasa_anual_pct.toLocaleString('es-CL',{minimumFractionDigits:2,maximumFractionDigits:2})+'%'; }
+function renderTasaBar(){ const e=document.getElementById('tasaInput'); if(e && document.activeElement!==e) e.value=P.tasa_anual_pct; }
+function setTasa(v){ const x=parseFloat(v); if(isNaN(x)||x<0) return; P.tasa_anual_pct=x; store.setItem('ws10_params',JSON.stringify(P)); paramsUI(); calc(); if(typeof simCalc==='function') simCalc(); }
 function stepTasa(d){ P.tasa_anual_pct=Math.max(0,Math.round((P.tasa_anual_pct+d)*100)/100); store.setItem('ws10_params',JSON.stringify(P)); renderTasaBar(); paramsUI(); calc(); if(typeof simCalc==='function') simCalc(); }
 
 init();
