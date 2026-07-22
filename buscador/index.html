@@ -79,7 +79,14 @@ textarea{width:100%;height:120px;font-family:Menlo,monospace;font-size:11px}
 .tasaBar .stepbtn{padding:5px 11px;border:1px solid var(--azul);border-radius:8px;background:#fff;color:var(--azul);font-weight:700;cursor:pointer;font-size:13px}
 .tasaBar .stepbtn:active{background:var(--azul);color:#fff}
 .tasaBar b{color:var(--azul);font-size:15px}
-#simCard .fila>div{min-width:120px}
+.hipGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.hipGrid{grid-template-columns:1fr}}
+.hipMode{margin:8px 0 10px}
+.hipPanel .fila{flex-wrap:wrap}
+.hipPanel .fila>div{min-width:140px}
+.hipBlock{margin-top:12px;border-top:1px solid #e4dccb;padding-top:10px}
+.hipOk{background:var(--verde)!important}
+.hipBad{background:#c0392b!important}
 </style></head><body>
 
 <div class="top">
@@ -185,41 +192,102 @@ textarea{width:100%;height:120px;font-family:Menlo,monospace;font-size:11px}
 </div>
 </div>
 
-<div class="card" id="simCard">
-  <h2>🧮 Simulador inverso — ¿qué renta necesito para este depto?</h2>
-  <p class="mini">Parte del valor de la propiedad y calcula la renta líquida mínima, el dividendo y el pie. Sin seguros (referencial). La tasa es la misma del calificador — muévela con ± para ver el efecto si sube o baja.</p>
-  <div class="tramos" style="margin:8px 0">
-    <button id="simModoInd" class="on" onclick="simModo('ind')">Renta individual</button>
-    <button id="simModoCom" onclick="simModo('com')">Complementar renta</button>
+<div class="card" id="hipotecasCard">
+  <h2>🧮 Calculadoras hipotecarias</h2>
+  <div class="fila" style="align-items:flex-end;margin-bottom:10px;max-width:340px">
+    <div><label>Valor de la UF (CLP)</label><input type="number" id="hipValorUF" value="40844.79" step="0.01" oninput="hipCalcAll()"></div>
   </div>
-  <div class="fila" style="flex-wrap:wrap;gap:10px">
-    <div><label>Valor del depto (UF)</label><input type="number" id="simValorUF" value="3000" oninput="simCalc()"></div>
-    <div><label>% a financiar</label><input type="number" id="simFin" value="80" oninput="simCalc()"></div>
-    <div><label>% máx renta al dividendo</label><input type="number" id="simPctRenta" value="25" oninput="simCalc()"></div>
-    <div><label>Plazo (años)</label><input type="number" id="simPlazo" value="30" oninput="simCalc()"></div>
-  </div>
-  <label style="margin-top:8px">Tasa anual (%) — variable de mercado</label>
-  <div class="fila" style="align-items:center;max-width:300px;gap:8px">
-    <button class="btn sec" onclick="stepTasa(-0.25)">− 0,25</button>
-    <b id="simTasaVal" style="flex:1;text-align:center;font-size:17px;color:var(--azul)">—</b>
-    <button class="btn sec" onclick="stepTasa(0.25)">+ 0,25</button>
-  </div>
-  <div id="simRentaInd" style="margin-top:6px">
-    <label>Renta líquida disponible (CLP)</label><input type="number" id="simRentaDisp" value="2000000" oninput="simCalc()">
-  </div>
-  <div id="simRentaCom" style="display:none;margin-top:6px">
-    <div class="fila" style="gap:10px">
-      <div><label>Renta titular (CLP)</label><input type="number" id="simRentaTit" value="1800000" oninput="simCalc()"></div>
-      <div><label>Renta codeudor (CLP)</label><input type="number" id="simRentaCod" value="1200000" oninput="simCalc()"></div>
+  <div class="hipGrid">
+    <div class="hipPanel">
+      <h2>Calculadora 1 — Capacidad de compra</h2>
+      <div class="tramos hipMode">
+        <button id="hipC1ModoInd" class="on" onclick="hipModo('c1','ind')">Renta individual</button>
+        <button id="hipC1ModoCom" onclick="hipModo('c1','com')">Complementar renta</button>
+      </div>
+      <div id="hipC1Ind">
+        <div class="fila">
+          <div><label>Renta líquida mensual (CLP)</label><input type="number" id="hipC1RentaIndividual" value="2000000" oninput="hipCalcAll()"></div>
+          <div><label>Tasa de interés anual (%)</label><input type="number" id="hipC1TasaIndividual" value="5.00" step="0.01" oninput="hipCalcAll()"></div>
+          <div><label>Plazo del crédito (años)</label><input type="number" id="hipC1PlazoIndividual" value="30" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>% valor propiedad financiado</label><input type="number" id="hipC1FinanciamientoIndividual" value="80" oninput="hipCalcAll()"></div>
+          <div><label>Ahorros destinados al pie (CLP)</label><input type="number" id="hipC1AhorrosIndividual" value="0" oninput="hipCalcAll()"></div>
+          <div><label>Subsidio habitacional (UF)</label><input type="number" id="hipC1SubsidioIndividualUF" value="0" oninput="hipCalcAll()"></div>
+        </div>
+      </div>
+      <div id="hipC1Com" style="display:none">
+        <div class="fila">
+          <div><label>Renta líquida del titular (CLP)</label><input type="number" id="hipC1RentaTitular" value="1800000" oninput="hipCalcAll()"></div>
+          <div><label>Renta líquida del codeudor (CLP)</label><input type="number" id="hipC1RentaCodeudor" value="1200000" oninput="hipCalcAll()"></div>
+          <div><label>Relación del codeudor (texto informativo)</label><input type="text" id="hipC1ParentescoCodeudor" value="—" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Tasa de interés anual (%)</label><input type="number" id="hipC1TasaComplementada" value="5.00" step="0.01" oninput="hipCalcAll()"></div>
+          <div><label>Plazo del crédito (años)</label><input type="number" id="hipC1PlazoComplementada" value="30" oninput="hipCalcAll()"></div>
+          <div><label>% financiamiento</label><input type="number" id="hipC1FinanciamientoComplementada" value="80" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Ahorros destinados al pie (CLP)</label><input type="number" id="hipC1AhorrosComplementada" value="0" oninput="hipCalcAll()"></div>
+          <div><label>Subsidio habitacional (UF)</label><input type="number" id="hipC1SubsidioComplementadaUF" value="0" oninput="hipCalcAll()"></div>
+        </div>
+        <p class="mini" id="hipC1RentaConjunta"></p>
+      </div>
+      <div class="cap" id="hipC1Out" style="margin-top:12px"></div>
+      <div class="hipBlock" id="hipC1Resumen"></div>
+      <div class="hipBlock" id="hipC1Detalle"></div>
+      <div class="disclaimer">Es una precalificación referencial; no descuenta seguros, otras deudas ni gastos operacionales.<br>El dividendo máximo se fija en 25% de la renta líquida (no configurable en esta calculadora).<br>El subsidio se suma como aporte al pie sin validar condiciones de aplicación.<br>En modo complementado, ambas rentas deben ser acreditables; edad, parentesco y deudas pueden afectar la aprobación real.</div>
+    </div>
+    <div class="hipPanel">
+      <h2>Calculadora 2 — Simulador inverso</h2>
+      <div class="tramos hipMode">
+        <button id="hipC2ModoInd" class="on" onclick="hipModo('c2','ind')">Renta individual</button>
+        <button id="hipC2ModoCom" onclick="hipModo('c2','com')">Complementar renta</button>
+      </div>
+      <div id="hipC2Ind">
+        <div class="fila">
+          <div><label>Valor del departamento (UF)</label><input type="number" id="hipC2ValorPropiedadIndividualUFInput" value="3000" oninput="hipCalcAll()"></div>
+          <div><label>% a financiar</label><input type="number" id="hipC2FinanciamientoIndividual" value="80" oninput="hipCalcAll()"></div>
+          <div><label>% máximo renta/dividendo</label><input type="number" id="hipC2PorcentajeRentaIndividual" value="25" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Tasa anual (%)</label><input type="number" id="hipC2TasaIndividual" value="5.00" step="0.01" oninput="hipCalcAll()"></div>
+          <div><label>Plazo (años)</label><input type="number" id="hipC2PlazoIndividual" value="30" oninput="hipCalcAll()"></div>
+          <div><label>Renta líquida disponible (CLP)</label><input type="number" id="hipC2RentaDisponibleIndividual" value="2000000" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Ahorros destinados al pie (CLP)</label><input type="number" id="hipC2AhorrosIndividual" value="0" oninput="hipCalcAll()"></div>
+          <div><label>Subsidio habitacional (UF)</label><input type="number" id="hipC2SubsidioIndividualUF" value="0" oninput="hipCalcAll()"></div>
+        </div>
+      </div>
+      <div id="hipC2Com" style="display:none">
+        <div class="fila">
+          <div><label>Valor del departamento (UF)</label><input type="number" id="hipC2ValorPropiedadComplementadaUFInput" value="4000" oninput="hipCalcAll()"></div>
+          <div><label>% a financiar</label><input type="number" id="hipC2FinanciamientoComplementada" value="80" oninput="hipCalcAll()"></div>
+          <div><label>% máximo renta/dividendo</label><input type="number" id="hipC2PorcentajeRentaComplementada" value="25" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Tasa anual (%)</label><input type="number" id="hipC2TasaComplementada" value="5.00" step="0.01" oninput="hipCalcAll()"></div>
+          <div><label>Plazo (años)</label><input type="number" id="hipC2PlazoComplementada" value="30" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Renta líquida titular (CLP)</label><input type="number" id="hipC2RentaTitular" value="1800000" oninput="hipCalcAll()"></div>
+          <div><label>Renta líquida codeudor (CLP)</label><input type="number" id="hipC2RentaCodeudor" value="1200000" oninput="hipCalcAll()"></div>
+          <div><label>Relación del codeudor (texto informativo)</label><input type="text" id="hipC2ParentescoCodeudor" value="—" oninput="hipCalcAll()"></div>
+        </div>
+        <div class="fila">
+          <div><label>Ahorros destinados al pie (CLP)</label><input type="number" id="hipC2AhorrosComplementada" value="0" oninput="hipCalcAll()"></div>
+          <div><label>Subsidio habitacional (UF)</label><input type="number" id="hipC2SubsidioComplementadaUF" value="0" oninput="hipCalcAll()"></div>
+        </div>
+        <p class="mini" id="hipC2RentaConjunta"></p>
+      </div>
+      <div class="cap" id="hipC2Out" style="margin-top:12px"></div>
+      <div id="hipC2Comparacion" style="margin-top:10px"></div>
+      <div class="hipBlock" id="hipC2Resumen"></div>
+      <div class="hipBlock" id="hipC2Detalle"></div>
+      <div class="disclaimer">Cálculo referencial; no incorpora seguros, gastos operacionales, deudas vigentes, restricciones de edad ni evaluación comercial real.<br>En modo complementado, ambas rentas deben ser acreditables; deudas, edad, estabilidad laboral, parentesco y seguros pueden modificar el resultado real.</div>
     </div>
   </div>
-  <div class="fila" style="gap:10px;margin-top:2px">
-    <div><label>Ahorros para el pie (CLP)</label><input type="number" id="simAhorro" value="0" oninput="simCalc()"></div>
-    <div><label>Subsidio (UF)</label><input type="number" id="simSubUF" value="0" oninput="simCalc()"></div>
-  </div>
-  <div class="cap" id="simOut" style="margin-top:12px"></div>
-  <div id="simCmp" style="margin-top:10px"></div>
-  <div class="disclaimer">Estimación referencial sin seguros ni gastos operacionales — no es oferta de crédito. La renta mínima usa el % de renta indicado como tope de dividendo.</div>
 </div>
 
 <script>
@@ -595,41 +663,98 @@ async function init(){
   if(ARR.actualizado) document.getElementById("arrInfo").textContent=", al "+ARR.actualizado;
   pintaTramos(); paramsUI(); poblaComunas();
   tri("triDicom","dicom"); tri("triSub","subsidio"); tri("triPV","pv");
-  calc(); renderTasaBar(); simModo('ind');
+  calc(); renderTasaBar(); hipInit();
 }
-/* ===== Simulador inverso + control de tasa (spec calculadoras 22-jul) ===== */
-let simMode='ind';
-function simModo(m){ simMode=m;
-  document.getElementById('simModoInd').className=m==='ind'?'on':'';
-  document.getElementById('simModoCom').className=m==='com'?'on':'';
-  document.getElementById('simRentaInd').style.display=m==='ind'?'block':'none';
-  document.getElementById('simRentaCom').style.display=m==='com'?'block':'none';
-  simCalc();
+/* ===== Calculadoras hipotecarias standalone (spec calculadoras 22-jul-2026) ===== */
+let hipModes={c1:'ind',c2:'ind'};
+function hipInit(){ hipModo('c1','ind'); hipModo('c2','ind'); hipCalcAll(); }
+function hipModo(calc,m){
+  hipModes[calc]=m;
+  document.getElementById('hipC'+(calc==='c1'?1:2)+'ModoInd').className=m==='ind'?'on':'';
+  document.getElementById('hipC'+(calc==='c1'?1:2)+'ModoCom').className=m==='com'?'on':'';
+  document.getElementById('hipC'+(calc==='c1'?1:2)+'Ind').style.display=m==='ind'?'block':'none';
+  document.getElementById('hipC'+(calc==='c1'?1:2)+'Com').style.display=m==='com'?'block':'none';
+  hipCalcAll();
 }
-function simCalc(){
-  const uf=P.uf_clp, tasa=P.tasa_anual_pct;
-  const valorUF=n('simValorUF'), fin=n('simFin')/100, pctR=n('simPctRenta')/100, plazo=n('simPlazo');
-  const rentaDisp = simMode==='com' ? n('simRentaTit')+n('simRentaCod') : n('simRentaDisp');
-  const ahorro=n('simAhorro'), subUF=n('simSubUF');
-  const i=tasa/100/12, meses=Math.round(plazo*12);
-  const valorCLP=valorUF*uf, credito=valorCLP*fin, pieReq=Math.max(0,valorCLP-credito);
-  const dividendo = i>0 ? credito*i/(1-Math.pow(1+i,-meses)) : (meses>0?credito/meses:0);
-  const rentaMin = pctR>0 ? dividendo/pctR : 0;
-  const recursos=ahorro+subUF*uf, pieFalta=Math.max(0,pieReq-recursos);
-  const dif=rentaDisp-rentaMin;
-  const stv=document.getElementById('simTasaVal'); if(stv) stv.textContent=tasa.toLocaleString('es-CL',{minimumFractionDigits:2,maximumFractionDigits:2})+'%';
-  const par=(l,clp)=>`<div class="t"><div class="v">${fmtCLP(clp)}</div><div class="l">${l}<br>${fmtUF(clp/uf)}</div></div>`;
-  document.getElementById('simOut').innerHTML =
-    par('Renta liquida minima', rentaMin) + par('Dividendo mensual', dividendo) + par('Credito requerido', credito) + par('Pie requerido', pieReq) + (pieFalta>0?par('Pie por completar', pieFalta):`<div class="t"><div class="v" style="color:var(--verde)">✓</div><div class="l">Pie cubierto con ahorro+subsidio</div></div>`);
-  const cmp=document.getElementById('simCmp');
-  if(rentaDisp>0){
-    if(dif>=0) cmp.innerHTML=`<div class="scorecard" style="background:var(--verde)"><b>Alcanza.</b> La renta ingresada (${fmtCLP(rentaDisp)}) supera la minima estimada en <b>${fmtCLP(dif)}</b>/mes.</div>`;
-    else cmp.innerHTML=`<div class="scorecard" style="background:#c0392b"><b>No alcanza por ${fmtCLP(-dif)}/mes.</b> Se necesita renta liquida de ${fmtCLP(rentaMin)} y hay ${fmtCLP(rentaDisp)}.</div>`;
-  } else cmp.innerHTML='';
+function hipUF(){ const v=n('hipValorUF'); return v>0?v:40844.79; }
+function hipFmtUF(x){ return (isFinite(x)?x:0).toLocaleString('es-CL',{minimumFractionDigits:2,maximumFractionDigits:2})+' UF'; }
+function hipPair(clp,uf){ return fmtCLP(clp)+' · '+hipFmtUF(uf); }
+function hipTile(label,clp,main){
+  return `<div class="t"><div class="v">${hipPair(clp,clp/hipUF())}</div><div class="l">${label}</div></div>`;
+}
+function hipAnualidad(principal,tasaAnual,meses){
+  const i=tasaAnual/100/12;
+  if(meses<=0) return 0;
+  return i>0 ? principal*i/(1-Math.pow(1+i,-meses)) : principal/meses;
+}
+function hipCreditoInverso(cuota,tasaAnual,meses){
+  const i=tasaAnual/100/12;
+  if(meses<=0) return 0;
+  return i>0 ? cuota*(1-Math.pow(1+i,-meses))/i : cuota*meses;
+}
+function hipLine(label,clp,uf){
+  return `<div class="razon"><b>${label}:</b> ${hipPair(clp,uf==null?clp/hipUF():uf)}</div>`;
+}
+function hipCalcAll(){
+  if(!document.getElementById('hipotecasCard')) return;
+  hipCalcCapacidad();
+  hipCalcInverso();
+}
+function hipCalcCapacidad(){
+  const uf=hipUF(), m=hipModes.c1, ind=m==='ind';
+  const renta = ind ? n('hipC1RentaIndividual') : n('hipC1RentaTitular')+n('hipC1RentaCodeudor');
+  const tasa = ind ? n('hipC1TasaIndividual') : n('hipC1TasaComplementada');
+  const plazo = ind ? n('hipC1PlazoIndividual') : n('hipC1PlazoComplementada');
+  const finPct = ind ? n('hipC1FinanciamientoIndividual') : n('hipC1FinanciamientoComplementada');
+  const ahorro = ind ? n('hipC1AhorrosIndividual') : n('hipC1AhorrosComplementada');
+  const subUF = ind ? n('hipC1SubsidioIndividualUF') : n('hipC1SubsidioComplementadaUF');
+  const meses=Math.round(plazo*12), divMax=renta*0.25, credito=hipCreditoInverso(divMax,tasa,meses);
+  const fin=finPct/100, valorCompra=fin>0?credito/fin:0, pieReq=Math.max(0,valorCompra-credito);
+  const recursos=ahorro+subUF*uf, pieFalta=Math.max(0,pieReq-recursos), excedente=Math.max(0,recursos-pieReq), piePct=100-finPct;
+  if(!ind) document.getElementById('hipC1RentaConjunta').textContent='Renta líquida conjunta = '+fmtCLP(renta)+' (titular + codeudor al 100%). Parentesco: '+document.getElementById('hipC1ParentescoCodeudor').value;
+  document.getElementById('hipC1Out').innerHTML =
+    hipTile('Dividendo máximo estimado',divMax)+
+    hipTile('Recursos totales para el pie',recursos)+
+    hipTile('Valor máximo de compra',valorCompra)+
+    hipTile('Pie requerido ('+piePct.toLocaleString('es-CL',{maximumFractionDigits:2})+'%)',pieReq)+
+    (pieFalta>0?hipTile('Pie por completar',pieFalta):`<div class="t"><div class="v" style="color:var(--verde)">${hipPair(excedente,excedente/uf)}</div><div class="l">Excedente para el pie</div></div>`);
+  document.getElementById('hipC1Resumen').innerHTML =
+    '<h2>Resumen</h2>'+hipLine('Ahorros',ahorro)+hipLine('Subsidio',subUF*uf,subUF)+hipLine('Total disponible',recursos);
+  document.getElementById('hipC1Detalle').innerHTML =
+    '<h2>Detalle</h2>'+hipLine('Crédito hipotecario máximo',credito)+hipLine('Dividendo utilizado',divMax)+
+    `<div class="razon"><b>Número de cuotas:</b> ${meses}</div><div class="razon"><b>% financiamiento:</b> ${finPct.toLocaleString('es-CL',{maximumFractionDigits:2})}%</div>`;
+}
+function hipCalcInverso(){
+  const uf=hipUF(), m=hipModes.c2, ind=m==='ind';
+  const valorUF = ind ? n('hipC2ValorPropiedadIndividualUFInput') : n('hipC2ValorPropiedadComplementadaUFInput');
+  const finPct = ind ? n('hipC2FinanciamientoIndividual') : n('hipC2FinanciamientoComplementada');
+  const pctRenta = ind ? n('hipC2PorcentajeRentaIndividual') : n('hipC2PorcentajeRentaComplementada');
+  const tasa = ind ? n('hipC2TasaIndividual') : n('hipC2TasaComplementada');
+  const plazo = ind ? n('hipC2PlazoIndividual') : n('hipC2PlazoComplementada');
+  const rentaDisp = ind ? n('hipC2RentaDisponibleIndividual') : n('hipC2RentaTitular')+n('hipC2RentaCodeudor');
+  const ahorro = ind ? n('hipC2AhorrosIndividual') : n('hipC2AhorrosComplementada');
+  const subUF = ind ? n('hipC2SubsidioIndividualUF') : n('hipC2SubsidioComplementadaUF');
+  const meses=Math.round(plazo*12), valorCLP=valorUF*uf, credito=valorCLP*(finPct/100), pieReq=Math.max(0,valorCLP-credito);
+  const dividendo=hipAnualidad(credito,tasa,meses), rentaMin=pctRenta>0?dividendo/(pctRenta/100):0;
+  const recursos=ahorro+subUF*uf, pieFalta=Math.max(0,pieReq-recursos), dif=rentaDisp-rentaMin;
+  if(!ind) document.getElementById('hipC2RentaConjunta').textContent='Renta conjunta = '+fmtCLP(rentaDisp)+' (titular + codeudor al 100%). Parentesco: '+document.getElementById('hipC2ParentescoCodeudor').value;
+  document.getElementById('hipC2Out').innerHTML =
+    hipTile('Crédito requerido',credito)+
+    hipTile('Recursos disponibles para el pie',recursos)+
+    hipTile('Renta líquida mínima requerida',rentaMin)+
+    hipTile('Dividendo mensual estimado',dividendo);
+  document.getElementById('hipC2Comparacion').innerHTML = dif>=0
+    ? `<div class="scorecard hipOk"><b>Alcanza.</b> La renta disponible/conjunta supera la renta mínima estimada en <b>${hipPair(dif,dif/uf)}</b>.</div>`
+    : `<div class="scorecard hipBad"><b>Falta renta.</b> Faltan <b>${hipPair(Math.abs(dif),Math.abs(dif)/uf)}</b> de renta líquida mensual para alcanzar la exigencia.</div>`;
+  document.getElementById('hipC2Resumen').innerHTML =
+    '<h2>Resumen</h2>'+hipLine('Pie requerido',pieReq)+hipLine('Recursos disponibles',recursos)+hipLine('Pie por completar',pieFalta);
+  document.getElementById('hipC2Detalle').innerHTML =
+    '<h2>Detalle</h2>'+hipLine('Valor del departamento',valorCLP,valorUF)+hipLine('Crédito hipotecario requerido',credito)+
+    `<div class="razon"><b>% financiamiento:</b> ${finPct.toLocaleString('es-CL',{maximumFractionDigits:2})}%</div><div class="razon"><b>Número de cuotas:</b> ${meses}</div>`;
 }
 function renderTasaBar(){ const e=document.getElementById('tasaInput'); if(e && document.activeElement!==e) e.value=P.tasa_anual_pct; }
-function setTasa(v){ const x=parseFloat(v); if(isNaN(x)||x<0) return; P.tasa_anual_pct=x; store.setItem('ws10_params',JSON.stringify(P)); paramsUI(); calc(); if(typeof simCalc==='function') simCalc(); }
-function stepTasa(d){ P.tasa_anual_pct=Math.max(0,Math.round((P.tasa_anual_pct+d)*100)/100); store.setItem('ws10_params',JSON.stringify(P)); renderTasaBar(); paramsUI(); calc(); if(typeof simCalc==='function') simCalc(); }
+function setTasa(v){ const x=parseFloat(v); if(isNaN(x)||x<0) return; P.tasa_anual_pct=x; store.setItem('ws10_params',JSON.stringify(P)); paramsUI(); calc(); }
+function stepTasa(d){ P.tasa_anual_pct=Math.max(0,Math.round((P.tasa_anual_pct+d)*100)/100); store.setItem('ws10_params',JSON.stringify(P)); renderTasaBar(); paramsUI(); calc(); }
 
 init();
 </script>
