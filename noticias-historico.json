@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-21",
+ "actualizado": "2026-07-22",
  "items": [
   {
    "captura": "2026-07-21",
@@ -100,6 +100,106 @@
    "fecha": "2026-07-08",
    "impacto": "bajo",
    "porque": "Resumen diario de movimientos de los grandes proveedores de agentes IA: útil para monitorear hacia dónde se mueve el estándar del mercado."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "inmobiliario",
+   "titulo": "Los efectos que podría tener el fin del anatocismo en el ahorro para la casa propia",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/21/los-efectos-que-podria-tener-el-fin-del-anatocismo-en-el-ahorro-para-la-casa-propia.shtml",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "El fin del anatocismo podría frenar la capitalización del ahorro para el pie, obligando a trámites manuales mensuales para no perder valor frente a la inflación."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "inmobiliario",
+   "titulo": "Cómo impactaría al mercado inmobiliario la polémica indicación para prohibir el anatocismo",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/mercados/banca-fintech/como-impactaria-al-mercado-inmobiliario-la-prohibicion-del-anatocismo",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "Colliers advierte el impacto de esta indicación en los créditos hipotecarios: riesgo regulatorio a monitorear para el financiamiento de compradores."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "inmobiliario",
+   "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
+   "fecha": "2026-07-20",
+   "impacto": "medio",
+   "porque": "La demanda se desplaza a comunas periféricas (La Florida +20% trimestral), clave para segmentar campañas geográficas."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "inmobiliario",
+   "titulo": "Mercado inmobiliario en Santiago: estudio detecta \"reequilibrio\" hacia la vivienda para uso propio",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/construccion/mercado-inmobiliario-en-santiago-estudio-detecta-reequilibrio-hacia-la",
+   "fecha": "2026-07-20",
+   "impacto": "medio",
+   "porque": "Compradores priorizan vivienda propia sobre inversión, lo que cambia el ángulo de mensaje publicitario más efectivo."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "inmobiliario",
+   "titulo": "Subsidio DS1 Tramo 4: requisitos para el nuevo beneficio de viviendas de hasta 4.000 UF",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/18/el-nuevo-subsidio-de-4-000-uf-para-la-clase-media-como-puedes-postular-y-cuanto-debes-ahorrar/",
+   "fecha": "2026-07-18",
+   "impacto": "medio",
+   "porque": "Nuevo tramo de subsidio amplía el público objetivo hacia vivienda de clase media hasta 4.000 UF, dato útil para orientar campañas y mensajes a leads."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "ia",
+   "titulo": "AI Agents News Brief: July 18, 2026 - Pinecone, Microsoft, Open Source Trends",
+   "fuente": "AI Agents Directory",
+   "url": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026",
+   "fecha": "2026-07-18",
+   "impacto": "medio",
+   "porque": "Pinecone lanza un motor de conocimiento para que agentes IA consulten contexto de negocio estructurado y Microsoft libera su Agent Framework para Go: baja el costo de construir agentes propios."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "ia",
+   "titulo": "Meta Compute: cómo el anuncio de vender capacidad de IA a terceros disparó la acción de Meta un 15% en una semana",
+   "fuente": "wwwhatsnew.com",
+   "url": "https://wwwhatsnew.com/2026/07/14/meta-compute-bolsa-15-semana-capacidad-ia-julio-2026/",
+   "fecha": "2026-07-14",
+   "impacto": "medio",
+   "porque": "La infraestructura de IA se está comoditizando, lo que puede abaratar a mediano plazo el costo de cómputo para herramientas de marketing/ventas."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "ia",
+   "titulo": "LTM se asocia con Anthropic para acelerar la adopción de Claude a nivel empresarial",
+   "fuente": "Yahoo Finanzas",
+   "url": "https://es-us.finanzas.yahoo.com/noticias/ltm-asocia-anthropic-acelerar-adopci%C3%B3n-155000546.html",
+   "fecha": "2026-07-13",
+   "impacto": "medio",
+   "porque": "Muestra cómo consultoras integran Claude en flujos de negocio reales, referencia útil para la operación de domo IA."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "ia",
+   "titulo": "OpenAI lanza ChatGPT Work con GPT-5.6, un agente de IA que ejecuta proyectos completos",
+   "fuente": "El Imparcial",
+   "url": "https://www.elimparcial.com/estilos/2026/07/11/openai-lanza-chatgpt-work-con-gpt-56-un-agente-de-ia-que-realiza-proyectos-completos-y-comenzara-a-llegar-a-usuarios-gratuitos-en-windows-y-mac/",
+   "fecha": "2026-07-11",
+   "impacto": "alto",
+   "porque": "Agente que ejecuta tareas de horas de forma autónoma: potencial para automatizar reportes, documentos y presentaciones del equipo."
+  },
+  {
+   "captura": "2026-07-22",
+   "area": "ia",
+   "titulo": "OpenAI, Meta y xAI lanzan nuevos modelos de IA en una semana de grandes lanzamientos",
+   "fuente": "Euronews",
+   "url": "https://www.euronews.com/next/2026/07/08/openai-meta-and-spacexai-push-new-ai-models-in-a-week-of-major-releases",
+   "fecha": "2026-07-08",
+   "impacto": "medio",
+   "porque": "La aceleración competitiva entre labs mejora las capacidades disponibles para las herramientas de ventas/marketing que dependen de estos modelos."
   }
  ]
 }

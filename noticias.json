@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-07-21",
-  "generado": "2026-07-21T09:52:48-04:00",
+  "fecha": "2026-07-22",
+  "generado": "2026-07-22T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Tasas hipotecarias se mantienen bajo el 4%, ¿es un buen momento para comprar una vivienda?",
+      "titulo": "Los efectos que podría tener el fin del anatocismo en el ahorro para la casa propia",
       "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/servicios/explicado/2026/07/08/tasas-hipotecarias-se-mantienen-bajo-el-4-es-un-buen-momento-para-comprar-una-vivienda.shtml",
-      "fecha": "2026-07-08",
-      "impacto": "alto",
-      "porque": "Tasas hipotecarias bajo 4% (mínimo desde 2021) son un argumento de venta directo para reactivar cotizaciones y cierres."
-    },
-    {
-      "titulo": "Con tasas en mínimos desde 2021: Altos precios de viviendas siguen limitando acceso a la casa propia",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/tu-bolsillo/2026/07/07/con-tasas-en-minimos-desde-2021-altos-precios-de-viviendas-siguen-limitando-el-acceso-a-casa-propia.shtml",
-      "fecha": "2026-07-07",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/21/los-efectos-que-podria-tener-el-fin-del-anatocismo-en-el-ahorro-para-la-casa-propia.shtml",
+      "fecha": "2026-07-21",
       "impacto": "medio",
-      "porque": "Explica por qué la baja de tasas no se traduce aún en más ventas: precios altos siguen siendo la barrera principal para el cliente final."
+      "porque": "El fin del anatocismo podría frenar la capitalización del ahorro para el pie, obligando a trámites manuales mensuales para no perder valor frente a la inflación."
     },
     {
-      "titulo": "Ministerio de Vivienda vuelve a postergar definición sobre cambios urbanos con que Hacienda busca reactivar negocio inmobiliario",
+      "titulo": "Cómo impactaría al mercado inmobiliario la polémica indicación para prohibir el anatocismo",
       "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/ministerio-de-vivienda-vuelve-a-postergar-definicion-sobre-cambios-urbanos",
-      "fecha": "2026-07-10",
+      "url": "https://www.df.cl/mercados/banca-fintech/como-impactaria-al-mercado-inmobiliario-la-prohibicion-del-anatocismo",
+      "fecha": "2026-07-21",
       "impacto": "medio",
-      "porque": "Nueva prórroga (hasta el 24 de julio) de la modificación a la OGUC que busca destrabar densidad y reactivar inversión inmobiliaria: retrasa certezas regulatorias para nuevos proyectos."
+      "porque": "Colliers advierte el impacto de esta indicación en los créditos hipotecarios: riesgo regulatorio a monitorear para el financiamiento de compradores."
     },
     {
-      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/13/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
-      "fecha": "2026-07-13",
+      "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
+      "fecha": "2026-07-20",
       "impacto": "medio",
-      "porque": "Llamado abierto hasta el 7 de agosto (170 UF de subsidio total): dato útil para asesorar a leads que evalúan arriendo vs. compra."
+      "porque": "La demanda se desplaza a comunas periféricas (La Florida +20% trimestral), clave para segmentar campañas geográficas."
     },
     {
-      "titulo": "Subsidio de Arriendo 2026: Requisitos, montos y cómo postular online al beneficio del Minvu",
+      "titulo": "Mercado inmobiliario en Santiago: estudio detecta \"reequilibrio\" hacia la vivienda para uso propio",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/construccion/mercado-inmobiliario-en-santiago-estudio-detecta-reequilibrio-hacia-la",
+      "fecha": "2026-07-20",
+      "impacto": "medio",
+      "porque": "Compradores priorizan vivienda propia sobre inversión, lo que cambia el ángulo de mensaje publicitario más efectivo."
+    },
+    {
+      "titulo": "Subsidio DS1 Tramo 4: requisitos para el nuevo beneficio de viviendas de hasta 4.000 UF",
       "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/18/abren-las-postulaciones-del-subsidio-de-arriendo-2026-podrias-perderlo-por-este-olvido-comun/",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/18/el-nuevo-subsidio-de-4-000-uf-para-la-clase-media-como-puedes-postular-y-cuanto-debes-ahorrar/",
       "fecha": "2026-07-18",
-      "impacto": "bajo",
-      "porque": "Detalle práctico de postulación (Clave Única, presencial en Serviu) que sirve como gancho de contenido o remarketing a base de leads de arriendo."
+      "impacto": "medio",
+      "porque": "Nuevo tramo de subsidio amplía el público objetivo hacia vivienda de clase media hasta 4.000 UF, dato útil para orientar campañas y mensajes a leads."
     }
   ],
   "ia": [
     {
-      "titulo": "Accenture Edge and Google Cloud Bring Scalable Agentic AI Solutions to Mid-Market Companies",
-      "fuente": "Google Cloud Press Corner",
-      "url": "https://www.googlecloudpresscorner.com/2026-07-07-Accenture-Edge-and-Google-Cloud-Bring-Scalable-Agentic-AI-Solutions-to-Mid-Market-Companies",
-      "fecha": "2026-07-07",
-      "impacto": "alto",
-      "porque": "Suite de agentes preconstruidos (Gemini Enterprise) para empresas de tamaño medio, con foco en crecimiento comercial y experiencia de cliente: referencia directa de lo que ya se ofrece al segmento donde compite domo IA."
-    },
-    {
-      "titulo": "OpenAI publicará este jueves GPT-5.6, su modelo más potente",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/tecnologia/openai-lanzara-gpt-56-su-modelo-mas-potente-nid08072026/",
-      "fecha": "2026-07-08",
-      "impacto": "medio",
-      "porque": "GPT-5.6 trae ChatGPT Work, un agente que ejecuta procesos completos conectado a Gmail, Drive, Slack y Microsoft 365: sube la vara de lo que un cliente esperará de un agente comercial propio."
-    },
-    {
-      "titulo": "Mercado Libre IA: Claves para el Futuro del Retail 2026",
-      "fuente": "ITseller Chile",
-      "url": "https://www.itseller.cl/2026/07/16/mercado-libre-ia-claves-para-el-futuro-del-retail-2026/",
-      "fecha": "2026-07-16",
-      "impacto": "medio",
-      "porque": "Más del 50% de las interacciones de soporte de vendedores ya se resuelven solas con IA: benchmark concreto de automatización de atención aplicable a ventas inmobiliarias."
-    },
-    {
-      "titulo": "China lanza Kimi K3, el modelo de IA de código abierto más grande, y desafía a EE.UU.",
-      "fuente": "Merca2",
-      "url": "https://www.merca2.es/2026/07/20/kimi-k3-ia-codigo-abierto-china-2420779/",
-      "fecha": "2026-07-20",
-      "impacto": "bajo",
-      "porque": "Modelo abierto (licencia tipo Apache 2.0) de gran capacidad sin costo de licencia: abarata a mediano plazo construir agentes propios en vez de depender de un solo proveedor."
-    },
-    {
-      "titulo": "AI Agents Directory Daily Brief: OpenAI, Meta, Microsoft, Anthropic Updates",
+      "titulo": "AI Agents News Brief: July 18, 2026 - Pinecone, Microsoft, Open Source Trends",
       "fuente": "AI Agents Directory",
-      "url": "https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-july-8-2026",
+      "url": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026",
+      "fecha": "2026-07-18",
+      "impacto": "medio",
+      "porque": "Pinecone lanza un motor de conocimiento para que agentes IA consulten contexto de negocio estructurado y Microsoft libera su Agent Framework para Go: baja el costo de construir agentes propios."
+    },
+    {
+      "titulo": "Meta Compute: cómo el anuncio de vender capacidad de IA a terceros disparó la acción de Meta un 15% en una semana",
+      "fuente": "wwwhatsnew.com",
+      "url": "https://wwwhatsnew.com/2026/07/14/meta-compute-bolsa-15-semana-capacidad-ia-julio-2026/",
+      "fecha": "2026-07-14",
+      "impacto": "medio",
+      "porque": "La infraestructura de IA se está comoditizando, lo que puede abaratar a mediano plazo el costo de cómputo para herramientas de marketing/ventas."
+    },
+    {
+      "titulo": "LTM se asocia con Anthropic para acelerar la adopción de Claude a nivel empresarial",
+      "fuente": "Yahoo Finanzas",
+      "url": "https://es-us.finanzas.yahoo.com/noticias/ltm-asocia-anthropic-acelerar-adopci%C3%B3n-155000546.html",
+      "fecha": "2026-07-13",
+      "impacto": "medio",
+      "porque": "Muestra cómo consultoras integran Claude en flujos de negocio reales, referencia útil para la operación de domo IA."
+    },
+    {
+      "titulo": "OpenAI lanza ChatGPT Work con GPT-5.6, un agente de IA que ejecuta proyectos completos",
+      "fuente": "El Imparcial",
+      "url": "https://www.elimparcial.com/estilos/2026/07/11/openai-lanza-chatgpt-work-con-gpt-56-un-agente-de-ia-que-realiza-proyectos-completos-y-comenzara-a-llegar-a-usuarios-gratuitos-en-windows-y-mac/",
+      "fecha": "2026-07-11",
+      "impacto": "alto",
+      "porque": "Agente que ejecuta tareas de horas de forma autónoma: potencial para automatizar reportes, documentos y presentaciones del equipo."
+    },
+    {
+      "titulo": "OpenAI, Meta y xAI lanzan nuevos modelos de IA en una semana de grandes lanzamientos",
+      "fuente": "Euronews",
+      "url": "https://www.euronews.com/next/2026/07/08/openai-meta-and-spacexai-push-new-ai-models-in-a-week-of-major-releases",
       "fecha": "2026-07-08",
-      "impacto": "bajo",
-      "porque": "Resumen diario de movimientos de los grandes proveedores de agentes IA: útil para monitorear hacia dónde se mueve el estándar del mercado."
+      "impacto": "medio",
+      "porque": "La aceleración competitiva entre labs mejora las capacidades disponibles para las herramientas de ventas/marketing que dependen de estos modelos."
     }
   ]
 }
