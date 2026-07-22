@@ -74,6 +74,11 @@ section{margin-top:26px}
 .card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px}
 .card h3{margin:0 0 4px;font-size:15px;font-weight:700}
 .card .hint{margin:0 0 14px;font-size:12.5px;color:var(--ink-3)}
+/* aviso de pauta pausada en el tab Pronóstico */
+.fcwarn{border:1px solid var(--warn);border-left-width:4px;border-radius:10px;padding:11px 14px;
+  margin:0 0 14px;font-size:13px;line-height:1.5;color:var(--ink-2);
+  background:color-mix(in srgb, var(--warn) 9%, var(--card))}
+.fcwarn b{color:var(--ink)} /* NO var(--warn): en claro da 2.4:1 sobre el fondo tintado */
 /* funnel */
 .fn{display:flex;flex-direction:column;gap:9px}
 .fn .row{display:grid;grid-template-columns:130px 1fr;gap:10px;align-items:center}
@@ -278,6 +283,7 @@ tr:last-child td{border-bottom:0}
        El tab entero se revela solo si el JSON carga y valida; si falta, el resto del dashboard ni se entera. -->
   <section id="sec-fc" data-grp="forecast" hidden>
     <p class="sub">Pronóstico próximos 14 días — TimesFM + simulación del embudo</p>
+    <div class="fcwarn" id="fc-alerta" hidden></div>
     <div class="kpis" id="fc-kpis"></div>
     <p class="hint" id="fc-gen" style="margin:10px 2px 0"></p>
   </section>
@@ -611,6 +617,25 @@ function render(d){
         <td><span class="pill ${cls}">${a.estado||"—"}</span></td></tr>`;
     }).join("");
   } else secF.hidden = true;
+
+  // Aviso en el tab Pronóstico cuando la pauta está (casi) apagada.
+  // Vive acá y no en el bloque del forecast a propósito: depende del CSV, no de forecast.json,
+  // así no importa cuál de los dos termine primero. Si el tab sigue oculto, nadie lo ve igual.
+  const fcAl = document.getElementById("fc-alerta");
+  if (fcAl){
+    const act = (d.fechas||[]).filter(a=>a.estado==="ACTIVE").length;
+    if (d.fechas && d.fechas.length && act<=1){
+      fcAl.hidden = false;
+      fcAl.innerHTML = act===0
+        ? `<b>⚠️ Pauta apagada:</b> no hay anuncios activos en Meta. Esta proyección se calculó con la serie
+           histórica de leads de cuando la pauta corría, así que mientras siga apagada es esperable que los
+           leads reales queden por debajo del rango de 14 días. Los números de abajo dicen qué pasaría si la
+           pauta volviera a correr como antes, no lo que va a pasar con la pauta detenida.`
+        : `<b>⚠️ Pauta reducida:</b> hoy hay 1 solo anuncio activo en Meta. Esta proyección se calculó con la
+           serie histórica de leads de cuando corrían todos los anuncios, así que lo más probable es que el
+           volumen real quede por debajo del rango de 14 días hasta que se reactive la pauta.`;
+    } else fcAl.hidden = true;
+  }
 
   // Heatmap día × hora
   const cardHxd = document.getElementById("card-hxd");
