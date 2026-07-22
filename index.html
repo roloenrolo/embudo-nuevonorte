@@ -155,9 +155,15 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
     <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
     <button class="tab" data-target="noticias" id="tab-noticias" aria-selected="false" hidden>📰 Noticias del día</button>
-    <a class="tab" style="text-decoration:none" href="https://convers-ia.app.n8n.cloud/webhook/ws10-dashboard" target="_blank" rel="noopener" title="Herramienta interna">🏘️ Buscador de proyectos ↗</a>
+    <button class="tab" data-target="buscador" aria-selected="false" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos</button>
     <a class="tab" style="text-decoration:none" href="https://convers-ia.app.n8n.cloud/webhook/antonia-feedback" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
   </nav>
+
+  <section data-grp="buscador" class="tab-off">
+    <p class="sub">Buscador de proyectos · calculadoras hipotecarias</p>
+    <p class="hint">Herramienta interna: calificador de leads, mapa de Santiago, inventario de proyectos y calculadoras (capacidad de compra + simulador inverso, sin seguros). Se llena en vivo; no guarda datos.</p>
+    <iframe id="ws10frame" data-src="https://convers-ia.app.n8n.cloud/webhook/ws10-dashboard" title="Buscador de proyectos" loading="lazy" style="width:100%;height:85vh;min-height:820px;border:1px solid #d8d8d8;border-radius:12px;background:#fff"></iframe>
+  </section>
 
   <section data-grp="agenda">
     <p class="sub">Agenda y calendario</p>
@@ -776,6 +782,7 @@ function switchTab(grp){
   window.scrollTo({ top:0, behavior:"smooth" });
 }
 document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.target)));
+document.querySelector('.tab[data-target="buscador"]')?.addEventListener("click", ()=>{ const f=document.getElementById("ws10frame"); if(f && !f.src) f.src=f.dataset.src; });
 
 (async function(){
   const st = document.getElementById("status");
