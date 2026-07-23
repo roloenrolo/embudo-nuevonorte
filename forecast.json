@@ -217,5 +217,6 @@
    "origen": "prior"
   }
  ],
- "nota": "Leads pronosticados con TimesFM sobre la serie diaria real; reuniones y cierres simulados con las tasas del embudo (asistencia y cierre son supuestos declarados, aún sin cierres observados)."
+ "nota": "Leads pronosticados con TimesFM sobre la serie diaria real; reuniones y cierres simulados con las tasas del embudo (asistencia y cierre son supuestos declarados, aún sin cierres observados).",
+ "anuncios_activos_generacion": 4
 }

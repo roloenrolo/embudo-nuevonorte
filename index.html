@@ -114,6 +114,8 @@ tr:last-child td{border-bottom:0}
 .pill.win{color:var(--good-text);background:color-mix(in srgb,var(--good) 15%,transparent)}
 .pill.mid{color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent)}
 .pill.bad{color:var(--crit-text);background:color-mix(in srgb,var(--crit) 14%,transparent)}
+.pausedads summary{cursor:pointer;color:var(--ink-2);font:600 12.5px/1.4 ui-monospace,Menlo;padding:4px 2px}
+.pausedads summary:hover{color:var(--ink)}
 /* heatmap día × hora */
 .hm{display:grid;grid-template-columns:36px repeat(24,minmax(16px,1fr));gap:3px;min-width:560px}
 .hm .lblc{font:600 10px/18px ui-monospace,Menlo;color:var(--ink-3);text-align:center}
@@ -181,6 +183,13 @@ tr:last-child td{border-bottom:0}
       <thead><tr><th>Anuncio</th><th>Leads</th><th>Gasto</th><th>Costo / lead</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
+    <details id="formads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+      <summary>Pausados / Terminados (<span id="formads-paused-count">0</span>)</summary>
+      <div class="tblwrap" style="margin-top:8px"><table id="formads-paused">
+        <thead><tr><th>Anuncio</th><th>Leads</th><th>Gasto</th><th>Costo / lead</th><th>Estado</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </details>
     <p class="hint" style="margin:10px 2px 0">Estos leads llegan por formulario de Meta y <strong>no pasan por Antonia</strong> (por eso van en carril aparte y no se suman al embudo de WhatsApp: las personas pueden solaparse). Los mismos anuncios también generan conversaciones de WhatsApp, así que el gasto es compartido y el costo por lead no es aislado.</p>
   </section>
 
@@ -188,9 +197,16 @@ tr:last-child td{border-bottom:0}
     <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
     <div class="kpis" id="metakpis"></div>
     <div class="tblwrap" id="metaadswrap" hidden style="margin-top:16px"><table id="metaads">
-      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th></tr></thead>
+      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
+    <details id="metaads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+      <summary>Pausados / Terminados (<span id="metaads-paused-count">0</span>)</summary>
+      <div class="tblwrap" style="margin-top:8px"><table id="metaads-paused">
+        <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th><th>Estado</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </details>
   </section>
 
   <section class="panels" data-grp="antonia">
@@ -209,9 +225,16 @@ tr:last-child td{border-bottom:0}
   <section data-grp="meta">
     <p class="sub">Costo por agendamiento, por anuncio</p>
     <div class="tblwrap"><table id="ads">
-      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th></tr></thead>
+      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
+    <details id="ads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+      <summary>Pausados / Terminados (<span id="ads-paused-count">0</span>)</summary>
+      <div class="tblwrap" style="margin-top:8px"><table id="ads-paused">
+        <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th><th>Estado</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </details>
   </section>
 
   <section id="sec-calif" data-grp="antonia" hidden>
@@ -254,6 +277,13 @@ tr:last-child td{border-bottom:0}
       <thead><tr><th>Anuncio</th><th>Inicio</th><th>Días activo</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
+    <details id="fechas-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+      <summary>Pausados / Terminados (<span id="fechas-paused-count">0</span>)</summary>
+      <div class="tblwrap" style="margin-top:8px"><table id="fechas-paused">
+        <thead><tr><th>Anuncio</th><th>Inicio</th><th>Días activo</th><th>Estado</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </details>
   </section>
 
   <section id="sec-adfun" data-grp="meta" hidden>
@@ -369,9 +399,9 @@ const SAMPLE = {
   ],
   spendTotal: 65,      // USD
   ads: [
-    { ad:"Ventas junio", spend:35, convs:33, booked:4 },
-    { ad:"Cyber-Copia",  spend:18, convs:8,  booked:1 },
-    { ad:"Cyber",        spend:12, convs:6,  booked:0 }
+    { ad:"Ventas junio", id:"1001", spend:35, convs:33, booked:4 },
+    { ad:"Cyber-Copia",  id:"1002", spend:18, convs:8,  booked:1 },
+    { ad:"Cyber",        id:"1003", spend:12, convs:6,  booked:0 }
   ],
   byDay: [3,2,4,5,3,1,2,6,4,3,5,4,3,3].map(n=>({d:"",n})),  // últimos 14 días
   adFunnels: null,   // se llena en vivo (filas 'adfun')
@@ -380,12 +410,27 @@ const SAMPLE = {
   byDow: null,       // se llena en vivo (filas 'dsem': Lun..Dom)
   byHxD: null,       // se llena en vivo (filas 'hxd': cruce día × hora)
   versiones: null,   // se llena en vivo (filas 'ver': Antonia v2 n8n vs flujo antiguo Make)
-  metaKpis: null,    // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones)
-  metaAds: null,     // se llena en vivo (filas 'metaad': KPIs Meta por anuncio)
+  metaKpis: {        // se llena en vivo (filas 'meta': gasto/impresiones/clics/alcance/conversaciones) — ejemplo
+    gasto:105, impresiones:11500, clics:310, alcance:7500, conversaciones:47
+  },
+  metaAds: [         // se llena en vivo (filas 'metaad': KPIs Meta por anuncio) — ejemplo con mezcla activo/pausado
+    { ad:"Ventas junio",     spend:35, imp:5000, cl:120, lnk:80, rch:3000, convs:33 },
+    { ad:"Cyber-Copia",      spend:18, imp:2000, cl:60,  lnk:40, rch:1500, convs:8  },
+    { ad:"Cyber",            spend:12, imp:1500, cl:40,  lnk:25, rch:1000, convs:6  },
+    { ad:"Formulario Julio", spend:40, imp:3000, cl:90,  lnk:60, rch:2000, convs:0  }
+  ],
   calif: null,       // se llena en vivo (filas 'calif': calificados/no_califica/sin_declarar + destino de calificados)
   rentas: null,      // se llena en vivo (filas 'renta': distribución por tramo declarado)
-  fechas: null,      // se llena en vivo (filas 'anunciofecha': fecha de inicio + días publicado por anuncio)
-  formAds: null,     // se llena en vivo (filas 'formad': leads de formulario por anuncio)
+  fechas: [          // se llena en vivo (filas 'anunciofecha': fecha de inicio + días publicado por anuncio) — ejemplo
+    { ad:"Ventas junio",     id:"1001", dias:40, inicio:"2026-06-01", estado:"ACTIVE" },
+    { ad:"Cyber-Copia",      id:"1002", dias:20, inicio:"2026-06-20", estado:"PAUSED" },
+    { ad:"Cyber",            id:"1003", dias:25, inicio:"2026-06-15", estado:"PAUSED" },
+    { ad:"Formulario Julio", id:"2001", dias:10, inicio:"2026-07-10", estado:"ACTIVE" }
+  ],
+  formAds: [         // se llena en vivo (filas 'formad': leads de formulario por anuncio) — ejemplo
+    { ad:"Formulario Julio", leads:12, spend:40, estado:"ACTIVE" },
+    { ad:"Formulario Junio", leads:8,  spend:25, estado:"PAUSED" }
+  ],
   formTot: null,     // se llena en vivo (fila 'formtot': total leads de formulario + gasto)
   reun: null,        // se llena en vivo (filas 'reun': agendadas/realizadas/no_asistio/proximas/pendientes)
   reunRes: null,     // se llena en vivo (filas 'reunres': resultado comercial de las realizadas)
@@ -394,6 +439,63 @@ const SAMPLE = {
 
 const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
 const pct = (a,b) => b ? Math.round(a/b*100) : 0;
+
+// Separa una lista de anuncios (cada uno con .estado) en activos/pausados y pinta
+// el bloque <details> colapsado de "Pausados / Terminados" con el mismo renderRow.
+// estado===null (no se pudo resolver) cuenta como activo: mejor mostrar de más que
+// esconder por error un anuncio que sí está generando leads.
+function renderAdsSplit(mainTbodySel, pausedWrapId, pausedTbodySel, pausedCountId, items, renderRow){
+  const activos = items.filter(a=>a.estado==null || a.estado==="ACTIVE");
+  const pausados = items.filter(a=>a.estado!=null && a.estado!=="ACTIVE");
+  document.querySelector(mainTbodySel).innerHTML = activos.map(renderRow).join("");
+  const wrap = document.getElementById(pausedWrapId);
+  if (pausados.length){
+    wrap.hidden = false;
+    document.getElementById(pausedCountId).textContent = pausados.length;
+    document.querySelector(pausedTbodySel).innerHTML = pausados.map(renderRow).join("");
+  } else wrap.hidden = true;
+}
+
+// Tiles del tab Pronóstico. factor=1 = pronóstico base tal cual forecast.json.
+// Solo se escalan las métricas ~lineales en volumen de leads (leads, media de agendas
+// y de cierres); P(≥1)/P(≥2) son probabilidades y NO se re-escalan (perderían sentido),
+// quedan explícitamente marcadas como "sin ajustar".
+function renderFcKpis(j, factor){
+  const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
+  const tot=j.tot||{}, ag=j.agendas||{}, ci=j.cierres||{};
+  const pctv = v => fin(v)==null ? "—" : Math.round(v*100)+"%";
+  const f = factor || 1;
+  const esc = v => fin(v)==null ? "—" : Math.round(v*f*10)/10;
+  document.getElementById("fc-kpis").innerHTML = [
+    {lbl:"Leads esperados (14 días)", val:esc(tot.p50), sub:`rango probable ${esc(tot.p10)}–${esc(tot.p90)}`},
+    {lbl:"Reuniones agendadas", val:esc(ag.media), sub:`rango probable ${fin(ag.p10)??"—"}–${fin(ag.p90)??"—"} (sin ajustar)`},
+    {lbl:"Prob. de ≥1 cierre", val:pctv(ci.p1), sub:`prob. de ≥2: ${pctv(ci.p2)} · sin ajustar por anuncios activos`},
+    {lbl:"Cierres esperados", val:esc(ci.esperados), sub:"simulación del embudo"+(f!==1?" · ajustado en vivo":"")}
+  ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+}
+
+// Ajusta en vivo el tab Pronóstico según cuántos anuncios están ACTIVE hoy (CSV) vs
+// cuántos había cuando se generó forecast.json (campo anuncios_activos_generacion).
+// Requiere las dos piezas (window.__fcData de la IIFE del pronóstico y
+// window.__anunciosActivosHoy de render()); si falta una, no hace nada todavía —
+// la llama quien complete la pieza faltante. Si el JSON es viejo (sin el campo nuevo)
+// o el cambio es <10%, se deja el pronóstico base tal cual (sin tocar el DOM).
+function aplicarAjusteForecast(){
+  const j = window.__fcData, activosHoy = window.__anunciosActivosHoy;
+  if (j == null || activosHoy == null) return;
+  const base = j.anuncios_activos_generacion;
+  if (base == null) return; // forecast.json sin el campo nuevo: comportamiento de hoy, intacto
+  const factor = base > 0 ? Math.min(2.5, Math.max(0.3, activosHoy / base)) : (activosHoy > 0 ? 2.5 : 1);
+  if (Math.abs(factor - 1) < 0.10) return; // ajuste no significativo: no vale la pena mostrarlo
+  renderFcKpis(j, factor);
+  const fcAl = document.getElementById("fc-alerta");
+  if (fcAl){
+    fcAl.hidden = false;
+    fcAl.innerHTML = `<b>📡 Ajustado en vivo:</b> hoy hay ${activosHoy} anuncio${activosHoy===1?"":"s"} activo${activosHoy===1?"":"s"} en Meta `+
+      `(había ${base} cuando se generó este pronóstico) → los números de arriba ya están escalados ×${factor.toFixed(2)}. `+
+      `El gráfico de abajo y las probabilidades de cierre usan el pronóstico base, sin este ajuste.`;
+  }
+}
 
 function render(d){
   // KPIs
@@ -426,14 +528,14 @@ function render(d){
     ].map(k=>
       `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
     ).join("");
-    document.querySelector("#formads tbody").innerHTML = d.formAds.map(a=>{
+    renderAdsSplit("#formads tbody", "formads-paused-wrap", "#formads-paused tbody", "formads-paused-count", d.formAds, a=>{
       const c = a.leads ? a.spend/a.leads : null;
       const cls = c==null ? "bad" : c<=2 ? "win" : c<=4 ? "mid" : "bad";
       const ecls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
       return `<tr><td>${a.ad}</td><td>${a.leads}</td><td>${fmtUSD(a.spend)}</td>
         <td><span class="pill ${cls}">${c==null?"—":fmtUSD(c)}</span></td>
         <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
-    }).join("");
+    });
   } else secForm.hidden = true;
 
   // Versión del flujo bajo el título del funnel
@@ -470,13 +572,18 @@ function render(d){
      <div class="n">${s.count}</div></div>`
   ).join("");
 
-  // Ads table
-  document.querySelector("#ads tbody").innerHTML = d.ads.map(a=>{
+  // Ads table — el nombre acá es el titular del anuncio (CRM), NO el mismo texto que
+  // usan formad/anunciofecha/metaad (ad_name de Meta); el estado se resuelve por ad_id.
+  const estadoPorId = Object.fromEntries((d.fechas||[]).map(f=>[f.id, f.estado]));
+  const adsConEstado = d.ads.map(a=>({...a, estado: a.id!=null ? (estadoPorId[a.id] ?? null) : null}));
+  renderAdsSplit("#ads tbody", "ads-paused-wrap", "#ads-paused tbody", "ads-paused-count", adsConEstado, a=>{
     const cpb = a.booked ? a.spend/a.booked : null;
     const cls = cpb==null ? "bad" : cpb<=10 ? "win" : cpb<=16 ? "mid" : "bad";
+    const ecls = a.estado==="ACTIVE" ? "win" : a.estado==null ? "mid" : a.estado==="PAUSED" ? "mid" : "bad";
     return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
-      <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td></tr>`;
-  }).join("");
+      <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td>
+      <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+  });
 
   // Calificación (el pilar)
   const secC = document.getElementById("sec-calif");
@@ -597,13 +704,18 @@ function render(d){
     const wrap = document.getElementById("metaadswrap");
     if (d.metaAds && d.metaAds.length){
       wrap.hidden = false;
-      document.querySelector("#metaads tbody").innerHTML = d.metaAds.map(a=>{
+      // metaad y anunciofecha comparten el mismo ad_name de Meta → join confiable por nombre.
+      const estadoPorNombre = Object.fromEntries((d.fechas||[]).map(f=>[f.ad, f.estado]));
+      const metaAdsConEstado = d.metaAds.map(a=>({...a, estado: estadoPorNombre[a.ad] ?? null}));
+      renderAdsSplit("#metaads tbody", "metaads-paused-wrap", "#metaads-paused tbody", "metaads-paused-count", metaAdsConEstado, a=>{
         const actr = a.imp ? (a.cl/a.imp*100).toFixed(2)+"%" : "—";
         const acpc = a.cl ? fmtUSD(a.spend/a.cl) : "—";
         const acxc = a.convs ? fmtUSD(a.spend/a.convs) : "—";
+        const ecls = a.estado==="ACTIVE" ? "win" : a.estado==null ? "mid" : a.estado==="PAUSED" ? "mid" : "bad";
         return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${fmtN(a.imp)}</td><td>${fmtN(a.cl)}</td>
-          <td>${actr}</td><td>${acpc}</td><td>${fmtN(a.rch)}</td><td>${fmtN(a.convs)}</td><td>${acxc}</td></tr>`;
-      }).join("");
+          <td>${actr}</td><td>${acpc}</td><td>${fmtN(a.rch)}</td><td>${fmtN(a.convs)}</td><td>${acxc}</td>
+          <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+      });
     } else wrap.hidden = true;
   } else { document.getElementById("sec-meta").hidden = true; }
 
@@ -611,11 +723,11 @@ function render(d){
   const secF = document.getElementById("sec-fechas");
   if (d.fechas && d.fechas.length){
     secF.hidden = false;
-    document.querySelector("#fechas tbody").innerHTML = d.fechas.map(a=>{
+    renderAdsSplit("#fechas tbody", "fechas-paused-wrap", "#fechas-paused tbody", "fechas-paused-count", d.fechas, a=>{
       const cls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
       return `<tr><td>${a.ad}</td><td>${a.inicio||"—"}</td><td>${a.dias} día${a.dias===1?"":"s"}</td>
         <td><span class="pill ${cls}">${a.estado||"—"}</span></td></tr>`;
-    }).join("");
+    });
   } else secF.hidden = true;
 
   // Aviso en el tab Pronóstico cuando la pauta está (casi) apagada.
@@ -635,6 +747,14 @@ function render(d){
            serie histórica de leads de cuando corrían todos los anuncios, así que lo más probable es que el
            volumen real quede por debajo del rango de 14 días hasta que se reactive la pauta.`;
     } else fcAl.hidden = true;
+
+    // Puente hacia el ajuste en vivo del pronóstico: la IIFE del tab Pronóstico corre
+    // aislada (fetch propio a forecast.json) y puede terminar antes o después de este
+    // render(); se pasa "act" por un global y se reintenta desde los dos lados. Si el
+    // forecast.json no trae el campo nuevo o el ajuste no es significativo, no hace nada
+    // y el aviso de arriba queda como única fuente de verdad (comportamiento de hoy).
+    window.__anunciosActivosHoy = act;
+    if (typeof aplicarAjusteForecast === "function") aplicarAjusteForecast();
   }
 
   // Heatmap día × hora
@@ -699,7 +819,7 @@ function fromRows(rows){
   const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
   const funnel=of("funnel").map((r,i)=>({name:g(r,"etiqueta"),count:nu(r,"n"),color:col[i]||"var(--f4)"}));
   const stalled=of("paso").map(r=>({step:g(r,"etiqueta")||g(r,"clave"),count:nu(r,"n")}));
-  const ads=of("anuncio").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),booked:nu(r,"n"),spend:nu(r,"extra1"),convs:nu(r,"extra2")}));
+  const ads=of("anuncio").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),id:g(r,"clave"),booked:nu(r,"n"),spend:nu(r,"extra1"),convs:nu(r,"extra2")}));
   const byDay=of("dia").map(r=>({d:g(r,"clave"),n:nu(r,"n")}));
   const afMap={};
   of("adfun").forEach(r=>{const id=g(r,"clave");
@@ -725,7 +845,7 @@ function fromRows(rows){
   const califRows=of("calif");
   const calif=califRows.length?Object.fromEntries(califRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
   const rentas=of("renta").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
-  const fechas=of("anunciofecha").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),dias:nu(r,"n"),inicio:g(r,"extra1"),estado:g(r,"extra2")}));
+  const fechas=of("anunciofecha").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),id:g(r,"clave"),dias:nu(r,"n"),inicio:g(r,"extra1"),estado:g(r,"extra2")}));
   const formAds=of("formad").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),leads:nu(r,"n"),spend:nu(r,"extra1"),estado:g(r,"extra2")}));
   const ftRow=of("formtot")[0];
   const formTot=ftRow?{leads:nu(ftRow,"n"),spend:nu(ftRow,"extra1")}:null;
@@ -811,12 +931,8 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     if([tot.p10,tot.p50,tot.p90,ag.media,ci.p1,ci.esperados].some(v=>fin(v)==null)) throw new Error("forecast incompleto");
 
     const pct = v => fin(v)==null ? "—" : Math.round(v*100)+"%";
-    document.getElementById("fc-kpis").innerHTML = [
-      {lbl:"Leads esperados (14 días)", val:tot.p50, sub:`rango probable ${tot.p10}–${tot.p90}`},
-      {lbl:"Reuniones agendadas", val:ag.media, sub:`rango probable ${fin(ag.p10)??"—"}–${fin(ag.p90)??"—"}`},
-      {lbl:"Prob. de ≥1 cierre", val:pct(ci.p1), sub:`prob. de ≥2: ${pct(ci.p2)}`},
-      {lbl:"Cierres esperados", val:ci.esperados, sub:"simulación del embudo"}
-    ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+    window.__fcData = j; // disponible para aplicarAjusteForecast(), corra antes o después que render()
+    renderFcKpis(j, 1);  // baseline sin ajustar; se re-pinta si hay ajuste en vivo aplicable
 
     const gen = new Date(j.generado);
     const dias = isNaN(gen) ? null : Math.floor((Date.now()-gen.getTime())/86400000);
@@ -861,6 +977,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     // Todo validado → activar secciones (tab-off las mantiene ocultas hasta el clic) y revelar el botón
     ["sec-fc","sec-fc-chart","sec-fc-tasas"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
     document.getElementById("tab-forecast").hidden=false;
+    if (typeof aplicarAjusteForecast === "function") aplicarAjusteForecast(); // por si render() ya corrió antes
   }catch(e){ /* sin forecast válido: el tab no existe; el resto del dashboard sigue igual */ }
 })();
 
