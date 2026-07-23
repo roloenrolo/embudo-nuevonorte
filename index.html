@@ -1071,6 +1071,8 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     document.getElementById("eco-alerta").innerHTML =
       `<b>⚠️ Cifras ESPERADAS, no reales:</b> ${esc(j.nota_supuestos||"con supuestos comerciales declarados.")}`;
 
+    const clp = v => fin(v)==null ? "—" : "CLP $"+v.toLocaleString("es-CL");
+    const s = j.sub||{};
     document.getElementById("eco-kpis").innerHTML = [
       {lbl:"ROAS esperado (inversión)", val:`${c.roas_esperado.toLocaleString("es-CL")}×`, cls:"good",
        sub:"ingreso esperado ÷ gasto WhatsApp · supuestos "+esc(j.generado)},
@@ -1078,6 +1080,14 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
        sub:`break-even ${usd(c.breakeven_por_calificado_usd)} por calificado`},
       {lbl:"Ventas esperadas", val:`≈${Math.round(c.ventas_esperadas??0)}`, cls:"",
        sub:`de los ${c.calificados} calificados acumulados (supuesto)`},
+      {lbl:"Ingreso esperado", val:usd(c.ingreso_esperado_usd), cls:"good",
+       sub:`≈${clp(Math.round((c.ingreso_esperado_usd??0)*(j.dolar&&j.dolar.valor||0)))} · gasto ${usd(c.gasto_usd)}`},
+      {lbl:"Comisión inversión", val:clp(c.comision_clp), cls:"",
+       sub:esc(c.nota_comision||"por depto vendido")},
+      {lbl:"Tasa calificado→venta", val:fin(c.tasa_calificado_venta)==null?"—":Math.round(c.tasa_calificado_venta*100)+"%", cls:"",
+       sub:"benchmark del universo Capitalizarme (calificados que reservan y promesan)"},
+      {lbl:"Comisión subsidios", val:clp(s.comision_clp), cls:"",
+       sub:"por venta · tasa de cierre del segmento: desconocida (no se inventa)"},
       {lbl:"CPL formulario", val:usd(f.cpl_usd), cls:"",
        sub:esc(f.nota||`${f.leads??"—"} leads · ${usd(f.gasto_usd)}`)}
     ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls}">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");

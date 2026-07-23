@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generado": "2026-07-23",
-  "actualizacion": "manual (Fase 0 PRD Matías v3) — se automatiza con la skill economia de Matías en Fase 1",
-  "nota_supuestos": "ROAS y ventas ESPERADAS con supuestos comerciales fechados el 23-jul-2026 (tasa de cierre = benchmark del universo de leads de Capitalizarme, no del embudo propio; sin ventas registradas aún). No es ROAS real.",
+  "actualizacion": "manual (Fase 0-1 PRD Matías v3) — la skill economia de Matías la regenera desde Fase 1",
+  "nota_supuestos": "ROAS, ventas e ingreso ESPERADOS con supuestos comerciales fechados el 23-jul-2026 (tasa de cierre = benchmark del universo de leads de Capitalizarme, no del embudo propio; sin ventas registradas aún). No es ROAS real.",
   "dolar": { "valor": 935.18, "fuente": "open.er-api.com", "fecha": "2026-07-23" },
   "cap": {
     "bucket": "whatsapp",
@@ -13,7 +13,12 @@
     "ventas_esperadas": 7.4,
     "costo_por_calificado_usd": 7.44,
     "breakeven_por_calificado_usd": 320.79,
-    "roas_esperado": 43.1
+    "roas_esperado": 43.1,
+    "comision_clp": 1500000,
+    "deptos_por_venta_max": 2,
+    "tasa_calificado_venta": 0.2,
+    "ingreso_esperado_usd": 11869,
+    "nota_comision": "CLP $1,5M por depto vendido; un cliente puede comprar hasta 2 — el ROAS usa 1 (conservador)"
   },
   "formulario": {
     "gasto_usd": 203.84,
@@ -23,6 +28,8 @@
   },
   "sub": {
     "estado": "Anuncios SUB publicados el 23-jul, aún sin gasto acumulado",
-    "nota": "Cuando la campaña junte datos, acá se publican sus indicadores por campaña y su tasa mínima de cierre para break-even (cálculo inverso — la tasa real del segmento es desconocida y no se inventa)."
+    "comision_clp": 500000,
+    "tasa_calificado_venta": null,
+    "nota": "Tasa de cierre del segmento DESCONOCIDA — no se inventa: cuando la campaña junte datos, acá aparece su tasa mínima de cierre para break-even (cálculo inverso) y sus indicadores por campaña."
   }
 }
