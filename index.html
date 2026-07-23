@@ -157,6 +157,7 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="agenda" aria-selected="false">🗓️ Agenda y reuniones</button>
     <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
     <button class="tab" data-target="noticias" id="tab-noticias" aria-selected="false" hidden>📰 Noticias del día</button>
+    <button class="tab" data-target="economia" id="tab-economia" aria-selected="false" hidden>💰 Economía</button>
     <a class="tab" style="text-decoration:none" href="buscador/" target="_blank" rel="noopener" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos ↗</a>
     <a class="tab" style="text-decoration:none" href="https://convers-ia.app.n8n.cloud/webhook/antonia-feedback" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
   </nav>
@@ -350,6 +351,23 @@ tr:last-child td{border-bottom:0}
     <p class="hint" id="not-gen" style="margin:12px 2px 0"></p>
     <button id="not-hist-btn" class="tab" style="margin-top:10px">📚 Ver histórico</button>
     <div id="not-hist" hidden style="margin-top:12px"></div>
+  </section>
+
+  <!-- Economía e2e: economia.json (Fase 0 PRD Matías v3; lo automatiza la skill economia en Fase 1).
+       Mismo patrón que forecast/noticias: el tab se revela solo si el JSON carga y valida. -->
+  <section id="sec-eco" data-grp="economia" hidden>
+    <p class="sub">Economía del embudo — gasto → lead calificado → venta esperada</p>
+    <div class="fcwarn" id="eco-alerta"></div>
+    <div class="kpis" id="eco-kpis"></div>
+  </section>
+  <section id="sec-eco-cadena" data-grp="economia" hidden>
+    <p class="sub">Cadena end-to-end (segmento inversión · bucket WhatsApp)</p>
+    <div class="card">
+      <div class="fn" id="eco-cadena"></div>
+      <p class="hint" id="eco-cadena-nota" style="margin:10px 2px 0"></p>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Segmento subsidios (SUB)</h3><p class="hint" id="eco-sub"></p></div>
+    <p class="hint" id="eco-gen" style="margin:12px 2px 0"></p>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -1034,6 +1052,61 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
       }catch(e){ box.innerHTML='<p class="hint">Histórico no disponible todavía (se acumula desde hoy).</p>'; box.hidden=false; btn.textContent="📚 Ver histórico"; }
     });
   }catch(e){ /* sin noticias válidas: el tab no aparece; el resto del dashboard sigue igual */ }
+})();
+
+// ---- Tab Economía: economia.json (Fase 0 PRD Matías v3; lo automatiza la skill economia de Matías) ----
+// Carga AISLADA igual que forecast/noticias: sin JSON válido, el botón del tab no aparece.
+(async function(){
+  const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
+  const usd = v => fin(v)==null ? "—" : "US$"+v.toLocaleString("es-CL",{minimumFractionDigits:2,maximumFractionDigits:2});
+  try{
+    const r = await fetch("./economia.json?_ts="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("sin economia.json");
+    const j = await r.json();
+    const c = j.cap||{}, f = j.formulario||{};
+    if([c.gasto_usd,c.calificados,c.costo_por_calificado_usd,c.breakeven_por_calificado_usd,c.roas_esperado].some(v=>fin(v)==null))
+      throw new Error("economia incompleto");
+
+    document.getElementById("eco-alerta").innerHTML =
+      `<b>⚠️ Cifras ESPERADAS, no reales:</b> ${esc(j.nota_supuestos||"con supuestos comerciales declarados.")}`;
+
+    document.getElementById("eco-kpis").innerHTML = [
+      {lbl:"ROAS esperado (inversión)", val:`${c.roas_esperado.toLocaleString("es-CL")}×`, cls:"good",
+       sub:"ingreso esperado ÷ gasto WhatsApp · supuestos "+esc(j.generado)},
+      {lbl:"Costo por calificado", val:usd(c.costo_por_calificado_usd), cls:"",
+       sub:`break-even ${usd(c.breakeven_por_calificado_usd)} por calificado`},
+      {lbl:"Ventas esperadas", val:`≈${Math.round(c.ventas_esperadas??0)}`, cls:"",
+       sub:`de los ${c.calificados} calificados acumulados (supuesto)`},
+      {lbl:"CPL formulario", val:usd(f.cpl_usd), cls:"",
+       sub:esc(f.nota||`${f.leads??"—"} leads · ${usd(f.gasto_usd)}`)}
+    ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls}">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+
+    // Cadena e2e en conteos (una sola escala; el gasto va en texto, no en las barras)
+    const pasos=[
+      {name:"Escribieron", n:fin(c.escribieron)??0, col:"var(--f1)"},
+      {name:"Calificados", n:fin(c.calificados)??0, col:"var(--f2)"},
+      {name:"Agendaron", n:fin(c.agendaron)??0, col:"var(--f3)"},
+      {name:"Ventas esperadas", n:fin(c.ventas_esperadas)??0, col:"var(--f4)", esp:true}
+    ];
+    const base=pasos[0].n||1;
+    document.getElementById("eco-cadena").innerHTML = pasos.map((p,i)=>{
+      const w=Math.max(6,p.n/base*100), drop=i>0?pasos[i-1].n-p.n:0;
+      const nTxt=p.esp?("≈"+(Math.round(p.n*10)/10).toLocaleString("es-CL")):p.n;
+      return `<div class="row"><div class="name">${p.name}${p.esp?' <small>(supuesto)</small>':''}${drop>0&&!p.esp?`<span class="drop">−${Math.round(drop*10)/10}</span>`:""}</div>
+        <div class="barwrap"><div class="bar" style="width:${w}%;background:${p.col}">${nTxt}</div>
+        <span class="pct">${Math.round(p.n/base*1000)/10}%</span></div></div>`;
+    }).join("");
+    document.getElementById("eco-cadena-nota").innerHTML =
+      `Gasto del bucket WhatsApp: <strong>${usd(c.gasto_usd)}</strong> (acumulado histórico). `+
+      `La conversión calificado→venta es un supuesto fechado; se reemplaza por dato real cuando exista registro de cierres.`;
+    document.getElementById("eco-sub").textContent = (j.sub&&(j.sub.estado+". "+(j.sub.nota||"")))||"—";
+    document.getElementById("eco-gen").innerHTML =
+      `Generado el ${esc(j.generado)} · dólar ${fin(j.dolar&&j.dolar.valor)??"—"} CLP (${esc(j.dolar&&j.dolar.fuente||"")}) · ${esc(j.actualizacion||"")}`;
+
+    ["sec-eco","sec-eco-cadena"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
+    document.getElementById("tab-economia").hidden=false;
+  }catch(e){ /* sin economia válida: el tab no aparece; el resto del dashboard sigue igual */ }
 })();
 </script>
 </body>

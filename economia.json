@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generado": "2026-07-23",
+  "actualizacion": "manual (Fase 0 PRD Matías v3) — se automatiza con la skill economia de Matías en Fase 1",
+  "nota_supuestos": "ROAS y ventas ESPERADAS con supuestos comerciales fechados el 23-jul-2026 (tasa de cierre = benchmark del universo de leads de Capitalizarme, no del embudo propio; sin ventas registradas aún). No es ROAS real.",
+  "dolar": { "valor": 935.18, "fuente": "open.er-api.com", "fecha": "2026-07-23" },
+  "cap": {
+    "bucket": "whatsapp",
+    "gasto_usd": 275.15,
+    "escribieron": 408,
+    "calificados": 37,
+    "agendaron": 8,
+    "ventas_esperadas": 7.4,
+    "costo_por_calificado_usd": 7.44,
+    "breakeven_por_calificado_usd": 320.79,
+    "roas_esperado": 43.1
+  },
+  "formulario": {
+    "gasto_usd": 203.84,
+    "leads": 190,
+    "cpl_usd": 1.07,
+    "nota": "la calificación de leads de formulario no está instrumentada todavía — hueco declarado, no un cero"
+  },
+  "sub": {
+    "estado": "Anuncios SUB publicados el 23-jul, aún sin gasto acumulado",
+    "nota": "Cuando la campaña junte datos, acá se publican sus indicadores por campaña y su tasa mínima de cierre para break-even (cálculo inverso — la tasa real del segmento es desconocida y no se inventa)."
+  }
+}
