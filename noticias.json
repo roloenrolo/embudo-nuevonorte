@@ -1,7 +1,23 @@
 {
-  "fecha": "2026-07-22",
-  "generado": "2026-07-22T07:35:00-04:00",
+  "fecha": "2026-07-23",
+  "generado": "2026-07-23T07:35:00-04:00",
   "inmobiliario": [
+    {
+      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+      "fecha": "2026-07-22",
+      "impacto": "medio",
+      "porque": "Nuevo aporte estatal de arriendo (170 UF, ~8.450 familias) puede desviar demanda hacia el arriendo en el segmento que Nuevo Norte capta con leads de compra."
+    },
+    {
+      "titulo": "El mercado inmobiliario de Valdivia se reactiva con una caída del 10% en el precio promedio de las viviendas",
+      "fuente": "Los Ríos Noticias",
+      "url": "https://www.losriosnoticias.cl/2026/07/22/el-mercado-inmobiliario-de-valdivia-se-reactiva-con-una-caida-del-10-en-el-precio-promedio-de-las-viviendas/26243",
+      "fecha": "2026-07-22",
+      "impacto": "bajo",
+      "porque": "Señal regional (fuera de RM) de reactivación vía ajuste de precios; referencia de tendencia, sin efecto directo en la operación en RM."
+    },
     {
       "titulo": "Los efectos que podría tener el fin del anatocismo en el ahorro para la casa propia",
       "fuente": "BioBioChile",
@@ -15,7 +31,7 @@
       "fuente": "Diario Financiero",
       "url": "https://www.df.cl/mercados/banca-fintech/como-impactaria-al-mercado-inmobiliario-la-prohibicion-del-anatocismo",
       "fecha": "2026-07-21",
-      "impacto": "medio",
+      "impacto": "alto",
       "porque": "Colliers advierte el impacto de esta indicación en los créditos hipotecarios: riesgo regulatorio a monitorear para el financiamiento de compradores."
     },
     {
@@ -25,25 +41,17 @@
       "fecha": "2026-07-20",
       "impacto": "medio",
       "porque": "La demanda se desplaza a comunas periféricas (La Florida +20% trimestral), clave para segmentar campañas geográficas."
-    },
-    {
-      "titulo": "Mercado inmobiliario en Santiago: estudio detecta \"reequilibrio\" hacia la vivienda para uso propio",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/mercado-inmobiliario-en-santiago-estudio-detecta-reequilibrio-hacia-la",
-      "fecha": "2026-07-20",
-      "impacto": "medio",
-      "porque": "Compradores priorizan vivienda propia sobre inversión, lo que cambia el ángulo de mensaje publicitario más efectivo."
-    },
-    {
-      "titulo": "Subsidio DS1 Tramo 4: requisitos para el nuevo beneficio de viviendas de hasta 4.000 UF",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/18/el-nuevo-subsidio-de-4-000-uf-para-la-clase-media-como-puedes-postular-y-cuanto-debes-ahorrar/",
-      "fecha": "2026-07-18",
-      "impacto": "medio",
-      "porque": "Nuevo tramo de subsidio amplía el público objetivo hacia vivienda de clase media hasta 4.000 UF, dato útil para orientar campañas y mensajes a leads."
     }
   ],
   "ia": [
+    {
+      "titulo": "Start-Up Chile elige su nueva generación BIG 12: 59 startups, ~60% con IA como tecnología principal",
+      "fuente": "Diario Sustentable",
+      "url": "https://www.diariosustentable.com/2026/07/start-up-chile-elige-su-nueva-generacion-la-ia-domina-pero-la-economia-circular-se-abre-paso-entre-las-59-elegidas/",
+      "fecha": "2026-07-22",
+      "impacto": "bajo",
+      "porque": "Confirma que la IA sigue siendo el eje del ecosistema emprendedor chileno; contexto de adopción sin aplicación directa inmediata al negocio."
+    },
     {
       "titulo": "AI Agents News Brief: July 18, 2026 - Pinecone, Microsoft, Open Source Trends",
       "fuente": "AI Agents Directory",
@@ -51,6 +59,14 @@
       "fecha": "2026-07-18",
       "impacto": "medio",
       "porque": "Pinecone lanza un motor de conocimiento para que agentes IA consulten contexto de negocio estructurado y Microsoft libera su Agent Framework para Go: baja el costo de construir agentes propios."
+    },
+    {
+      "titulo": "Mercado Libre IA: claves para el futuro del retail 2026",
+      "fuente": "ITseller",
+      "url": "https://www.itseller.cl/2026/07/16/mercado-libre-ia-claves-para-el-futuro-del-retail-2026/",
+      "fecha": "2026-07-16",
+      "impacto": "medio",
+      "porque": "La adopción de IA en retail regional muestra hacia dónde va la personalización y automatización de venta online, aplicable a los embudos de leads de Nuevo Norte."
     },
     {
       "titulo": "Meta Compute: cómo el anuncio de vender capacidad de IA a terceros disparó la acción de Meta un 15% en una semana",
@@ -61,28 +77,12 @@
       "porque": "La infraestructura de IA se está comoditizando, lo que puede abaratar a mediano plazo el costo de cómputo para herramientas de marketing/ventas."
     },
     {
-      "titulo": "LTM se asocia con Anthropic para acelerar la adopción de Claude a nivel empresarial",
-      "fuente": "Yahoo Finanzas",
-      "url": "https://es-us.finanzas.yahoo.com/noticias/ltm-asocia-anthropic-acelerar-adopci%C3%B3n-155000546.html",
-      "fecha": "2026-07-13",
-      "impacto": "medio",
-      "porque": "Muestra cómo consultoras integran Claude en flujos de negocio reales, referencia útil para la operación de domo IA."
-    },
-    {
       "titulo": "OpenAI lanza ChatGPT Work con GPT-5.6, un agente de IA que ejecuta proyectos completos",
       "fuente": "El Imparcial",
       "url": "https://www.elimparcial.com/estilos/2026/07/11/openai-lanza-chatgpt-work-con-gpt-56-un-agente-de-ia-que-realiza-proyectos-completos-y-comenzara-a-llegar-a-usuarios-gratuitos-en-windows-y-mac/",
       "fecha": "2026-07-11",
       "impacto": "alto",
       "porque": "Agente que ejecuta tareas de horas de forma autónoma: potencial para automatizar reportes, documentos y presentaciones del equipo."
-    },
-    {
-      "titulo": "OpenAI, Meta y xAI lanzan nuevos modelos de IA en una semana de grandes lanzamientos",
-      "fuente": "Euronews",
-      "url": "https://www.euronews.com/next/2026/07/08/openai-meta-and-spacexai-push-new-ai-models-in-a-week-of-major-releases",
-      "fecha": "2026-07-08",
-      "impacto": "medio",
-      "porque": "La aceleración competitiva entre labs mejora las capacidades disponibles para las herramientas de ventas/marketing que dependen de estos modelos."
     }
   ]
 }

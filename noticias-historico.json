@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-22",
+ "actualizado": "2026-07-23",
  "items": [
   {
    "captura": "2026-07-21",
@@ -200,6 +200,36 @@
    "fecha": "2026-07-08",
    "impacto": "medio",
    "porque": "La aceleración competitiva entre labs mejora las capacidades disponibles para las herramientas de ventas/marketing que dependen de estos modelos."
+  },
+  {
+   "captura": "2026-07-23",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+   "fecha": "2026-07-22",
+   "impacto": "medio",
+   "porque": "Nuevo aporte estatal de arriendo (170 UF, ~8.450 familias) puede desviar demanda hacia el arriendo en el segmento que Nuevo Norte capta con leads de compra."
+  },
+  {
+   "captura": "2026-07-23",
+   "area": "inmobiliario",
+   "titulo": "El mercado inmobiliario de Valdivia se reactiva con una caída del 10% en el precio promedio de las viviendas",
+   "fuente": "Los Ríos Noticias",
+   "url": "https://www.losriosnoticias.cl/2026/07/22/el-mercado-inmobiliario-de-valdivia-se-reactiva-con-una-caida-del-10-en-el-precio-promedio-de-las-viviendas/26243",
+   "fecha": "2026-07-22",
+   "impacto": "bajo",
+   "porque": "Señal regional (fuera de RM) de reactivación vía ajuste de precios; referencia de tendencia, sin efecto directo en la operación en RM."
+  },
+  {
+   "captura": "2026-07-23",
+   "area": "ia",
+   "titulo": "Start-Up Chile elige su nueva generación BIG 12: 59 startups, ~60% con IA como tecnología principal",
+   "fuente": "Diario Sustentable",
+   "url": "https://www.diariosustentable.com/2026/07/start-up-chile-elige-su-nueva-generacion-la-ia-domina-pero-la-economia-circular-se-abre-paso-entre-las-59-elegidas/",
+   "fecha": "2026-07-22",
+   "impacto": "bajo",
+   "porque": "Confirma que la IA sigue siendo el eje del ecosistema emprendedor chileno; contexto de adopción sin aplicación directa inmediata al negocio."
   }
  ]
 }
