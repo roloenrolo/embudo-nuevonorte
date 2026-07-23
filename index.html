@@ -213,7 +213,12 @@ tr:last-child td{border-bottom:0}
   <section class="panels" data-grp="antonia">
     <div class="card">
       <h3>El embudo</h3>
-      <p class="hint" id="fnhint">De cada lead que escribe, cuántos avanzan a cada etapa.</p>
+      <div id="funnel15-wrap" hidden>
+        <p class="hint" style="margin:0 0 6px;font-weight:700">🕒 Últimos 15 días</p>
+        <div class="fn" id="funnel15"></div>
+        <div style="margin:14px 0;border-top:1px solid var(--hair)"></div>
+      </div>
+      <p class="hint" id="fnhint">Histórico completo: de cada lead que escribe, cuántos avanzan a cada etapa.</p>
       <div class="fn" id="funnel"></div>
     </div>
     <div class="card">
@@ -408,6 +413,12 @@ const SAMPLE = {
     { name:"Eligió horario",    count:8,  color:"var(--f3)" },
     { name:"Agendó",            count:5,  color:"var(--f4)" }
   ],
+  funnel15: [   // se llena en vivo (filas 'funnel15': mismo embudo, ventana de 15 días) — ejemplo
+    { name:"Escribieron",       count:16 },
+    { name:"Declaró presupuesto",count:5  },
+    { name:"Eligió horario",    count:3  },
+    { name:"Agendó",            count:2  }
+  ],
   stalled: [
     { step:"Bienvenida",  count:18 },
     { step:"Presupuesto", count:6 },
@@ -563,6 +574,20 @@ function render(d){
       d.versiones.map(v=>`<strong>${v.n}</strong> ${v.lbl}`).join(" + ") + ".";
   }
 
+  // Funnel de los últimos 15 días (mismo criterio del histórico, solo ventana de fecha)
+  const wrap15 = document.getElementById("funnel15-wrap");
+  if (d.funnel15 && d.funnel15.length && d.funnel15[0].count > 0){
+    wrap15.hidden = false;
+    const top15 = d.funnel15[0].count || 1;
+    document.getElementById("funnel15").innerHTML = d.funnel15.map((s,i)=>{
+      const w = Math.max(6, s.count/top15*100);
+      const drop = i>0 ? d.funnel15[i-1].count - s.count : 0;
+      return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+        <div class="barwrap"><div class="bar" style="width:${w}%;background:var(--accent)">${s.count}</div>
+        <span class="pct">${pct(s.count, top15)}%</span></div></div>`;
+    }).join("");
+  } else wrap15.hidden = true;
+
   // Funnel (la barra de presupuesto se abre en califica/no califica si hay filas 'presu')
   const top = d.funnel[0].count || 1;
   document.getElementById("funnel").innerHTML = d.funnel.map((s,i)=>{
@@ -663,12 +688,17 @@ function render(d){
     } else resEl.innerHTML = `<div class="row"><div class="name" style="opacity:.6">Aún sin resultados registrados</div></div>`;
   } else secR.hidden = true;
 
-  // Ad funnels (dónde se caen, por anuncio)
+  // Ad funnels (dónde se caen, por anuncio) — solo anuncios activos hoy
   const secAF = document.getElementById("sec-adfun");
-  if (d.adFunnels && d.adFunnels.length){
+  const estadoPorIdAF = Object.fromEntries((d.fechas||[]).map(f=>[f.id, f.estado]));
+  const adFunnelsActivos = (d.adFunnels||[]).filter(a=>{
+    const est = estadoPorIdAF[a.id];
+    return est==null || est==="ACTIVE"; // sin match → mostrar (falso negativo mejor que esconder uno activo)
+  });
+  if (adFunnelsActivos.length){
     secAF.hidden = false;
     const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
-    document.getElementById("adfun").innerHTML = d.adFunnels.map(a=>{
+    document.getElementById("adfun").innerHTML = adFunnelsActivos.map(a=>{
       const base = a.steps[0] ? a.steps[0].count : 0, b = base||1;
       return `<div class="card"><h3>${a.name}</h3><p class="hint">${base} leads de este anuncio</p><div class="fn">`+
         a.steps.map((s,i)=>{
@@ -836,6 +866,7 @@ function fromRows(rows){
   const of=t=>body.filter(r=>g(r,"tipo")===t).sort((a,b)=>nu(a,"orden")-nu(b,"orden"));
   const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
   const funnel=of("funnel").map((r,i)=>({name:g(r,"etiqueta"),count:nu(r,"n"),color:col[i]||"var(--f4)"}));
+  const funnel15=of("funnel15").map(r=>({name:g(r,"etiqueta"),count:nu(r,"n")}));
   const stalled=of("paso").map(r=>({step:g(r,"etiqueta")||g(r,"clave"),count:nu(r,"n")}));
   const ads=of("anuncio").map(r=>({ad:g(r,"etiqueta")||g(r,"clave"),id:g(r,"clave"),booked:nu(r,"n"),spend:nu(r,"extra1"),convs:nu(r,"extra2")}));
   const byDay=of("dia").map(r=>({d:g(r,"clave"),n:nu(r,"n")}));
@@ -882,7 +913,7 @@ function fromRows(rows){
   const kpi=Object.fromEntries(of("kpi").map(r=>[g(r,"clave"),nu(r,"n")]));
   return {
     totalLeads: kpi.leads || (funnel[0]?funnel[0].count:0),
-    funnel, stalled,
+    funnel, funnel15: funnel15.length?funnel15:null, stalled,
     spendTotal: kpi.spend_total || ads.reduce((s,a)=>s+a.spend,0),
     ads, byDay: byDay.length?byDay:[{d:"",n:0}],
     adFunnels: adFunnels.length?adFunnels:null,
