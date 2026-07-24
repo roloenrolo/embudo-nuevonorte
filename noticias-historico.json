@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-23",
+ "actualizado": "2026-07-24",
  "items": [
   {
    "captura": "2026-07-21",
@@ -230,6 +230,86 @@
    "fecha": "2026-07-22",
    "impacto": "bajo",
    "porque": "Confirma que la IA sigue siendo el eje del ecosistema emprendedor chileno; contexto de adopción sin aplicación directa inmediata al negocio."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "inmobiliario",
+   "titulo": "El nuevo dividendo silencioso: el gasto común crece sin control y ya pesa tanto como el dividendo",
+   "fuente": "G5noticias",
+   "url": "https://g5noticias.cl/2026/07/23/el-nuevo-dividendo-silencioso-por-gonzalo-escobar-academico-facultad-de-economia-y-negocios-unab/",
+   "fecha": "2026-07-23",
+   "impacto": "medio",
+   "porque": "El gasto común como tercer costo fijo afecta la capacidad de pago de leads de departamentos, relevante para calificar prospectos."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "inmobiliario",
+   "titulo": "Casi 100 permisos de edificación de viviendas en Santiago Centro, pero más de la mitad no ha iniciado obras",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/hay-casi-100-permisos-de-edificacion-de-viviendas-aprobados-en-santiago-centro-pero-mas-de-la-mitad-no-ha-iniciado-obras/",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "Oferta futura de departamentos en zona de alta demanda de leads; útil para calibrar mensajes de urgencia/escasez en campañas."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de arriendo 2026 cubrirá solo al 0,5% de los más de 1,7 millones de hogares que arriendan en Chile",
+   "fuente": "The Clinic",
+   "url": "https://www.theclinic.cl/2026/07/13/subsidio-de-arriendo-2026-cubrira-solo-al-05-de-los-mas-de-17-millones-de-hogares-que-viven-en-alquiler-en-chile/",
+   "fecha": "2026-07-13",
+   "impacto": "medio",
+   "porque": "Baja cobertura del subsidio de arriendo empuja demanda hacia compra con subsidio a la tasa, argumento útil en creativos de captación."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "inmobiliario",
+   "titulo": "Mercado inmobiliario se recupera en 2026: Remax Chile proyecta un escenario favorable para compradores e inversionistas",
+   "fuente": "G5noticias",
+   "url": "https://g5noticias.cl/2026/07/12/mercado-inmobiliario-se-recupera-en-2026-remax-chile-proyecta-un-escenario-favorable-para-compradores-e-inversionistas/",
+   "fecha": "2026-07-12",
+   "impacto": "alto",
+   "porque": "Contexto de recuperación y tasas bajas respalda el ángulo de 'buen momento para comprar' en los anuncios de captación."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "inmobiliario",
+   "titulo": "Rentabilidad Inversión Inmobiliaria Chile 2026: Guía con números reales",
+   "fuente": "Propital Blog",
+   "url": "https://www.propital.com/blog/2026-07-10-rentabilidad-inversion-inmobiliaria-chile-2026",
+   "fecha": "2026-07-10",
+   "impacto": "medio",
+   "porque": "Datos de rentabilidad esperada sirven para el ángulo inversionista, complementario al de vivienda propia."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "ia",
+   "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz: el paso de vender modelos a gestionar los agentes de tus clientes",
+   "fuente": "wwwhatsnew.com",
+   "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
+   "fecha": "2026-07-23",
+   "impacto": "alto",
+   "porque": "Agentes de voz gestionados end-to-end para atención/ventas; referencia directa para evaluar automatización de conversaciones de WhatsApp."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "ia",
+   "titulo": "La inversión mundial en marketing superará los 2.1 billones de dólares en 2026, impulsada por video, redes sociales e IA",
+   "fuente": "Roastbrief",
+   "url": "https://roastbrief.com.mx/2026/07/la-inversion-mundial-en-marketing-superara-los-2-1-billones-de-dolares-en-2026-y-sera-impulsada-por-video-redes-sociales-e-ia/",
+   "fecha": "2026-07-20",
+   "impacto": "medio",
+   "porque": "Confirma que video + IA concentran el crecimiento de inversión publicitaria, alineado con el mix actual de campañas."
+  },
+  {
+   "captura": "2026-07-24",
+   "area": "ia",
+   "titulo": "Top 11 nuevas actualizaciones de WhatsApp (julio 2026): agentes IA y hasta 22% más ROAS con Advantage+",
+   "fuente": "Leadsales",
+   "url": "https://leadsales.io/blog/top-actualizaciones-de-whatsapp/",
+   "fecha": "2026-07-17",
+   "impacto": "alto",
+   "porque": "Actualizaciones directas al canal WhatsApp que ya es el ancla de conversión de Nuevo Norte; el dato de +22% ROAS con Advantage+ es accionable."
   }
  ]
 }

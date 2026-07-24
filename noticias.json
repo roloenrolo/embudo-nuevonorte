@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-07-23",
-  "generado": "2026-07-23T07:35:00-04:00",
+  "fecha": "2026-07-24",
+  "generado": "2026-07-24T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
-      "fecha": "2026-07-22",
+      "titulo": "El nuevo dividendo silencioso: el gasto común crece sin control y ya pesa tanto como el dividendo",
+      "fuente": "G5noticias",
+      "url": "https://g5noticias.cl/2026/07/23/el-nuevo-dividendo-silencioso-por-gonzalo-escobar-academico-facultad-de-economia-y-negocios-unab/",
+      "fecha": "2026-07-23",
       "impacto": "medio",
-      "porque": "Nuevo aporte estatal de arriendo (170 UF, ~8.450 familias) puede desviar demanda hacia el arriendo en el segmento que Nuevo Norte capta con leads de compra."
+      "porque": "El gasto común como tercer costo fijo afecta la capacidad de pago de leads de departamentos, relevante para calificar prospectos."
     },
     {
-      "titulo": "El mercado inmobiliario de Valdivia se reactiva con una caída del 10% en el precio promedio de las viviendas",
-      "fuente": "Los Ríos Noticias",
-      "url": "https://www.losriosnoticias.cl/2026/07/22/el-mercado-inmobiliario-de-valdivia-se-reactiva-con-una-caida-del-10-en-el-precio-promedio-de-las-viviendas/26243",
-      "fecha": "2026-07-22",
-      "impacto": "bajo",
-      "porque": "Señal regional (fuera de RM) de reactivación vía ajuste de precios; referencia de tendencia, sin efecto directo en la operación en RM."
-    },
-    {
-      "titulo": "Los efectos que podría tener el fin del anatocismo en el ahorro para la casa propia",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/21/los-efectos-que-podria-tener-el-fin-del-anatocismo-en-el-ahorro-para-la-casa-propia.shtml",
+      "titulo": "Casi 100 permisos de edificación de viviendas en Santiago Centro, pero más de la mitad no ha iniciado obras",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/hay-casi-100-permisos-de-edificacion-de-viviendas-aprobados-en-santiago-centro-pero-mas-de-la-mitad-no-ha-iniciado-obras/",
       "fecha": "2026-07-21",
       "impacto": "medio",
-      "porque": "El fin del anatocismo podría frenar la capitalización del ahorro para el pie, obligando a trámites manuales mensuales para no perder valor frente a la inflación."
+      "porque": "Oferta futura de departamentos en zona de alta demanda de leads; útil para calibrar mensajes de urgencia/escasez en campañas."
     },
     {
-      "titulo": "Cómo impactaría al mercado inmobiliario la polémica indicación para prohibir el anatocismo",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/mercados/banca-fintech/como-impactaria-al-mercado-inmobiliario-la-prohibicion-del-anatocismo",
-      "fecha": "2026-07-21",
+      "titulo": "Subsidio de arriendo 2026 cubrirá solo al 0,5% de los más de 1,7 millones de hogares que arriendan en Chile",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/07/13/subsidio-de-arriendo-2026-cubrira-solo-al-05-de-los-mas-de-17-millones-de-hogares-que-viven-en-alquiler-en-chile/",
+      "fecha": "2026-07-13",
+      "impacto": "medio",
+      "porque": "Baja cobertura del subsidio de arriendo empuja demanda hacia compra con subsidio a la tasa, argumento útil en creativos de captación."
+    },
+    {
+      "titulo": "Mercado inmobiliario se recupera en 2026: Remax Chile proyecta un escenario favorable para compradores e inversionistas",
+      "fuente": "G5noticias",
+      "url": "https://g5noticias.cl/2026/07/12/mercado-inmobiliario-se-recupera-en-2026-remax-chile-proyecta-un-escenario-favorable-para-compradores-e-inversionistas/",
+      "fecha": "2026-07-12",
       "impacto": "alto",
-      "porque": "Colliers advierte el impacto de esta indicación en los créditos hipotecarios: riesgo regulatorio a monitorear para el financiamiento de compradores."
+      "porque": "Contexto de recuperación y tasas bajas respalda el ángulo de 'buen momento para comprar' en los anuncios de captación."
     },
     {
-      "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
-      "fecha": "2026-07-20",
+      "titulo": "Rentabilidad Inversión Inmobiliaria Chile 2026: Guía con números reales",
+      "fuente": "Propital Blog",
+      "url": "https://www.propital.com/blog/2026-07-10-rentabilidad-inversion-inmobiliaria-chile-2026",
+      "fecha": "2026-07-10",
       "impacto": "medio",
-      "porque": "La demanda se desplaza a comunas periféricas (La Florida +20% trimestral), clave para segmentar campañas geográficas."
+      "porque": "Datos de rentabilidad esperada sirven para el ángulo inversionista, complementario al de vivienda propia."
     }
   ],
   "ia": [
     {
-      "titulo": "Start-Up Chile elige su nueva generación BIG 12: 59 startups, ~60% con IA como tecnología principal",
-      "fuente": "Diario Sustentable",
-      "url": "https://www.diariosustentable.com/2026/07/start-up-chile-elige-su-nueva-generacion-la-ia-domina-pero-la-economia-circular-se-abre-paso-entre-las-59-elegidas/",
-      "fecha": "2026-07-22",
-      "impacto": "bajo",
-      "porque": "Confirma que la IA sigue siendo el eje del ecosistema emprendedor chileno; contexto de adopción sin aplicación directa inmediata al negocio."
+      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz: el paso de vender modelos a gestionar los agentes de tus clientes",
+      "fuente": "wwwhatsnew.com",
+      "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
+      "fecha": "2026-07-23",
+      "impacto": "alto",
+      "porque": "Agentes de voz gestionados end-to-end para atención/ventas; referencia directa para evaluar automatización de conversaciones de WhatsApp."
     },
     {
-      "titulo": "AI Agents News Brief: July 18, 2026 - Pinecone, Microsoft, Open Source Trends",
-      "fuente": "AI Agents Directory",
-      "url": "https://aiagentsdirectory.com/news/ai-agents-daily-brief-july-18-2026",
-      "fecha": "2026-07-18",
+      "titulo": "La inversión mundial en marketing superará los 2.1 billones de dólares en 2026, impulsada por video, redes sociales e IA",
+      "fuente": "Roastbrief",
+      "url": "https://roastbrief.com.mx/2026/07/la-inversion-mundial-en-marketing-superara-los-2-1-billones-de-dolares-en-2026-y-sera-impulsada-por-video-redes-sociales-e-ia/",
+      "fecha": "2026-07-20",
       "impacto": "medio",
-      "porque": "Pinecone lanza un motor de conocimiento para que agentes IA consulten contexto de negocio estructurado y Microsoft libera su Agent Framework para Go: baja el costo de construir agentes propios."
+      "porque": "Confirma que video + IA concentran el crecimiento de inversión publicitaria, alineado con el mix actual de campañas."
+    },
+    {
+      "titulo": "Top 11 nuevas actualizaciones de WhatsApp (julio 2026): agentes IA y hasta 22% más ROAS con Advantage+",
+      "fuente": "Leadsales",
+      "url": "https://leadsales.io/blog/top-actualizaciones-de-whatsapp/",
+      "fecha": "2026-07-17",
+      "impacto": "alto",
+      "porque": "Actualizaciones directas al canal WhatsApp que ya es el ancla de conversión de Nuevo Norte; el dato de +22% ROAS con Advantage+ es accionable."
     },
     {
       "titulo": "Mercado Libre IA: claves para el futuro del retail 2026",
-      "fuente": "ITseller",
+      "fuente": "ITseller Chile",
       "url": "https://www.itseller.cl/2026/07/16/mercado-libre-ia-claves-para-el-futuro-del-retail-2026/",
       "fecha": "2026-07-16",
       "impacto": "medio",
-      "porque": "La adopción de IA en retail regional muestra hacia dónde va la personalización y automatización de venta online, aplicable a los embudos de leads de Nuevo Norte."
+      "porque": "Ejemplo regional de IA aplicada a búsqueda y conversión, referencia de benchmarking para embudo de leads."
     },
     {
-      "titulo": "Meta Compute: cómo el anuncio de vender capacidad de IA a terceros disparó la acción de Meta un 15% en una semana",
-      "fuente": "wwwhatsnew.com",
-      "url": "https://wwwhatsnew.com/2026/07/14/meta-compute-bolsa-15-semana-capacidad-ia-julio-2026/",
-      "fecha": "2026-07-14",
+      "titulo": "LTM se asocia con Anthropic para acelerar la adopción de Claude y ampliar su implementación a nivel empresarial",
+      "fuente": "Yahoo Finanzas",
+      "url": "https://es-us.finanzas.yahoo.com/noticias/ltm-asocia-anthropic-acelerar-adopci%C3%B3n-155000546.html",
+      "fecha": "2026-07-13",
       "impacto": "medio",
-      "porque": "La infraestructura de IA se está comoditizando, lo que puede abaratar a mediano plazo el costo de cómputo para herramientas de marketing/ventas."
-    },
-    {
-      "titulo": "OpenAI lanza ChatGPT Work con GPT-5.6, un agente de IA que ejecuta proyectos completos",
-      "fuente": "El Imparcial",
-      "url": "https://www.elimparcial.com/estilos/2026/07/11/openai-lanza-chatgpt-work-con-gpt-56-un-agente-de-ia-que-realiza-proyectos-completos-y-comenzara-a-llegar-a-usuarios-gratuitos-en-windows-y-mac/",
-      "fecha": "2026-07-11",
-      "impacto": "alto",
-      "porque": "Agente que ejecuta tareas de horas de forma autónoma: potencial para automatizar reportes, documentos y presentaciones del equipo."
+      "porque": "Señal de adopción empresarial de agentes IA en flujos de negocio, contexto para el propio stack agéntico de domo IA."
     }
   ]
 }
