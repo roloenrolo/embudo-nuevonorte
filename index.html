@@ -136,6 +136,15 @@ tr:last-child td{border-bottom:0}
 .tab:hover{border-color:var(--accent)}
 .tab[aria-selected="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
 [data-grp].tab-off{display:none!important}
+.sim-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}
+.sim-control{display:flex;flex-direction:column;gap:9px}
+.sim-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.sim-label{font-weight:700;color:var(--ink);line-height:1.25}
+.sim-value{font:700 13px/1.25 ui-monospace,Menlo,monospace;color:var(--accent-ink);text-align:right;overflow-wrap:anywhere}
+.sim-base{display:block;margin-top:3px;font-size:12px;color:var(--ink-3)}
+.sim-control input[type="range"]{width:100%;min-height:44px;accent-color:var(--accent);cursor:pointer}
+.sim-actions{display:flex;justify-content:flex-end;margin-top:12px}
+@media(max-width:520px){.sim-head{flex-direction:column;gap:4px}.sim-value{text-align:left}.sim-actions{justify-content:stretch}.sim-actions .tab{width:100%;min-height:44px}}
 </style>
 
 </head>
@@ -345,6 +354,16 @@ tr:last-child td{border-bottom:0}
     </table></div>
     <p class="hint" id="fc-nota" style="margin:10px 2px 0"></p>
   </section>
+  <section id="sec-fc-sim" data-grp="forecast" hidden>
+    <p class="sub">Simulador — juega con las variables del pronóstico</p>
+    <div class="fcwarn">🎛 Simulador: los números de esta sección son escenarios que armas tú moviendo los controles — NO son el pronóstico oficial de arriba.</div>
+    <div class="card">
+      <div class="sim-controls" id="fc-sim-controls"></div>
+      <div class="sim-actions"><button class="tab" type="button" id="fc-sim-reset">↺ Restablecer</button></div>
+    </div>
+    <div class="kpis" id="fc-sim-kpis" style="margin-top:12px"></div>
+    <p class="hint" style="margin:10px 2px 0">Leads escalados del pronóstico TimesFM oficial; reuniones y cierres re-simulados con tus tasas (fijas, sin incertidumbre Beta) — por eso P(≥1)/P(≥2) pueden diferir ~10% del oficial incluso en base.</p>
+  </section>
 
   <!-- Noticias del día: noticias.json generado por Chucao (mini) cada mañana. Mismo patrón que forecast: el tab se revela solo si el JSON carga y valida. -->
   <section id="sec-noticias" data-grp="noticias" hidden>
@@ -524,6 +543,131 @@ function aplicarAjusteForecast(){
       `(había ${base} cuando se generó este pronóstico) → los números de arriba ya están escalados ×${factor.toFixed(2)}. `+
       `El gráfico de abajo y las probabilidades de cierre usan el pronóstico base, sin este ajuste.`;
   }
+}
+
+function initSimulador(j){
+  try{
+    const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
+    const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const tot = j && j.tot ? j.tot : {}, ag = j && j.agendas ? j.agendas : {}, ci = j && j.cierres ? j.cierres : {};
+    const tasas = Array.isArray(j && j.tasas) ? j.tasas.slice(0,4) : [];
+    if([tot.p10,tot.p50,tot.p90,ag.media,ci.esperados,ci.p1,ci.p2].some(v=>fin(v)==null) || tasas.length!==4 || tasas.some(t=>fin(t.valor)==null)) return;
+
+    const controls = document.getElementById("fc-sim-controls");
+    const out = document.getElementById("fc-sim-kpis");
+    const reset = document.getElementById("fc-sim-reset");
+    if(!controls || !out || !reset) return;
+
+    const pct1 = v => (v*100).toFixed(1).replace(".", ",")+"%";
+    const dec2 = v => v.toFixed(2).replace(".", ",");
+    const fmtNum = v => (Math.round(v*10)/10).toLocaleString("es-CL", {maximumFractionDigits:1});
+    const fmtDelta = (v, base, suffix) => {
+      const d = v - base, sign = d > 0 ? "+" : "";
+      return `${sign}${fmtNum(d)}${suffix||""} vs oficial`;
+    };
+    const mulberry32 = seed => function(){
+      let t = seed += 0x6D2B79F5;
+      t = Math.imul(t ^ t >>> 15, t | 1);
+      t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+    const invLeads = u => {
+      let v;
+      if(u < 0.10) v = tot.p10 + (u - 0.10) * (tot.p50 - tot.p10) / 0.40;
+      else if(u <= 0.50) v = tot.p10 + (u - 0.10) * (tot.p50 - tot.p10) / 0.40;
+      else if(u <= 0.90) v = tot.p50 + (u - 0.50) * (tot.p90 - tot.p50) / 0.40;
+      else v = tot.p90 + (u - 0.90) * (tot.p90 - tot.p50) / 0.40;
+      return Math.max(0, v);
+    };
+    const binom = (n, p, rnd) => {
+      n = Math.max(0, Math.round(n)); p = Math.max(0, Math.min(1, p));
+      if(n===0 || p<=0) return 0;
+      if(p>=1) return n;
+      let x = 0;
+      for(let i=0;i<n;i++) if(rnd() < p) x++;
+      return x;
+    };
+
+    const specs = [
+      {key:"factor", label:"Volumen de leads", min:0.30, max:2.00, step:0.05, base:1}
+    ].concat(tasas.map((t,i)=>{
+      const base = Math.max(0, Math.min(1, t.valor));
+      return {key:"t"+i, label:t.nombre, min:Math.max(0, base*0.5), max:Math.min(base*2, 1), step:Math.max((Math.min(base*2, 1)-base*0.5)/60, 0.001), base};
+    }));
+    const vals = Object.fromEntries(specs.map(s=>[s.key, s.base]));
+    controls.innerHTML = specs.map(s=>{
+      const isFactor = s.key === "factor";
+      const baseTxt = isFactor ? "base" : `base ${pct1(s.base)}`;
+      return `<label class="card sim-control" for="fc-sim-${esc(s.key)}">`+
+        `<span class="sim-head"><span><span class="sim-label">${esc(s.label)}</span><span class="sim-base" id="fc-sim-base-${esc(s.key)}">${esc(baseTxt)}</span></span>`+
+        `<span class="sim-value" id="fc-sim-val-${esc(s.key)}"></span></span>`+
+        `<input id="fc-sim-${esc(s.key)}" type="range" min="${s.min}" max="${s.max}" step="${s.step}" value="${s.base}" data-key="${esc(s.key)}"></label>`;
+    }).join("");
+
+    let timer = null;
+    const updateLabels = () => {
+      specs.forEach(s=>{
+        const el = document.getElementById("fc-sim-val-"+s.key);
+        const baseEl = document.getElementById("fc-sim-base-"+s.key);
+        if(!el) return;
+        if(s.key === "factor"){
+          const p50 = Math.round(tot.p50 * vals.factor);
+          el.textContent = `×${dec2(vals.factor)}${vals.factor===1 ? " (base)" : ""} · ${p50} leads P50`;
+        } else {
+          el.textContent = pct1(vals[s.key]);
+          if(baseEl) baseEl.textContent = `base ${pct1(s.base)}`;
+        }
+      });
+    };
+    const run = () => {
+      const factor = vals.factor;
+      const rates = [vals.t0, vals.t1, vals.t2, vals.t3];
+      const rnd = mulberry32(7);
+      const trials = 5000;
+      let sumAg = 0, sumCi = 0, ge1 = 0, ge2 = 0;
+      for(let i=0;i<trials;i++){
+        const u = 0.05 + rnd() * 0.90;
+        let n = Math.max(0, Math.round(invLeads(u) * factor));
+        const contactados = binom(n, rates[0], rnd);
+        const agendados = binom(contactados, rates[1], rnd);
+        const asistieron = binom(agendados, rates[2], rnd);
+        const cerrados = binom(asistieron, rates[3], rnd);
+        sumAg += agendados; sumCi += cerrados;
+        if(cerrados >= 1) ge1++;
+        if(cerrados >= 2) ge2++;
+      }
+      const p10 = Math.round(tot.p10 * factor), p50 = Math.round(tot.p50 * factor), p90 = Math.round(tot.p90 * factor);
+      const reuniones = sumAg / trials, cierres = sumCi / trials, p1 = ge1 / trials, p2 = ge2 / trials;
+      out.innerHTML = [
+        {lbl:"Leads 14d P50", val:p50, sub:`P10–P90: ${p10}–${p90} · ${fmtDelta(p50, tot.p50)}`},
+        {lbl:"Reuniones esperadas", val:fmtNum(reuniones), sub:fmtDelta(reuniones, ag.media)},
+        {lbl:"Cierres esperados", val:fmtNum(cierres), sub:fmtDelta(cierres, ci.esperados)},
+        {lbl:"P(≥1 cierre)", val:pct1(p1), sub:fmtDelta(p1*100, ci.p1*100, " pp")},
+        {lbl:"P(≥2 cierres)", val:pct1(p2), sub:fmtDelta(p2*100, ci.p2*100, " pp")}
+      ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+    };
+    const recompute = () => {
+      updateLabels();
+      clearTimeout(timer);
+      timer = setTimeout(run, 150);
+    };
+    controls.querySelectorAll("input").forEach(input=>{
+      input.addEventListener("input", e=>{
+        vals[e.target.dataset.key] = parseFloat(e.target.value);
+        recompute();
+      });
+    });
+    reset.addEventListener("click", ()=>{
+      specs.forEach(s=>{
+        vals[s.key] = s.base;
+        const el = document.getElementById("fc-sim-"+s.key);
+        if(el) el.value = String(s.base);
+      });
+      recompute();
+    });
+    updateLabels();
+    run();
+  }catch(e){ /* el simulador es accesorio: nunca debe romper el tab de pronóstico */ }
 }
 
 function render(d){
@@ -1024,8 +1168,9 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     }
 
     // Todo validado → activar secciones (tab-off las mantiene ocultas hasta el clic) y revelar el botón
-    ["sec-fc","sec-fc-chart","sec-fc-tasas"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
+    ["sec-fc","sec-fc-chart","sec-fc-tasas","sec-fc-sim"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
     document.getElementById("tab-forecast").hidden=false;
+    try{ initSimulador(j); }catch(e){}
     if (typeof aplicarAjusteForecast === "function") aplicarAjusteForecast(); // por si render() ya corrió antes
   }catch(e){ /* sin forecast válido: el tab no existe; el resto del dashboard sigue igual */ }
 })();
