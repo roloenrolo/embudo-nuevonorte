@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-24",
+ "actualizado": "2026-07-25",
  "items": [
   {
    "captura": "2026-07-21",
@@ -310,6 +310,56 @@
    "fecha": "2026-07-17",
    "impacto": "alto",
    "porque": "Actualizaciones directas al canal WhatsApp que ya es el ancla de conversión de Nuevo Norte; el dato de +22% ROAS con Advantage+ es accionable."
+  },
+  {
+   "captura": "2026-07-25",
+   "area": "inmobiliario",
+   "titulo": "Mercado anticipa que el Banco Central mantendrá la tasa en reunión de la próxima semana",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/economia-y-politica/macro/mercado-anticipa-que-el-banco-central-mantendra-la-tasa-en-reunion-de-la",
+   "fecha": "2026-07-24",
+   "impacto": "medio",
+   "porque": "TPM estable en 4,5% sostiene el ciclo de tasas hipotecarias a la baja, base del mensaje \"mejor momento para comprar\"."
+  },
+  {
+   "captura": "2026-07-25",
+   "area": "ia",
+   "titulo": "Agentes de IA para compras: el consumidor ya está delegando",
+   "fuente": "Digitaltoo",
+   "url": "https://www.digitaltoo.com/2026/07/13/agentes-ia-compras/",
+   "fecha": "2026-07-13",
+   "impacto": "alto",
+   "porque": "El comprador empieza a delegar decisiones en agentes de IA: hay que pensar cómo se muestra la oferta ante un agente, no solo ante una persona."
+  },
+  {
+   "captura": "2026-07-25",
+   "area": "ia",
+   "titulo": "Meta cambia el cobro de WhatsApp Business en octubre 2026: cómo reducir el impacto",
+   "fuente": "WAD",
+   "url": "https://www.wad.chat/es/wad/recursos/nuevo-cobro-meta-whatsapp-business-octubre-2026.html",
+   "fecha": "",
+   "impacto": "alto",
+   "porque": "Desde el 1-oct Meta cobrará por mensaje de servicio dentro de la ventana de 24h en la API de WhatsApp Business, encareciendo el canal que hoy concentra el CPA-conversación de Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-25",
+   "area": "ia",
+   "titulo": "OpenAI lanza GPT-5.6 en tres versiones y ChatGPT Work, su respuesta directa a Claude Cowork de Anthropic",
+   "fuente": "wwwhatsnew",
+   "url": "https://wwwhatsnew.com/2026/07/11/gpt-5-6-chatgpt-work-openai-sol-terra-luna-julio-2026/",
+   "fecha": "2026-07-11",
+   "impacto": "medio",
+   "porque": "Escalada de herramientas agénticas de productividad; vale evaluar si aportan a automatizar reportes o creativos internos."
+  },
+  {
+   "captura": "2026-07-25",
+   "area": "ia",
+   "titulo": "Marketing mundial superará los 2,1 billones de dólares en 2026, impulsado por video, redes sociales e inteligencia artificial",
+   "fuente": "Merca20",
+   "url": "https://www.merca20.com/marketing-mundial-superara-los-2-1-billones-de-dolares-en-2026-impulsado-por-video-redes-sociales-e-inteligencia-artificial/",
+   "fecha": "",
+   "impacto": "bajo",
+   "porque": "Contexto macro: la IA es motor confirmado del crecimiento del gasto publicitario global en 2026."
   }
  ]
 }
