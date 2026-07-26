@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-25",
+ "actualizado": "2026-07-26",
  "items": [
   {
    "captura": "2026-07-21",
@@ -360,6 +360,66 @@
    "fecha": "",
    "impacto": "bajo",
    "porque": "Contexto macro: la IA es motor confirmado del crecimiento del gasto publicitario global en 2026."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "inmobiliario",
+   "titulo": "Subsidio a la tasa impulsa el acceso a la vivienda y se acerca a los 30 mil créditos hipotecarios otorgados",
+   "fuente": "Construnoticias",
+   "url": "https://construnoticias.com/2026/07/23/subsidio-a-la-tasa-impulsa-el-acceso-a-la-vivienda-y-se-acerca-a-los-30-mil-creditos-hipotecarios-otorgados/",
+   "fecha": "2026-07-23",
+   "impacto": "alto",
+   "porque": "El subsidio a la tasa sigue siendo el motor de demanda; respalda directamente los tests de calculadora de subsidio que corre Rodolfo."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "inmobiliario",
+   "titulo": "Resultados segundo trimestre 2026: Ventas de departamentos crecieron 4,4% y concentran el 85% del mercado de la RM",
+   "fuente": "Diario Estrategia",
+   "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5960694/resultados-segundo-trimestre-2026-ventas-departamentos-crecieron-44-concentran-85-mercado-rm",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "Confirma reactivación de demanda de departamentos en la RM, respaldando mantener o subir inversión en pauta activa."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "ia",
+   "titulo": "OpenAI dice que Codex y ChatGPT Work llegan a 10 millones de usuarios semanales",
+   "fuente": "Unite.AI",
+   "url": "https://www.unite.ai/openai-says-codex-and-chatgpt-work-hit-10-million-users/",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "Valida que los agentes de IA para tareas de oficina escalan rápido; referencia para evaluar herramientas similares en el equipo."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "ia",
+   "titulo": "Google lanza Gemini 3.6 Flash, 3.5 Flash-Lite y 3.5 Flash Cyber: más eficiencia y 350 tokens por segundo",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/07/23/google-gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber-julio-2026/",
+   "fecha": "2026-07-23",
+   "impacto": "medio",
+   "porque": "Modelos más rápidos y baratos de Google; opción a evaluar para tareas de campaña frente al costo actual de Claude/GPT."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "ia",
+   "titulo": "AMD invertirá hasta US$5.000 millones en Anthropic como parte de un gran acuerdo de infraestructura para IA",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/amd-invertira-hasta-us-5000-millones-en-anthropic-como-parte-de-un-gran-acuerdo-de-infraestructura-para-ia/",
+   "fecha": "2026-07-22",
+   "impacto": "bajo",
+   "porque": "Refuerza la estabilidad de largo plazo de Anthropic/Claude, proveedor de IA usado internamente."
+  },
+  {
+   "captura": "2026-07-26",
+   "area": "ia",
+   "titulo": "IPO de Anthropic: todo lo que necesitas saber",
+   "fuente": "Forex.com",
+   "url": "https://www.forex.com/es/news-and-analysis/ipo-de-anthropic-todo-lo-que-necesitas-saber-sobre-anthropic-2026-07-22/",
+   "fecha": "2026-07-22",
+   "impacto": "bajo",
+   "porque": "Contexto financiero del proveedor de IA usado por el equipo; sin impacto operativo inmediato."
   }
  ]
 }
