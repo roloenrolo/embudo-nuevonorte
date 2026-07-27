@@ -1,31 +1,7 @@
 {
- "generado": "2026-07-21T13:10:47+00:00",
+ "generado": "2026-07-27T12:40:28+00:00",
  "horizonte": 14,
  "serie": [
-  {
-   "fecha": "2026-07-08",
-   "leads": 23
-  },
-  {
-   "fecha": "2026-07-09",
-   "leads": 19
-  },
-  {
-   "fecha": "2026-07-10",
-   "leads": 14
-  },
-  {
-   "fecha": "2026-07-11",
-   "leads": 15
-  },
-  {
-   "fecha": "2026-07-12",
-   "leads": 17
-  },
-  {
-   "fecha": "2026-07-13",
-   "leads": 22
-  },
   {
    "fecha": "2026-07-14",
    "leads": 23
@@ -40,7 +16,7 @@
   },
   {
    "fecha": "2026-07-17",
-   "leads": 16
+   "leads": 11
   },
   {
    "fecha": "2026-07-18",
@@ -52,114 +28,138 @@
   },
   {
    "fecha": "2026-07-20",
-   "leads": 16
+   "leads": 12
   },
   {
    "fecha": "2026-07-21",
    "leads": 4
+  },
+  {
+   "fecha": "2026-07-22",
+   "leads": 1
+  },
+  {
+   "fecha": "2026-07-23",
+   "leads": 21
+  },
+  {
+   "fecha": "2026-07-24",
+   "leads": 16
+  },
+  {
+   "fecha": "2026-07-25",
+   "leads": 12
+  },
+  {
+   "fecha": "2026-07-26",
+   "leads": 25
+  },
+  {
+   "fecha": "2026-07-27",
+   "leads": 3
   }
  ],
  "pron": [
   {
-   "fecha": "2026-07-22",
-   "p10": 0.0,
-   "p50": 9.7,
-   "p90": 18.8
-  },
-  {
-   "fecha": "2026-07-23",
-   "p10": 1.7,
-   "p50": 12.5,
-   "p90": 21.8
-  },
-  {
-   "fecha": "2026-07-24",
-   "p10": 5.0,
-   "p50": 16.1,
-   "p90": 25.1
-  },
-  {
-   "fecha": "2026-07-25",
-   "p10": 5.3,
-   "p50": 16.6,
-   "p90": 25.3
-  },
-  {
-   "fecha": "2026-07-26",
-   "p10": 5.7,
-   "p50": 17.2,
-   "p90": 26.1
-  },
-  {
-   "fecha": "2026-07-27",
-   "p10": 5.3,
-   "p50": 17.0,
-   "p90": 25.9
-  },
-  {
    "fecha": "2026-07-28",
-   "p10": 5.2,
-   "p50": 17.0,
-   "p90": 25.7
+   "p10": 0.0,
+   "p50": 12.7,
+   "p90": 24.8
   },
   {
    "fecha": "2026-07-29",
-   "p10": 5.3,
-   "p50": 17.3,
-   "p90": 26.4
+   "p10": 0.0,
+   "p50": 11.9,
+   "p90": 24.4
   },
   {
    "fecha": "2026-07-30",
-   "p10": 6.3,
-   "p50": 18.4,
-   "p90": 27.7
+   "p10": 0.0,
+   "p50": 14.0,
+   "p90": 27.0
   },
   {
    "fecha": "2026-07-31",
-   "p10": 5.6,
-   "p50": 18.0,
-   "p90": 27.5
+   "p10": 0.0,
+   "p50": 13.7,
+   "p90": 27.0
   },
   {
    "fecha": "2026-08-01",
-   "p10": 5.3,
-   "p50": 17.5,
-   "p90": 27.1
+   "p10": 0.0,
+   "p50": 11.8,
+   "p90": 26.0
   },
   {
    "fecha": "2026-08-02",
-   "p10": 4.3,
-   "p50": 16.8,
-   "p90": 26.7
+   "p10": 0.0,
+   "p50": 10.9,
+   "p90": 25.4
   },
   {
    "fecha": "2026-08-03",
-   "p10": 4.2,
-   "p50": 16.7,
-   "p90": 26.7
+   "p10": 0.0,
+   "p50": 10.7,
+   "p90": 25.4
   },
   {
    "fecha": "2026-08-04",
-   "p10": 4.8,
-   "p50": 17.1,
-   "p90": 27.1
+   "p10": 0.0,
+   "p50": 12.8,
+   "p90": 27.3
+  },
+  {
+   "fecha": "2026-08-05",
+   "p10": 0.0,
+   "p50": 13.3,
+   "p90": 27.5
+  },
+  {
+   "fecha": "2026-08-06",
+   "p10": 0.0,
+   "p50": 13.1,
+   "p90": 27.2
+  },
+  {
+   "fecha": "2026-08-07",
+   "p10": 0.0,
+   "p50": 14.7,
+   "p90": 28.8
+  },
+  {
+   "fecha": "2026-08-08",
+   "p10": 0.0,
+   "p50": 12.8,
+   "p90": 26.8
+  },
+  {
+   "fecha": "2026-08-09",
+   "p10": 0.0,
+   "p50": 13.9,
+   "p90": 28.3
+  },
+  {
+   "fecha": "2026-08-10",
+   "p10": 0.0,
+   "p50": 13.6,
+   "p90": 27.8
   }
  ],
  "tot": {
-  "p10": 63,
-  "p50": 227,
-  "p90": 357
+  "p10": 0,
+  "p50": 179,
+  "p90": 373
  },
  "agendas": {
-  "media": 6.0,
-  "p10": 2,
+  "media": 6.3,
+  "p10": 3,
   "p90": 10
  },
  "cierres": {
-  "esperados": 0.89,
-  "p0": 0.452,
-  "p1": 0.548,
-  "p2": 0.223
+  "esperados": 0.95,
+  "p0": 0.426,
+  "p1": 0.574,
+  "p2": 0.244
  },
  "palancas": [
   {
@@ -167,43 +167,43 @@
    "nombre": "Sin recordatorios (asistencia real 25%)",
    "segun": "Clara",
    "detalle": "1 de 4 reuniones resueltas asistió; el 60% del caso base ASUME confirmación+recordatorio funcionando",
-   "cierres_esperados": 0.37,
-   "p1": 0.3
+   "cierres_esperados": 0.4,
+   "p1": 0.316
   },
   {
    "clave": "palanca_agendamiento",
    "nombre": "Agendamiento 4,5% → 10%",
    "segun": "Antonia",
    "detalle": "botón Hoy + link por WhatsApp + proyectos en el chat (el plan original asumía 20%)",
-   "cierres_esperados": 1.84,
-   "p1": 0.783
+   "cierres_esperados": 1.57,
+   "p1": 0.734
   },
   {
    "clave": "palanca_angulos",
    "nombre": "Mezcla de ángulos: calificación 55% → 65%",
    "segun": "Matías",
    "detalle": "sin_pie concentra 99,5% del gasto histórico y atrae 89% renta baja; test inversion_rentabilidad/asesoria_datos en curso",
-   "cierres_esperados": 1.03,
-   "p1": 0.597
+   "cierres_esperados": 1.05,
+   "p1": 0.605
   },
   {
    "clave": "todas",
    "nombre": "Las 3 palancas juntas",
    "segun": "Antonia + Matías + Clara",
    "detalle": "agendamiento 10% + calificación 65% + asistencia 60% protegida",
-   "cierres_esperados": 2.17,
-   "p1": 0.826
+   "cierres_esperados": 1.76,
+   "p1": 0.771
   }
  ],
  "tasas": [
   {
    "nombre": "contactabilidad",
-   "valor": 0.5579,
+   "valor": 0.584,
    "origen": "calibrada"
   },
   {
    "nombre": "tasa de agendamiento",
-   "valor": 0.0482,
+   "valor": 0.06,
    "origen": "calibrada"
   },
   {
@@ -217,6 +217,6 @@
    "origen": "prior"
   }
  ],
- "nota": "Leads pronosticados con TimesFM sobre la serie diaria real; reuniones y cierres simulados con las tasas del embudo (asistencia y cierre son supuestos declarados, aún sin cierres observados).",
- "anuncios_activos_generacion": 4
+ "anuncios_activos_generacion": 4,
+ "nota": "Leads pronosticados con TimesFM sobre la serie diaria real; reuniones y cierres simulados con las tasas del embudo (asistencia y cierre son supuestos declarados, aún sin cierres observados)."
 }
