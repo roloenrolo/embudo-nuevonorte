@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-26",
+ "actualizado": "2026-07-27",
  "items": [
   {
    "captura": "2026-07-21",
@@ -420,6 +420,66 @@
    "fecha": "2026-07-22",
    "impacto": "bajo",
    "porque": "Contexto financiero del proveedor de IA usado por el equipo; sin impacto operativo inmediato."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "inmobiliario",
+   "titulo": "Subsidio del Minvu para mejorar o ampliar tu vivienda: hasta 120 UF",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/26/subsidio-mejoramiento-ampliacion-vivienda-minvu-2026-requisitos-monto/",
+   "fecha": "2026-07-26",
+   "impacto": "medio",
+   "porque": "Amplía el universo de hogares que invierten en su vivienda actual, señal de demanda potencial para asesoría patrimonial de Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "inmobiliario",
+   "titulo": "CChC local realiza positivo balance de Finco 2026 para el mercado inmobiliario",
+   "fuente": "Conce Construye",
+   "url": "https://www.conceconstruye.cl/2026/07/23/cchclocalrealizopositivobalancedefinco2026/",
+   "fecha": "2026-07-23",
+   "impacto": "medio",
+   "porque": "El gremio confirma dinamismo del sector, dato útil para calibrar el timing de campañas de captación inmobiliaria."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "ia",
+   "titulo": "Anthropic lanza Claude Opus 5: el modelo más capaz de la gama media se acerca a Fable 5 a la mitad del precio",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
+   "fecha": "2026-07-26",
+   "impacto": "alto",
+   "porque": "Mejora directa de capacidad y costo del motor que usa la flota de agentes de domo IA."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "ia",
+   "titulo": "OpenAI lanza el programa ChatGPT para pequeñas empresas: academias presenciales, partners como Shopify e Intuit y acceso a GPT-5.6",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/07/23/chatgpt-programa-pequenas-empresas-openai-shopify-intuit-2026/",
+   "fecha": "2026-07-23",
+   "impacto": "alto",
+   "porque": "Competidor directo posicionándose en IA aplicada a pymes/ventas: referencia para el benchmarking de la propuesta de valor propia."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "ia",
+   "titulo": "Neo sale del sigilo con 100 millones de a16z y Bessemer para controlar los agentes de IA en la empresa",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/07/22/neo-security-100-millones-a16z-bessemer-control-agentes-ia-empresa-julio-2026/",
+   "fecha": "2026-07-22",
+   "impacto": "medio",
+   "porque": "El mercado empieza a invertir fuerte en gobernanza de agentes de IA en la empresa, relevante para la propia flota de agentes."
+  },
+  {
+   "captura": "2026-07-27",
+   "area": "ia",
+   "titulo": "Microsoft y Mistral amplían su alianza estratégica para ofrecer a empresas y sectores regulados modelos de IA de última generación",
+   "fuente": "Microsoft Source EMEA",
+   "url": "https://news.microsoft.com/source/emea/2026/07/microsoft-mistral-alianza-ia-soberana/?lang=es",
+   "fecha": "2026-07-21",
+   "impacto": "bajo",
+   "porque": "Enfocado en sectores regulados europeos, pero indica tendencia de adopción enterprise de IA que eventualmente llega a Latam."
   }
  ]
 }

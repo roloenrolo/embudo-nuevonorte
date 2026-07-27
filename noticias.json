@@ -1,88 +1,80 @@
 {
-  "fecha": "2026-07-26",
-  "generado": "2026-07-26T07:33:00-04:00",
+  "fecha": "2026-07-27",
+  "generado": "2026-07-27T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Subsidio a la tasa impulsa el acceso a la vivienda y se acerca a los 30 mil créditos hipotecarios otorgados",
-      "fuente": "Construnoticias",
-      "url": "https://construnoticias.com/2026/07/23/subsidio-a-la-tasa-impulsa-el-acceso-a-la-vivienda-y-se-acerca-a-los-30-mil-creditos-hipotecarios-otorgados/",
+      "titulo": "Subsidio del Minvu para mejorar o ampliar tu vivienda: hasta 120 UF",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/26/subsidio-mejoramiento-ampliacion-vivienda-minvu-2026-requisitos-monto/",
+      "fecha": "2026-07-26",
+      "impacto": "medio",
+      "porque": "Amplía el universo de hogares que invierten en su vivienda actual, señal de demanda potencial para asesoría patrimonial de Nuevo Norte."
+    },
+    {
+      "titulo": "CChC local realiza positivo balance de Finco 2026 para el mercado inmobiliario",
+      "fuente": "Conce Construye",
+      "url": "https://www.conceconstruye.cl/2026/07/23/cchclocalrealizopositivobalancedefinco2026/",
       "fecha": "2026-07-23",
-      "impacto": "alto",
-      "porque": "El subsidio a la tasa sigue siendo el motor de demanda; respalda directamente los tests de calculadora de subsidio que corre Rodolfo."
+      "impacto": "medio",
+      "porque": "El gremio confirma dinamismo del sector, dato útil para calibrar el timing de campañas de captación inmobiliaria."
     },
     {
       "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
       "fuente": "El Mostrador",
       "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
       "fecha": "2026-07-22",
-      "impacto": "medio",
-      "porque": "Abre postulación hasta el 7 de agosto: público de arriendo distinto al de compra, posible segmento adicional para leads de asesoría."
+      "impacto": "bajo",
+      "porque": "Apunta a arriendo, no a compra, pero indica actividad de política pública y liquidez de familias que puede anticipar futura demanda de compra."
     },
     {
       "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
       "fuente": "Diario Financiero",
       "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
       "fecha": "2026-07-20",
-      "impacto": "medio",
-      "porque": "Informe de Tinsa/Accumin muestra que comunas como La Florida lideran el alza de ventas; útil para ajustar geo-targeting."
-    },
-    {
-      "titulo": "Resultados segundo trimestre 2026: Ventas de departamentos crecieron 4,4% y concentran el 85% del mercado de la RM",
-      "fuente": "Diario Estrategia",
-      "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5960694/resultados-segundo-trimestre-2026-ventas-departamentos-crecieron-44-concentran-85-mercado-rm",
-      "fecha": "2026-07-21",
-      "impacto": "medio",
-      "porque": "Confirma reactivación de demanda de departamentos en la RM, respaldando mantener o subir inversión en pauta activa."
-    },
-    {
-      "titulo": "Mercado inmobiliario se recupera en 2026: Remax Chile proyecta un escenario favorable para compradores e inversionistas",
-      "fuente": "G5 Noticias",
-      "url": "https://g5noticias.cl/2026/07/12/mercado-inmobiliario-se-recupera-en-2026-remax-chile-proyecta-un-escenario-favorable-para-compradores-e-inversionistas/",
-      "fecha": "2026-07-12",
-      "impacto": "bajo",
-      "porque": "Sentimiento general positivo de mercado, sin dato accionable directo para campañas."
+      "impacto": "alto",
+      "porque": "Dato duro de Tinsa (ventas Stgo Q2 2026 +1,7%, La Florida a la cabeza): orienta el targeting geográfico de campañas de domo IA y Nuevo Norte."
     }
   ],
   "ia": [
     {
-      "titulo": "Mercado Libre IA: claves para el futuro del retail 2026",
-      "fuente": "ITSeller",
-      "url": "https://www.itseller.cl/2026/07/16/mercado-libre-ia-claves-para-el-futuro-del-retail-2026/",
-      "fecha": "2026-07-16",
-      "impacto": "alto",
-      "porque": "Caso de uso directo de IA aplicada a ventas/retail, comparable a lo que busca aplicar domo IA en la operación comercial."
-    },
-    {
-      "titulo": "OpenAI dice que Codex y ChatGPT Work llegan a 10 millones de usuarios semanales",
-      "fuente": "Unite.AI",
-      "url": "https://www.unite.ai/openai-says-codex-and-chatgpt-work-hit-10-million-users/",
-      "fecha": "2026-07-21",
-      "impacto": "medio",
-      "porque": "Valida que los agentes de IA para tareas de oficina escalan rápido; referencia para evaluar herramientas similares en el equipo."
-    },
-    {
-      "titulo": "Google lanza Gemini 3.6 Flash, 3.5 Flash-Lite y 3.5 Flash Cyber: más eficiencia y 350 tokens por segundo",
+      "titulo": "Anthropic lanza Claude Opus 5: el modelo más capaz de la gama media se acerca a Fable 5 a la mitad del precio",
       "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/23/google-gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber-julio-2026/",
+      "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
+      "fecha": "2026-07-26",
+      "impacto": "alto",
+      "porque": "Mejora directa de capacidad y costo del motor que usa la flota de agentes de domo IA."
+    },
+    {
+      "titulo": "OpenAI lanza el programa ChatGPT para pequeñas empresas: academias presenciales, partners como Shopify e Intuit y acceso a GPT-5.6",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/07/23/chatgpt-programa-pequenas-empresas-openai-shopify-intuit-2026/",
+      "fecha": "2026-07-23",
+      "impacto": "alto",
+      "porque": "Competidor directo posicionándose en IA aplicada a pymes/ventas: referencia para el benchmarking de la propuesta de valor propia."
+    },
+    {
+      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
       "fecha": "2026-07-23",
       "impacto": "medio",
-      "porque": "Modelos más rápidos y baratos de Google; opción a evaluar para tareas de campaña frente al costo actual de Claude/GPT."
+      "porque": "Modelo de agentes de voz gestionados para atención al cliente; marca hacia dónde va la oferta enterprise de IA conversacional."
     },
     {
-      "titulo": "AMD invertirá hasta US$5.000 millones en Anthropic como parte de un gran acuerdo de infraestructura para IA",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/amd-invertira-hasta-us-5000-millones-en-anthropic-como-parte-de-un-gran-acuerdo-de-infraestructura-para-ia/",
+      "titulo": "Neo sale del sigilo con 100 millones de a16z y Bessemer para controlar los agentes de IA en la empresa",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/07/22/neo-security-100-millones-a16z-bessemer-control-agentes-ia-empresa-julio-2026/",
       "fecha": "2026-07-22",
-      "impacto": "bajo",
-      "porque": "Refuerza la estabilidad de largo plazo de Anthropic/Claude, proveedor de IA usado internamente."
+      "impacto": "medio",
+      "porque": "El mercado empieza a invertir fuerte en gobernanza de agentes de IA en la empresa, relevante para la propia flota de agentes."
     },
     {
-      "titulo": "IPO de Anthropic: todo lo que necesitas saber",
-      "fuente": "Forex.com",
-      "url": "https://www.forex.com/es/news-and-analysis/ipo-de-anthropic-todo-lo-que-necesitas-saber-sobre-anthropic-2026-07-22/",
-      "fecha": "2026-07-22",
+      "titulo": "Microsoft y Mistral amplían su alianza estratégica para ofrecer a empresas y sectores regulados modelos de IA de última generación",
+      "fuente": "Microsoft Source EMEA",
+      "url": "https://news.microsoft.com/source/emea/2026/07/microsoft-mistral-alianza-ia-soberana/?lang=es",
+      "fecha": "2026-07-21",
       "impacto": "bajo",
-      "porque": "Contexto financiero del proveedor de IA usado por el equipo; sin impacto operativo inmediato."
+      "porque": "Enfocado en sectores regulados europeos, pero indica tendencia de adopción enterprise de IA que eventualmente llega a Latam."
     }
   ]
 }
