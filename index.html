@@ -150,7 +150,11 @@ tr:last-child td{border-bottom:0}
 .sim-label{font-weight:700;color:var(--ink);line-height:1.25}
 .sim-value{font:700 13px/1.25 "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--accent-ink);text-align:right;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
 .sim-base{display:block;margin-top:3px;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.sim-control input[type="range"]{width:100%;min-height:44px;accent-color:var(--accent);color-scheme:light;cursor:pointer}
+.sim-control input[type="range"]{width:100%;min-height:44px;accent-color:var(--accent);color-scheme:light;cursor:pointer;-webkit-appearance:none;appearance:none;background:transparent}
+.sim-control input[type="range"]::-webkit-slider-runnable-track{height:6px;border-radius:999px;background:var(--surface2);border:1px solid var(--hair)}
+.sim-control input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;margin-top:-7px;border-radius:999px;background:var(--accent);border:1px solid var(--accent-ink);cursor:pointer}
+.sim-control input[type="range"]::-moz-range-track{height:6px;border-radius:999px;background:var(--surface2);border:1px solid var(--hair)}
+.sim-control input[type="range"]::-moz-range-thumb{width:18px;height:18px;border:1px solid var(--accent-ink);border-radius:999px;background:var(--accent);cursor:pointer}
 .sim-actions{display:flex;justify-content:flex-end;margin-top:12px}
 @media(max-width:520px){.sim-head{flex-direction:column;gap:4px}.sim-value{text-align:left}.sim-actions{justify-content:stretch}.sim-actions .tab{width:100%;min-height:44px}}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
