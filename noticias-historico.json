@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-27",
+ "actualizado": "2026-07-28",
  "items": [
   {
    "captura": "2026-07-21",
@@ -480,6 +480,56 @@
    "fecha": "2026-07-21",
    "impacto": "bajo",
    "porque": "Enfocado en sectores regulados europeos, pero indica tendencia de adopción enterprise de IA que eventualmente llega a Latam."
+  },
+  {
+   "captura": "2026-07-28",
+   "area": "inmobiliario",
+   "titulo": "Retrasos en aprobación de obras eleva costos de viviendas en 10%: ranking revela regiones de Chile con más demora para proyectos inmobiliarios",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/regiones/los-lagos-biobio-y-o-higgins-lideran-tramitaciones-excesivas-en-proyectos",
+   "fecha": "2026-07-27",
+   "impacto": "medio",
+   "porque": "Trámites que hoy toman hasta 472 días (Los Lagos a la cabeza) encarecen costos y alargan plazos de entrega, una objeción que puede surgir en conversaciones de venta de Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-28",
+   "area": "ia",
+   "titulo": "AEO y GEO: las nuevas claves para que las pymes sean visibles en los motores de búsqueda con IA",
+   "fuente": "Emol",
+   "url": "https://www.emol.com/noticias/Economia/2026/07/24/1206635/empresas-motores-busqueda-ia.html",
+   "fecha": "2026-07-24",
+   "impacto": "medio",
+   "porque": "La visibilidad ya no depende solo del SEO tradicional sino de cómo los motores de IA (ChatGPT, Gemini) citan a las marcas: relevante para la estrategia de contenido de domo IA."
+  },
+  {
+   "captura": "2026-07-28",
+   "area": "ia",
+   "titulo": "Meta lanza Seller: nueva app con IA para disputar a eBay el mercado de comerciantes",
+   "fuente": "DiarioBitcoin",
+   "url": "https://www.diariobitcoin.com/tecnologia/meta-lanza-seller-nueva-app-con-ia-para-disputar-a-ebay-el-mercado-de-comerciantes/",
+   "fecha": "2026-07-24",
+   "impacto": "medio",
+   "porque": "Meta suma IA que sugiere títulos, precios y categorías a vendedores de Marketplace: indica hacia dónde evoluciona la plataforma publicitaria que usa Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-28",
+   "area": "ia",
+   "titulo": "Claude renueva su modo de voz: Anthropic suma más inteligencia e integraciones con Gmail y Slack",
+   "fuente": "ITSitio",
+   "url": "https://www.itsitio.com/inteligencia-artificial/claude-renueva-su-modo-de-voz-anthropic-suma-mas-inteligencia-e-integraciones-con-gmail-y-slack/",
+   "fecha": "2026-07-24",
+   "impacto": "bajo",
+   "porque": "Mejora de producto del proveedor que sostiene la flota de agentes de domo IA; sin impacto inmediato en ventas pero a seguir."
+  },
+  {
+   "captura": "2026-07-28",
+   "area": "ia",
+   "titulo": "En Chile 8 de cada 10 empresas ya usan inteligencia artificial, pero la ciberseguridad emerge como el principal desafío",
+   "fuente": "Publimetro Chile",
+   "url": "https://www.publimetro.cl/tecnologia/2026/07/23/en-chile-8-de-cada-10-empresas-ya-usan-inteligencia-artificial-pero-la-ciberseguridad-emerge-como-el-principal-desafio/",
+   "fecha": "2026-07-23",
+   "impacto": "medio",
+   "porque": "Confirma adopción masiva de IA en empresas chilenas, con brecha en gobernanza de datos: argumento a favor de un manejo cuidadoso y visible de datos de clientes en la propuesta de domo IA."
   }
  ]
 }

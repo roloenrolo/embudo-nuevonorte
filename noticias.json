@@ -1,30 +1,22 @@
 {
-  "fecha": "2026-07-27",
-  "generado": "2026-07-27T07:35:00-04:00",
+  "fecha": "2026-07-28",
+  "generado": "2026-07-28T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Subsidio del Minvu para mejorar o ampliar tu vivienda: hasta 120 UF",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/26/subsidio-mejoramiento-ampliacion-vivienda-minvu-2026-requisitos-monto/",
-      "fecha": "2026-07-26",
+      "titulo": "Retrasos en aprobación de obras eleva costos de viviendas en 10%: ranking revela regiones de Chile con más demora para proyectos inmobiliarios",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/regiones/los-lagos-biobio-y-o-higgins-lideran-tramitaciones-excesivas-en-proyectos",
+      "fecha": "2026-07-27",
       "impacto": "medio",
-      "porque": "Amplía el universo de hogares que invierten en su vivienda actual, señal de demanda potencial para asesoría patrimonial de Nuevo Norte."
+      "porque": "Trámites que hoy toman hasta 472 días (Los Lagos a la cabeza) encarecen costos y alargan plazos de entrega, una objeción que puede surgir en conversaciones de venta de Nuevo Norte."
     },
     {
-      "titulo": "CChC local realiza positivo balance de Finco 2026 para el mercado inmobiliario",
-      "fuente": "Conce Construye",
-      "url": "https://www.conceconstruye.cl/2026/07/23/cchclocalrealizopositivobalancedefinco2026/",
-      "fecha": "2026-07-23",
-      "impacto": "medio",
-      "porque": "El gremio confirma dinamismo del sector, dato útil para calibrar el timing de campañas de captación inmobiliaria."
-    },
-    {
-      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+      "titulo": "El mercado inmobiliario de Valdivia se reactiva con una caída del 10% en el precio promedio de las viviendas",
+      "fuente": "Los Ríos Noticias",
+      "url": "https://www.losriosnoticias.cl/2026/07/22/el-mercado-inmobiliario-de-valdivia-se-reactiva-con-una-caida-del-10-en-el-precio-promedio-de-las-viviendas/26243",
       "fecha": "2026-07-22",
       "impacto": "bajo",
-      "porque": "Apunta a arriendo, no a compra, pero indica actividad de política pública y liquidez de familias que puede anticipar futura demanda de compra."
+      "porque": "Señal regional (fuera del foco RM actual) de que el ajuste de precios está reactivando ventas, patrón a monitorear si se replica en el resto del país."
     },
     {
       "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
@@ -32,49 +24,41 @@
       "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
       "fecha": "2026-07-20",
       "impacto": "alto",
-      "porque": "Dato duro de Tinsa (ventas Stgo Q2 2026 +1,7%, La Florida a la cabeza): orienta el targeting geográfico de campañas de domo IA y Nuevo Norte."
+      "porque": "Dato duro de Tinsa (ventas Stgo Q2 2026 +1,7%, La Florida +20,3% liderando): orienta el targeting geográfico de campañas de domo IA y Nuevo Norte."
     }
   ],
   "ia": [
     {
-      "titulo": "Anthropic lanza Claude Opus 5: el modelo más capaz de la gama media se acerca a Fable 5 a la mitad del precio",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
-      "fecha": "2026-07-26",
-      "impacto": "alto",
-      "porque": "Mejora directa de capacidad y costo del motor que usa la flota de agentes de domo IA."
-    },
-    {
-      "titulo": "OpenAI lanza el programa ChatGPT para pequeñas empresas: academias presenciales, partners como Shopify e Intuit y acceso a GPT-5.6",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/23/chatgpt-programa-pequenas-empresas-openai-shopify-intuit-2026/",
-      "fecha": "2026-07-23",
-      "impacto": "alto",
-      "porque": "Competidor directo posicionándose en IA aplicada a pymes/ventas: referencia para el benchmarking de la propuesta de valor propia."
-    },
-    {
-      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
-      "fecha": "2026-07-23",
+      "titulo": "AEO y GEO: las nuevas claves para que las pymes sean visibles en los motores de búsqueda con IA",
+      "fuente": "Emol",
+      "url": "https://www.emol.com/noticias/Economia/2026/07/24/1206635/empresas-motores-busqueda-ia.html",
+      "fecha": "2026-07-24",
       "impacto": "medio",
-      "porque": "Modelo de agentes de voz gestionados para atención al cliente; marca hacia dónde va la oferta enterprise de IA conversacional."
+      "porque": "La visibilidad ya no depende solo del SEO tradicional sino de cómo los motores de IA (ChatGPT, Gemini) citan a las marcas: relevante para la estrategia de contenido de domo IA."
     },
     {
-      "titulo": "Neo sale del sigilo con 100 millones de a16z y Bessemer para controlar los agentes de IA en la empresa",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/22/neo-security-100-millones-a16z-bessemer-control-agentes-ia-empresa-julio-2026/",
-      "fecha": "2026-07-22",
+      "titulo": "Meta lanza Seller: nueva app con IA para disputar a eBay el mercado de comerciantes",
+      "fuente": "DiarioBitcoin",
+      "url": "https://www.diariobitcoin.com/tecnologia/meta-lanza-seller-nueva-app-con-ia-para-disputar-a-ebay-el-mercado-de-comerciantes/",
+      "fecha": "2026-07-24",
       "impacto": "medio",
-      "porque": "El mercado empieza a invertir fuerte en gobernanza de agentes de IA en la empresa, relevante para la propia flota de agentes."
+      "porque": "Meta suma IA que sugiere títulos, precios y categorías a vendedores de Marketplace: indica hacia dónde evoluciona la plataforma publicitaria que usa Nuevo Norte."
     },
     {
-      "titulo": "Microsoft y Mistral amplían su alianza estratégica para ofrecer a empresas y sectores regulados modelos de IA de última generación",
-      "fuente": "Microsoft Source EMEA",
-      "url": "https://news.microsoft.com/source/emea/2026/07/microsoft-mistral-alianza-ia-soberana/?lang=es",
-      "fecha": "2026-07-21",
+      "titulo": "Claude renueva su modo de voz: Anthropic suma más inteligencia e integraciones con Gmail y Slack",
+      "fuente": "ITSitio",
+      "url": "https://www.itsitio.com/inteligencia-artificial/claude-renueva-su-modo-de-voz-anthropic-suma-mas-inteligencia-e-integraciones-con-gmail-y-slack/",
+      "fecha": "2026-07-24",
       "impacto": "bajo",
-      "porque": "Enfocado en sectores regulados europeos, pero indica tendencia de adopción enterprise de IA que eventualmente llega a Latam."
+      "porque": "Mejora de producto del proveedor que sostiene la flota de agentes de domo IA; sin impacto inmediato en ventas pero a seguir."
+    },
+    {
+      "titulo": "En Chile 8 de cada 10 empresas ya usan inteligencia artificial, pero la ciberseguridad emerge como el principal desafío",
+      "fuente": "Publimetro Chile",
+      "url": "https://www.publimetro.cl/tecnologia/2026/07/23/en-chile-8-de-cada-10-empresas-ya-usan-inteligencia-artificial-pero-la-ciberseguridad-emerge-como-el-principal-desafio/",
+      "fecha": "2026-07-23",
+      "impacto": "medio",
+      "porque": "Confirma adopción masiva de IA en empresas chilenas, con brecha en gobernanza de datos: argumento a favor de un manejo cuidadoso y visible de datos de clientes en la propuesta de domo IA."
     }
   ]
 }
