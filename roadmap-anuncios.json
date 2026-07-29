@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "generado": "2026-07-29",
+  "titulo": "Roadmap de anuncios",
+  "bajada": "Cada semana se prueba UNA sola cosa, con todo lo demás fijo. Así, cuando algo rinde, se sabe por qué.",
+  "regla": "Ningún anuncio se juzga antes de 7 días. Al que gana se le refuerza el presupuesto; al que no, se pausa. \"Sin conclusión\" también es un resultado válido y se registra.",
+  "ciclos": [
+    {
+      "n": 0,
+      "desde": "2026-07-29",
+      "hasta": "2026-08-03",
+      "titulo": "Ordenar la pauta",
+      "variable": "ninguna — semana de limpieza",
+      "detalle": "Cerrar los nombres de anuncios fuera de convención, confirmar las pausas propuestas, decidir el futuro de los dos ganadores históricos que están detenidos y publicar el kit creativo nuevo.",
+      "estado": "en_curso"
+    },
+    {
+      "n": 1,
+      "desde": "2026-08-04",
+      "hasta": "2026-08-10",
+      "titulo": "Formato",
+      "variable": "imagen vs video corto",
+      "detalle": "Mismo mensaje, misma persona, mismo texto: cambia solo el formato. Sería el primer video de la historia de la cuenta.",
+      "pregunta": "¿El video baja el costo por resultado, o solo sube el costo de producción?",
+      "estado": "proximo"
+    },
+    {
+      "n": 2,
+      "desde": "2026-08-11",
+      "hasta": "2026-08-17",
+      "titulo": "Ángulo",
+      "variable": "tres mensajes distintos compitiendo",
+      "detalle": "Sobre el segmento que mejor rinde hoy (subsidio adjudicado), con el formato ganador del ciclo anterior ya fijo.",
+      "pregunta": "¿El mensaje que domina hoy gana porque es mejor, o porque es el único que se ha probado?",
+      "estado": "planificado"
+    },
+    {
+      "n": 3,
+      "desde": "2026-08-18",
+      "hasta": "2026-08-24",
+      "titulo": "Por definir",
+      "variable": "se elige al cerrar el ciclo 2",
+      "detalle": "Se decide con el dato en la mano, no antes. Candidatos: a quién se le muestra el anuncio, o cuántas preguntas hace Antonia antes de ofrecer hora.",
+      "estado": "planificado"
+    },
+    {
+      "n": 4,
+      "desde": "2026-08-25",
+      "hasta": "2026-08-31",
+      "titulo": "Titular",
+      "variable": "el gancho y los primeros 3 segundos",
+      "detalle": "Mismo visual, mismo mensaje: cambia solo el titular. Es el test más barato y el que más se puede iterar, por eso va al final — cuando ya hay un ganador estable que vale la pena afinar.",
+      "estado": "planificado"
+    }
+  ],
+  "cierre": {
+    "fecha": "2026-09-01",
+    "texto": "Con los 4 ciclos cerrados debería existir, por primera vez, un anuncio de referencia: segmento, mensaje, formato y titular, cada uno ganado en su propio test."
+  }
+}
