@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-28",
+ "actualizado": "2026-07-29",
  "items": [
   {
    "captura": "2026-07-21",
@@ -530,6 +530,66 @@
    "fecha": "2026-07-23",
    "impacto": "medio",
    "porque": "Confirma adopción masiva de IA en empresas chilenas, con brecha en gobernanza de datos: argumento a favor de un manejo cuidadoso y visible de datos de clientes en la propuesta de domo IA."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "inmobiliario",
+   "titulo": "Banco Central mantiene la tasa de interés en 4,5% por presión inflacionaria y debilidad económica",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/mercados/2026/07/28/banco-central-congela-la-tasa-de-interes-por-presion-inflacionaria-y-debilidad-economica/",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "La TPM sin cambios frena una baja más rápida de tasas hipotecarias, prolongando el ciclo de recuperación lenta que golpea la demanda de departamentos."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "inmobiliario",
+   "titulo": "El ABC de la Ley de Reconstrucción: exención transitoria de IVA a la vivienda nueva",
+   "fuente": "Chócale",
+   "url": "https://chocale.cl/2026/07/el-abc-de-la-ley-de-reconstruccion-la-megarreforma-explicada-en-simple/",
+   "fecha": "2026-07-25",
+   "impacto": "alto",
+   "porque": "La expectativa de una rebaja de 6-7% en el precio final por exención de IVA ya está frenando decisiones de compra mientras se tramita — afecta directamente el ritmo de venta de deptos."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "ia",
+   "titulo": "1.122 empleados de OpenAI, Anthropic y Google piden regular el ritmo de desarrollo de la IA (\"Pacing the Frontier\")",
+   "fuente": "Infobae",
+   "url": "https://www.infobae.com/america/agencias/2026/07/29/empleados-de-openai-anthropic-y-google-piden-al-gobierno-de-eeuu-que-regule-el-ritmo-de-desarrollo-de-la-ia/",
+   "fecha": "2026-07-29",
+   "impacto": "bajo",
+   "porque": "Señal de gobernanza de largo plazo sin efecto inmediato en las herramientas de IA que usa hoy el negocio."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "ia",
+   "titulo": "Cómo OpenAI, Google y Anthropic usan sus propios agentes de IA en sus oficinas",
+   "fuente": "eBankingNews",
+   "url": "https://www.ebankingnews.com/2026/07/25/como-openai-google-y-anthropic-usan-sus-propios-agentes-de-ia-en-sus-oficinas/",
+   "fecha": "2026-07-25",
+   "impacto": "medio",
+   "porque": "Tareas de marketing que tomaban 15-60 minutos de carga manual de datos ahora corren en segundos con agentes — aplicable directo al trabajo operativo de domo IA."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "ia",
+   "titulo": "Anthropic elige a Chile para una nueva edición de su programa global Claude Impact Lab",
+   "fuente": "Mundo en Línea",
+   "url": "https://mundoenlinea.cl/2026/07/24/anthropic-elige-a-chile-para-una-nueva-edicion-de-su-programa-global-claude-impact-lab/",
+   "fecha": "2026-07-24",
+   "impacto": "medio",
+   "porque": "Posiciona a Chile como foco de innovación con IA de Anthropic — oportunidad de visibilidad para actores locales de IA aplicada a negocio."
+  },
+  {
+   "captura": "2026-07-29",
+   "area": "ia",
+   "titulo": "Meta Ads Updates julio 2026: cambios en privacidad, tarifas por ubicación y automatización con agentes de IA",
+   "fuente": "Adsuploader",
+   "url": "https://adsuploader.com/es/blog/meta-ads-updates",
+   "fecha": "",
+   "impacto": "alto",
+   "porque": "El recargo de 2-5% por país y las nuevas reglas de privacidad afectan directo el costo y la configuración de las campañas de Meta Ads que corre Nuevo Norte."
   }
  ]
 }

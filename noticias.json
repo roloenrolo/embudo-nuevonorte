@@ -1,64 +1,88 @@
 {
-  "fecha": "2026-07-28",
-  "generado": "2026-07-28T07:35:00-04:00",
+  "fecha": "2026-07-29",
+  "generado": "2026-07-29T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Retrasos en aprobación de obras eleva costos de viviendas en 10%: ranking revela regiones de Chile con más demora para proyectos inmobiliarios",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/regiones/los-lagos-biobio-y-o-higgins-lideran-tramitaciones-excesivas-en-proyectos",
-      "fecha": "2026-07-27",
-      "impacto": "medio",
-      "porque": "Trámites que hoy toman hasta 472 días (Los Lagos a la cabeza) encarecen costos y alargan plazos de entrega, una objeción que puede surgir en conversaciones de venta de Nuevo Norte."
+      "titulo": "Banco Central mantiene la tasa de interés en 4,5% por presión inflacionaria y debilidad económica",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/mercados/2026/07/28/banco-central-congela-la-tasa-de-interes-por-presion-inflacionaria-y-debilidad-economica/",
+      "fecha": "2026-07-28",
+      "impacto": "alto",
+      "porque": "La TPM sin cambios frena una baja más rápida de tasas hipotecarias, prolongando el ciclo de recuperación lenta que golpea la demanda de departamentos."
     },
     {
-      "titulo": "El mercado inmobiliario de Valdivia se reactiva con una caída del 10% en el precio promedio de las viviendas",
-      "fuente": "Los Ríos Noticias",
-      "url": "https://www.losriosnoticias.cl/2026/07/22/el-mercado-inmobiliario-de-valdivia-se-reactiva-con-una-caida-del-10-en-el-precio-promedio-de-las-viviendas/26243",
+      "titulo": "El ABC de la Ley de Reconstrucción: exención transitoria de IVA a la vivienda nueva",
+      "fuente": "Chócale",
+      "url": "https://chocale.cl/2026/07/el-abc-de-la-ley-de-reconstruccion-la-megarreforma-explicada-en-simple/",
+      "fecha": "2026-07-25",
+      "impacto": "alto",
+      "porque": "La expectativa de una rebaja de 6-7% en el precio final por exención de IVA ya está frenando decisiones de compra mientras se tramita — afecta directamente el ritmo de venta de deptos."
+    },
+    {
+      "titulo": "Subsidio de Arriendo 2026: postulaciones abiertas hasta el 7 de agosto",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
       "fecha": "2026-07-22",
-      "impacto": "bajo",
-      "porque": "Señal regional (fuera del foco RM actual) de que el ajuste de precios está reactivando ventas, patrón a monitorear si se replica en el resto del país."
+      "impacto": "medio",
+      "porque": "Desplaza a parte de la demanda hacia arriendo subsidiado en vez de compra — relevante para segmentar mensajes de arriendo vs compra."
+    },
+    {
+      "titulo": "Casi 100 permisos de edificación aprobados en Santiago Centro, pero más de la mitad sin iniciar obras",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/hay-casi-100-permisos-de-edificacion-de-viviendas-aprobados-en-santiago-centro-pero-mas-de-la-mitad-no-ha-iniciado-obras/",
+      "fecha": "2026-07-22",
+      "impacto": "medio",
+      "porque": "Hay stock con permiso pero sin construir en Santiago Centro — la oferta futura de deptos podría tardar más de lo esperado en materializarse."
     },
     {
       "titulo": "El motor inmobiliario de Santiago se traslada a las comunas periféricas, según consultora",
       "fuente": "Diario Financiero",
       "url": "https://www.df.cl/empresas/construccion/el-motor-inmobiliario-de-santiago-se-traslada-a-las-comunas-perifericas",
-      "fecha": "2026-07-20",
-      "impacto": "alto",
-      "porque": "Dato duro de Tinsa (ventas Stgo Q2 2026 +1,7%, La Florida +20,3% liderando): orienta el targeting geográfico de campañas de domo IA y Nuevo Norte."
+      "fecha": "2026-07-22",
+      "impacto": "medio",
+      "porque": "La demanda de deptos se desplaza a comunas periféricas (La Florida +20,3%) — señal para ajustar el foco geográfico de campañas."
     }
   ],
   "ia": [
     {
-      "titulo": "AEO y GEO: las nuevas claves para que las pymes sean visibles en los motores de búsqueda con IA",
-      "fuente": "Emol",
-      "url": "https://www.emol.com/noticias/Economia/2026/07/24/1206635/empresas-motores-busqueda-ia.html",
-      "fecha": "2026-07-24",
-      "impacto": "medio",
-      "porque": "La visibilidad ya no depende solo del SEO tradicional sino de cómo los motores de IA (ChatGPT, Gemini) citan a las marcas: relevante para la estrategia de contenido de domo IA."
-    },
-    {
-      "titulo": "Meta lanza Seller: nueva app con IA para disputar a eBay el mercado de comerciantes",
-      "fuente": "DiarioBitcoin",
-      "url": "https://www.diariobitcoin.com/tecnologia/meta-lanza-seller-nueva-app-con-ia-para-disputar-a-ebay-el-mercado-de-comerciantes/",
-      "fecha": "2026-07-24",
-      "impacto": "medio",
-      "porque": "Meta suma IA que sugiere títulos, precios y categorías a vendedores de Marketplace: indica hacia dónde evoluciona la plataforma publicitaria que usa Nuevo Norte."
-    },
-    {
-      "titulo": "Claude renueva su modo de voz: Anthropic suma más inteligencia e integraciones con Gmail y Slack",
-      "fuente": "ITSitio",
-      "url": "https://www.itsitio.com/inteligencia-artificial/claude-renueva-su-modo-de-voz-anthropic-suma-mas-inteligencia-e-integraciones-con-gmail-y-slack/",
-      "fecha": "2026-07-24",
+      "titulo": "1.122 empleados de OpenAI, Anthropic y Google piden regular el ritmo de desarrollo de la IA (\"Pacing the Frontier\")",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/america/agencias/2026/07/29/empleados-de-openai-anthropic-y-google-piden-al-gobierno-de-eeuu-que-regule-el-ritmo-de-desarrollo-de-la-ia/",
+      "fecha": "2026-07-29",
       "impacto": "bajo",
-      "porque": "Mejora de producto del proveedor que sostiene la flota de agentes de domo IA; sin impacto inmediato en ventas pero a seguir."
+      "porque": "Señal de gobernanza de largo plazo sin efecto inmediato en las herramientas de IA que usa hoy el negocio."
     },
     {
-      "titulo": "En Chile 8 de cada 10 empresas ya usan inteligencia artificial, pero la ciberseguridad emerge como el principal desafío",
-      "fuente": "Publimetro Chile",
-      "url": "https://www.publimetro.cl/tecnologia/2026/07/23/en-chile-8-de-cada-10-empresas-ya-usan-inteligencia-artificial-pero-la-ciberseguridad-emerge-como-el-principal-desafio/",
-      "fecha": "2026-07-23",
+      "titulo": "Cómo OpenAI, Google y Anthropic usan sus propios agentes de IA en sus oficinas",
+      "fuente": "eBankingNews",
+      "url": "https://www.ebankingnews.com/2026/07/25/como-openai-google-y-anthropic-usan-sus-propios-agentes-de-ia-en-sus-oficinas/",
+      "fecha": "2026-07-25",
       "impacto": "medio",
-      "porque": "Confirma adopción masiva de IA en empresas chilenas, con brecha en gobernanza de datos: argumento a favor de un manejo cuidadoso y visible de datos de clientes en la propuesta de domo IA."
+      "porque": "Tareas de marketing que tomaban 15-60 minutos de carga manual de datos ahora corren en segundos con agentes — aplicable directo al trabajo operativo de domo IA."
+    },
+    {
+      "titulo": "Anthropic elige a Chile para una nueva edición de su programa global Claude Impact Lab",
+      "fuente": "Mundo en Línea",
+      "url": "https://mundoenlinea.cl/2026/07/24/anthropic-elige-a-chile-para-una-nueva-edicion-de-su-programa-global-claude-impact-lab/",
+      "fecha": "2026-07-24",
+      "impacto": "medio",
+      "porque": "Posiciona a Chile como foco de innovación con IA de Anthropic — oportunidad de visibilidad para actores locales de IA aplicada a negocio."
+    },
+    {
+      "titulo": "Anthropic lanza Claude Opus 5, modelo de gama media a mitad de precio de Fable 5",
+      "fuente": "wwwhatsnew",
+      "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
+      "fecha": "2026-07-24",
+      "impacto": "medio",
+      "porque": "Baja el costo de usar IA avanzada para tareas de oficina y análisis — relevante para las herramientas internas de domo IA."
+    },
+    {
+      "titulo": "Meta Ads Updates julio 2026: cambios en privacidad, tarifas por ubicación y automatización con agentes de IA",
+      "fuente": "Adsuploader",
+      "url": "https://adsuploader.com/es/blog/meta-ads-updates",
+      "fecha": "",
+      "impacto": "alto",
+      "porque": "El recargo de 2-5% por país y las nuevas reglas de privacidad afectan directo el costo y la configuración de las campañas de Meta Ads que corre Nuevo Norte."
     }
   ]
 }
