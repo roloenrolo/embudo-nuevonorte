@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-29",
+ "actualizado": "2026-07-30",
  "items": [
   {
    "captura": "2026-07-21",
@@ -590,6 +590,76 @@
    "fecha": "",
    "impacto": "alto",
    "porque": "El recargo de 2-5% por país y las nuevas reglas de privacidad afectan directo el costo y la configuración de las campañas de Meta Ads que corre Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/29/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+   "fecha": "2026-07-29",
+   "impacto": "alto",
+   "porque": "Postulación cierra el 7-ago; subsidio-vence-a2 (mismo programa) es hoy el mejor anuncio de Nuevo Norte ($3.28/lead) — el cierre del plazo puede acelerar o cortar esa demanda."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: cómo postular, requisitos y montos del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/25/podrias-recibir-hasta-200-mil-al-mes-para-tu-arriendo-como-postular-al-beneficio-2026/",
+   "fecha": "2026-07-25",
+   "impacto": "medio",
+   "porque": "Detalle de montos (hasta $200 mil/mes) útil para los mensajes de la campaña subsidio-vence-a2."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "ia",
+   "titulo": "Cómo WhatsApp con Inteligencia Artificial se consolida como el principal canal de atención, ventas y cobranza para empresas",
+   "fuente": "EbankingNews",
+   "url": "https://www.ebankingnews.com/2026/07/28/como-whatsapp-con-inteligencia-artificial-se-consolidacomo-el-principal-canal-de-atencion-ventas-y-cobranza-para-empresas/",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "63% de empresas en Chile ya usa WhatsApp+IA para ventas — canal central del embudo de Nuevo Norte (WhatsApp: 511 escribieron → 21 agendaron)."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "ia",
+   "titulo": "Marketing Trends July 27: ChatGPT Ads Go Live",
+   "fuente": "B2the7",
+   "url": "https://www.b2the7.com/news-blog/marketing-trends-july-27-2026-chatgpt-ads",
+   "fecha": "2026-07-27",
+   "impacto": "medio",
+   "porque": "OpenAI abrió una plataforma de ads self-serve dentro de ChatGPT — nuevo canal potencial de pauta a evaluar a futuro."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "ia",
+   "titulo": "This Week in AI in Marketing & Management (27th Jul 26)",
+   "fuente": "Anicca",
+   "url": "https://anicca.co.uk/blog/2026-07-25-ai-in-marketing-management/",
+   "fecha": "2026-07-25",
+   "impacto": "medio",
+   "porque": "Google reportó +14% de ingresos por ads gracias a AI Max — la optimización automática de campañas sigue ganando peso frente a la gestión manual."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "ia",
+   "titulo": "Google AI Max for Standard Shopping Campaigns se expande",
+   "fuente": "Common Thread Collective",
+   "url": "https://commonthreadco.com/blogs/coachs-corner/google-ai-max-shopping-campaigns-july-2026-ecommerce",
+   "fecha": "2026-07-24",
+   "impacto": "medio",
+   "porque": "Google reporta +5% en conversiones a igual costo con AI Max — relevante si domo IA corre o evalúa campañas en Google Ads además de Meta."
+  },
+  {
+   "captura": "2026-07-30",
+   "area": "ia",
+   "titulo": "Meta Business Agent Billing Starts Aug 1: Free Test Window Ends in Days",
+   "fuente": "Tech Times",
+   "url": "https://www.techtimes.com/articles/320787/20260716/meta-business-agent-billing-starts-aug-1-free-test-window-ends-days.htm",
+   "fecha": "2026-07-16",
+   "impacto": "alto",
+   "porque": "Desde el 1-ago Meta cobra por token (~4-5 centavos/mensaje) el agente de IA nativo de WhatsApp — impacta directo el costo por conversación que hoy mide Matías (CPA-conversación)."
   }
  ]
 }
