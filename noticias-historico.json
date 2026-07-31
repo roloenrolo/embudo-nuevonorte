@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-30",
+ "actualizado": "2026-07-31",
  "items": [
   {
    "captura": "2026-07-21",
@@ -660,6 +660,56 @@
    "fecha": "2026-07-16",
    "impacto": "alto",
    "porque": "Desde el 1-ago Meta cobra por token (~4-5 centavos/mensaje) el agente de IA nativo de WhatsApp — impacta directo el costo por conversación que hoy mide Matías (CPA-conversación)."
+  },
+  {
+   "captura": "2026-07-31",
+   "area": "inmobiliario",
+   "titulo": "Gobierno mantiene plazo de caducidad de permisos de construcción en reforma para impulsar sector inmobiliario",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/construccion/gobierno-mantiene-plazo-de-caducidad-de-permisos-de-construccion-en-reforma",
+   "fecha": "2026-07-30",
+   "impacto": "alto",
+   "porque": "La reforma a la OGUC (decreto presentado a Contraloría el 30-jul) proyecta bajar 10-15% el precio de viviendas nuevas y reactivar el sector — cambia el contexto de oferta y precios que enmarca las campañas de Nuevo Norte."
+  },
+  {
+   "captura": "2026-07-31",
+   "area": "inmobiliario",
+   "titulo": "\"Loteos brujos\": el desafío pendiente del Estado para evitar catástrofes",
+   "fuente": "Diario El Día",
+   "url": "https://www.diarioeldia.cl/noticias/2026/07/30/146297-loteos-brujos-el-desafio-pendiente-del-estado-para-evitar-catastrofes",
+   "fecha": "2026-07-30",
+   "impacto": "bajo",
+   "porque": "Riesgo legal de subdivisiones rurales sin permiso municipal — alerta reputacional a vigilar si el pipeline capta terrenos irregulares, aunque no afecta directamente el negocio hoy."
+  },
+  {
+   "captura": "2026-07-31",
+   "area": "inmobiliario",
+   "titulo": "Santiago Centro acelera su recuperación inmobiliaria: ventas impulsan la absorción de stock",
+   "fuente": "Mercados & Inmobiliarios",
+   "url": "https://mercadosinmobiliarios.cl/articulo/santiago-centro-acelera-su-recuperacion-inmobiliaria-ventas-impulsan-la-absorcion-de-stock-y-abren-espacio-para-una-nueva-etapa-de-desarrollo",
+   "fecha": "2026-07-27",
+   "impacto": "alto",
+   "porque": "El subsidio a la tasa está acelerando ventas de entrega inmediata en una comuna clave — señal de dónde está la demanda hoy para orientar presupuesto de campañas."
+  },
+  {
+   "captura": "2026-07-31",
+   "area": "ia",
+   "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
+   "fuente": "PressPeru",
+   "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
+   "fecha": "2026-07-29",
+   "impacto": "alto",
+   "porque": "Agentes de IA que actúan sobre catálogo, inventario y pedidos en tiempo real — referencia directa de hacia dónde va la automatización de ventas que hoy corre Matías."
+  },
+  {
+   "captura": "2026-07-31",
+   "area": "ia",
+   "titulo": "¿Puede una IA comprar por ti? El riesgo de dejar dinero y decisiones en manos de un agente",
+   "fuente": "El Debate",
+   "url": "https://www.eldebate.com/tecnologia/20260729/puede-ia-comprar-ti-riesgo-dejar-dinero-decisiones-manos-agente_442278.html",
+   "fecha": "2026-07-29",
+   "impacto": "medio",
+   "porque": "Plantea los riesgos de delegar decisiones a agentes autónomos — relevante para calibrar cuánta autonomía dar al motor de reglas (F2) de Matías."
   }
  ]
 }
