@@ -1,64 +1,88 @@
 {
-  "fecha": "2026-07-31",
-  "generado": "2026-07-31T07:35:00-04:00",
+  "fecha": "2026-08-01",
+  "generado": "2026-08-01T07:35:00-04:00",
   "inmobiliario": [
+    {
+      "titulo": "Subsidio a la tasa y nuevos créditos reactivan el mercado de viviendas económicas en Chile",
+      "fuente": "Diario El Pulso",
+      "url": "https://www.diarioelpulso.cl/2026/07/31/subsidio-a-la-tasa-y-nuevos-creditos-reactivan-el-mercado-de-viviendas-economicas-en-chile/",
+      "fecha": "2026-07-31",
+      "impacto": "alto",
+      "porque": "El subsidio sigue siendo el gancho principal de venta bajo 4.000 UF, el mismo segmento que trabajan las campañas de asesoría y subsidio."
+    },
+    {
+      "titulo": "Mercado inmobiliario se enfría: precio de departamentos nuevos sube en la RM y la demanda por viviendas cae a la espera del IVA 0",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
+      "fecha": "2026-07-31",
+      "impacto": "alto",
+      "porque": "Compradores están pausando decisiones a la espera del IVA 0%, lo que puede enfriar leads de corto plazo y exige ajustar el mensaje de las campañas."
+    },
     {
       "titulo": "Gobierno mantiene plazo de caducidad de permisos de construcción en reforma para impulsar sector inmobiliario",
       "fuente": "Diario Financiero",
       "url": "https://www.df.cl/empresas/construccion/gobierno-mantiene-plazo-de-caducidad-de-permisos-de-construccion-en-reforma",
       "fecha": "2026-07-30",
-      "impacto": "alto",
-      "porque": "La reforma a la OGUC (decreto presentado a Contraloría el 30-jul) proyecta bajar 10-15% el precio de viviendas nuevas y reactivar el sector — cambia el contexto de oferta y precios que enmarca las campañas de Nuevo Norte."
+      "impacto": "medio",
+      "porque": "Mantiene presión sobre desarrolladores para vender antes del vencimiento de permisos, sin cambiar el escenario de fondo para leads."
     },
     {
-      "titulo": "\"Loteos brujos\": el desafío pendiente del Estado para evitar catástrofes",
-      "fuente": "Diario El Día",
-      "url": "https://www.diarioeldia.cl/noticias/2026/07/30/146297-loteos-brujos-el-desafio-pendiente-del-estado-para-evitar-catastrofes",
-      "fecha": "2026-07-30",
-      "impacto": "bajo",
-      "porque": "Riesgo legal de subdivisiones rurales sin permiso municipal — alerta reputacional a vigilar si el pipeline capta terrenos irregulares, aunque no afecta directamente el negocio hoy."
-    },
-    {
-      "titulo": "Santiago Centro acelera su recuperación inmobiliaria: ventas impulsan la absorción de stock",
-      "fuente": "Mercados & Inmobiliarios",
-      "url": "https://mercadosinmobiliarios.cl/articulo/santiago-centro-acelera-su-recuperacion-inmobiliaria-ventas-impulsan-la-absorcion-de-stock-y-abren-espacio-para-una-nueva-etapa-de-desarrollo",
-      "fecha": "2026-07-27",
+      "titulo": "Subsidio a la tasa hipotecaria supera a suspensión del IVA en preferencias de potenciales compradores de vivienda",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-hipotecaria-supera-a-suspension-del-iva-en-preferencias",
+      "fecha": "2026-07-28",
       "impacto": "alto",
-      "porque": "El subsidio a la tasa está acelerando ventas de entrega inmediata en una comuna clave — señal de dónde está la demanda hoy para orientar presupuesto de campañas."
+      "porque": "Confirma que el subsidio a la tasa (no el IVA) es el incentivo que más mueve la decisión de compra, útil para calibrar el copy de campañas."
     },
     {
       "titulo": "Subsidio a la tasa impulsa el acceso a la vivienda y se acerca a los 30 mil créditos hipotecarios otorgados",
       "fuente": "Construnoticias",
       "url": "https://construnoticias.com/2026/07/23/subsidio-a-la-tasa-impulsa-el-acceso-a-la-vivienda-y-se-acerca-a-los-30-mil-creditos-hipotecarios-otorgados/",
       "fecha": "2026-07-23",
-      "impacto": "alto",
-      "porque": "El subsidio sigue siendo el principal driver de decisión de compra (53,9% de preferencia sobre otras políticas) — mensaje central que deben seguir explotando los anuncios de asesoria_datos."
+      "impacto": "medio",
+      "porque": "Ritmo de aprobación sostenido; con cupos limitados (50 mil), el plazo para capturar leads con este incentivo se acorta."
     }
   ],
   "ia": [
+    {
+      "titulo": "Prosus lanza ToqanClaw en Argentina, una plataforma de IA agéntica para pymes que no requiere conocimientos de programación",
+      "fuente": "El Diario 24",
+      "url": "https://www.eldiario24.com/tecnologia/2026/07/31/toqanclaw-ia-agentica-argentina",
+      "fecha": "2026-07-31",
+      "impacto": "medio",
+      "porque": "Baja la barrera para que pymes de la región automaticen procesos de venta sin programar; competencia potencial directa para herramientas propias."
+    },
+    {
+      "titulo": "Encore AI levanta 30M$ en Serie A: agentes IA que replican a los empleados estrella",
+      "fuente": "Merca2",
+      "url": "https://www.merca2.es/2026/07/30/encore-ai-ronda-serie-a-agentes-ia-2427214/",
+      "fecha": "2026-07-30",
+      "impacto": "medio",
+      "porque": "Valida el modelo de agentes entrenados con datos de conversaciones/CRM para replicar al mejor vendedor, aplicable al funnel de asesoría de Nuevo Norte."
+    },
     {
       "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
       "fuente": "PressPeru",
       "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
       "fecha": "2026-07-29",
       "impacto": "alto",
-      "porque": "Agentes de IA que actúan sobre catálogo, inventario y pedidos en tiempo real — referencia directa de hacia dónde va la automatización de ventas que hoy corre Matías."
+      "porque": "Un líder de mercado sube el estándar de automatización comercial con agentes, lo que eleva la expectativa de clientes sobre lo que un agente IA debe resolver."
     },
     {
-      "titulo": "¿Puede una IA comprar por ti? El riesgo de dejar dinero y decisiones en manos de un agente",
-      "fuente": "El Debate",
-      "url": "https://www.eldebate.com/tecnologia/20260729/puede-ia-comprar-ti-riesgo-dejar-dinero-decisiones-manos-agente_442278.html",
-      "fecha": "2026-07-29",
-      "impacto": "medio",
-      "porque": "Plantea los riesgos de delegar decisiones a agentes autónomos — relevante para calibrar cuánta autonomía dar al motor de reglas (F2) de Matías."
+      "titulo": "Los agentes de IA comienzan a decidir qué compran los consumidores",
+      "fuente": "trendTIC",
+      "url": "https://www.trendtic.cl/2026/07/reciente-investigacion-de-expertos-revela-nuevas-reglas-de-comercio-los-agentes-de-ia-comienzan-a-decidir-que-compran-los-consumidores/",
+      "fecha": "2026-07-28",
+      "impacto": "alto",
+      "porque": "Si agentes de compra empiezan a filtrar oferta antes de llegar al humano, cambia cómo hay que estructurar anuncios y contenido para ser \"legible\" por IA."
     },
     {
-      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz: de vender modelos a gestionar agentes",
+      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz",
       "fuente": "WWWhatsnew",
       "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
       "fecha": "2026-07-23",
       "impacto": "alto",
-      "porque": "Agentes de voz con escalado a humanos para atención y facturación — modelo a mirar si domo IA quiere sumar voz a los flujos de WhatsApp de Nuevo Norte."
+      "porque": "OpenAI entra directo a atención al cliente empresarial con voz y chat, presionando precios y expectativas de lo que debe resolver un agente IA."
     }
   ]
 }

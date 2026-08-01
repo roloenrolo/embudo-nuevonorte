@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-31",
+ "actualizado": "2026-08-01",
  "items": [
   {
    "captura": "2026-07-21",
@@ -710,6 +710,66 @@
    "fecha": "2026-07-29",
    "impacto": "medio",
    "porque": "Plantea los riesgos de delegar decisiones a agentes autónomos — relevante para calibrar cuánta autonomía dar al motor de reglas (F2) de Matías."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "inmobiliario",
+   "titulo": "Subsidio a la tasa y nuevos créditos reactivan el mercado de viviendas económicas en Chile",
+   "fuente": "Diario El Pulso",
+   "url": "https://www.diarioelpulso.cl/2026/07/31/subsidio-a-la-tasa-y-nuevos-creditos-reactivan-el-mercado-de-viviendas-economicas-en-chile/",
+   "fecha": "2026-07-31",
+   "impacto": "alto",
+   "porque": "El subsidio sigue siendo el gancho principal de venta bajo 4.000 UF, el mismo segmento que trabajan las campañas de asesoría y subsidio."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "inmobiliario",
+   "titulo": "Mercado inmobiliario se enfría: precio de departamentos nuevos sube en la RM y la demanda por viviendas cae a la espera del IVA 0",
+   "fuente": "The Clinic",
+   "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
+   "fecha": "2026-07-31",
+   "impacto": "alto",
+   "porque": "Compradores están pausando decisiones a la espera del IVA 0%, lo que puede enfriar leads de corto plazo y exige ajustar el mensaje de las campañas."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "inmobiliario",
+   "titulo": "Subsidio a la tasa hipotecaria supera a suspensión del IVA en preferencias de potenciales compradores de vivienda",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-hipotecaria-supera-a-suspension-del-iva-en-preferencias",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "Confirma que el subsidio a la tasa (no el IVA) es el incentivo que más mueve la decisión de compra, útil para calibrar el copy de campañas."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "ia",
+   "titulo": "Prosus lanza ToqanClaw en Argentina, una plataforma de IA agéntica para pymes que no requiere conocimientos de programación",
+   "fuente": "El Diario 24",
+   "url": "https://www.eldiario24.com/tecnologia/2026/07/31/toqanclaw-ia-agentica-argentina",
+   "fecha": "2026-07-31",
+   "impacto": "medio",
+   "porque": "Baja la barrera para que pymes de la región automaticen procesos de venta sin programar; competencia potencial directa para herramientas propias."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "ia",
+   "titulo": "Encore AI levanta 30M$ en Serie A: agentes IA que replican a los empleados estrella",
+   "fuente": "Merca2",
+   "url": "https://www.merca2.es/2026/07/30/encore-ai-ronda-serie-a-agentes-ia-2427214/",
+   "fecha": "2026-07-30",
+   "impacto": "medio",
+   "porque": "Valida el modelo de agentes entrenados con datos de conversaciones/CRM para replicar al mejor vendedor, aplicable al funnel de asesoría de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-01",
+   "area": "ia",
+   "titulo": "Los agentes de IA comienzan a decidir qué compran los consumidores",
+   "fuente": "trendTIC",
+   "url": "https://www.trendtic.cl/2026/07/reciente-investigacion-de-expertos-revela-nuevas-reglas-de-comercio-los-agentes-de-ia-comienzan-a-decidir-que-compran-los-consumidores/",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "Si agentes de compra empiezan a filtrar oferta antes de llegar al humano, cambia cómo hay que estructurar anuncios y contenido para ser \"legible\" por IA."
   }
  ]
 }
