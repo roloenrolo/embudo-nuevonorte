@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-01",
+ "actualizado": "2026-08-02",
  "items": [
   {
    "captura": "2026-07-21",
@@ -770,6 +770,66 @@
    "fecha": "2026-07-28",
    "impacto": "alto",
    "porque": "Si agentes de compra empiezan a filtrar oferta antes de llegar al humano, cambia cómo hay que estructurar anuncios y contenido para ser \"legible\" por IA."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "inmobiliario",
+   "titulo": "Gobierno presenta a Contraloría reforma a la OGUC que proyecta bajar 10-15% el precio de viviendas nuevas",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/29/gobierno-propondra-una-modificacion-a-ordenanza-de-construccion-menos-radical-de-lo-esperado.shtml",
+   "fecha": "2026-07-29",
+   "impacto": "alto",
+   "porque": "Si baja el precio de la vivienda nueva cambia el ángulo de venta para proyectos nuevos; vale monitorear el trámite en Contraloría."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "inmobiliario",
+   "titulo": "Banco Central mantiene la TPM en 4,5% por quinta reunión consecutiva",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "Las tasas hipotecarias no seguirán bajando en el corto plazo; ajustar mensajes de creativos que prometen 'tasas en baja'."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "inmobiliario",
+   "titulo": "El auge de la tokenización inmobiliaria en Chile",
+   "fuente": "El Insular",
+   "url": "https://elinsular.cl/2026/07/29/el-auge-de-la-tokenizacion-inmobiliaria/",
+   "fecha": "2026-07-29",
+   "impacto": "bajo",
+   "porque": "Tendencia emergente de inversión fraccionada regulada por la CMF; impacto bajo e indirecto en captación de leads B2C."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "ia",
+   "titulo": "Salesforce reporta que las compras iniciadas en chats de IA suben 200% interanual",
+   "fuente": "Martech Notes",
+   "url": "https://www.martechnotes.com/salesforce-says-agentic-search-is-up-200-as-shoppers-start-in-ai-chat-on-july-28-2026/",
+   "fecha": "2026-07-28",
+   "impacto": "alto",
+   "porque": "Confirma que el comercio conversacional ya mueve venta real; refuerza la apuesta por atención vía WhatsApp/chat."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "ia",
+   "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce con agentes Shopper, Buyer y Merchant",
+   "fuente": "itwarelatam",
+   "url": "https://itwarelatam.com/2026/07/25/salesforce-agentforce-commerce/",
+   "fecha": "2026-07-25",
+   "impacto": "medio",
+   "porque": "Referencia de cómo la competencia empaqueta agentes de venta end-to-end; benchmark de funcionalidades a igualar."
+  },
+  {
+   "captura": "2026-08-02",
+   "area": "ia",
+   "titulo": "ChatGPT Work: nuevo agente de OpenAI para operar sobre CRM, correo y flujos de negocio",
+   "fuente": "Marketing4eCommerce",
+   "url": "https://marketing4ecommerce.net/chatgpt-work/",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "Agentes que operan directo sobre CRM y correo son competencia directa del tipo de automatización que ofrece domo IA."
   }
  ]
 }

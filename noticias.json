@@ -1,88 +1,80 @@
 {
-  "fecha": "2026-08-01",
-  "generado": "2026-08-01T07:35:00-04:00",
+  "fecha": "2026-08-02",
+  "generado": "2026-08-02T07:38:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Subsidio a la tasa y nuevos créditos reactivan el mercado de viviendas económicas en Chile",
-      "fuente": "Diario El Pulso",
-      "url": "https://www.diarioelpulso.cl/2026/07/31/subsidio-a-la-tasa-y-nuevos-creditos-reactivan-el-mercado-de-viviendas-economicas-en-chile/",
-      "fecha": "2026-07-31",
+      "titulo": "Gobierno presenta a Contraloría reforma a la OGUC que proyecta bajar 10-15% el precio de viviendas nuevas",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/29/gobierno-propondra-una-modificacion-a-ordenanza-de-construccion-menos-radical-de-lo-esperado.shtml",
+      "fecha": "2026-07-29",
       "impacto": "alto",
-      "porque": "El subsidio sigue siendo el gancho principal de venta bajo 4.000 UF, el mismo segmento que trabajan las campañas de asesoría y subsidio."
+      "porque": "Si baja el precio de la vivienda nueva cambia el ángulo de venta para proyectos nuevos; vale monitorear el trámite en Contraloría."
     },
     {
-      "titulo": "Mercado inmobiliario se enfría: precio de departamentos nuevos sube en la RM y la demanda por viviendas cae a la espera del IVA 0",
-      "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
-      "fecha": "2026-07-31",
-      "impacto": "alto",
-      "porque": "Compradores están pausando decisiones a la espera del IVA 0%, lo que puede enfriar leads de corto plazo y exige ajustar el mensaje de las campañas."
-    },
-    {
-      "titulo": "Gobierno mantiene plazo de caducidad de permisos de construcción en reforma para impulsar sector inmobiliario",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/gobierno-mantiene-plazo-de-caducidad-de-permisos-de-construccion-en-reforma",
-      "fecha": "2026-07-30",
-      "impacto": "medio",
-      "porque": "Mantiene presión sobre desarrolladores para vender antes del vencimiento de permisos, sin cambiar el escenario de fondo para leads."
-    },
-    {
-      "titulo": "Subsidio a la tasa hipotecaria supera a suspensión del IVA en preferencias de potenciales compradores de vivienda",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-hipotecaria-supera-a-suspension-del-iva-en-preferencias",
+      "titulo": "Banco Central mantiene la TPM en 4,5% por quinta reunión consecutiva",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
       "fecha": "2026-07-28",
       "impacto": "alto",
-      "porque": "Confirma que el subsidio a la tasa (no el IVA) es el incentivo que más mueve la decisión de compra, útil para calibrar el copy de campañas."
+      "porque": "Las tasas hipotecarias no seguirán bajando en el corto plazo; ajustar mensajes de creativos que prometen 'tasas en baja'."
     },
     {
-      "titulo": "Subsidio a la tasa impulsa el acceso a la vivienda y se acerca a los 30 mil créditos hipotecarios otorgados",
-      "fuente": "Construnoticias",
-      "url": "https://construnoticias.com/2026/07/23/subsidio-a-la-tasa-impulsa-el-acceso-a-la-vivienda-y-se-acerca-a-los-30-mil-creditos-hipotecarios-otorgados/",
-      "fecha": "2026-07-23",
+      "titulo": "El auge de la tokenización inmobiliaria en Chile",
+      "fuente": "El Insular",
+      "url": "https://elinsular.cl/2026/07/29/el-auge-de-la-tokenizacion-inmobiliaria/",
+      "fecha": "2026-07-29",
+      "impacto": "bajo",
+      "porque": "Tendencia emergente de inversión fraccionada regulada por la CMF; impacto bajo e indirecto en captación de leads B2C."
+    },
+    {
+      "titulo": "Ventas de departamentos en la Región Metropolitana crecieron 4,4% en el segundo trimestre",
+      "fuente": "Diario Estrategia",
+      "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5960694/resultados-segundo-trimestre-2026-ventas-departamentos-crecieron-44-concentran-85-mercado-rm",
+      "fecha": "",
       "impacto": "medio",
-      "porque": "Ritmo de aprobación sostenido; con cupos limitados (50 mil), el plazo para capturar leads con este incentivo se acorta."
+      "porque": "Departamentos siguen siendo el motor de venta en la RM, con La Florida liderando (+20,3%); útil para segmentar campañas por comuna."
     }
   ],
   "ia": [
     {
-      "titulo": "Prosus lanza ToqanClaw en Argentina, una plataforma de IA agéntica para pymes que no requiere conocimientos de programación",
-      "fuente": "El Diario 24",
-      "url": "https://www.eldiario24.com/tecnologia/2026/07/31/toqanclaw-ia-agentica-argentina",
-      "fecha": "2026-07-31",
-      "impacto": "medio",
-      "porque": "Baja la barrera para que pymes de la región automaticen procesos de venta sin programar; competencia potencial directa para herramientas propias."
-    },
-    {
-      "titulo": "Encore AI levanta 30M$ en Serie A: agentes IA que replican a los empleados estrella",
-      "fuente": "Merca2",
-      "url": "https://www.merca2.es/2026/07/30/encore-ai-ronda-serie-a-agentes-ia-2427214/",
-      "fecha": "2026-07-30",
-      "impacto": "medio",
-      "porque": "Valida el modelo de agentes entrenados con datos de conversaciones/CRM para replicar al mejor vendedor, aplicable al funnel de asesoría de Nuevo Norte."
-    },
-    {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
-      "fuente": "PressPeru",
-      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
-      "fecha": "2026-07-29",
-      "impacto": "alto",
-      "porque": "Un líder de mercado sube el estándar de automatización comercial con agentes, lo que eleva la expectativa de clientes sobre lo que un agente IA debe resolver."
-    },
-    {
-      "titulo": "Los agentes de IA comienzan a decidir qué compran los consumidores",
-      "fuente": "trendTIC",
-      "url": "https://www.trendtic.cl/2026/07/reciente-investigacion-de-expertos-revela-nuevas-reglas-de-comercio-los-agentes-de-ia-comienzan-a-decidir-que-compran-los-consumidores/",
+      "titulo": "Salesforce reporta que las compras iniciadas en chats de IA suben 200% interanual",
+      "fuente": "Martech Notes",
+      "url": "https://www.martechnotes.com/salesforce-says-agentic-search-is-up-200-as-shoppers-start-in-ai-chat-on-july-28-2026/",
       "fecha": "2026-07-28",
       "impacto": "alto",
-      "porque": "Si agentes de compra empiezan a filtrar oferta antes de llegar al humano, cambia cómo hay que estructurar anuncios y contenido para ser \"legible\" por IA."
+      "porque": "Confirma que el comercio conversacional ya mueve venta real; refuerza la apuesta por atención vía WhatsApp/chat."
     },
     {
-      "titulo": "OpenAI lanza Presence, su plataforma enterprise de agentes de voz",
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce con agentes Shopper, Buyer y Merchant",
+      "fuente": "itwarelatam",
+      "url": "https://itwarelatam.com/2026/07/25/salesforce-agentforce-commerce/",
+      "fecha": "2026-07-25",
+      "impacto": "medio",
+      "porque": "Referencia de cómo la competencia empaqueta agentes de venta end-to-end; benchmark de funcionalidades a igualar."
+    },
+    {
+      "titulo": "OpenAI lanza Presence, plataforma enterprise de agentes de voz para ventas outbound y atención",
       "fuente": "WWWhatsnew",
       "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
       "fecha": "2026-07-23",
       "impacto": "alto",
-      "porque": "OpenAI entra directo a atención al cliente empresarial con voz y chat, presionando precios y expectativas de lo que debe resolver un agente IA."
+      "porque": "Valida el modelo de agente de voz para ventas outbound, línea de negocio directamente comparable a la de Nuevo Norte."
+    },
+    {
+      "titulo": "OpenAI lanza el programa ChatGPT para pequeñas empresas, con partners como Shopify e Intuit",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/07/23/chatgpt-programa-pequenas-empresas-openai-shopify-intuit-2026/",
+      "fecha": "2026-07-23",
+      "impacto": "medio",
+      "porque": "Baja la barrera de adopción de IA en pymes; más prospectos llegarán ya familiarizados con agentes de IA."
+    },
+    {
+      "titulo": "ChatGPT Work: nuevo agente de OpenAI para operar sobre CRM, correo y flujos de negocio",
+      "fuente": "Marketing4eCommerce",
+      "url": "https://marketing4ecommerce.net/chatgpt-work/",
+      "fecha": "",
+      "impacto": "medio",
+      "porque": "Agentes que operan directo sobre CRM y correo son competencia directa del tipo de automatización que ofrece domo IA."
     }
   ]
 }
