@@ -1,80 +1,88 @@
 {
-  "fecha": "2026-08-02",
-  "generado": "2026-08-02T07:38:00-04:00",
+  "fecha": "2026-08-03",
+  "generado": "2026-08-03T07:36:30-04:00",
   "inmobiliario": [
     {
-      "titulo": "Gobierno presenta a Contraloría reforma a la OGUC que proyecta bajar 10-15% el precio de viviendas nuevas",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/29/gobierno-propondra-una-modificacion-a-ordenanza-de-construccion-menos-radical-de-lo-esperado.shtml",
-      "fecha": "2026-07-29",
+      "titulo": "Interés por comprar vivienda nueva crece un 15% en Chile: casas lideran el dinamismo",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/mercados/2026/07/31/interes-por-comprar-vivienda-nueva-crece-un-15-en-chile-casas-lideran-el-dinamismo/",
+      "fecha": "2026-07-31",
       "impacto": "alto",
-      "porque": "Si baja el precio de la vivienda nueva cambia el ángulo de venta para proyectos nuevos; vale monitorear el trámite en Contraloría."
+      "porque": "Demanda de vivienda nueva al alza y giro hacia casas: relevante para orientar mensajes y foco de producto de Nuevo Norte."
     },
     {
-      "titulo": "Banco Central mantiene la TPM en 4,5% por quinta reunión consecutiva",
+      "titulo": "Subsidio a la tasa hipotecaria supera a suspensión del IVA en preferencias de compradores",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-hipotecaria-supera-a-suspension-del-iva-en-preferencias",
+      "fecha": "2026-07-28",
+      "impacto": "alto",
+      "porque": "Los compradores prefieren el subsidio a la tasa por sobre la suspensión del IVA: el copy de venta debe enfatizar la tasa, no el IVA."
+    },
+    {
+      "titulo": "Banco Central mantiene la tasa de política monetaria en 4,5%",
       "fuente": "BioBioChile",
       "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
       "fecha": "2026-07-28",
-      "impacto": "alto",
-      "porque": "Las tasas hipotecarias no seguirán bajando en el corto plazo; ajustar mensajes de creativos que prometen 'tasas en baja'."
-    },
-    {
-      "titulo": "El auge de la tokenización inmobiliaria en Chile",
-      "fuente": "El Insular",
-      "url": "https://elinsular.cl/2026/07/29/el-auge-de-la-tokenizacion-inmobiliaria/",
-      "fecha": "2026-07-29",
-      "impacto": "bajo",
-      "porque": "Tendencia emergente de inversión fraccionada regulada por la CMF; impacto bajo e indirecto en captación de leads B2C."
-    },
-    {
-      "titulo": "Ventas de departamentos en la Región Metropolitana crecieron 4,4% en el segundo trimestre",
-      "fuente": "Diario Estrategia",
-      "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5960694/resultados-segundo-trimestre-2026-ventas-departamentos-crecieron-44-concentran-85-mercado-rm",
-      "fecha": "",
       "impacto": "medio",
-      "porque": "Departamentos siguen siendo el motor de venta en la RM, con La Florida liderando (+20,3%); útil para segmentar campañas por comuna."
+      "porque": "Sin recorte adicional de tasas en el corto plazo: el crédito hipotecario no se abarata más por ahora."
+    },
+    {
+      "titulo": "Con ayuda de la IA, Minvu procesa observaciones para reforma que busca bajar 10-15% el precio de viviendas",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/construccion/con-ayuda-de-la-ia-minvu-procesa-observaciones-para-definir-ajustes-y",
+      "fecha": "2026-07-24",
+      "impacto": "alto",
+      "porque": "Reforma a la OGUC en curso podría bajar precios y reactivar oferta: cambia el escenario de precios a mediano plazo."
+    },
+    {
+      "titulo": "Retrasos en aprobación de obras elevan costos de viviendas en 10%",
+      "fuente": "Diario Financiero (estudio Colliers)",
+      "url": "https://www.df.cl/regiones/los-lagos-biobio-y-o-higgins-lideran-tramitaciones-excesivas-en-proyectos",
+      "fecha": "2026-07-27",
+      "impacto": "medio",
+      "porque": "La permisología sigue encareciendo proyectos: presión de costos que puede trasladarse a precios de venta."
     }
   ],
   "ia": [
     {
-      "titulo": "Salesforce reporta que las compras iniciadas en chats de IA suben 200% interanual",
-      "fuente": "Martech Notes",
-      "url": "https://www.martechnotes.com/salesforce-says-agentic-search-is-up-200-as-shoppers-start-in-ai-chat-on-july-28-2026/",
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
+      "fuente": "PressPeru",
+      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
+      "fecha": "2026-07-29",
+      "impacto": "alto",
+      "porque": "Comercio agéntico ya mueve ventas reales (retailers con Buyer Agent crecen 59% más rápido): referencia directa para IA aplicada a ventas."
+    },
+    {
+      "titulo": "Agentes de IA comienzan a decidir qué compran los consumidores, según informe global",
+      "fuente": "trendTIC",
+      "url": "https://www.trendtic.cl/2026/07/reciente-investigacion-de-expertos-revela-nuevas-reglas-de-comercio-los-agentes-de-ia-comienzan-a-decidir-que-compran-los-consumidores/",
       "fecha": "2026-07-28",
       "impacto": "alto",
-      "porque": "Confirma que el comercio conversacional ya mueve venta real; refuerza la apuesta por atención vía WhatsApp/chat."
+      "porque": "Anticipa que el marketing deberá dirigirse también a agentes de IA compradores, no solo a personas."
     },
     {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce con agentes Shopper, Buyer y Merchant",
-      "fuente": "itwarelatam",
-      "url": "https://itwarelatam.com/2026/07/25/salesforce-agentforce-commerce/",
-      "fecha": "2026-07-25",
+      "titulo": "Anthropic lanza Claude Opus 5, modelo casi frontera a mitad de precio",
+      "fuente": "wwwhatsnew / Fast Company",
+      "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
+      "fecha": "2026-07-24",
       "impacto": "medio",
-      "porque": "Referencia de cómo la competencia empaqueta agentes de venta end-to-end; benchmark de funcionalidades a igualar."
+      "porque": "Automatización de tareas de negocio y programación más accesible en costo para equipos pequeños."
     },
     {
-      "titulo": "OpenAI lanza Presence, plataforma enterprise de agentes de voz para ventas outbound y atención",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/23/openai-presence-plataforma-enterprise-agentes-voz-chat-2026/",
-      "fecha": "2026-07-23",
-      "impacto": "alto",
-      "porque": "Valida el modelo de agente de voz para ventas outbound, línea de negocio directamente comparable a la de Nuevo Norte."
-    },
-    {
-      "titulo": "OpenAI lanza el programa ChatGPT para pequeñas empresas, con partners como Shopify e Intuit",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/07/23/chatgpt-programa-pequenas-empresas-openai-shopify-intuit-2026/",
-      "fecha": "2026-07-23",
+      "titulo": "¿Quién responde cuando la IA se equivoca? La gobernanza, el nuevo reto corporativo",
+      "fuente": "trendTIC",
+      "url": "https://www.trendtic.cl/2026/07/quien-responde-cuando-la-ia-se-equivoca-la-gobernanza-el-nuevo-reto-corporativo/",
+      "fecha": "2026-07-30",
       "impacto": "medio",
-      "porque": "Baja la barrera de adopción de IA en pymes; más prospectos llegarán ya familiarizados con agentes de IA."
+      "porque": "Marca la necesidad de supervisión humana y trazabilidad al usar IA en procesos de negocio, incluida la gestión de campañas."
     },
     {
-      "titulo": "ChatGPT Work: nuevo agente de OpenAI para operar sobre CRM, correo y flujos de negocio",
-      "fuente": "Marketing4eCommerce",
-      "url": "https://marketing4ecommerce.net/chatgpt-work/",
-      "fecha": "",
-      "impacto": "medio",
-      "porque": "Agentes que operan directo sobre CRM y correo son competencia directa del tipo de automatización que ofrece domo IA."
+      "titulo": "Perplexity lleva su agente de escritorio con IA a Windows, compite con Copilot",
+      "fuente": "TechTimes",
+      "url": "https://www.techtimes.com/articles/321882/20260728/perplexity-brings-ai-desktop-agent-windows-routing-tasks-across-20-models.htm",
+      "fecha": "2026-07-28",
+      "impacto": "bajo",
+      "porque": "Más competencia en agentes de productividad empresarial, aunque de aplicación indirecta a ventas/marketing."
     }
   ]
 }

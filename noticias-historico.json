@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-02",
+ "actualizado": "2026-08-03",
  "items": [
   {
    "captura": "2026-07-21",
@@ -830,6 +830,46 @@
    "fecha": "",
    "impacto": "medio",
    "porque": "Agentes que operan directo sobre CRM y correo son competencia directa del tipo de automatización que ofrece domo IA."
+  },
+  {
+   "captura": "2026-08-03",
+   "area": "inmobiliario",
+   "titulo": "Interés por comprar vivienda nueva crece un 15% en Chile: casas lideran el dinamismo",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/mercados/2026/07/31/interes-por-comprar-vivienda-nueva-crece-un-15-en-chile-casas-lideran-el-dinamismo/",
+   "fecha": "2026-07-31",
+   "impacto": "alto",
+   "porque": "Demanda de vivienda nueva al alza y giro hacia casas: relevante para orientar mensajes y foco de producto de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-03",
+   "area": "inmobiliario",
+   "titulo": "Con ayuda de la IA, Minvu procesa observaciones para reforma que busca bajar 10-15% el precio de viviendas",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/construccion/con-ayuda-de-la-ia-minvu-procesa-observaciones-para-definir-ajustes-y",
+   "fecha": "2026-07-24",
+   "impacto": "alto",
+   "porque": "Reforma a la OGUC en curso podría bajar precios y reactivar oferta: cambia el escenario de precios a mediano plazo."
+  },
+  {
+   "captura": "2026-08-03",
+   "area": "ia",
+   "titulo": "¿Quién responde cuando la IA se equivoca? La gobernanza, el nuevo reto corporativo",
+   "fuente": "trendTIC",
+   "url": "https://www.trendtic.cl/2026/07/quien-responde-cuando-la-ia-se-equivoca-la-gobernanza-el-nuevo-reto-corporativo/",
+   "fecha": "2026-07-30",
+   "impacto": "medio",
+   "porque": "Marca la necesidad de supervisión humana y trazabilidad al usar IA en procesos de negocio, incluida la gestión de campañas."
+  },
+  {
+   "captura": "2026-08-03",
+   "area": "ia",
+   "titulo": "Perplexity lleva su agente de escritorio con IA a Windows, compite con Copilot",
+   "fuente": "TechTimes",
+   "url": "https://www.techtimes.com/articles/321882/20260728/perplexity-brings-ai-desktop-agent-windows-routing-tasks-across-20-models.htm",
+   "fecha": "2026-07-28",
+   "impacto": "bajo",
+   "porque": "Más competencia en agentes de productividad empresarial, aunque de aplicación indirecta a ventas/marketing."
   }
  ]
 }
