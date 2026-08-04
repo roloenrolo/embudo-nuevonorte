@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-03",
+ "actualizado": "2026-08-04",
  "items": [
   {
    "captura": "2026-07-21",
@@ -870,6 +870,66 @@
    "fecha": "2026-07-28",
    "impacto": "bajo",
    "porque": "Más competencia en agentes de productividad empresarial, aunque de aplicación indirecta a ventas/marketing."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "inmobiliario",
+   "titulo": "La próxima semana vence la postulación al Subsidio de Arriendo (DS52)",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/07/30/la-proxima-semana-vence-postulacion-al-subsidio-de-arriendo-cuales-son-los-requisitos-y-como-postular.shtml",
+   "fecha": "2026-07-30",
+   "impacto": "alto",
+   "porque": "Cierre 7-ago da una ventana corta de urgencia para campañas ligadas a arriendo/DS52, ángulo que Nuevo Norte puede explotar esta semana."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "inmobiliario",
+   "titulo": "Subsidio de Arriendo 2026: cómo postular, requisitos y montos del Minvu",
+   "fuente": "El Mostrador",
+   "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/podrias-recibir-hasta-200-mil-al-mes-para-tu-arriendo-como-postular-al-beneficio-2026/",
+   "fecha": "2026-07-22",
+   "impacto": "medio",
+   "porque": "Guía de referencia sobre montos y requisitos del DS52, útil para segmentar mensajes de campañas de arriendo."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "inmobiliario",
+   "titulo": "Megarreforma es despachada en tercer trámite en la Cámara y pasa a comisión mixta (incluye IVA 0% a vivienda nueva)",
+   "fuente": "Diario Concepción",
+   "url": "https://www.diarioconcepcion.cl/politica/2026/07/21/camara-baja-despacha-megarreforma-comision-mixta.html",
+   "fecha": "2026-07-21",
+   "impacto": "alto",
+   "porque": "Es el vehículo legal del IVA 0% a viviendas nuevas por 12 meses, que podría bajar precios 10-15% y reactivar demanda si se promulga."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "ia",
+   "titulo": "Google mueve Local Services Ads a Google Ads: migración a Performance Max con pago por lead desde agosto",
+   "fuente": "Justia — Legal Marketing & Technology Blog",
+   "url": "https://onward.justia.com/google-is-moving-local-services-ads-to-performance-max-what-law-firms-need-to-know/",
+   "fecha": "2026-07-31",
+   "impacto": "medio",
+   "porque": "Cambia cómo se estructuran las campañas de pago-por-lead en Google; referencia de hacia dónde evoluciona ese modelo aunque Nuevo Norte pauta principalmente en Meta."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "ia",
+   "titulo": "ChatGPT ahora muestra anuncios y los marketers se apuran a adaptarse",
+   "fuente": "Northeast Times",
+   "url": "https://northeasttimes.com/2026/07/22/chatgpt-now-shows-ads-and-marketers-are-scrambling-to-adapt/",
+   "fecha": "2026-07-22",
+   "impacto": "medio",
+   "porque": "Nuevo canal publicitario en fase de prueba en EE.UU.; aún no aplica a Chile pero anticipa un cambio de reglas del juego en pauta digital."
+  },
+  {
+   "captura": "2026-08-04",
+   "area": "ia",
+   "titulo": "WARC y PHD: la delegación de decisiones de compra a agentes de IA está transformando el marketing",
+   "fuente": "TotalMedios",
+   "url": "https://www.totalmedios.com/nota/64611/como-la-ia-agentica-acelerara-la-toma-de-decisiones-del-consumidor-proyecciones-de-warc-y-phd-para-2030",
+   "fecha": "2026-07-21",
+   "impacto": "medio",
+   "porque": "Advierte que las marcas deberán optimizar sus datos y contenido para ser \"encontradas\" también por agentes de IA, no solo por personas — relevante para cómo se estructura el copy a mediano plazo."
   }
  ]
 }

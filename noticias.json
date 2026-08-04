@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-08-03",
-  "generado": "2026-08-03T07:36:30-04:00",
+  "fecha": "2026-08-04",
+  "generado": "2026-08-04T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Interés por comprar vivienda nueva crece un 15% en Chile: casas lideran el dinamismo",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/mercados/2026/07/31/interes-por-comprar-vivienda-nueva-crece-un-15-en-chile-casas-lideran-el-dinamismo/",
+      "titulo": "Mercado inmobiliario se enfría: precio de departamentos nuevos sube en la RM y la demanda cae a la espera del IVA 0 por 12 meses",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
       "fecha": "2026-07-31",
       "impacto": "alto",
-      "porque": "Demanda de vivienda nueva al alza y giro hacia casas: relevante para orientar mensajes y foco de producto de Nuevo Norte."
+      "porque": "Compradores están pausando decisiones de compra a la espera del IVA 0, lo que puede frenar conversión en campañas activas de Nuevo Norte en las próximas semanas."
     },
     {
-      "titulo": "Subsidio a la tasa hipotecaria supera a suspensión del IVA en preferencias de compradores",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-hipotecaria-supera-a-suspension-del-iva-en-preferencias",
-      "fecha": "2026-07-28",
+      "titulo": "La próxima semana vence la postulación al Subsidio de Arriendo (DS52)",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/07/30/la-proxima-semana-vence-postulacion-al-subsidio-de-arriendo-cuales-son-los-requisitos-y-como-postular.shtml",
+      "fecha": "2026-07-30",
       "impacto": "alto",
-      "porque": "Los compradores prefieren el subsidio a la tasa por sobre la suspensión del IVA: el copy de venta debe enfatizar la tasa, no el IVA."
+      "porque": "Cierre 7-ago da una ventana corta de urgencia para campañas ligadas a arriendo/DS52, ángulo que Nuevo Norte puede explotar esta semana."
     },
     {
-      "titulo": "Banco Central mantiene la tasa de política monetaria en 4,5%",
+      "titulo": "Banco Central mantiene la TPM en 4,5% y advierte mayor incertidumbre internacional",
       "fuente": "BioBioChile",
       "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
       "fecha": "2026-07-28",
       "impacto": "medio",
-      "porque": "Sin recorte adicional de tasas en el corto plazo: el crédito hipotecario no se abarata más por ahora."
+      "porque": "Tasas hipotecarias se mantienen estables sin sorpresas, lo que sostiene el escenario actual de financiamiento sin cambios abruptos para compradores."
     },
     {
-      "titulo": "Con ayuda de la IA, Minvu procesa observaciones para reforma que busca bajar 10-15% el precio de viviendas",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/con-ayuda-de-la-ia-minvu-procesa-observaciones-para-definir-ajustes-y",
-      "fecha": "2026-07-24",
-      "impacto": "alto",
-      "porque": "Reforma a la OGUC en curso podría bajar precios y reactivar oferta: cambia el escenario de precios a mediano plazo."
-    },
-    {
-      "titulo": "Retrasos en aprobación de obras elevan costos de viviendas en 10%",
-      "fuente": "Diario Financiero (estudio Colliers)",
-      "url": "https://www.df.cl/regiones/los-lagos-biobio-y-o-higgins-lideran-tramitaciones-excesivas-en-proyectos",
-      "fecha": "2026-07-27",
+      "titulo": "Subsidio de Arriendo 2026: cómo postular, requisitos y montos del Minvu",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/podrias-recibir-hasta-200-mil-al-mes-para-tu-arriendo-como-postular-al-beneficio-2026/",
+      "fecha": "2026-07-22",
       "impacto": "medio",
-      "porque": "La permisología sigue encareciendo proyectos: presión de costos que puede trasladarse a precios de venta."
+      "porque": "Guía de referencia sobre montos y requisitos del DS52, útil para segmentar mensajes de campañas de arriendo."
+    },
+    {
+      "titulo": "Megarreforma es despachada en tercer trámite en la Cámara y pasa a comisión mixta (incluye IVA 0% a vivienda nueva)",
+      "fuente": "Diario Concepción",
+      "url": "https://www.diarioconcepcion.cl/politica/2026/07/21/camara-baja-despacha-megarreforma-comision-mixta.html",
+      "fecha": "2026-07-21",
+      "impacto": "alto",
+      "porque": "Es el vehículo legal del IVA 0% a viviendas nuevas por 12 meses, que podría bajar precios 10-15% y reactivar demanda si se promulga."
     }
   ],
   "ia": [
     {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
+      "titulo": "Google mueve Local Services Ads a Google Ads: migración a Performance Max con pago por lead desde agosto",
+      "fuente": "Justia — Legal Marketing & Technology Blog",
+      "url": "https://onward.justia.com/google-is-moving-local-services-ads-to-performance-max-what-law-firms-need-to-know/",
+      "fecha": "2026-07-31",
+      "impacto": "medio",
+      "porque": "Cambia cómo se estructuran las campañas de pago-por-lead en Google; referencia de hacia dónde evoluciona ese modelo aunque Nuevo Norte pauta principalmente en Meta."
+    },
+    {
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes que cierran ventas conectados a ChatGPT y Gemini",
       "fuente": "PressPeru",
       "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
       "fecha": "2026-07-29",
-      "impacto": "alto",
-      "porque": "Comercio agéntico ya mueve ventas reales (retailers con Buyer Agent crecen 59% más rápido): referencia directa para IA aplicada a ventas."
-    },
-    {
-      "titulo": "Agentes de IA comienzan a decidir qué compran los consumidores, según informe global",
-      "fuente": "trendTIC",
-      "url": "https://www.trendtic.cl/2026/07/reciente-investigacion-de-expertos-revela-nuevas-reglas-de-comercio-los-agentes-de-ia-comienzan-a-decidir-que-compran-los-consumidores/",
-      "fecha": "2026-07-28",
-      "impacto": "alto",
-      "porque": "Anticipa que el marketing deberá dirigirse también a agentes de IA compradores, no solo a personas."
-    },
-    {
-      "titulo": "Anthropic lanza Claude Opus 5, modelo casi frontera a mitad de precio",
-      "fuente": "wwwhatsnew / Fast Company",
-      "url": "https://wwwhatsnew.com/2026/07/26/anthropic-claude-opus-5-lanzamiento-precio-fable-julio-2026/",
-      "fecha": "2026-07-24",
-      "impacto": "medio",
-      "porque": "Automatización de tareas de negocio y programación más accesible en costo para equipos pequeños."
-    },
-    {
-      "titulo": "¿Quién responde cuando la IA se equivoca? La gobernanza, el nuevo reto corporativo",
-      "fuente": "trendTIC",
-      "url": "https://www.trendtic.cl/2026/07/quien-responde-cuando-la-ia-se-equivoca-la-gobernanza-el-nuevo-reto-corporativo/",
-      "fecha": "2026-07-30",
-      "impacto": "medio",
-      "porque": "Marca la necesidad de supervisión humana y trazabilidad al usar IA en procesos de negocio, incluida la gestión de campañas."
-    },
-    {
-      "titulo": "Perplexity lleva su agente de escritorio con IA a Windows, compite con Copilot",
-      "fuente": "TechTimes",
-      "url": "https://www.techtimes.com/articles/321882/20260728/perplexity-brings-ai-desktop-agent-windows-routing-tasks-across-20-models.htm",
-      "fecha": "2026-07-28",
       "impacto": "bajo",
-      "porque": "Más competencia en agentes de productividad empresarial, aunque de aplicación indirecta a ventas/marketing."
+      "porque": "Foco en e-commerce a gran escala, poco aplicable de inmediato a la pauta inmobiliaria de Nuevo Norte, pero marca hacia dónde va el agente de ventas por IA."
+    },
+    {
+      "titulo": "Marketing Trends: ChatGPT abre su plataforma de anuncios self-serve a todas las empresas y Google fusiona Local Service Ads en Performance Max",
+      "fuente": "B2 The 7",
+      "url": "https://www.b2the7.com/news-blog/marketing-trends-july-27-2026-chatgpt-ads",
+      "fecha": "2026-07-27",
+      "impacto": "alto",
+      "porque": "Resume los movimientos de medios pagados de la semana (ChatGPT Ads, Google Ads, Reels) más relevantes para decidir dónde invertir presupuesto de pauta."
+    },
+    {
+      "titulo": "ChatGPT ahora muestra anuncios y los marketers se apuran a adaptarse",
+      "fuente": "Northeast Times",
+      "url": "https://northeasttimes.com/2026/07/22/chatgpt-now-shows-ads-and-marketers-are-scrambling-to-adapt/",
+      "fecha": "2026-07-22",
+      "impacto": "medio",
+      "porque": "Nuevo canal publicitario en fase de prueba en EE.UU.; aún no aplica a Chile pero anticipa un cambio de reglas del juego en pauta digital."
+    },
+    {
+      "titulo": "WARC y PHD: la delegación de decisiones de compra a agentes de IA está transformando el marketing",
+      "fuente": "TotalMedios",
+      "url": "https://www.totalmedios.com/nota/64611/como-la-ia-agentica-acelerara-la-toma-de-decisiones-del-consumidor-proyecciones-de-warc-y-phd-para-2030",
+      "fecha": "2026-07-21",
+      "impacto": "medio",
+      "porque": "Advierte que las marcas deberán optimizar sus datos y contenido para ser \"encontradas\" también por agentes de IA, no solo por personas — relevante para cómo se estructura el copy a mediano plazo."
     }
   ]
 }
