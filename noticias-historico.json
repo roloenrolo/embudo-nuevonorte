@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-04",
+ "actualizado": "2026-08-05",
  "items": [
   {
    "captura": "2026-07-21",
@@ -930,6 +930,56 @@
    "fecha": "2026-07-21",
    "impacto": "medio",
    "porque": "Advierte que las marcas deberán optimizar sus datos y contenido para ser \"encontradas\" también por agentes de IA, no solo por personas — relevante para cómo se estructura el copy a mediano plazo."
+  },
+  {
+   "captura": "2026-08-05",
+   "area": "inmobiliario",
+   "titulo": "Gobierno ingresa con urgencia proyecto que amplía el subsidio a la tasa hipotecaria y el Fogaes hasta viviendas de 6.000 UF",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "Suma 30.000 cupos nuevos y sube el tope de 4.000 a 6.000 UF: amplía directamente el universo de compradores elegibles para las campañas de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-05",
+   "area": "inmobiliario",
+   "titulo": "Senado vota el último artículo de la megarreforma (incluye IVA 0% a la vivienda nueva), pero vetos anunciados podrían retrasar su promulgación",
+   "fuente": "Puranoticia",
+   "url": "https://puranoticia.pnt.cl/nacional/senado-vota-ultimo-articulo-de-la-megarreforma-pero-vetos-retrasarian-su",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "El IVA 0% por 12 meses a viviendas nuevas está a un paso de ley, pero con riesgo de demora por vetos y requerimiento ante el Tribunal Constitucional: no asumir fecha de entrada en vigencia todavía."
+  },
+  {
+   "captura": "2026-08-05",
+   "area": "ia",
+   "titulo": "OpenAI presenta Astra: una versión interna resolvió 10 problemas matemáticos abiertos por décadas",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/08/04/openai-astra-matematicas-10-problemas-decadas-lean-agosto-2026/",
+   "fecha": "2026-08-04",
+   "impacto": "medio",
+   "porque": "Señal de salto de capacidad de razonamiento en el próximo modelo insignia de OpenAI, aún sin lanzamiento público ni caso de uso comercial directo."
+  },
+  {
+   "captura": "2026-08-05",
+   "area": "ia",
+   "titulo": "Meta empieza a cobrar por el uso de Meta Business Agent en WhatsApp (US$2 por millón de tokens) tras el período gratuito",
+   "fuente": "Adtech.com.mx",
+   "url": "https://adtech.com.mx/meta-business-agent-whatsapp-comercio-conversacional-ventas/",
+   "fecha": "2026-08-01",
+   "impacto": "alto",
+   "porque": "Impacta directamente el costo de operar agentes conversacionales de ventas en WhatsApp, el mismo canal que usa Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-05",
+   "area": "ia",
+   "titulo": "Microsoft prepara una súper app que unifica Copilot, GitHub Copilot y agentes autónomos",
+   "fuente": "Infobae",
+   "url": "https://www.infobae.com/tecno/2026/07/30/microsoft-apuesta-por-una-super-app-de-copilot-con-chat-inteligente-codigo-y-agentes-autonomos/",
+   "fecha": "2026-07-30",
+   "impacto": "bajo",
+   "porque": "Movimiento de plataforma a monitorear, sin detalles de precio ni fecha de lanzamiento aún."
   }
  ]
 }

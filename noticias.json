@@ -1,14 +1,30 @@
 {
-  "fecha": "2026-08-04",
-  "generado": "2026-08-04T07:35:00-04:00",
+  "fecha": "2026-08-05",
+  "generado": "2026-08-05T07:36:27-04:00",
   "inmobiliario": [
     {
-      "titulo": "Mercado inmobiliario se enfría: precio de departamentos nuevos sube en la RM y la demanda cae a la espera del IVA 0 por 12 meses",
+      "titulo": "Gobierno ingresa con urgencia proyecto que amplía el subsidio a la tasa hipotecaria y el Fogaes hasta viviendas de 6.000 UF",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "Suma 30.000 cupos nuevos y sube el tope de 4.000 a 6.000 UF: amplía directamente el universo de compradores elegibles para las campañas de Nuevo Norte."
+    },
+    {
+      "titulo": "Senado vota el último artículo de la megarreforma (incluye IVA 0% a la vivienda nueva), pero vetos anunciados podrían retrasar su promulgación",
+      "fuente": "Puranoticia",
+      "url": "https://puranoticia.pnt.cl/nacional/senado-vota-ultimo-articulo-de-la-megarreforma-pero-vetos-retrasarian-su",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "El IVA 0% por 12 meses a viviendas nuevas está a un paso de ley, pero con riesgo de demora por vetos y requerimiento ante el Tribunal Constitucional: no asumir fecha de entrada en vigencia todavía."
+    },
+    {
+      "titulo": "Precio de departamentos nuevos sube 5% en la Región Metropolitana y la demanda se pausa a la espera del IVA 0%",
       "fuente": "The Clinic",
       "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
       "fecha": "2026-07-31",
       "impacto": "alto",
-      "porque": "Compradores están pausando decisiones de compra a la espera del IVA 0, lo que puede frenar conversión en campañas activas de Nuevo Norte en las próximas semanas."
+      "porque": "Compradores pausando decisiones a la espera del beneficio tributario: puede explicar caídas de conversión de corto plazo que no son fatiga creativa sino timing de mercado."
     },
     {
       "titulo": "La próxima semana vence la postulación al Subsidio de Arriendo (DS52)",
@@ -19,46 +35,46 @@
       "porque": "Cierre 7-ago da una ventana corta de urgencia para campañas ligadas a arriendo/DS52, ángulo que Nuevo Norte puede explotar esta semana."
     },
     {
-      "titulo": "Banco Central mantiene la TPM en 4,5% y advierte mayor incertidumbre internacional",
+      "titulo": "Banco Central mantiene la Tasa de Política Monetaria en 4,5% por quinta reunión consecutiva",
       "fuente": "BioBioChile",
       "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
       "fecha": "2026-07-28",
       "impacto": "medio",
-      "porque": "Tasas hipotecarias se mantienen estables sin sorpresas, lo que sostiene el escenario actual de financiamiento sin cambios abruptos para compradores."
-    },
-    {
-      "titulo": "Subsidio de Arriendo 2026: cómo postular, requisitos y montos del Minvu",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/22/podrias-recibir-hasta-200-mil-al-mes-para-tu-arriendo-como-postular-al-beneficio-2026/",
-      "fecha": "2026-07-22",
-      "impacto": "medio",
-      "porque": "Guía de referencia sobre montos y requisitos del DS52, útil para segmentar mensajes de campañas de arriendo."
-    },
-    {
-      "titulo": "Megarreforma es despachada en tercer trámite en la Cámara y pasa a comisión mixta (incluye IVA 0% a vivienda nueva)",
-      "fuente": "Diario Concepción",
-      "url": "https://www.diarioconcepcion.cl/politica/2026/07/21/camara-baja-despacha-megarreforma-comision-mixta.html",
-      "fecha": "2026-07-21",
-      "impacto": "alto",
-      "porque": "Es el vehículo legal del IVA 0% a viviendas nuevas por 12 meses, que podría bajar precios 10-15% y reactivar demanda si se promulga."
+      "porque": "Estabilidad en la TPM da previsibilidad a las tasas hipotecarias de referencia usadas en el mensaje de campañas de crédito."
     }
   ],
   "ia": [
     {
-      "titulo": "Google mueve Local Services Ads a Google Ads: migración a Performance Max con pago por lead desde agosto",
-      "fuente": "Justia — Legal Marketing & Technology Blog",
-      "url": "https://onward.justia.com/google-is-moving-local-services-ads-to-performance-max-what-law-firms-need-to-know/",
-      "fecha": "2026-07-31",
+      "titulo": "OpenAI presenta Astra: una versión interna resolvió 10 problemas matemáticos abiertos por décadas",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/08/04/openai-astra-matematicas-10-problemas-decadas-lean-agosto-2026/",
+      "fecha": "2026-08-04",
       "impacto": "medio",
-      "porque": "Cambia cómo se estructuran las campañas de pago-por-lead en Google; referencia de hacia dónde evoluciona ese modelo aunque Nuevo Norte pauta principalmente en Meta."
+      "porque": "Señal de salto de capacidad de razonamiento en el próximo modelo insignia de OpenAI, aún sin lanzamiento público ni caso de uso comercial directo."
     },
     {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes que cierran ventas conectados a ChatGPT y Gemini",
+      "titulo": "Meta empieza a cobrar por el uso de Meta Business Agent en WhatsApp (US$2 por millón de tokens) tras el período gratuito",
+      "fuente": "Adtech.com.mx",
+      "url": "https://adtech.com.mx/meta-business-agent-whatsapp-comercio-conversacional-ventas/",
+      "fecha": "2026-08-01",
+      "impacto": "alto",
+      "porque": "Impacta directamente el costo de operar agentes conversacionales de ventas en WhatsApp, el mismo canal que usa Nuevo Norte."
+    },
+    {
+      "titulo": "Microsoft prepara una súper app que unifica Copilot, GitHub Copilot y agentes autónomos",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/tecno/2026/07/30/microsoft-apuesta-por-una-super-app-de-copilot-con-chat-inteligente-codigo-y-agentes-autonomos/",
+      "fecha": "2026-07-30",
+      "impacto": "bajo",
+      "porque": "Movimiento de plataforma a monitorear, sin detalles de precio ni fecha de lanzamiento aún."
+    },
+    {
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes de IA conectados a catálogo, inventario y pedidos reales",
       "fuente": "PressPeru",
       "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
       "fecha": "2026-07-29",
-      "impacto": "bajo",
-      "porque": "Foco en e-commerce a gran escala, poco aplicable de inmediato a la pauta inmobiliaria de Nuevo Norte, pero marca hacia dónde va el agente de ventas por IA."
+      "impacto": "medio",
+      "porque": "Referencia de hacia dónde va el estándar de agentes de ventas conectados a datos operacionales, relevante como benchmark competitivo."
     },
     {
       "titulo": "Marketing Trends: ChatGPT abre su plataforma de anuncios self-serve a todas las empresas y Google fusiona Local Service Ads en Performance Max",
@@ -67,22 +83,6 @@
       "fecha": "2026-07-27",
       "impacto": "alto",
       "porque": "Resume los movimientos de medios pagados de la semana (ChatGPT Ads, Google Ads, Reels) más relevantes para decidir dónde invertir presupuesto de pauta."
-    },
-    {
-      "titulo": "ChatGPT ahora muestra anuncios y los marketers se apuran a adaptarse",
-      "fuente": "Northeast Times",
-      "url": "https://northeasttimes.com/2026/07/22/chatgpt-now-shows-ads-and-marketers-are-scrambling-to-adapt/",
-      "fecha": "2026-07-22",
-      "impacto": "medio",
-      "porque": "Nuevo canal publicitario en fase de prueba en EE.UU.; aún no aplica a Chile pero anticipa un cambio de reglas del juego en pauta digital."
-    },
-    {
-      "titulo": "WARC y PHD: la delegación de decisiones de compra a agentes de IA está transformando el marketing",
-      "fuente": "TotalMedios",
-      "url": "https://www.totalmedios.com/nota/64611/como-la-ia-agentica-acelerara-la-toma-de-decisiones-del-consumidor-proyecciones-de-warc-y-phd-para-2030",
-      "fecha": "2026-07-21",
-      "impacto": "medio",
-      "porque": "Advierte que las marcas deberán optimizar sus datos y contenido para ser \"encontradas\" también por agentes de IA, no solo por personas — relevante para cómo se estructura el copy a mediano plazo."
     }
   ]
 }
