@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-08-05",
-  "generado": "2026-08-05T07:36:27-04:00",
+  "fecha": "2026-08-06",
+  "generado": "2026-08-06T07:45:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Gobierno ingresa con urgencia proyecto que amplía el subsidio a la tasa hipotecaria y el Fogaes hasta viviendas de 6.000 UF",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
-      "fecha": "2026-08-04",
+      "titulo": "Megarreforma fue despachada: qué falta para que entre en vigencia y cómo se compensará a los municipios",
+      "fuente": "Mala Espina Check",
+      "url": "https://www.malaespinacheck.cl/politica/2026/08/05/megarreforma-fue-despachada-que-falta-para-que-entre-en-vigencia-y-como-se-compensara-a-los-municipios/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Suma 30.000 cupos nuevos y sube el tope de 4.000 a 6.000 UF: amplía directamente el universo de compradores elegibles para las campañas de Nuevo Norte."
+      "porque": "El IVA 0% a la vivienda nueva quedó a un paso de ley; falta veto presidencial y revisión del TC, con promulgación estimada para mediados/fines de agosto."
     },
     {
-      "titulo": "Senado vota el último artículo de la megarreforma (incluye IVA 0% a la vivienda nueva), pero vetos anunciados podrían retrasar su promulgación",
-      "fuente": "Puranoticia",
-      "url": "https://puranoticia.pnt.cl/nacional/senado-vota-ultimo-articulo-de-la-megarreforma-pero-vetos-retrasarian-su",
-      "fecha": "2026-08-04",
+      "titulo": "Megarreforma: comisión de Hacienda aprueba tres vetos del gobierno y Quiroz fija nueva meta para intentar promulgar ley en agosto",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/politica/noticia/megarreforma-ejecutivo-ingresa-tres-vetos-supresivos-y-quiroz-fija-nueva-meta-para-intentar-promulgar-ley-en-agosto/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "El IVA 0% por 12 meses a viviendas nuevas está a un paso de ley, pero con riesgo de demora por vetos y requerimiento ante el Tribunal Constitucional: no asumir fecha de entrada en vigencia todavía."
+      "porque": "Confirma la ventana de agosto para el beneficio tributario que puede activar demanda represada de vivienda nueva."
     },
     {
-      "titulo": "Precio de departamentos nuevos sube 5% en la Región Metropolitana y la demanda se pausa a la espera del IVA 0%",
-      "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
-      "fecha": "2026-07-31",
+      "titulo": "Gobierno presenta proyecto que amplía subsidio al dividendo hasta las 6 mil UF",
+      "fuente": "Diario y Radio Universidad de Chile",
+      "url": "https://radio.uchile.cl/2026/08/05/gobierno-presenta-proyecto-que-amplia-subsidio-al-dividendo-hasta-las-6-mil-uf/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Compradores pausando decisiones a la espera del beneficio tributario: puede explicar caídas de conversión de corto plazo que no son fatiga creativa sino timing de mercado."
+      "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y baja la tasa de ~4% a ~3%: impacta directo a las campañas Sub-subsidio-vence de Nuevo Norte."
     },
     {
-      "titulo": "La próxima semana vence la postulación al Subsidio de Arriendo (DS52)",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/07/30/la-proxima-semana-vence-postulacion-al-subsidio-de-arriendo-cuales-son-los-requisitos-y-como-postular.shtml",
-      "fecha": "2026-07-30",
+      "titulo": "Ampliación del subsidio al crédito hipotecario cubre un tercio del stock disponible de viviendas de hasta 6.000 UF",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/ampliacion-del-subsidio-al-credito-hipotecario-cubre-un-tercio-del-stock-disponible-de-viviendas-de-hasta-6000-uf/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Cierre 7-ago da una ventana corta de urgencia para campañas ligadas a arriendo/DS52, ángulo que Nuevo Norte puede explotar esta semana."
+      "porque": "Dimensiona el impacto: un tercio del stock de vivienda nueva queda con financiamiento subsidiado, argumento fuerte para las piezas de campaña."
     },
     {
-      "titulo": "Banco Central mantiene la Tasa de Política Monetaria en 4,5% por quinta reunión consecutiva",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/07/28/por-unanimidad-banco-central-vuelve-a-mantener-la-tasa-de-interes.shtml",
-      "fecha": "2026-07-28",
+      "titulo": "Mejor Tasa Crédito Hipotecario Chile Julio 2026",
+      "fuente": "Neatpagos",
+      "url": "https://www.neatpagos.com/blog/articulo/mejor-tasa-credito-hipotecario",
+      "fecha": "",
       "impacto": "medio",
-      "porque": "Estabilidad en la TPM da previsibilidad a las tasas hipotecarias de referencia usadas en el mensaje de campañas de crédito."
+      "porque": "Tasas promedio en mínimos desde 2023 (4,36%, algunas ofertas bajo 3,3% con Fogaes) abaratan el financiamiento y refuerzan el argumento de \"ahora es el momento\"."
     }
   ],
   "ia": [
     {
-      "titulo": "OpenAI presenta Astra: una versión interna resolvió 10 problemas matemáticos abiertos por décadas",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/08/04/openai-astra-matematicas-10-problemas-decadas-lean-agosto-2026/",
-      "fecha": "2026-08-04",
-      "impacto": "medio",
-      "porque": "Señal de salto de capacidad de razonamiento en el próximo modelo insignia de OpenAI, aún sin lanzamiento público ni caso de uso comercial directo."
+      "titulo": "Salesforce lanza sus primeros agentes de ventas con IA en un modelo de negocio basado en el pago por conversación",
+      "fuente": "ReasonWhy",
+      "url": "https://www.reasonwhy.es/actualidad/salesforce-lanza-sagentes-ventas-con-inteligencia-artificial-modelo-negocio-pago-por-conversacion",
+      "fecha": "2026-07-29",
+      "impacto": "alto",
+      "porque": "Pago desde US$2 por conversación resuelta: benchmark de precio para comparar el costo de agentes propios vs. plataformas como Salesforce."
     },
     {
-      "titulo": "Meta empieza a cobrar por el uso de Meta Business Agent en WhatsApp (US$2 por millón de tokens) tras el período gratuito",
-      "fuente": "Adtech.com.mx",
-      "url": "https://adtech.com.mx/meta-business-agent-whatsapp-comercio-conversacional-ventas/",
+      "titulo": "Meta te dio un agente de IA en WhatsApp. Te falta la otra mitad",
+      "fuente": "Impulsa Blog",
+      "url": "https://www.sistemaimpulsa.com/blog/meta-agente-ia-whatsapp",
       "fecha": "2026-08-01",
       "impacto": "alto",
-      "porque": "Impacta directamente el costo de operar agentes conversacionales de ventas en WhatsApp, el mismo canal que usa Nuevo Norte."
+      "porque": "Desde el 1-ago Meta cobra por uso del Business Agent en WhatsApp (~4-5¢ USD/mensaje): sube el costo operativo del canal principal de venta de Nuevo Norte."
     },
     {
-      "titulo": "Microsoft prepara una súper app que unifica Copilot, GitHub Copilot y agentes autónomos",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/tecno/2026/07/30/microsoft-apuesta-por-una-super-app-de-copilot-con-chat-inteligente-codigo-y-agentes-autonomos/",
-      "fecha": "2026-07-30",
-      "impacto": "bajo",
-      "porque": "Movimiento de plataforma a monitorear, sin detalles de precio ni fecha de lanzamiento aún."
-    },
-    {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes de IA conectados a catálogo, inventario y pedidos reales",
-      "fuente": "PressPeru",
-      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
-      "fecha": "2026-07-29",
-      "impacto": "medio",
-      "porque": "Referencia de hacia dónde va el estándar de agentes de ventas conectados a datos operacionales, relevante como benchmark competitivo."
-    },
-    {
-      "titulo": "Marketing Trends: ChatGPT abre su plataforma de anuncios self-serve a todas las empresas y Google fusiona Local Service Ads en Performance Max",
-      "fuente": "B2 The 7",
-      "url": "https://www.b2the7.com/news-blog/marketing-trends-july-27-2026-chatgpt-ads",
-      "fecha": "2026-07-27",
+      "titulo": "Meta cobrará por su agente de IA en WhatsApp e Instagram",
+      "fuente": "The Startup Journal",
+      "url": "https://www.startupjournal.io/article/meta-cobrara-business-agent-whatsapp-instagram-tokens-2026",
+      "fecha": "2026-08-01",
       "impacto": "alto",
-      "porque": "Resume los movimientos de medios pagados de la semana (ChatGPT Ads, Google Ads, Reels) más relevantes para decidir dónde invertir presupuesto de pauta."
+      "porque": "Tarifa global de US$2 por millón de tokens: confirma el cambio de costos que afecta directo la conversación por WhatsApp."
+    },
+    {
+      "titulo": "OpenAI ChatGPT Ads Daily Budget Changes, New Features, API & Ad Formats",
+      "fuente": "Search Engine Roundtable",
+      "url": "https://www.seroundtable.com/chatgpt-ads-budget-api-ad-formats-more-41756.html",
+      "fecha": "",
+      "impacto": "medio",
+      "porque": "Nuevas herramientas de puja por conversión y presupuesto en ChatGPT Ads, plataforma emergente para pauta digital a monitorear."
+    },
+    {
+      "titulo": "Comercio agéntico: Claves para capturar su valor",
+      "fuente": "EnRetail",
+      "url": "https://www.enretail.com/2026/08/04/comercio-agentico-ia-ventas/",
+      "fecha": "2026-08-04",
+      "impacto": "medio",
+      "porque": "Los agentes de IA ya intervienen directo en la decisión de compra: referencia de hacia dónde va la automatización de ventas."
     }
   ]
 }
