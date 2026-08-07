@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-06",
+ "actualizado": "2026-08-07",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1080,6 +1080,86 @@
    "fecha": "2026-08-04",
    "impacto": "medio",
    "porque": "Los agentes de IA ya intervienen directo en la decisión de compra: referencia de hacia dónde va la automatización de ventas."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "inmobiliario",
+   "titulo": "Banco Central mantiene la tasa de interés en 4,5% y alerta por el resurgimiento de los riesgos del conflicto en Medio Oriente",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-alerta-por-el-resurgimiento-de-los-riesgos-del-conflicto-en-medio-oriente/",
+   "fecha": "2026-07-28",
+   "impacto": "medio",
+   "porque": "TPM estable por unanimidad: sin sorpresas de corto plazo para el costo del crédito hipotecario."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "inmobiliario",
+   "titulo": "Para obtener paneles solares y arreglar tu casa: cómo postular a programas de mejoramiento de vivienda",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/08/04/para-obtener-paneles-solares-y-arreglar-tu-casa-como-postular-a-programas-de-mejoramiento-de-vivienda.shtml",
+   "fecha": "2026-08-04",
+   "impacto": "bajo",
+   "porque": "Subsidio DS27 de mejoramiento, fuera del segmento de compra/arriendo de Nuevo Norte, pero suma tráfico de búsqueda de subsidios habitacionales."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "inmobiliario",
+   "titulo": "Mercado inmobiliario: Estas son las comunas que lideran el alza de ventas",
+   "fuente": "24horas",
+   "url": "https://www.24horas.cl/actualidad/economia/mercado-inmobiliario-estas-son-las-comunas-que-lideran-el-alza-de-ventas",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "La Florida (+20%) y Providencia (+45%) lideran ventas de departamentos: útil para segmentar geográficamente campañas de vivienda nueva."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "ia",
+   "titulo": "Meta Business Agent: así cambiarán los costos de la IA en agosto",
+   "fuente": "infoarenales",
+   "url": "https://infoarenales.com/2026/08/03/whatsapp-deja-de-ser-gratis-para-las-empresas-a-partir-de-octubre-2026-las-claves-del-cambio-de-meta/",
+   "fecha": "2026-08-03",
+   "impacto": "alto",
+   "porque": "Desde el 1-ago Meta cobra ~US$2 por millón de tokens del Business Agent en WhatsApp: sube el costo operativo del canal principal de conversación de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "ia",
+   "titulo": "El AI Act entra en una nueva fase: qué cambia desde hoy y qué obligaciones se han retrasado hasta 2028",
+   "fuente": "El Español",
+   "url": "https://www.elespanol.com/invertia/disruptores/politica-digital/europa/20260802/ai-act-entra-nueva-fase-cambia-hoy-obligaciones-retrasado/1003744336612_0.html",
+   "fecha": "2026-08-02",
+   "impacto": "medio",
+   "porque": "Desde el 2-ago rige la obligación de avisar cuando un cliente conversa con IA: no aplica en Chile aún, pero marca el estándar que probablemente exijan clientes o reguladores locales."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "ia",
+   "titulo": "Anthropic refuerza a Claude con nuevas funciones de IA para empresas y vuelve a sacudir al sector tecnológico",
+   "fuente": "Acento Noticias",
+   "url": "https://www.acentonoticias.com.mx/principal/anthropic-refuerza-a-claude-con-nuevas-funciones-de-ia-para-empresas-y-vuelve-a-sacudir-al-sector-tecnologico/",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "Nuevas capacidades de agentes para RRHH, finanzas y ofimática que domo IA podría evaluar para sus propios flujos internos."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "ia",
+   "titulo": "Business Notebooks, la nueva herramienta de Google que todo emprendedor pedía",
+   "fuente": "iProUp",
+   "url": "https://www.iproup.com/empleo/69552-business-notebooks-la-nueva-herramienta-de-google-que-todo-emprendedor-pedia",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "Gemini conectado al Perfil de Negocio para responder reseñas y analizar rendimiento: competencia directa en asistentes IA accesibles para pymes, categoría donde compite domo IA."
+  },
+  {
+   "captura": "2026-08-07",
+   "area": "ia",
+   "titulo": "La Revolución de la IA en Marketing: Cómo Latinoamérica Lidera la Adopción con Casos Reales",
+   "fuente": "Retargeting",
+   "url": "https://www.retargeting.cl/blog/la-revolucion-de-la-ia-en-marketing-como-latinoamerica-lidera-la-adopcion-con-casos-reales",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "Con 90% de penetración en la región, WhatsApp se consolida como columna vertebral del marketing conversacional con IA: confirma la apuesta de canal de domo IA."
   }
  ]
 }

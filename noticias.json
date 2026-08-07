@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-08-06",
-  "generado": "2026-08-06T07:45:00-04:00",
+  "fecha": "2026-08-07",
+  "generado": "2026-08-07T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Megarreforma fue despachada: qué falta para que entre en vigencia y cómo se compensará a los municipios",
-      "fuente": "Mala Espina Check",
-      "url": "https://www.malaespinacheck.cl/politica/2026/08/05/megarreforma-fue-despachada-que-falta-para-que-entre-en-vigencia-y-como-se-compensara-a-los-municipios/",
-      "fecha": "2026-08-05",
+      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
+      "fuente": "El Mostrador",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/29/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
+      "fecha": "2026-07-29",
       "impacto": "alto",
-      "porque": "El IVA 0% a la vivienda nueva quedó a un paso de ley; falta veto presidencial y revisión del TC, con promulgación estimada para mediados/fines de agosto."
+      "porque": "Hoy 7-ago cierra la ventana de postulación: gancho de urgencia directo para leads del segmento subsidio de Nuevo Norte."
     },
     {
-      "titulo": "Megarreforma: comisión de Hacienda aprueba tres vetos del gobierno y Quiroz fija nueva meta para intentar promulgar ley en agosto",
+      "titulo": "Gobierno anuncia proyecto para extender el subsidio a la tasa hipotecaria y el FOGAES",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "Suma 30 mil cupos y sube el tope a 6.000 UF, ampliando el universo de viviendas subsidiables: argumento directo para las piezas Sub-subsidio-vence."
+    },
+    {
+      "titulo": "Banco Central mantiene la tasa de interés en 4,5% y alerta por el resurgimiento de los riesgos del conflicto en Medio Oriente",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/politica/noticia/megarreforma-ejecutivo-ingresa-tres-vetos-supresivos-y-quiroz-fija-nueva-meta-para-intentar-promulgar-ley-en-agosto/",
-      "fecha": "2026-08-05",
-      "impacto": "alto",
-      "porque": "Confirma la ventana de agosto para el beneficio tributario que puede activar demanda represada de vivienda nueva."
+      "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-alerta-por-el-resurgimiento-de-los-riesgos-del-conflicto-en-medio-oriente/",
+      "fecha": "2026-07-28",
+      "impacto": "medio",
+      "porque": "TPM estable por unanimidad: sin sorpresas de corto plazo para el costo del crédito hipotecario."
     },
     {
-      "titulo": "Gobierno presenta proyecto que amplía subsidio al dividendo hasta las 6 mil UF",
-      "fuente": "Diario y Radio Universidad de Chile",
-      "url": "https://radio.uchile.cl/2026/08/05/gobierno-presenta-proyecto-que-amplia-subsidio-al-dividendo-hasta-las-6-mil-uf/",
-      "fecha": "2026-08-05",
-      "impacto": "alto",
-      "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y baja la tasa de ~4% a ~3%: impacta directo a las campañas Sub-subsidio-vence de Nuevo Norte."
+      "titulo": "Para obtener paneles solares y arreglar tu casa: cómo postular a programas de mejoramiento de vivienda",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/08/04/para-obtener-paneles-solares-y-arreglar-tu-casa-como-postular-a-programas-de-mejoramiento-de-vivienda.shtml",
+      "fecha": "2026-08-04",
+      "impacto": "bajo",
+      "porque": "Subsidio DS27 de mejoramiento, fuera del segmento de compra/arriendo de Nuevo Norte, pero suma tráfico de búsqueda de subsidios habitacionales."
     },
     {
-      "titulo": "Ampliación del subsidio al crédito hipotecario cubre un tercio del stock disponible de viviendas de hasta 6.000 UF",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/ampliacion-del-subsidio-al-credito-hipotecario-cubre-un-tercio-del-stock-disponible-de-viviendas-de-hasta-6000-uf/",
-      "fecha": "2026-08-05",
-      "impacto": "alto",
-      "porque": "Dimensiona el impacto: un tercio del stock de vivienda nueva queda con financiamiento subsidiado, argumento fuerte para las piezas de campaña."
-    },
-    {
-      "titulo": "Mejor Tasa Crédito Hipotecario Chile Julio 2026",
-      "fuente": "Neatpagos",
-      "url": "https://www.neatpagos.com/blog/articulo/mejor-tasa-credito-hipotecario",
+      "titulo": "Mercado inmobiliario: Estas son las comunas que lideran el alza de ventas",
+      "fuente": "24horas",
+      "url": "https://www.24horas.cl/actualidad/economia/mercado-inmobiliario-estas-son-las-comunas-que-lideran-el-alza-de-ventas",
       "fecha": "",
       "impacto": "medio",
-      "porque": "Tasas promedio en mínimos desde 2023 (4,36%, algunas ofertas bajo 3,3% con Fogaes) abaratan el financiamiento y refuerzan el argumento de \"ahora es el momento\"."
+      "porque": "La Florida (+20%) y Providencia (+45%) lideran ventas de departamentos: útil para segmentar geográficamente campañas de vivienda nueva."
     }
   ],
   "ia": [
     {
-      "titulo": "Salesforce lanza sus primeros agentes de ventas con IA en un modelo de negocio basado en el pago por conversación",
-      "fuente": "ReasonWhy",
-      "url": "https://www.reasonwhy.es/actualidad/salesforce-lanza-sagentes-ventas-con-inteligencia-artificial-modelo-negocio-pago-por-conversacion",
-      "fecha": "2026-07-29",
+      "titulo": "Meta Business Agent: así cambiarán los costos de la IA en agosto",
+      "fuente": "infoarenales",
+      "url": "https://infoarenales.com/2026/08/03/whatsapp-deja-de-ser-gratis-para-las-empresas-a-partir-de-octubre-2026-las-claves-del-cambio-de-meta/",
+      "fecha": "2026-08-03",
       "impacto": "alto",
-      "porque": "Pago desde US$2 por conversación resuelta: benchmark de precio para comparar el costo de agentes propios vs. plataformas como Salesforce."
+      "porque": "Desde el 1-ago Meta cobra ~US$2 por millón de tokens del Business Agent en WhatsApp: sube el costo operativo del canal principal de conversación de Nuevo Norte."
     },
     {
-      "titulo": "Meta te dio un agente de IA en WhatsApp. Te falta la otra mitad",
-      "fuente": "Impulsa Blog",
-      "url": "https://www.sistemaimpulsa.com/blog/meta-agente-ia-whatsapp",
-      "fecha": "2026-08-01",
-      "impacto": "alto",
-      "porque": "Desde el 1-ago Meta cobra por uso del Business Agent en WhatsApp (~4-5¢ USD/mensaje): sube el costo operativo del canal principal de venta de Nuevo Norte."
+      "titulo": "El AI Act entra en una nueva fase: qué cambia desde hoy y qué obligaciones se han retrasado hasta 2028",
+      "fuente": "El Español",
+      "url": "https://www.elespanol.com/invertia/disruptores/politica-digital/europa/20260802/ai-act-entra-nueva-fase-cambia-hoy-obligaciones-retrasado/1003744336612_0.html",
+      "fecha": "2026-08-02",
+      "impacto": "medio",
+      "porque": "Desde el 2-ago rige la obligación de avisar cuando un cliente conversa con IA: no aplica en Chile aún, pero marca el estándar que probablemente exijan clientes o reguladores locales."
     },
     {
-      "titulo": "Meta cobrará por su agente de IA en WhatsApp e Instagram",
-      "fuente": "The Startup Journal",
-      "url": "https://www.startupjournal.io/article/meta-cobrara-business-agent-whatsapp-instagram-tokens-2026",
-      "fecha": "2026-08-01",
-      "impacto": "alto",
-      "porque": "Tarifa global de US$2 por millón de tokens: confirma el cambio de costos que afecta directo la conversación por WhatsApp."
-    },
-    {
-      "titulo": "OpenAI ChatGPT Ads Daily Budget Changes, New Features, API & Ad Formats",
-      "fuente": "Search Engine Roundtable",
-      "url": "https://www.seroundtable.com/chatgpt-ads-budget-api-ad-formats-more-41756.html",
+      "titulo": "Anthropic refuerza a Claude con nuevas funciones de IA para empresas y vuelve a sacudir al sector tecnológico",
+      "fuente": "Acento Noticias",
+      "url": "https://www.acentonoticias.com.mx/principal/anthropic-refuerza-a-claude-con-nuevas-funciones-de-ia-para-empresas-y-vuelve-a-sacudir-al-sector-tecnologico/",
       "fecha": "",
       "impacto": "medio",
-      "porque": "Nuevas herramientas de puja por conversión y presupuesto en ChatGPT Ads, plataforma emergente para pauta digital a monitorear."
+      "porque": "Nuevas capacidades de agentes para RRHH, finanzas y ofimática que domo IA podría evaluar para sus propios flujos internos."
     },
     {
-      "titulo": "Comercio agéntico: Claves para capturar su valor",
-      "fuente": "EnRetail",
-      "url": "https://www.enretail.com/2026/08/04/comercio-agentico-ia-ventas/",
-      "fecha": "2026-08-04",
+      "titulo": "Business Notebooks, la nueva herramienta de Google que todo emprendedor pedía",
+      "fuente": "iProUp",
+      "url": "https://www.iproup.com/empleo/69552-business-notebooks-la-nueva-herramienta-de-google-que-todo-emprendedor-pedia",
+      "fecha": "",
       "impacto": "medio",
-      "porque": "Los agentes de IA ya intervienen directo en la decisión de compra: referencia de hacia dónde va la automatización de ventas."
+      "porque": "Gemini conectado al Perfil de Negocio para responder reseñas y analizar rendimiento: competencia directa en asistentes IA accesibles para pymes, categoría donde compite domo IA."
+    },
+    {
+      "titulo": "La Revolución de la IA en Marketing: Cómo Latinoamérica Lidera la Adopción con Casos Reales",
+      "fuente": "Retargeting",
+      "url": "https://www.retargeting.cl/blog/la-revolucion-de-la-ia-en-marketing-como-latinoamerica-lidera-la-adopcion-con-casos-reales",
+      "fecha": "",
+      "impacto": "medio",
+      "porque": "Con 90% de penetración en la región, WhatsApp se consolida como columna vertebral del marketing conversacional con IA: confirma la apuesta de canal de domo IA."
     }
   ]
 }
