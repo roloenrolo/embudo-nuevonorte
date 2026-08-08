@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-07",
+ "actualizado": "2026-08-08",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1160,6 +1160,96 @@
    "fecha": "",
    "impacto": "medio",
    "porque": "Con 90% de penetración en la región, WhatsApp se consolida como columna vertebral del marketing conversacional con IA: confirma la apuesta de canal de domo IA."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Cámara Baja aprueba (139 votos) extensión hasta 2028 de la rebaja a la tasa del crédito hipotecario y lo despacha al Senado",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/economia-y-politica/congreso/camara-baja-aprueba-extension-hasta-2028-de-la-rebaja-a-la-tasa-del-credito",
+   "fecha": "2026-08-05",
+   "impacto": "alto",
+   "porque": "Extiende hasta mayo 2028 la rebaja de tasa (de ~4% a 3%) y sube cupos de 50.000 a 80.000 con tope de 6.000 UF: ventana más larga y amplia para funnels de Nuevo Norte orientados a subsidio."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Gobierno presenta proyecto para ampliar subsidio hipotecario y garantía estatal Fogaes para la primera vivienda",
+   "fuente": "Diario El America",
+   "url": "https://elamerica.cl/2026/08/06/gobierno-presenta-proyecto-para-ampliar-subsidio-hipotecario-y-garantia-estatal-para-la-primera-vivienda/",
+   "fecha": "2026-08-06",
+   "impacto": "alto",
+   "porque": "Refuerza el mensaje de urgencia/vigencia del subsidio que ya es el ángulo ganador de la semana (sub-subsidio-vence-a2) en las campañas."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Quiroz y Poduje ingresan proyecto que extiende la rebaja al crédito hipotecario y crea un subsidio estatal potenciado",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/economia-y-politica/congreso/quiroz-y-poduje-ingresan-proyecto-que-extiende-la-rebaja-al-credito",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "Detalle técnico del proyecto (tope 6.000 UF, 80.000 cupos) útil para actualizar guiones y landing de calificación."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Gobierno ingresa con urgencia proyecto que eleva subsidio a la tasa hipotecaria para viviendas de hasta 6.000 UF",
+   "fuente": "The Clinic",
+   "url": "https://www.theclinic.cl/2026/08/04/gobierno-ingresa-con-urgencia-proyecto-que-eleva-subsidio-a-la-tasa-hipotecaria-para-viviendas-de-hasta-6-000-uf/",
+   "fecha": "2026-08-04",
+   "impacto": "medio",
+   "porque": "Confirma trámite con urgencia legislativa: da pie a mensajes de 'aprovecha antes de que cambie' en los anuncios."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Subsidio a la tasa de interés hipotecaria podría agotarse a mediados de 2026, un año antes del plazo fijado por ley",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-de-interes-hipotecaria-podria-agotarse-a-mediados-de",
+   "fecha": "2026-08-01",
+   "impacto": "medio",
+   "porque": "Contexto de por qué el Gobierno corre a ampliar cupos; refuerza narrativa de urgencia/escasez para leads indecisos."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "inmobiliario",
+   "titulo": "Tasas hipotecarias caen en Chile y dan algo de alivio al mercado inmobiliario",
+   "fuente": "Yahoo Finanzas",
+   "url": "https://es-us.finanzas.yahoo.com/noticias/tasas-hipotecarias-caen-chile-alivio-123555594.html",
+   "fecha": "",
+   "impacto": "medio",
+   "porque": "Tasa promedio bajo 4% por primera vez en 4 años: baja la barrera de entrada del comprador que hoy duda por costo del crédito."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "ia",
+   "titulo": "Meta lanza Muse Code, su agente de IA para programar, junto al modelo Muse Spark 1.2",
+   "fuente": "wwwhatsnew.com",
+   "url": "https://wwwhatsnew.com/2026/08/07/meta-muse-code-agente-codificacion-terminal-beta-agosto-2026/",
+   "fecha": "2026-08-05",
+   "impacto": "bajo",
+   "porque": "Señal del ritmo de inversión de Meta en agentes de IA propios; sin aplicación directa a ventas/marketing todavía."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "ia",
+   "titulo": "Anthropic crea equipo interno de diseño de chips para Claude y contratará ingenieros con sueldos de hasta US$485.000",
+   "fuente": "La Nación",
+   "url": "https://www.lanacion.com.ar/tecnologia/anthropic-la-compania-detras-de-la-ia-claude-disenara-sus-propios-chips-de-servidores-nid06082026/",
+   "fecha": "2026-08-06",
+   "impacto": "bajo",
+   "porque": "Apuesta de infraestructura de largo plazo; relevante solo como indicador de hacia dónde escala la industria, no accionable hoy."
+  },
+  {
+   "captura": "2026-08-08",
+   "area": "ia",
+   "titulo": "Dataprop, la proptech chilena que busca modernizar el corretaje inmobiliario con IA y herramientas digitales",
+   "fuente": "G5noticias",
+   "url": "https://g5noticias.cl/2026/07/29/la-proptech-chilena-que-busca-modernizar-el-corretaje-inmobiliario-desde-adentro/",
+   "fecha": "2026-07-29",
+   "impacto": "medio",
+   "porque": "Competencia/tendencia directa en el mismo rubro (corretaje inmobiliario chileno) que usa IA para CRM, campañas y reportería — vale monitorear como referencia o partner potencial."
   }
  ]
 }

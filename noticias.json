@@ -1,88 +1,80 @@
 {
-  "fecha": "2026-08-07",
-  "generado": "2026-08-07T07:35:00-04:00",
+  "fecha": "2026-08-08",
+  "generado": "2026-08-08T07:34:15-04:00",
   "inmobiliario": [
     {
-      "titulo": "Subsidio de Arriendo 2026: requisitos y fechas para postular al llamado de julio del Minvu",
-      "fuente": "El Mostrador",
-      "url": "https://www.elmostrador.cl/datos-utiles/2026/07/29/subsidio-de-arriendo-2026-requisitos-y-fechas-para-postular-al-llamado-de-julio-del-minvu/",
-      "fecha": "2026-07-29",
+      "titulo": "Cámara Baja aprueba (139 votos) extensión hasta 2028 de la rebaja a la tasa del crédito hipotecario y lo despacha al Senado",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/economia-y-politica/congreso/camara-baja-aprueba-extension-hasta-2028-de-la-rebaja-a-la-tasa-del-credito",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Hoy 7-ago cierra la ventana de postulación: gancho de urgencia directo para leads del segmento subsidio de Nuevo Norte."
+      "porque": "Extiende hasta mayo 2028 la rebaja de tasa (de ~4% a 3%) y sube cupos de 50.000 a 80.000 con tope de 6.000 UF: ventana más larga y amplia para funnels de Nuevo Norte orientados a subsidio."
     },
     {
-      "titulo": "Gobierno anuncia proyecto para extender el subsidio a la tasa hipotecaria y el FOGAES",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "titulo": "Gobierno presenta proyecto para ampliar subsidio hipotecario y garantía estatal Fogaes para la primera vivienda",
+      "fuente": "Diario El America",
+      "url": "https://elamerica.cl/2026/08/06/gobierno-presenta-proyecto-para-ampliar-subsidio-hipotecario-y-garantia-estatal-para-la-primera-vivienda/",
+      "fecha": "2026-08-06",
+      "impacto": "alto",
+      "porque": "Refuerza el mensaje de urgencia/vigencia del subsidio que ya es el ángulo ganador de la semana (sub-subsidio-vence-a2) en las campañas."
+    },
+    {
+      "titulo": "Quiroz y Poduje ingresan proyecto que extiende la rebaja al crédito hipotecario y crea un subsidio estatal potenciado",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/economia-y-politica/congreso/quiroz-y-poduje-ingresan-proyecto-que-extiende-la-rebaja-al-credito",
       "fecha": "2026-08-04",
       "impacto": "alto",
-      "porque": "Suma 30 mil cupos y sube el tope a 6.000 UF, ampliando el universo de viviendas subsidiables: argumento directo para las piezas Sub-subsidio-vence."
+      "porque": "Detalle técnico del proyecto (tope 6.000 UF, 80.000 cupos) útil para actualizar guiones y landing de calificación."
     },
     {
-      "titulo": "Banco Central mantiene la tasa de interés en 4,5% y alerta por el resurgimiento de los riesgos del conflicto en Medio Oriente",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-alerta-por-el-resurgimiento-de-los-riesgos-del-conflicto-en-medio-oriente/",
-      "fecha": "2026-07-28",
+      "titulo": "Gobierno ingresa con urgencia proyecto que eleva subsidio a la tasa hipotecaria para viviendas de hasta 6.000 UF",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/08/04/gobierno-ingresa-con-urgencia-proyecto-que-eleva-subsidio-a-la-tasa-hipotecaria-para-viviendas-de-hasta-6-000-uf/",
+      "fecha": "2026-08-04",
       "impacto": "medio",
-      "porque": "TPM estable por unanimidad: sin sorpresas de corto plazo para el costo del crédito hipotecario."
+      "porque": "Confirma trámite con urgencia legislativa: da pie a mensajes de 'aprovecha antes de que cambie' en los anuncios."
     },
     {
-      "titulo": "Para obtener paneles solares y arreglar tu casa: cómo postular a programas de mejoramiento de vivienda",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/08/04/para-obtener-paneles-solares-y-arreglar-tu-casa-como-postular-a-programas-de-mejoramiento-de-vivienda.shtml",
-      "fecha": "2026-08-04",
-      "impacto": "bajo",
-      "porque": "Subsidio DS27 de mejoramiento, fuera del segmento de compra/arriendo de Nuevo Norte, pero suma tráfico de búsqueda de subsidios habitacionales."
+      "titulo": "Subsidio a la tasa de interés hipotecaria podría agotarse a mediados de 2026, un año antes del plazo fijado por ley",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-de-interes-hipotecaria-podria-agotarse-a-mediados-de",
+      "fecha": "2026-08-01",
+      "impacto": "medio",
+      "porque": "Contexto de por qué el Gobierno corre a ampliar cupos; refuerza narrativa de urgencia/escasez para leads indecisos."
     },
     {
-      "titulo": "Mercado inmobiliario: Estas son las comunas que lideran el alza de ventas",
-      "fuente": "24horas",
-      "url": "https://www.24horas.cl/actualidad/economia/mercado-inmobiliario-estas-son-las-comunas-que-lideran-el-alza-de-ventas",
+      "titulo": "Tasas hipotecarias caen en Chile y dan algo de alivio al mercado inmobiliario",
+      "fuente": "Yahoo Finanzas",
+      "url": "https://es-us.finanzas.yahoo.com/noticias/tasas-hipotecarias-caen-chile-alivio-123555594.html",
       "fecha": "",
       "impacto": "medio",
-      "porque": "La Florida (+20%) y Providencia (+45%) lideran ventas de departamentos: útil para segmentar geográficamente campañas de vivienda nueva."
+      "porque": "Tasa promedio bajo 4% por primera vez en 4 años: baja la barrera de entrada del comprador que hoy duda por costo del crédito."
     }
   ],
   "ia": [
     {
-      "titulo": "Meta Business Agent: así cambiarán los costos de la IA en agosto",
-      "fuente": "infoarenales",
-      "url": "https://infoarenales.com/2026/08/03/whatsapp-deja-de-ser-gratis-para-las-empresas-a-partir-de-octubre-2026-las-claves-del-cambio-de-meta/",
-      "fecha": "2026-08-03",
-      "impacto": "alto",
-      "porque": "Desde el 1-ago Meta cobra ~US$2 por millón de tokens del Business Agent en WhatsApp: sube el costo operativo del canal principal de conversación de Nuevo Norte."
+      "titulo": "Meta lanza Muse Code, su agente de IA para programar, junto al modelo Muse Spark 1.2",
+      "fuente": "wwwhatsnew.com",
+      "url": "https://wwwhatsnew.com/2026/08/07/meta-muse-code-agente-codificacion-terminal-beta-agosto-2026/",
+      "fecha": "2026-08-05",
+      "impacto": "bajo",
+      "porque": "Señal del ritmo de inversión de Meta en agentes de IA propios; sin aplicación directa a ventas/marketing todavía."
     },
     {
-      "titulo": "El AI Act entra en una nueva fase: qué cambia desde hoy y qué obligaciones se han retrasado hasta 2028",
-      "fuente": "El Español",
-      "url": "https://www.elespanol.com/invertia/disruptores/politica-digital/europa/20260802/ai-act-entra-nueva-fase-cambia-hoy-obligaciones-retrasado/1003744336612_0.html",
-      "fecha": "2026-08-02",
-      "impacto": "medio",
-      "porque": "Desde el 2-ago rige la obligación de avisar cuando un cliente conversa con IA: no aplica en Chile aún, pero marca el estándar que probablemente exijan clientes o reguladores locales."
+      "titulo": "Anthropic crea equipo interno de diseño de chips para Claude y contratará ingenieros con sueldos de hasta US$485.000",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/tecnologia/anthropic-la-compania-detras-de-la-ia-claude-disenara-sus-propios-chips-de-servidores-nid06082026/",
+      "fecha": "2026-08-06",
+      "impacto": "bajo",
+      "porque": "Apuesta de infraestructura de largo plazo; relevante solo como indicador de hacia dónde escala la industria, no accionable hoy."
     },
     {
-      "titulo": "Anthropic refuerza a Claude con nuevas funciones de IA para empresas y vuelve a sacudir al sector tecnológico",
-      "fuente": "Acento Noticias",
-      "url": "https://www.acentonoticias.com.mx/principal/anthropic-refuerza-a-claude-con-nuevas-funciones-de-ia-para-empresas-y-vuelve-a-sacudir-al-sector-tecnologico/",
-      "fecha": "",
+      "titulo": "Dataprop, la proptech chilena que busca modernizar el corretaje inmobiliario con IA y herramientas digitales",
+      "fuente": "G5noticias",
+      "url": "https://g5noticias.cl/2026/07/29/la-proptech-chilena-que-busca-modernizar-el-corretaje-inmobiliario-desde-adentro/",
+      "fecha": "2026-07-29",
       "impacto": "medio",
-      "porque": "Nuevas capacidades de agentes para RRHH, finanzas y ofimática que domo IA podría evaluar para sus propios flujos internos."
-    },
-    {
-      "titulo": "Business Notebooks, la nueva herramienta de Google que todo emprendedor pedía",
-      "fuente": "iProUp",
-      "url": "https://www.iproup.com/empleo/69552-business-notebooks-la-nueva-herramienta-de-google-que-todo-emprendedor-pedia",
-      "fecha": "",
-      "impacto": "medio",
-      "porque": "Gemini conectado al Perfil de Negocio para responder reseñas y analizar rendimiento: competencia directa en asistentes IA accesibles para pymes, categoría donde compite domo IA."
-    },
-    {
-      "titulo": "La Revolución de la IA en Marketing: Cómo Latinoamérica Lidera la Adopción con Casos Reales",
-      "fuente": "Retargeting",
-      "url": "https://www.retargeting.cl/blog/la-revolucion-de-la-ia-en-marketing-como-latinoamerica-lidera-la-adopcion-con-casos-reales",
-      "fecha": "",
-      "impacto": "medio",
-      "porque": "Con 90% de penetración en la región, WhatsApp se consolida como columna vertebral del marketing conversacional con IA: confirma la apuesta de canal de domo IA."
+      "porque": "Competencia/tendencia directa en el mismo rubro (corretaje inmobiliario chileno) que usa IA para CRM, campañas y reportería — vale monitorear como referencia o partner potencial."
     }
   ]
 }
