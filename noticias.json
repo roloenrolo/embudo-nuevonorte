@@ -1,80 +1,72 @@
 {
-  "fecha": "2026-08-08",
-  "generado": "2026-08-08T07:34:15-04:00",
+  "fecha": "2026-08-09",
+  "generado": "2026-08-09T07:34:26-04:00",
   "inmobiliario": [
     {
-      "titulo": "Cámara Baja aprueba (139 votos) extensión hasta 2028 de la rebaja a la tasa del crédito hipotecario y lo despacha al Senado",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/economia-y-politica/congreso/camara-baja-aprueba-extension-hasta-2028-de-la-rebaja-a-la-tasa-del-credito",
+      "titulo": "Cámara de Diputados aprueba por unanimidad (139 votos) ampliar subsidio a la tasa hipotecaria y garantía Fogaes",
+      "fuente": "Puranoticia.cl",
+      "url": "https://puranoticia.pnt.cl/nacional/camara-de-diputados-aprueba-en-primer-tramite-el-proyecto-que-amplia-el",
       "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Extiende hasta mayo 2028 la rebaja de tasa (de ~4% a 3%) y sube cupos de 50.000 a 80.000 con tope de 6.000 UF: ventana más larga y amplia para funnels de Nuevo Norte orientados a subsidio."
+      "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y suma 30 mil cupos; refuerza directamente el mensaje de 'Sub-subsidio-vence', el ad ganador de la semana en Nuevo Norte."
     },
     {
-      "titulo": "Gobierno presenta proyecto para ampliar subsidio hipotecario y garantía estatal Fogaes para la primera vivienda",
-      "fuente": "Diario El America",
-      "url": "https://elamerica.cl/2026/08/06/gobierno-presenta-proyecto-para-ampliar-subsidio-hipotecario-y-garantia-estatal-para-la-primera-vivienda/",
-      "fecha": "2026-08-06",
-      "impacto": "alto",
-      "porque": "Refuerza el mensaje de urgencia/vigencia del subsidio que ya es el ángulo ganador de la semana (sub-subsidio-vence-a2) en las campañas."
-    },
-    {
-      "titulo": "Quiroz y Poduje ingresan proyecto que extiende la rebaja al crédito hipotecario y crea un subsidio estatal potenciado",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/economia-y-politica/congreso/quiroz-y-poduje-ingresan-proyecto-que-extiende-la-rebaja-al-credito",
+      "titulo": "Congreso aprueba ley de IVA 0% transitorio para la venta de viviendas nuevas",
+      "fuente": "Carey y Cía.",
+      "url": "https://www.carey.cl/reforma-tributaria/beneficios-a-la-vivienda",
       "fecha": "2026-08-04",
       "impacto": "alto",
-      "porque": "Detalle técnico del proyecto (tope 6.000 UF, 80.000 cupos) útil para actualizar guiones y landing de calificación."
+      "porque": "Exención de IVA por 12 meses en primera venta de viviendas nuevas: cambia el timing de decisión de compra y es gancho concreto para nuevos creativos."
     },
     {
-      "titulo": "Gobierno ingresa con urgencia proyecto que eleva subsidio a la tasa hipotecaria para viviendas de hasta 6.000 UF",
+      "titulo": "Precio de departamentos nuevos sube 5% en la RM mientras la demanda cae a la espera del IVA 0%",
       "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/08/04/gobierno-ingresa-con-urgencia-proyecto-que-eleva-subsidio-a-la-tasa-hipotecaria-para-viviendas-de-hasta-6-000-uf/",
-      "fecha": "2026-08-04",
+      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
+      "fecha": "2026-07-31",
       "impacto": "medio",
-      "porque": "Confirma trámite con urgencia legislativa: da pie a mensajes de 'aprovecha antes de que cambie' en los anuncios."
+      "porque": "Confirma que compradores están pausando decisiones a la espera de la nueva ley de IVA — explica posibles bajas de conversión de corto plazo no atribuibles a los ads."
     },
     {
-      "titulo": "Subsidio a la tasa de interés hipotecaria podría agotarse a mediados de 2026, un año antes del plazo fijado por ley",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/mercados/banca-fintech/subsidio-a-la-tasa-de-interes-hipotecaria-podria-agotarse-a-mediados-de",
-      "fecha": "2026-08-01",
+      "titulo": "Tasa de interés hipotecaria promedio cae a 4,32% en la semana del 31 de julio, mínimo desde 2023",
+      "fuente": "Expovivienda",
+      "url": "https://www.expovivienda.cl/tasa-de-interes-de-creditos-hipotecarios-llega-a-minimos-en-casi-dos-anos/",
+      "fecha": "2026-07-31",
       "impacto": "medio",
-      "porque": "Contexto de por qué el Gobierno corre a ampliar cupos; refuerza narrativa de urgencia/escasez para leads indecisos."
-    },
-    {
-      "titulo": "Tasas hipotecarias caen en Chile y dan algo de alivio al mercado inmobiliario",
-      "fuente": "Yahoo Finanzas",
-      "url": "https://es-us.finanzas.yahoo.com/noticias/tasas-hipotecarias-caen-chile-alivio-123555594.html",
-      "fecha": "",
-      "impacto": "medio",
-      "porque": "Tasa promedio bajo 4% por primera vez en 4 años: baja la barrera de entrada del comprador que hoy duda por costo del crédito."
+      "porque": "Con Fogaes, Banco de Chile y Santander ofrecen tasas bajo 3,3% UF: mejora la capacidad de pago de leads calificados y sustenta el mensaje de 'ahora es el momento'."
     }
   ],
   "ia": [
     {
-      "titulo": "Meta lanza Muse Code, su agente de IA para programar, junto al modelo Muse Spark 1.2",
-      "fuente": "wwwhatsnew.com",
-      "url": "https://wwwhatsnew.com/2026/08/07/meta-muse-code-agente-codificacion-terminal-beta-agosto-2026/",
-      "fecha": "2026-08-05",
-      "impacto": "bajo",
-      "porque": "Señal del ritmo de inversión de Meta en agentes de IA propios; sin aplicación directa a ventas/marketing todavía."
+      "titulo": "Meta empieza a cobrar por token el uso del agente de IA propio en WhatsApp Business Platform",
+      "fuente": "Chatsell",
+      "url": "https://chatsell.net/whatsapp-api-facturacion-latam-argentina-chile-colombia-2026/",
+      "fecha": "2026-08-01",
+      "impacto": "alto",
+      "porque": "Nuevo Norte concentra el 100% de su gasto activo en WhatsApp: este cobro por token (y el de mensajes de servicio desde octubre) sube el costo real por conversación que hoy no está en el CPA reportado."
     },
     {
-      "titulo": "Anthropic crea equipo interno de diseño de chips para Claude y contratará ingenieros con sueldos de hasta US$485.000",
-      "fuente": "La Nación",
-      "url": "https://www.lanacion.com.ar/tecnologia/anthropic-la-compania-detras-de-la-ia-claude-disenara-sus-propios-chips-de-servidores-nid06082026/",
+      "titulo": "OpenAI, Microsoft, Amazon, Cursor y Vercel lanzan 'Agent Plugins', estándar abierto para extensiones de agentes de IA",
+      "fuente": "El Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/agent-plugins-2026-5-gigantes-unifican-plugins-de-ia-para-founders/",
       "fecha": "2026-08-06",
       "impacto": "bajo",
-      "porque": "Apuesta de infraestructura de largo plazo; relevante solo como indicador de hacia dónde escala la industria, no accionable hoy."
+      "porque": "Estandariza cómo se construyen extensiones de agentes IA; relevante como tendencia de plataforma, sin efecto inmediato en la operación de domo IA."
     },
     {
-      "titulo": "Dataprop, la proptech chilena que busca modernizar el corretaje inmobiliario con IA y herramientas digitales",
-      "fuente": "G5noticias",
-      "url": "https://g5noticias.cl/2026/07/29/la-proptech-chilena-que-busca-modernizar-el-corretaje-inmobiliario-desde-adentro/",
+      "titulo": "Meta lanza Muse Code, su primer agente de IA para programación, para competir con Anthropic y OpenAI",
+      "fuente": "Infosertecla",
+      "url": "https://infosertecla.com/2026/08/06/meta-lanza-muse-code-su-agente-de-ia-para-programar/",
+      "fecha": "2026-08-05",
+      "impacto": "bajo",
+      "porque": "Herramienta para desarrollo de software, no para ventas/marketing directo — contexto de mercado IA, sin aplicación inmediata en el funnel de Nuevo Norte."
+    },
+    {
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes de compra en ChatGPT, Google Search y Gemini",
+      "fuente": "PressPerú",
+      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
       "fecha": "2026-07-29",
       "impacto": "medio",
-      "porque": "Competencia/tendencia directa en el mismo rubro (corretaje inmobiliario chileno) que usa IA para CRM, campañas y reportería — vale monitorear como referencia o partner potencial."
+      "porque": "Marca la tendencia de compra asistida por agentes fuera del sitio propio; anticipa hacia dónde migra la captación de leads más allá de Meta Ads."
     }
   ]
 }

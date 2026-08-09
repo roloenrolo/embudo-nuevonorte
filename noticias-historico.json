@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-08",
+ "actualizado": "2026-08-09",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1250,6 +1250,66 @@
    "fecha": "2026-07-29",
    "impacto": "medio",
    "porque": "Competencia/tendencia directa en el mismo rubro (corretaje inmobiliario chileno) que usa IA para CRM, campañas y reportería — vale monitorear como referencia o partner potencial."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "inmobiliario",
+   "titulo": "Cámara de Diputados aprueba por unanimidad (139 votos) ampliar subsidio a la tasa hipotecaria y garantía Fogaes",
+   "fuente": "Puranoticia.cl",
+   "url": "https://puranoticia.pnt.cl/nacional/camara-de-diputados-aprueba-en-primer-tramite-el-proyecto-que-amplia-el",
+   "fecha": "2026-08-05",
+   "impacto": "alto",
+   "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y suma 30 mil cupos; refuerza directamente el mensaje de 'Sub-subsidio-vence', el ad ganador de la semana en Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "inmobiliario",
+   "titulo": "Congreso aprueba ley de IVA 0% transitorio para la venta de viviendas nuevas",
+   "fuente": "Carey y Cía.",
+   "url": "https://www.carey.cl/reforma-tributaria/beneficios-a-la-vivienda",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "Exención de IVA por 12 meses en primera venta de viviendas nuevas: cambia el timing de decisión de compra y es gancho concreto para nuevos creativos."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "inmobiliario",
+   "titulo": "Tasa de interés hipotecaria promedio cae a 4,32% en la semana del 31 de julio, mínimo desde 2023",
+   "fuente": "Expovivienda",
+   "url": "https://www.expovivienda.cl/tasa-de-interes-de-creditos-hipotecarios-llega-a-minimos-en-casi-dos-anos/",
+   "fecha": "2026-07-31",
+   "impacto": "medio",
+   "porque": "Con Fogaes, Banco de Chile y Santander ofrecen tasas bajo 3,3% UF: mejora la capacidad de pago de leads calificados y sustenta el mensaje de 'ahora es el momento'."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "ia",
+   "titulo": "Meta empieza a cobrar por token el uso del agente de IA propio en WhatsApp Business Platform",
+   "fuente": "Chatsell",
+   "url": "https://chatsell.net/whatsapp-api-facturacion-latam-argentina-chile-colombia-2026/",
+   "fecha": "2026-08-01",
+   "impacto": "alto",
+   "porque": "Nuevo Norte concentra el 100% de su gasto activo en WhatsApp: este cobro por token (y el de mensajes de servicio desde octubre) sube el costo real por conversación que hoy no está en el CPA reportado."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "ia",
+   "titulo": "OpenAI, Microsoft, Amazon, Cursor y Vercel lanzan 'Agent Plugins', estándar abierto para extensiones de agentes de IA",
+   "fuente": "El Ecosistema Startup",
+   "url": "https://ecosistemastartup.com/agent-plugins-2026-5-gigantes-unifican-plugins-de-ia-para-founders/",
+   "fecha": "2026-08-06",
+   "impacto": "bajo",
+   "porque": "Estandariza cómo se construyen extensiones de agentes IA; relevante como tendencia de plataforma, sin efecto inmediato en la operación de domo IA."
+  },
+  {
+   "captura": "2026-08-09",
+   "area": "ia",
+   "titulo": "Meta lanza Muse Code, su primer agente de IA para programación, para competir con Anthropic y OpenAI",
+   "fuente": "Infosertecla",
+   "url": "https://infosertecla.com/2026/08/06/meta-lanza-muse-code-su-agente-de-ia-para-programar/",
+   "fecha": "2026-08-05",
+   "impacto": "bajo",
+   "porque": "Herramienta para desarrollo de software, no para ventas/marketing directo — contexto de mercado IA, sin aplicación inmediata en el funnel de Nuevo Norte."
   }
  ]
 }
