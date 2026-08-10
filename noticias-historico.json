@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-09",
+ "actualizado": "2026-08-10",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1310,6 +1310,56 @@
    "fecha": "2026-08-05",
    "impacto": "bajo",
    "porque": "Herramienta para desarrollo de software, no para ventas/marketing directo — contexto de mercado IA, sin aplicación inmediata en el funnel de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-10",
+   "area": "inmobiliario",
+   "titulo": "El Congreso chileno aprobó el último artículo del Plan de Reconstrucción Nacional, con exención de IVA transitoria de 12 meses en venta de viviendas nuevas",
+   "fuente": "Infobae",
+   "url": "https://www.infobae.com/america/america-latina/2026/08/05/el-congreso-chileno-aprobo-el-ultimo-articulo-del-plan-de-reconstruccion-nacional-del-gobierno-de-kast/",
+   "fecha": "2026-08-05",
+   "impacto": "alto",
+   "porque": "Cambia el timing de decisión de compra de vivienda nueva; una vez publicada la ley es gancho concreto para nuevos creativos de urgencia ('compra sin IVA')."
+  },
+  {
+   "captura": "2026-08-10",
+   "area": "inmobiliario",
+   "titulo": "Últimos días para postular al Subsidio de Arriendo 2026: cierre 7 de agosto",
+   "fuente": "24horas.cl",
+   "url": "https://www.24horas.cl/te-sirve/ultimos-dias-para-postular-al-subsidio-de-arriendo-2026-requisitos-y-monto",
+   "fecha": "",
+   "impacto": "bajo",
+   "porque": "Beneficio de arriendo (no compra), cierre ya ocurrido; relevancia baja para el funnel de venta de Nuevo Norte pero contexto útil de calendario habitacional."
+  },
+  {
+   "captura": "2026-08-10",
+   "area": "ia",
+   "titulo": "Comercio agéntico: cómo la IA ya multiplica las ventas online",
+   "fuente": "IT Seller",
+   "url": "https://www.itseller.cl/2026/08/04/comercio-agentico-ia-aumentar-ventas/",
+   "fecha": "2026-08-04",
+   "impacto": "medio",
+   "porque": "Agentes de compra IA empiezan a decidir y comprar por el usuario; anticipa un canal de captación distinto al de ads tradicionales que Nuevo Norte deberá monitorear."
+  },
+  {
+   "captura": "2026-08-10",
+   "area": "ia",
+   "titulo": "Antibots contra compradores: la nueva paradoja de los agentes de compra IA",
+   "fuente": "Revista Inteligencia Artificial",
+   "url": "https://www.revistainteligenciaartificial.com/2026/08/antibots-contra-compradores-la-nueva-paradoja/",
+   "fecha": "2026-08-04",
+   "impacto": "bajo",
+   "porque": "Sistemas antibots bloquean agentes de compra legítimos; riesgo a vigilar si algún día se automatiza la calificación de leads con agentes propios."
+  },
+  {
+   "captura": "2026-08-10",
+   "area": "ia",
+   "titulo": "AI Act: qué cambia el 2 de agosto de 2026 y qué deben hacer las empresas que usan chatbots",
+   "fuente": "IA Regulación",
+   "url": "https://iaregulacion.com/ai-act-2-agosto-2026/",
+   "fecha": "2026-08-02",
+   "impacto": "bajo",
+   "porque": "Exige transparencia cuando un cliente interactúa con un chatbot o contenido generado por IA; aplica en la UE, pero marca la tendencia regulatoria que eventualmente llega a Chile."
   }
  ]
 }

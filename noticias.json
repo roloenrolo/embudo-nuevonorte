@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-08-09",
-  "generado": "2026-08-09T07:34:26-04:00",
+  "fecha": "2026-08-10",
+  "generado": "2026-08-10T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Cámara de Diputados aprueba por unanimidad (139 votos) ampliar subsidio a la tasa hipotecaria y garantía Fogaes",
+      "titulo": "Cámara de Diputados aprueba por unanimidad (139 votos) ampliar subsidio a la tasa hipotecaria y garantía Fogaes a viviendas de hasta 6.000 UF",
       "fuente": "Puranoticia.cl",
       "url": "https://puranoticia.pnt.cl/nacional/camara-de-diputados-aprueba-en-primer-tramite-el-proyecto-que-amplia-el",
       "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y suma 30 mil cupos; refuerza directamente el mensaje de 'Sub-subsidio-vence', el ad ganador de la semana en Nuevo Norte."
+      "porque": "Sube el tope de vivienda subsidiable a 6.000 UF y suma 30 mil cupos; ensancha el universo de compradores elegibles y refuerza el mensaje de 'Sub-subsidio-vence', ganador de la semana en Nuevo Norte."
     },
     {
-      "titulo": "Congreso aprueba ley de IVA 0% transitorio para la venta de viviendas nuevas",
-      "fuente": "Carey y Cía.",
-      "url": "https://www.carey.cl/reforma-tributaria/beneficios-a-la-vivienda",
-      "fecha": "2026-08-04",
+      "titulo": "El Congreso chileno aprobó el último artículo del Plan de Reconstrucción Nacional, con exención de IVA transitoria de 12 meses en venta de viviendas nuevas",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/america/america-latina/2026/08/05/el-congreso-chileno-aprobo-el-ultimo-articulo-del-plan-de-reconstruccion-nacional-del-gobierno-de-kast/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Exención de IVA por 12 meses en primera venta de viviendas nuevas: cambia el timing de decisión de compra y es gancho concreto para nuevos creativos."
+      "porque": "Cambia el timing de decisión de compra de vivienda nueva; una vez publicada la ley es gancho concreto para nuevos creativos de urgencia ('compra sin IVA')."
     },
     {
       "titulo": "Precio de departamentos nuevos sube 5% en la RM mientras la demanda cae a la espera del IVA 0%",
@@ -27,38 +27,54 @@
       "porque": "Confirma que compradores están pausando decisiones a la espera de la nueva ley de IVA — explica posibles bajas de conversión de corto plazo no atribuibles a los ads."
     },
     {
-      "titulo": "Tasa de interés hipotecaria promedio cae a 4,32% en la semana del 31 de julio, mínimo desde 2023",
+      "titulo": "Tasa de interés hipotecaria promedio cae a 4,32%, mínimo desde 2023",
       "fuente": "Expovivienda",
       "url": "https://www.expovivienda.cl/tasa-de-interes-de-creditos-hipotecarios-llega-a-minimos-en-casi-dos-anos/",
       "fecha": "2026-07-31",
       "impacto": "medio",
-      "porque": "Con Fogaes, Banco de Chile y Santander ofrecen tasas bajo 3,3% UF: mejora la capacidad de pago de leads calificados y sustenta el mensaje de 'ahora es el momento'."
+      "porque": "Con Fogaes, bancos ofrecen tasas bajo 3,3% UF: mejora la capacidad de pago de leads calificados y sustenta el mensaje de 'ahora es el momento'."
+    },
+    {
+      "titulo": "Últimos días para postular al Subsidio de Arriendo 2026: cierre 7 de agosto",
+      "fuente": "24horas.cl",
+      "url": "https://www.24horas.cl/te-sirve/ultimos-dias-para-postular-al-subsidio-de-arriendo-2026-requisitos-y-monto",
+      "fecha": "",
+      "impacto": "bajo",
+      "porque": "Beneficio de arriendo (no compra), cierre ya ocurrido; relevancia baja para el funnel de venta de Nuevo Norte pero contexto útil de calendario habitacional."
     }
   ],
   "ia": [
     {
-      "titulo": "Meta empieza a cobrar por token el uso del agente de IA propio en WhatsApp Business Platform",
+      "titulo": "Meta empieza a cobrar por token el uso de su agente de IA en WhatsApp Business Platform desde el 1 de agosto",
       "fuente": "Chatsell",
       "url": "https://chatsell.net/whatsapp-api-facturacion-latam-argentina-chile-colombia-2026/",
       "fecha": "2026-08-01",
       "impacto": "alto",
-      "porque": "Nuevo Norte concentra el 100% de su gasto activo en WhatsApp: este cobro por token (y el de mensajes de servicio desde octubre) sube el costo real por conversación que hoy no está en el CPA reportado."
+      "porque": "Nuevo Norte concentra el 100% de su gasto activo en WhatsApp: este cobro por token sube el costo real por conversación que hoy no está en el CPA reportado."
     },
     {
-      "titulo": "OpenAI, Microsoft, Amazon, Cursor y Vercel lanzan 'Agent Plugins', estándar abierto para extensiones de agentes de IA",
-      "fuente": "El Ecosistema Startup",
-      "url": "https://ecosistemastartup.com/agent-plugins-2026-5-gigantes-unifican-plugins-de-ia-para-founders/",
-      "fecha": "2026-08-06",
-      "impacto": "bajo",
-      "porque": "Estandariza cómo se construyen extensiones de agentes IA; relevante como tendencia de plataforma, sin efecto inmediato en la operación de domo IA."
+      "titulo": "Comercio agéntico: cómo la IA ya multiplica las ventas online",
+      "fuente": "IT Seller",
+      "url": "https://www.itseller.cl/2026/08/04/comercio-agentico-ia-aumentar-ventas/",
+      "fecha": "2026-08-04",
+      "impacto": "medio",
+      "porque": "Agentes de compra IA empiezan a decidir y comprar por el usuario; anticipa un canal de captación distinto al de ads tradicionales que Nuevo Norte deberá monitorear."
     },
     {
-      "titulo": "Meta lanza Muse Code, su primer agente de IA para programación, para competir con Anthropic y OpenAI",
-      "fuente": "Infosertecla",
-      "url": "https://infosertecla.com/2026/08/06/meta-lanza-muse-code-su-agente-de-ia-para-programar/",
-      "fecha": "2026-08-05",
+      "titulo": "Antibots contra compradores: la nueva paradoja de los agentes de compra IA",
+      "fuente": "Revista Inteligencia Artificial",
+      "url": "https://www.revistainteligenciaartificial.com/2026/08/antibots-contra-compradores-la-nueva-paradoja/",
+      "fecha": "2026-08-04",
       "impacto": "bajo",
-      "porque": "Herramienta para desarrollo de software, no para ventas/marketing directo — contexto de mercado IA, sin aplicación inmediata en el funnel de Nuevo Norte."
+      "porque": "Sistemas antibots bloquean agentes de compra legítimos; riesgo a vigilar si algún día se automatiza la calificación de leads con agentes propios."
+    },
+    {
+      "titulo": "AI Act: qué cambia el 2 de agosto de 2026 y qué deben hacer las empresas que usan chatbots",
+      "fuente": "IA Regulación",
+      "url": "https://iaregulacion.com/ai-act-2-agosto-2026/",
+      "fecha": "2026-08-02",
+      "impacto": "bajo",
+      "porque": "Exige transparencia cuando un cliente interactúa con un chatbot o contenido generado por IA; aplica en la UE, pero marca la tendencia regulatoria que eventualmente llega a Chile."
     },
     {
       "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce, con agentes de compra en ChatGPT, Google Search y Gemini",
