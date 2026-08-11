@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-10",
+ "actualizado": "2026-08-11",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1360,6 +1360,96 @@
    "fecha": "2026-08-02",
    "impacto": "bajo",
    "porque": "Exige transparencia cuando un cliente interactúa con un chatbot o contenido generado por IA; aplica en la UE, pero marca la tendencia regulatoria que eventualmente llega a Chile."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "inmobiliario",
+   "titulo": "Ampliación del subsidio a la tasa avanza a la sala del Senado",
+   "fuente": "La Tercera Pulso",
+   "url": "https://www.latercera.com/pulso/noticia/extension-del-subsidio-a-la-tasa-avanza-a-la-sala-del-senado/",
+   "fecha": "2026-08-10",
+   "impacto": "alto",
+   "porque": "La Comisión de Hacienda del Senado aprobó por unanimidad subir el tope a 6.000 UF y sumar 30.000 cupos; se vota en sala esta semana, ampliando el universo de compradores elegibles para campañas de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "inmobiliario",
+   "titulo": "Ministerio de Hacienda valora el respaldo unánime de la Cámara al proyecto que amplía el subsidio hipotecario y la garantía Fogaes",
+   "fuente": "G5 Noticias",
+   "url": "https://g5noticias.cl/2026/08/05/ministerio-de-hacienda-valora-el-respaldo-unanime-de-la-camara-al-proyecto-que-amplia-el-subsidio-hipotecario-y-la-garantia-fogaes/",
+   "fecha": "2026-08-05",
+   "impacto": "alto",
+   "porque": "Confirma que el proyecto pasó la Cámara sin objeciones y avanza rápido, reforzando la probabilidad de que sea ley en agosto."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "inmobiliario",
+   "titulo": "Subsidio a la tasa hipotecaria: sector inmobiliario celebra ampliación del beneficio y Hacienda aterriza efectos",
+   "fuente": "Emol",
+   "url": "https://www.emol.com/noticias/Economia/2026/08/04/1207568/gremios-inmobiliarios-subsidio.html",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "La tasa subsidiada baja de 4% a 3%: para una vivienda de 5.000 UF el ingreso familiar requerido cae de $4M a $3M mensuales, ampliando el público objetivo de las campañas."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "inmobiliario",
+   "titulo": "Con viviendas de hasta 6.000 UF: Gobierno busca ampliar subsidio a la tasa hipotecaria",
+   "fuente": "Cooperativa.cl",
+   "url": "https://www.cooperativa.cl/noticias/pais/vivienda/con-viviendas-de-hasta-6-000-uf-gobierno-busca-ampliar-subsidio-a-la/2026-08-04/122532.html",
+   "fecha": "2026-08-04",
+   "impacto": "alto",
+   "porque": "Detalla el proyecto y advierte que sin la ley el programa actual se agota en septiembre 2026 — urgencia real para el mercado que atiende Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "ia",
+   "titulo": "OpenAI brings product carousels to ChatGPT ads",
+   "fuente": "Digiday",
+   "url": "https://digiday.com/marketing/openai-brings-product-carousels-to-chatgpt-ads/",
+   "fecha": "2026-08-06",
+   "impacto": "medio",
+   "porque": "ChatGPT ya permite mostrar varios productos en un mismo anuncio patrocinado; anticipa hacia dónde evoluciona la publicidad conversacional que compite con Meta por el mismo presupuesto."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "ia",
+   "titulo": "Meta Business Agent deja de ser gratis: cobro por tokens desde el 1 de agosto",
+   "fuente": "Marketing4eCommerce",
+   "url": "https://marketing4ecommerce.mx/el-meta-business-agent-deja-de-ser-gratis/",
+   "fecha": "2026-08-01",
+   "impacto": "alto",
+   "porque": "US$2 por millón de tokens (~4-5¢ por conversación). Como el 100% de los anuncios activos de Nuevo Norte corren a WhatsApp, este cobro impacta directamente el costo por conversación."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "ia",
+   "titulo": "OpenAI appears to be building chatbot-native ads that launch AI agents",
+   "fuente": "Search Engine Land",
+   "url": "https://www.seroundtable.com/chatgpt-ads-business-agent-41801.html",
+   "fecha": "2026-07-31",
+   "impacto": "medio",
+   "porque": "OpenAI prueba anuncios que abren una conversación con un agente de negocio en vez de un sitio web — el mismo terreno de venta conversacional en el que compite domo IA."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "ia",
+   "titulo": "La IA dejó de ser una apuesta: startup Vambe abre el debate sobre el futuro de los negocios en un streaming abierto el 20 de agosto",
+   "fuente": "Forbes Chile",
+   "url": "https://forbes.cl/brandvoice/2026-07-31/la-ia-dejo-de-ser-una-apuesta-startup-vambe-abre-el-debate-sobre-el-futuro-de-los-negocios-en-un-streaming-abierto-el-20-de-agosto/",
+   "fecha": "2026-07-31",
+   "impacto": "medio",
+   "porque": "Referente chileno directo en IA conversacional de ventas — vale seguir su evento del 20-ago para benchmarking de producto y mensaje."
+  },
+  {
+   "captura": "2026-08-11",
+   "area": "ia",
+   "titulo": "Weekly Digital Marketing News Roundup (July 31 – August 7, 2026): Google, OpenAI, Meta & India Marketing Updates",
+   "fuente": "Boston Institute of Analytics",
+   "url": "https://bostoninstituteofanalytics.org/blog/weekly-digital-marketing-news-roundup-july-31-august-7-2026-google-openai-meta-india-marketing-updates/",
+   "fecha": "2026-08-07",
+   "impacto": "bajo",
+   "porque": "Panorama general de la semana en IA publicitaria (Google, OpenAI, Meta); sin acción específica inmediata pero útil como radar."
   }
  ]
 }
