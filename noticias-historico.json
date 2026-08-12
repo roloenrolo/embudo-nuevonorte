@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-11",
+ "actualizado": "2026-08-12",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1450,6 +1450,66 @@
    "fecha": "2026-08-07",
    "impacto": "bajo",
    "porque": "Panorama general de la semana en IA publicitaria (Google, OpenAI, Meta); sin acción específica inmediata pero útil como radar."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "inmobiliario",
+   "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/11/congreso-despacha-a-ley-la-ampliacion-del-subsidio-a-la-tasa-hipotecaria.shtml",
+   "fecha": "2026-08-11",
+   "impacto": "alto",
+   "porque": "Sube el tope a 6.000 UF y los cupos de 50 mil a 80 mil hasta mayo de 2028: amplía directamente el público elegible de los ad sets de subsidio de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "inmobiliario",
+   "titulo": "CBRE: inversión inmobiliaria alcanza su mayor optimismo para este 2026",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
+   "fecha": "2026-08-12",
+   "impacto": "medio",
+   "porque": "65% de los encuestados espera aumentar compras en 2026 (vs 38% en 2025): contexto favorable para mensajes de inversión en los creativos."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "inmobiliario",
+   "titulo": "Nuevo actor apuesta por las viviendas sobre UF 10 mil y anticipa que el mercado acelerará recién en 2027",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/empresas/industria/nuevo-actor-apuesta-por-las-viviendas-sobre-uf-10-mil-y-anticipa-que-el",
+   "fecha": "2026-08-10",
+   "impacto": "bajo",
+   "porque": "Nuevo competidor (Capital Prime) entra al segmento premium sobre UF 10.000, fuera del foco de subsidio/allegados de Nuevo Norte, pero indica movimiento de capital en el sector."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "ia",
+   "titulo": "Meta lanza Marketing API v26.0 y un servidor MCP público para gestionar campañas de Ads",
+   "fuente": "Kitchn (resumen changelog Meta Ads)",
+   "url": "https://www.kitchn.io/blog/meta-marketing-api-q2-2026-update",
+   "fecha": "2026-07-29",
+   "impacto": "alto",
+   "porque": "El nuevo servidor MCP en mcp.facebook.com/ads permite leer y escribir campañas Meta directamente vía IA: afecta el stack con el que Matías opera y reporta las campañas de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "ia",
+   "titulo": "Meta libera Muse Glimmer, modelo abierto para agentes de IA on-device",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+   "fecha": "2026-08-10",
+   "impacto": "bajo",
+   "porque": "Investigación de frontera sobre IA personal on-device; sin aplicación inmediata al negocio, pero marca tendencia de Meta en agentes IA."
+  },
+  {
+   "captura": "2026-08-12",
+   "area": "ia",
+   "titulo": "OpenAI lanza asientos Premium para ChatGPT Business a USD 125/usuario",
+   "fuente": "OpenAI (oficial)",
+   "url": "https://openai.com/index/premium-seats-chatgpt-business/",
+   "fecha": "2026-08-10",
+   "impacto": "bajo",
+   "porque": "Referencia de precios de herramientas IA empresariales; no afecta el stack actual de domo IA pero marca el piso de costos de IA agéntica en negocios."
   }
  ]
 }

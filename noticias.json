@@ -1,80 +1,80 @@
 {
-  "fecha": "2026-08-11",
-  "generado": "2026-08-11T07:35:56-04:00",
+  "fecha": "2026-08-12",
+  "generado": "2026-08-12T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Ampliación del subsidio a la tasa avanza a la sala del Senado",
-      "fuente": "La Tercera Pulso",
-      "url": "https://www.latercera.com/pulso/noticia/extension-del-subsidio-a-la-tasa-avanza-a-la-sala-del-senado/",
-      "fecha": "2026-08-10",
+      "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/11/congreso-despacha-a-ley-la-ampliacion-del-subsidio-a-la-tasa-hipotecaria.shtml",
+      "fecha": "2026-08-11",
       "impacto": "alto",
-      "porque": "La Comisión de Hacienda del Senado aprobó por unanimidad subir el tope a 6.000 UF y sumar 30.000 cupos; se vota en sala esta semana, ampliando el universo de compradores elegibles para campañas de Nuevo Norte."
+      "porque": "Sube el tope a 6.000 UF y los cupos de 50 mil a 80 mil hasta mayo de 2028: amplía directamente el público elegible de los ad sets de subsidio de Nuevo Norte."
     },
     {
-      "titulo": "Ministerio de Hacienda valora el respaldo unánime de la Cámara al proyecto que amplía el subsidio hipotecario y la garantía Fogaes",
-      "fuente": "G5 Noticias",
-      "url": "https://g5noticias.cl/2026/08/05/ministerio-de-hacienda-valora-el-respaldo-unanime-de-la-camara-al-proyecto-que-amplia-el-subsidio-hipotecario-y-la-garantia-fogaes/",
+      "titulo": "Gobierno presenta proyecto que amplía subsidio al dividendo hasta las 6 mil UF",
+      "fuente": "Radio Universidad de Chile",
+      "url": "https://radio.uchile.cl/2026/08/05/gobierno-presenta-proyecto-que-amplia-subsidio-al-dividendo-hasta-las-6-mil-uf/",
       "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Confirma que el proyecto pasó la Cámara sin objeciones y avanza rápido, reforzando la probabilidad de que sea ley en agosto."
+      "porque": "Es el antecedente directo de la ley despachada el 11-ago; confirma con una semana de anticipación el ensanche del criterio de elegibilidad para los mensajes de subsidio."
     },
     {
-      "titulo": "Subsidio a la tasa hipotecaria: sector inmobiliario celebra ampliación del beneficio y Hacienda aterriza efectos",
-      "fuente": "Emol",
-      "url": "https://www.emol.com/noticias/Economia/2026/08/04/1207568/gremios-inmobiliarios-subsidio.html",
-      "fecha": "2026-08-04",
-      "impacto": "alto",
-      "porque": "La tasa subsidiada baja de 4% a 3%: para una vivienda de 5.000 UF el ingreso familiar requerido cae de $4M a $3M mensuales, ampliando el público objetivo de las campañas."
+      "titulo": "CBRE: inversión inmobiliaria alcanza su mayor optimismo para este 2026",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
+      "fecha": "2026-08-12",
+      "impacto": "medio",
+      "porque": "65% de los encuestados espera aumentar compras en 2026 (vs 38% en 2025): contexto favorable para mensajes de inversión en los creativos."
     },
     {
-      "titulo": "Con viviendas de hasta 6.000 UF: Gobierno busca ampliar subsidio a la tasa hipotecaria",
-      "fuente": "Cooperativa.cl",
-      "url": "https://www.cooperativa.cl/noticias/pais/vivienda/con-viviendas-de-hasta-6-000-uf-gobierno-busca-ampliar-subsidio-a-la/2026-08-04/122532.html",
-      "fecha": "2026-08-04",
-      "impacto": "alto",
-      "porque": "Detalla el proyecto y advierte que sin la ley el programa actual se agota en septiembre 2026 — urgencia real para el mercado que atiende Nuevo Norte."
+      "titulo": "Nuevo actor apuesta por las viviendas sobre UF 10 mil y anticipa que el mercado acelerará recién en 2027",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/industria/nuevo-actor-apuesta-por-las-viviendas-sobre-uf-10-mil-y-anticipa-que-el",
+      "fecha": "2026-08-10",
+      "impacto": "bajo",
+      "porque": "Nuevo competidor (Capital Prime) entra al segmento premium sobre UF 10.000, fuera del foco de subsidio/allegados de Nuevo Norte, pero indica movimiento de capital en el sector."
     }
   ],
   "ia": [
     {
-      "titulo": "OpenAI brings product carousels to ChatGPT ads",
-      "fuente": "Digiday",
-      "url": "https://digiday.com/marketing/openai-brings-product-carousels-to-chatgpt-ads/",
-      "fecha": "2026-08-06",
-      "impacto": "medio",
-      "porque": "ChatGPT ya permite mostrar varios productos en un mismo anuncio patrocinado; anticipa hacia dónde evoluciona la publicidad conversacional que compite con Meta por el mismo presupuesto."
-    },
-    {
-      "titulo": "Meta Business Agent deja de ser gratis: cobro por tokens desde el 1 de agosto",
-      "fuente": "Marketing4eCommerce",
-      "url": "https://marketing4ecommerce.mx/el-meta-business-agent-deja-de-ser-gratis/",
-      "fecha": "2026-08-01",
+      "titulo": "Meta lanza Marketing API v26.0 y un servidor MCP público para gestionar campañas de Ads",
+      "fuente": "Kitchn (resumen changelog Meta Ads)",
+      "url": "https://www.kitchn.io/blog/meta-marketing-api-q2-2026-update",
+      "fecha": "2026-07-29",
       "impacto": "alto",
-      "porque": "US$2 por millón de tokens (~4-5¢ por conversación). Como el 100% de los anuncios activos de Nuevo Norte corren a WhatsApp, este cobro impacta directamente el costo por conversación."
+      "porque": "El nuevo servidor MCP en mcp.facebook.com/ads permite leer y escribir campañas Meta directamente vía IA: afecta el stack con el que Matías opera y reporta las campañas de Nuevo Norte."
     },
     {
-      "titulo": "OpenAI appears to be building chatbot-native ads that launch AI agents",
-      "fuente": "Search Engine Land",
-      "url": "https://www.seroundtable.com/chatgpt-ads-business-agent-41801.html",
-      "fecha": "2026-07-31",
+      "titulo": "Meta Business Agent en WhatsApp pasa a cobro por tokens desde el 1 de agosto",
+      "fuente": "Tech Times",
+      "url": "https://www.techtimes.com/articles/320787/20260716/meta-business-agent-billing-starts-aug-1-free-test-window-ends-days.htm",
+      "fecha": "2026-07-16",
+      "impacto": "alto",
+      "porque": "Las 4 campañas activas de Nuevo Norte son 100% WhatsApp; el cobro de USD 2 por millón de tokens (~4-5¢ por conversación) puede subir el costo por conversación que reporta Matías."
+    },
+    {
+      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
+      "fuente": "PressPeru",
+      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
+      "fecha": "2026-07-29",
       "impacto": "medio",
-      "porque": "OpenAI prueba anuncios que abren una conversación con un agente de negocio en vez de un sitio web — el mismo terreno de venta conversacional en el que compite domo IA."
+      "porque": "Agentes de compra/venta con integración nativa en ChatGPT y Google: referencia de hacia dónde va el comercio conversacional con IA."
     },
     {
-      "titulo": "La IA dejó de ser una apuesta: startup Vambe abre el debate sobre el futuro de los negocios en un streaming abierto el 20 de agosto",
-      "fuente": "Forbes Chile",
-      "url": "https://forbes.cl/brandvoice/2026-07-31/la-ia-dejo-de-ser-una-apuesta-startup-vambe-abre-el-debate-sobre-el-futuro-de-los-negocios-en-un-streaming-abierto-el-20-de-agosto/",
-      "fecha": "2026-07-31",
-      "impacto": "medio",
-      "porque": "Referente chileno directo en IA conversacional de ventas — vale seguir su evento del 20-ago para benchmarking de producto y mensaje."
-    },
-    {
-      "titulo": "Weekly Digital Marketing News Roundup (July 31 – August 7, 2026): Google, OpenAI, Meta & India Marketing Updates",
-      "fuente": "Boston Institute of Analytics",
-      "url": "https://bostoninstituteofanalytics.org/blog/weekly-digital-marketing-news-roundup-july-31-august-7-2026-google-openai-meta-india-marketing-updates/",
-      "fecha": "2026-08-07",
+      "titulo": "Meta libera Muse Glimmer, modelo abierto para agentes de IA on-device",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+      "fecha": "2026-08-10",
       "impacto": "bajo",
-      "porque": "Panorama general de la semana en IA publicitaria (Google, OpenAI, Meta); sin acción específica inmediata pero útil como radar."
+      "porque": "Investigación de frontera sobre IA personal on-device; sin aplicación inmediata al negocio, pero marca tendencia de Meta en agentes IA."
+    },
+    {
+      "titulo": "OpenAI lanza asientos Premium para ChatGPT Business a USD 125/usuario",
+      "fuente": "OpenAI (oficial)",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business/",
+      "fecha": "2026-08-10",
+      "impacto": "bajo",
+      "porque": "Referencia de precios de herramientas IA empresariales; no afecta el stack actual de domo IA pero marca el piso de costos de IA agéntica en negocios."
     }
   ]
 }
