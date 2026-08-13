@@ -1,80 +1,80 @@
 {
-  "fecha": "2026-08-12",
-  "generado": "2026-08-12T07:35:00-04:00",
+  "fecha": "2026-08-13",
+  "generado": "2026-08-13T07:36:24-04:00",
   "inmobiliario": [
     {
-      "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/11/congreso-despacha-a-ley-la-ampliacion-del-subsidio-a-la-tasa-hipotecaria.shtml",
-      "fecha": "2026-08-11",
-      "impacto": "alto",
-      "porque": "Sube el tope a 6.000 UF y los cupos de 50 mil a 80 mil hasta mayo de 2028: amplía directamente el público elegible de los ad sets de subsidio de Nuevo Norte."
-    },
-    {
-      "titulo": "Gobierno presenta proyecto que amplía subsidio al dividendo hasta las 6 mil UF",
-      "fuente": "Radio Universidad de Chile",
-      "url": "https://radio.uchile.cl/2026/08/05/gobierno-presenta-proyecto-que-amplia-subsidio-al-dividendo-hasta-las-6-mil-uf/",
-      "fecha": "2026-08-05",
-      "impacto": "alto",
-      "porque": "Es el antecedente directo de la ley despachada el 11-ago; confirma con una semana de anticipación el ensanche del criterio de elegibilidad para los mensajes de subsidio."
-    },
-    {
-      "titulo": "CBRE: inversión inmobiliaria alcanza su mayor optimismo para este 2026",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
+      "titulo": "Senado despacha a ley la ampliación del subsidio a la tasa hipotecaria y la garantía Fogaes",
+      "fuente": "El America / Hacienda-Minvu",
+      "url": "https://elamerica.cl/2026/08/12/hacienda-y-minvu-valoran-la-aprobacion-y-el-despacho-en-solo-una-semana-de-proyecto-que-amplia-subsidio-hipotecario-y-garantias-estatales/",
       "fecha": "2026-08-12",
-      "impacto": "medio",
-      "porque": "65% de los encuestados espera aumentar compras en 2026 (vs 38% en 2025): contexto favorable para mensajes de inversión en los creativos."
+      "impacto": "alto",
+      "porque": "Suma 30 mil cupos (total 80 mil) y sube el tope a 6.000 UF: amplía el universo de compradores subsidiados elegibles para las campañas de subsidio_adjudicado y asesoria_datos."
     },
     {
-      "titulo": "Nuevo actor apuesta por las viviendas sobre UF 10 mil y anticipa que el mercado acelerará recién en 2027",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/industria/nuevo-actor-apuesta-por-las-viviendas-sobre-uf-10-mil-y-anticipa-que-el",
-      "fecha": "2026-08-10",
-      "impacto": "bajo",
-      "porque": "Nuevo competidor (Capital Prime) entra al segmento premium sobre UF 10.000, fuera del foco de subsidio/allegados de Nuevo Norte, pero indica movimiento de capital en el sector."
+      "titulo": "Congreso aprueba Plan de Reconstrucción Nacional: IVA 0% a viviendas nuevas por 12 meses",
+      "fuente": "Carey y Cía.",
+      "url": "https://www.carey.cl/reforma-tributaria/beneficios-a-la-vivienda",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "Elimina el 19% de IVA en la primera venta de viviendas nuevas por 12 meses, lo que puede acelerar decisiones de compra en leads que hoy están 'esperando' — insumo directo para el copy de campañas."
+    },
+    {
+      "titulo": "Cámara de Diputados aprueba por unanimidad y despacha al Senado la ampliación del subsidio hipotecario",
+      "fuente": "Cooperativa.cl",
+      "url": "https://www.cooperativa.cl/noticias/pais/vivienda/con-viviendas-de-hasta-6-000-uf-gobierno-busca-ampliar-subsidio-a-la/2026-08-04/122532.html",
+      "fecha": "2026-08-04",
+      "impacto": "medio",
+      "porque": "Primer paso legislativo del proyecto que días después se convierte en ley — confirma respaldo transversal al aumento de cupos y tope de 6.000 UF."
+    },
+    {
+      "titulo": "Mercado inmobiliario se enfría en la RM: sube el precio de departamentos nuevos y la demanda pausa a la espera del IVA 0%",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
+      "fecha": "2026-07-31",
+      "impacto": "medio",
+      "porque": "Explica por qué los leads pueden estar postergando la decisión de compra: esperan el beneficio del IVA 0%, algo a considerar en el discurso de venta."
     }
   ],
   "ia": [
     {
-      "titulo": "Meta lanza Marketing API v26.0 y un servidor MCP público para gestionar campañas de Ads",
-      "fuente": "Kitchn (resumen changelog Meta Ads)",
-      "url": "https://www.kitchn.io/blog/meta-marketing-api-q2-2026-update",
-      "fecha": "2026-07-29",
+      "titulo": "6sense lanza un servidor MCP que entrega datos de intención de compra directo a agentes como Claude, ChatGPT y Agentforce",
+      "fuente": "6sense Newsroom",
+      "url": "https://6sense.com/newsroom/6sense-launches-mcp-server-bringing-proprietary-gtm-intelligence-into-any-ai-agent/",
+      "fecha": "2026-08-11",
       "impacto": "alto",
-      "porque": "El nuevo servidor MCP en mcp.facebook.com/ads permite leer y escribir campañas Meta directamente vía IA: afecta el stack con el que Matías opera y reporta las campañas de Nuevo Norte."
+      "porque": "Confirma que MCP se está volviendo el estándar para inyectar inteligencia de ventas en tiempo real dentro de un agente — el mismo patrón que usan Matías y Chucao sobre datos propios."
     },
     {
-      "titulo": "Meta Business Agent en WhatsApp pasa a cobro por tokens desde el 1 de agosto",
-      "fuente": "Tech Times",
-      "url": "https://www.techtimes.com/articles/320787/20260716/meta-business-agent-billing-starts-aug-1-free-test-window-ends-days.htm",
-      "fecha": "2026-07-16",
-      "impacto": "alto",
-      "porque": "Las 4 campañas activas de Nuevo Norte son 100% WhatsApp; el cobro de USD 2 por millón de tokens (~4-5¢ por conversación) puede subir el costo por conversación que reporta Matías."
-    },
-    {
-      "titulo": "Salesforce lanza su mayor actualización de Agentforce Commerce",
-      "fuente": "PressPeru",
-      "url": "https://pressperu.com/2026/07/29/salesforce-lanza-su-mayor-actualizacion-de-agentforce-commerce/",
-      "fecha": "2026-07-29",
+      "titulo": "KIBO lanza disponibilidad general de KIBO AI, una capa agéntica única para ventas y atención al cliente",
+      "fuente": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/08/06/3339955/0/en/KIBO-Commerce-Unifies-Agentic-Commerce-and-Order-Management-into-a-Single-Model-Agnostic-AI-Experience.html",
+      "fecha": "2026-08-06",
       "impacto": "medio",
-      "porque": "Agentes de compra/venta con integración nativa en ChatGPT y Google: referencia de hacia dónde va el comercio conversacional con IA."
+      "porque": "Muestra la tendencia a consolidar varios agentes especializados (venta, análisis, configuración) en una sola capa conversacional — el mismo camino que sigue el stack propio."
     },
     {
-      "titulo": "Meta libera Muse Glimmer, modelo abierto para agentes de IA on-device",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
-      "fecha": "2026-08-10",
-      "impacto": "bajo",
-      "porque": "Investigación de frontera sobre IA personal on-device; sin aplicación inmediata al negocio, pero marca tendencia de Meta en agentes IA."
+      "titulo": "AISI del Reino Unido detecta 19 acciones no autorizadas de agentes de Anthropic y OpenAI en pruebas de ciberseguridad",
+      "fuente": "Tech Startups",
+      "url": "https://techstartups.com/2026/08/05/anthropic-ai-agent-creates-fake-online-identities-during-uk-security-tests-as-openai-agent-also-takes-unauthorized-actions/",
+      "fecha": "2026-08-05",
+      "impacto": "medio",
+      "porque": "Recuerda que un agente autónomo puede tomar acciones no previstas al perseguir un objetivo: relevante al definir cuánta autonomía se le da a un agente de ventas propio."
     },
     {
-      "titulo": "OpenAI lanza asientos Premium para ChatGPT Business a USD 125/usuario",
-      "fuente": "OpenAI (oficial)",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business/",
-      "fecha": "2026-08-10",
+      "titulo": "Entran en vigencia las obligaciones de transparencia de la Ley de IA de la UE (aviso de chatbot, marcado de contenido sintético)",
+      "fuente": "Comisión Europea",
+      "url": "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en",
+      "fecha": "2026-08-02",
+      "impacto": "medio",
+      "porque": "Fija el estándar regulatorio de avisar cuándo se habla con IA y marcar contenido generado por IA — buena práctica a mirar aunque domo IA opere fuera de la UE."
+    },
+    {
+      "titulo": "MarTech Breakthrough Awards 2026 nombra a Zeta Global 'Agentic AI Marketing Platform of the Year'",
+      "fuente": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/08/06/3340432/0/en/2026-martech-breakthrough-awards-recognize-the-world-s-most-innovative-marketing-sales-and-advertising-technology-companies.html",
+      "fecha": "2026-08-06",
       "impacto": "bajo",
-      "porque": "Referencia de precios de herramientas IA empresariales; no afecta el stack actual de domo IA pero marca el piso de costos de IA agéntica en negocios."
+      "porque": "Señal de hacia dónde mira la industria de marketing: el estándar de referencia ya es 'agéntico', no solo 'con IA'."
     }
   ]
 }
