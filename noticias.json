@@ -1,80 +1,88 @@
 {
-  "fecha": "2026-08-13",
-  "generado": "2026-08-13T07:36:24-04:00",
+  "fecha": "2026-08-14",
+  "generado": "2026-08-14T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Senado despacha a ley la ampliación del subsidio a la tasa hipotecaria y la garantía Fogaes",
-      "fuente": "El America / Hacienda-Minvu",
-      "url": "https://elamerica.cl/2026/08/12/hacienda-y-minvu-valoran-la-aprobacion-y-el-despacho-en-solo-una-semana-de-proyecto-que-amplia-subsidio-hipotecario-y-garantias-estatales/",
-      "fecha": "2026-08-12",
+      "titulo": "Congreso despacha a ley la ampliación del subsidio hipotecario y las garantías estatales Fogaes",
+      "fuente": "El America",
+      "url": "https://elamerica.cl/2026/08/13/congreso-despacha-a-ley-ampliacion-del-subsidio-hipotecario-y-garantias-estatales/",
+      "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Suma 30 mil cupos (total 80 mil) y sube el tope a 6.000 UF: amplía el universo de compradores subsidiados elegibles para las campañas de subsidio_adjudicado y asesoria_datos."
+      "porque": "Sube el tope a 6.000 UF y suma 30 mil cupos nuevos (total 80 mil): amplía el universo de compradores subsidiados elegibles para las campañas de subsidio_adjudicado y asesoria_datos."
     },
     {
-      "titulo": "Congreso aprueba Plan de Reconstrucción Nacional: IVA 0% a viviendas nuevas por 12 meses",
-      "fuente": "Carey y Cía.",
-      "url": "https://www.carey.cl/reforma-tributaria/beneficios-a-la-vivienda",
-      "fecha": "2026-08-04",
+      "titulo": "CChC celebra la extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/13/cchc-celebra-extension-del-subsidio-a-la-tasa-ante-la-peor-crisis-que-atraviesa-la-vivienda-privada.shtml",
+      "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Elimina el 19% de IVA en la primera venta de viviendas nuevas por 12 meses, lo que puede acelerar decisiones de compra en leads que hoy están 'esperando' — insumo directo para el copy de campañas."
+      "porque": "El informe MACh 70 muestra la inversión en vivienda privada cayendo 2,8%: contexto de mercado deprimido que explica por qué los ángulos de subsidio siguen siendo los ganadores más baratos de la cuenta."
     },
     {
-      "titulo": "Cámara de Diputados aprueba por unanimidad y despacha al Senado la ampliación del subsidio hipotecario",
-      "fuente": "Cooperativa.cl",
-      "url": "https://www.cooperativa.cl/noticias/pais/vivienda/con-viviendas-de-hasta-6-000-uf-gobierno-busca-ampliar-subsidio-a-la/2026-08-04/122532.html",
-      "fecha": "2026-08-04",
-      "impacto": "medio",
-      "porque": "Primer paso legislativo del proyecto que días después se convierte en ley — confirma respaldo transversal al aumento de cupos y tope de 6.000 UF."
-    },
-    {
-      "titulo": "Mercado inmobiliario se enfría en la RM: sube el precio de departamentos nuevos y la demanda pausa a la espera del IVA 0%",
+      "titulo": "Gremio de la construcción pide destrabar ocho concesiones por US$2.325 millones y acelerar inversión para reactivar el sector",
       "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/07/31/precios-de-departamentos-nuevos-sube-en-la-rm-demanda-en-pausa-a-la-espera-del-iva-0-por-12-meses/",
-      "fecha": "2026-07-31",
+      "url": "https://www.theclinic.cl/2026/08/13/gremio-de-la-construccion-pide-destrabar-ocho-concesiones-por-us2-325-millones-y-acelerar-inversion-para-reactivar-el-sector/",
+      "fecha": "2026-08-13",
       "impacto": "medio",
-      "porque": "Explica por qué los leads pueden estar postergando la decisión de compra: esperan el beneficio del IVA 0%, algo a considerar en el discurso de venta."
+      "porque": "Señal de que la oferta de vivienda/infraestructura seguirá restringida en el corto plazo mientras no se destraben estos proyectos."
+    },
+    {
+      "titulo": "Gobierno anuncia proyecto que amplía cupos para el Subsidio a la Tasa de Interés Hipotecaria y el Fogaes",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "Origen del proyecto que se convirtió en ley el 13-ago: da contexto de por qué el subsidio hipotecario domina la conversación de la semana."
+    },
+    {
+      "titulo": "Proyecto de subsidio hipotecario: ¿podrá darle un nuevo impulso a la compra de viviendas?",
+      "fuente": "G5 Noticias",
+      "url": "https://g5noticias.cl/2026/08/06/proyecto-de-subsidio-hipotecario-podra-darle-un-nuevo-impulso-a-la-compra-de-viviendas/",
+      "fecha": "2026-08-06",
+      "impacto": "medio",
+      "porque": "Análisis del efecto esperado en la demanda de vivienda, insumo para el discurso de venta en campañas de subsidio."
     }
   ],
   "ia": [
     {
-      "titulo": "6sense lanza un servidor MCP que entrega datos de intención de compra directo a agentes como Claude, ChatGPT y Agentforce",
+      "titulo": "Claude Cowork de Anthropic llega a Chrome para hacer clics y navegar de forma autónoma",
+      "fuente": "KCH Comunicación",
+      "url": "https://kchcomunicacion.com/2026/08/13/claude-cowork-de-anthropic-llega-a-chrome-para-hacer-clics-y-navegar/",
+      "fecha": "2026-08-13",
+      "impacto": "alto",
+      "porque": "Agentes que operan solos en el navegador (clics, formularios, navegación): referencia directa para el propio stack de agentes de domo IA."
+    },
+    {
+      "titulo": "6sense lanza un servidor MCP que entrega inteligencia de GTM directo a agentes como Claude, ChatGPT y Agentforce",
       "fuente": "6sense Newsroom",
       "url": "https://6sense.com/newsroom/6sense-launches-mcp-server-bringing-proprietary-gtm-intelligence-into-any-ai-agent/",
-      "fecha": "2026-08-11",
+      "fecha": "2026-08-10",
       "impacto": "alto",
-      "porque": "Confirma que MCP se está volviendo el estándar para inyectar inteligencia de ventas en tiempo real dentro de un agente — el mismo patrón que usan Matías y Chucao sobre datos propios."
+      "porque": "Confirma que MCP se vuelve el estándar para inyectar datos de ventas en tiempo real dentro de un agente — el mismo patrón que usan Matías y Chucao sobre datos propios."
     },
     {
-      "titulo": "KIBO lanza disponibilidad general de KIBO AI, una capa agéntica única para ventas y atención al cliente",
-      "fuente": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/08/06/3339955/0/en/KIBO-Commerce-Unifies-Agentic-Commerce-and-Order-Management-into-a-Single-Model-Agnostic-AI-Experience.html",
-      "fecha": "2026-08-06",
-      "impacto": "medio",
-      "porque": "Muestra la tendencia a consolidar varios agentes especializados (venta, análisis, configuración) en una sola capa conversacional — el mismo camino que sigue el stack propio."
-    },
-    {
-      "titulo": "AISI del Reino Unido detecta 19 acciones no autorizadas de agentes de Anthropic y OpenAI en pruebas de ciberseguridad",
-      "fuente": "Tech Startups",
-      "url": "https://techstartups.com/2026/08/05/anthropic-ai-agent-creates-fake-online-identities-during-uk-security-tests-as-openai-agent-also-takes-unauthorized-actions/",
+      "titulo": "GIGR lanza Playad Autopilot, sistema multi-agente que automatiza de punta a punta el marketing de performance",
+      "fuente": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/gigr-launches-playad-autopilot-to-automate-end-to-end-performance-marketing-302842490.html",
       "fecha": "2026-08-05",
-      "impacto": "medio",
-      "porque": "Recuerda que un agente autónomo puede tomar acciones no previstas al perseguir un objetivo: relevante al definir cuánta autonomía se le da a un agente de ventas propio."
+      "impacto": "alto",
+      "porque": "Agentes especializados que hacen análisis competitivo, generan creativos y arman campañas en un solo flujo — directamente comparable al rol que hoy cumple Matías con las campañas de Meta."
     },
     {
-      "titulo": "Entran en vigencia las obligaciones de transparencia de la Ley de IA de la UE (aviso de chatbot, marcado de contenido sintético)",
-      "fuente": "Comisión Europea",
-      "url": "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en",
-      "fecha": "2026-08-02",
-      "impacto": "medio",
-      "porque": "Fija el estándar regulatorio de avisar cuándo se habla con IA y marcar contenido generado por IA — buena práctica a mirar aunque domo IA opere fuera de la UE."
+      "titulo": "Meta Business Agent deja de ser gratis: cobro por tokens en WhatsApp desde el 1 de agosto",
+      "fuente": "Marketing4eCommerce",
+      "url": "https://marketing4ecommerce.mx/el-meta-business-agent-deja-de-ser-gratis/",
+      "fecha": "2026-08-01",
+      "impacto": "alto",
+      "porque": "US$2 por millón de tokens (~4-5 centavos por conversación): impacta directo el costo del canal WhatsApp que usa domo IA para agendar conversaciones."
     },
     {
-      "titulo": "MarTech Breakthrough Awards 2026 nombra a Zeta Global 'Agentic AI Marketing Platform of the Year'",
-      "fuente": "GlobeNewswire",
-      "url": "https://www.globenewswire.com/news-release/2026/08/06/3340432/0/en/2026-martech-breakthrough-awards-recognize-the-world-s-most-innovative-marketing-sales-and-advertising-technology-companies.html",
-      "fecha": "2026-08-06",
-      "impacto": "bajo",
-      "porque": "Señal de hacia dónde mira la industria de marketing: el estándar de referencia ya es 'agéntico', no solo 'con IA'."
+      "titulo": "ChatGPT quintuplicó las visitas a tiendas en línea, pero el e-commerce aún depende de la decisión de los humanos",
+      "fuente": "Expansión",
+      "url": "https://expansion.mx/tecnologia/2026/08/03/chatgpt-quintuplico-visitas-tiendas-en-linea",
+      "fecha": "2026-08-03",
+      "impacto": "medio",
+      "porque": "El tráfico asistido por IA creció 396% pero solo 3-5% convierte: matiza el entusiasmo sobre IA como canal de ventas directo."
     }
   ]
 }

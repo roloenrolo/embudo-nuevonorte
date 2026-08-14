@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-13",
+ "actualizado": "2026-08-14",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1570,6 +1570,76 @@
    "fecha": "2026-08-06",
    "impacto": "bajo",
    "porque": "Señal de hacia dónde mira la industria de marketing: el estándar de referencia ya es 'agéntico', no solo 'con IA'."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "inmobiliario",
+   "titulo": "Congreso despacha a ley la ampliación del subsidio hipotecario y las garantías estatales Fogaes",
+   "fuente": "El America",
+   "url": "https://elamerica.cl/2026/08/13/congreso-despacha-a-ley-ampliacion-del-subsidio-hipotecario-y-garantias-estatales/",
+   "fecha": "2026-08-13",
+   "impacto": "alto",
+   "porque": "Sube el tope a 6.000 UF y suma 30 mil cupos nuevos (total 80 mil): amplía el universo de compradores subsidiados elegibles para las campañas de subsidio_adjudicado y asesoria_datos."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "inmobiliario",
+   "titulo": "CChC celebra la extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/13/cchc-celebra-extension-del-subsidio-a-la-tasa-ante-la-peor-crisis-que-atraviesa-la-vivienda-privada.shtml",
+   "fecha": "2026-08-13",
+   "impacto": "alto",
+   "porque": "El informe MACh 70 muestra la inversión en vivienda privada cayendo 2,8%: contexto de mercado deprimido que explica por qué los ángulos de subsidio siguen siendo los ganadores más baratos de la cuenta."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "inmobiliario",
+   "titulo": "Gremio de la construcción pide destrabar ocho concesiones por US$2.325 millones y acelerar inversión para reactivar el sector",
+   "fuente": "The Clinic",
+   "url": "https://www.theclinic.cl/2026/08/13/gremio-de-la-construccion-pide-destrabar-ocho-concesiones-por-us2-325-millones-y-acelerar-inversion-para-reactivar-el-sector/",
+   "fecha": "2026-08-13",
+   "impacto": "medio",
+   "porque": "Señal de que la oferta de vivienda/infraestructura seguirá restringida en el corto plazo mientras no se destraben estos proyectos."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "inmobiliario",
+   "titulo": "Proyecto de subsidio hipotecario: ¿podrá darle un nuevo impulso a la compra de viviendas?",
+   "fuente": "G5 Noticias",
+   "url": "https://g5noticias.cl/2026/08/06/proyecto-de-subsidio-hipotecario-podra-darle-un-nuevo-impulso-a-la-compra-de-viviendas/",
+   "fecha": "2026-08-06",
+   "impacto": "medio",
+   "porque": "Análisis del efecto esperado en la demanda de vivienda, insumo para el discurso de venta en campañas de subsidio."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "ia",
+   "titulo": "Claude Cowork de Anthropic llega a Chrome para hacer clics y navegar de forma autónoma",
+   "fuente": "KCH Comunicación",
+   "url": "https://kchcomunicacion.com/2026/08/13/claude-cowork-de-anthropic-llega-a-chrome-para-hacer-clics-y-navegar/",
+   "fecha": "2026-08-13",
+   "impacto": "alto",
+   "porque": "Agentes que operan solos en el navegador (clics, formularios, navegación): referencia directa para el propio stack de agentes de domo IA."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "ia",
+   "titulo": "GIGR lanza Playad Autopilot, sistema multi-agente que automatiza de punta a punta el marketing de performance",
+   "fuente": "PR Newswire",
+   "url": "https://www.prnewswire.com/news-releases/gigr-launches-playad-autopilot-to-automate-end-to-end-performance-marketing-302842490.html",
+   "fecha": "2026-08-05",
+   "impacto": "alto",
+   "porque": "Agentes especializados que hacen análisis competitivo, generan creativos y arman campañas en un solo flujo — directamente comparable al rol que hoy cumple Matías con las campañas de Meta."
+  },
+  {
+   "captura": "2026-08-14",
+   "area": "ia",
+   "titulo": "ChatGPT quintuplicó las visitas a tiendas en línea, pero el e-commerce aún depende de la decisión de los humanos",
+   "fuente": "Expansión",
+   "url": "https://expansion.mx/tecnologia/2026/08/03/chatgpt-quintuplico-visitas-tiendas-en-linea",
+   "fecha": "2026-08-03",
+   "impacto": "medio",
+   "porque": "El tráfico asistido por IA creció 396% pero solo 3-5% convierte: matiza el entusiasmo sobre IA como canal de ventas directo."
   }
  ]
 }
