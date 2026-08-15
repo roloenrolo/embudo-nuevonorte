@@ -1,88 +1,80 @@
 {
-  "fecha": "2026-08-14",
-  "generado": "2026-08-14T07:35:00-04:00",
+  "fecha": "2026-08-15",
+  "generado": "2026-08-15T07:34:12-04:00",
   "inmobiliario": [
     {
-      "titulo": "Congreso despacha a ley la ampliación del subsidio hipotecario y las garantías estatales Fogaes",
+      "titulo": "Congreso despacha a ley la ampliación del subsidio hipotecario y garantías estatales",
       "fuente": "El America",
       "url": "https://elamerica.cl/2026/08/13/congreso-despacha-a-ley-ampliacion-del-subsidio-hipotecario-y-garantias-estatales/",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Sube el tope a 6.000 UF y suma 30 mil cupos nuevos (total 80 mil): amplía el universo de compradores subsidiados elegibles para las campañas de subsidio_adjudicado y asesoria_datos."
+      "porque": "Amplía a 80 mil cupos y hasta 6.000 UF el tope de vivienda subsidiada — impacta directo a las campañas 'subsidio_adjudicado' que hoy dominan el 55% del gasto de Nuevo Norte."
     },
     {
-      "titulo": "CChC celebra la extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
+      "titulo": "CChC celebra extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
       "fuente": "BioBioChile",
       "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/13/cchc-celebra-extension-del-subsidio-a-la-tasa-ante-la-peor-crisis-que-atraviesa-la-vivienda-privada.shtml",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "El informe MACh 70 muestra la inversión en vivienda privada cayendo 2,8%: contexto de mercado deprimido que explica por qué los ángulos de subsidio siguen siendo los ganadores más baratos de la cuenta."
+      "porque": "Confirma que el sector ve el subsidio como salvavidas ante la crisis de vivienda privada, lo que valida el mensaje de urgencia en los anuncios de subsidio."
     },
     {
-      "titulo": "Gremio de la construcción pide destrabar ocho concesiones por US$2.325 millones y acelerar inversión para reactivar el sector",
-      "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/08/13/gremio-de-la-construccion-pide-destrabar-ocho-concesiones-por-us2-325-millones-y-acelerar-inversion-para-reactivar-el-sector/",
+      "titulo": "Gobierno presenta proyecto para ampliar subsidio hipotecario y garantía estatal para la primera vivienda",
+      "fuente": "El America",
+      "url": "https://elamerica.cl/2026/08/06/gobierno-presenta-proyecto-para-ampliar-subsidio-hipotecario-y-garantia-estatal-para-la-primera-vivienda/",
+      "fecha": "2026-08-06",
+      "impacto": "alto",
+      "porque": "Detalla el proyecto original (30 mil cupos nuevos, tope 6.000 UF) que dio origen a la ley despachada el 13-ago; contexto útil para explicar el beneficio en los creativos."
+    },
+    {
+      "titulo": "CChC pide acelerar medidas de inversión y recorta proyección de construcción para 2026",
+      "fuente": "Emol",
+      "url": "https://www.emol.com/noticias/Economia/2026/08/13/1208398/informe-camara-chilena-de-la.html",
       "fecha": "2026-08-13",
       "impacto": "medio",
-      "porque": "Señal de que la oferta de vivienda/infraestructura seguirá restringida en el corto plazo mientras no se destraben estos proyectos."
+      "porque": "Inversión en vivienda privada cae 2,8% y faltan 198 mil empleos en el sector — el subsidio queda como casi la única palanca de demanda, refuerza la relevancia de las campañas de subsidio."
     },
     {
-      "titulo": "Gobierno anuncia proyecto que amplía cupos para el Subsidio a la Tasa de Interés Hipotecaria y el Fogaes",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "titulo": "Minvu y Hacienda presentan proyecto para ampliar el subsidio hipotecario y garantías estatales",
+      "fuente": "Radio Gennesis",
+      "url": "https://www.radiogennesis.cl/2026/08/04/minvu-y-hacienda-presentan-proyecto-para-ampliar-el-subsidio-hipotecario-y-garantias-estatales/",
       "fecha": "2026-08-04",
-      "impacto": "alto",
-      "porque": "Origen del proyecto que se convirtió en ley el 13-ago: da contexto de por qué el subsidio hipotecario domina la conversación de la semana."
-    },
-    {
-      "titulo": "Proyecto de subsidio hipotecario: ¿podrá darle un nuevo impulso a la compra de viviendas?",
-      "fuente": "G5 Noticias",
-      "url": "https://g5noticias.cl/2026/08/06/proyecto-de-subsidio-hipotecario-podra-darle-un-nuevo-impulso-a-la-compra-de-viviendas/",
-      "fecha": "2026-08-06",
       "impacto": "medio",
-      "porque": "Análisis del efecto esperado en la demanda de vivienda, insumo para el discurso de venta en campañas de subsidio."
+      "porque": "Primer anuncio oficial de la medida antes de su aprobación; útil para entender la cronología completa del beneficio que ahora es ley."
     }
   ],
   "ia": [
     {
-      "titulo": "Claude Cowork de Anthropic llega a Chrome para hacer clics y navegar de forma autónoma",
-      "fuente": "KCH Comunicación",
-      "url": "https://kchcomunicacion.com/2026/08/13/claude-cowork-de-anthropic-llega-a-chrome-para-hacer-clics-y-navegar/",
+      "titulo": "El despliegue de agentes de IA en las empresas se duplica en un año, según el Salesforce Agentic Enterprise Index",
+      "fuente": "Periódico Publicidad",
+      "url": "https://www.periodicopublicidad.com/articulo/negocios/despliegue-agentes-ia-empresas-duplica-ano/20260813104155177105.html",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Agentes que operan solos en el navegador (clics, formularios, navegación): referencia directa para el propio stack de agentes de domo IA."
+      "porque": "Los retailers que usan agentes de IA suben ventas 8% interanual vs 2% sin ellos — evidencia de ROI concreto que respalda el uso de agentes propios en domo IA."
     },
     {
-      "titulo": "6sense lanza un servidor MCP que entrega inteligencia de GTM directo a agentes como Claude, ChatGPT y Agentforce",
-      "fuente": "6sense Newsroom",
-      "url": "https://6sense.com/newsroom/6sense-launches-mcp-server-bringing-proprietary-gtm-intelligence-into-any-ai-agent/",
+      "titulo": "Meta abre el código de su modelo de IA más potente, Muse Spark 1.2, y reta a OpenAI y Anthropic",
+      "fuente": "CNBC",
+      "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
       "fecha": "2026-08-10",
-      "impacto": "alto",
-      "porque": "Confirma que MCP se vuelve el estándar para inyectar datos de ventas en tiempo real dentro de un agente — el mismo patrón que usan Matías y Chucao sobre datos propios."
-    },
-    {
-      "titulo": "GIGR lanza Playad Autopilot, sistema multi-agente que automatiza de punta a punta el marketing de performance",
-      "fuente": "PR Newswire",
-      "url": "https://www.prnewswire.com/news-releases/gigr-launches-playad-autopilot-to-automate-end-to-end-performance-marketing-302842490.html",
-      "fecha": "2026-08-05",
-      "impacto": "alto",
-      "porque": "Agentes especializados que hacen análisis competitivo, generan creativos y arman campañas en un solo flujo — directamente comparable al rol que hoy cumple Matías con las campañas de Meta."
-    },
-    {
-      "titulo": "Meta Business Agent deja de ser gratis: cobro por tokens en WhatsApp desde el 1 de agosto",
-      "fuente": "Marketing4eCommerce",
-      "url": "https://marketing4ecommerce.mx/el-meta-business-agent-deja-de-ser-gratis/",
-      "fecha": "2026-08-01",
-      "impacto": "alto",
-      "porque": "US$2 por millón de tokens (~4-5 centavos por conversación): impacta directo el costo del canal WhatsApp que usa domo IA para agendar conversaciones."
-    },
-    {
-      "titulo": "ChatGPT quintuplicó las visitas a tiendas en línea, pero el e-commerce aún depende de la decisión de los humanos",
-      "fuente": "Expansión",
-      "url": "https://expansion.mx/tecnologia/2026/08/03/chatgpt-quintuplico-visitas-tiendas-en-linea",
-      "fecha": "2026-08-03",
       "impacto": "medio",
-      "porque": "El tráfico asistido por IA creció 396% pero solo 3-5% convierte: matiza el entusiasmo sobre IA como canal de ventas directo."
+      "porque": "Modelos de punta gratuitos bajan el costo de construir agentes propios de ventas/marketing."
+    },
+    {
+      "titulo": "Meta lanza Muse Glimmer: modelo open source liviano que corre en un solo computador",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/08/11/meta-muse-glimmer-30b-open-source-gpu-ordenador-local/",
+      "fecha": "2026-08-11",
+      "impacto": "bajo",
+      "porque": "IA local más barata a mediano plazo, reduce dependencia de cómputo en la nube para automatizaciones internas."
+    },
+    {
+      "titulo": "Comercio agéntico: cómo la IA multiplica tus ventas hoy",
+      "fuente": "IT Seller",
+      "url": "https://www.itseller.cl/2026/08/04/comercio-agentico-ia-aumentar-ventas/",
+      "fecha": "2026-08-04",
+      "impacto": "medio",
+      "porque": "Casos prácticos de IA agéntica aplicada directamente a ventas, tendencia comparable al enfoque de domo IA en Nuevo Norte."
     }
   ]
 }

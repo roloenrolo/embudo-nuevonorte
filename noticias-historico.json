@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-14",
+ "actualizado": "2026-08-15",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1640,6 +1640,56 @@
    "fecha": "2026-08-03",
    "impacto": "medio",
    "porque": "El tráfico asistido por IA creció 396% pero solo 3-5% convierte: matiza el entusiasmo sobre IA como canal de ventas directo."
+  },
+  {
+   "captura": "2026-08-15",
+   "area": "inmobiliario",
+   "titulo": "CChC pide acelerar medidas de inversión y recorta proyección de construcción para 2026",
+   "fuente": "Emol",
+   "url": "https://www.emol.com/noticias/Economia/2026/08/13/1208398/informe-camara-chilena-de-la.html",
+   "fecha": "2026-08-13",
+   "impacto": "medio",
+   "porque": "Inversión en vivienda privada cae 2,8% y faltan 198 mil empleos en el sector — el subsidio queda como casi la única palanca de demanda, refuerza la relevancia de las campañas de subsidio."
+  },
+  {
+   "captura": "2026-08-15",
+   "area": "inmobiliario",
+   "titulo": "Minvu y Hacienda presentan proyecto para ampliar el subsidio hipotecario y garantías estatales",
+   "fuente": "Radio Gennesis",
+   "url": "https://www.radiogennesis.cl/2026/08/04/minvu-y-hacienda-presentan-proyecto-para-ampliar-el-subsidio-hipotecario-y-garantias-estatales/",
+   "fecha": "2026-08-04",
+   "impacto": "medio",
+   "porque": "Primer anuncio oficial de la medida antes de su aprobación; útil para entender la cronología completa del beneficio que ahora es ley."
+  },
+  {
+   "captura": "2026-08-15",
+   "area": "ia",
+   "titulo": "El despliegue de agentes de IA en las empresas se duplica en un año, según el Salesforce Agentic Enterprise Index",
+   "fuente": "Periódico Publicidad",
+   "url": "https://www.periodicopublicidad.com/articulo/negocios/despliegue-agentes-ia-empresas-duplica-ano/20260813104155177105.html",
+   "fecha": "2026-08-13",
+   "impacto": "alto",
+   "porque": "Los retailers que usan agentes de IA suben ventas 8% interanual vs 2% sin ellos — evidencia de ROI concreto que respalda el uso de agentes propios en domo IA."
+  },
+  {
+   "captura": "2026-08-15",
+   "area": "ia",
+   "titulo": "Meta abre el código de su modelo de IA más potente, Muse Spark 1.2, y reta a OpenAI y Anthropic",
+   "fuente": "CNBC",
+   "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+   "fecha": "2026-08-10",
+   "impacto": "medio",
+   "porque": "Modelos de punta gratuitos bajan el costo de construir agentes propios de ventas/marketing."
+  },
+  {
+   "captura": "2026-08-15",
+   "area": "ia",
+   "titulo": "Meta lanza Muse Glimmer: modelo open source liviano que corre en un solo computador",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/08/11/meta-muse-glimmer-30b-open-source-gpu-ordenador-local/",
+   "fecha": "2026-08-11",
+   "impacto": "bajo",
+   "porque": "IA local más barata a mediano plazo, reduce dependencia de cómputo en la nube para automatizaciones internas."
   }
  ]
 }
