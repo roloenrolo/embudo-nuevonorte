@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-15",
+ "actualizado": "2026-08-16",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1690,6 +1690,56 @@
    "fecha": "2026-08-11",
    "impacto": "bajo",
    "porque": "IA local más barata a mediano plazo, reduce dependencia de cómputo en la nube para automatizaciones internas."
+  },
+  {
+   "captura": "2026-08-16",
+   "area": "inmobiliario",
+   "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria: pie de 10%, tasa baja de 4% a 3%, viviendas hasta 6.000 UF y 30 mil cupos nuevos",
+   "fuente": "24horas.cl",
+   "url": "https://www.24horas.cl/actualidad/nacional/viviendas-de-hasta-6-000-uf-y-30-mil-nuevos-cupos-senado-despacha-a-ley-subsidio-tasa",
+   "fecha": "2026-08-13",
+   "impacto": "alto",
+   "porque": "Amplía directamente el universo de compradores elegibles para el subsidio a la tasa (hasta 6.000 UF), el ángulo que ya domina el 51% del gasto publicitario de Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-16",
+   "area": "ia",
+   "titulo": "Grok Bot: x.ai lanza agentes de IA con computadora propia que trabajan 24/7",
+   "fuente": "DiarioBitcoin",
+   "url": "https://www.diariobitcoin.com/software/grok-bot-x-ai-lanza-agentes-de-ia-con-computadora-propia-que-trabajan-24-7/",
+   "fecha": "2026-08-11",
+   "impacto": "medio",
+   "porque": "Nuevo competidor en agentes autónomos de trabajo; a vigilar como referencia de lo que la competencia podría ofrecer en atención de leads."
+  },
+  {
+   "captura": "2026-08-16",
+   "area": "ia",
+   "titulo": "OpenAI Ads llega a Brasil: la plataforma de anuncios de ChatGPT se abre al mercado brasileño",
+   "fuente": "Stainen",
+   "url": "https://blog.stainen.com.br/inteligencia-artificial/openai-ads-brasil-plataforma-anuncios-chatgpt/",
+   "fecha": "2026-08-06",
+   "impacto": "medio",
+   "porque": "Señal de expansión regional de un canal publicitario nuevo (ads dentro de ChatGPT); potencial diversificación futura frente a la dependencia actual de Meta/WhatsApp."
+  },
+  {
+   "captura": "2026-08-16",
+   "area": "ia",
+   "titulo": "Meta lanza su primer agente de IA para programación (Muse Code) para competir con Anthropic y OpenAI",
+   "fuente": "The Objective",
+   "url": "https://theobjective.com/tecnologia/2026-08-05/meta-ia-programacion-anthropic-openai/",
+   "fecha": "2026-08-05",
+   "impacto": "bajo",
+   "porque": "Herramienta de desarrollo, no de ventas o marketing; relevancia indirecta para el negocio."
+  },
+  {
+   "captura": "2026-08-16",
+   "area": "ia",
+   "titulo": "Meta comienza a cobrar por uso de su agente de IA en WhatsApp Business: USD 2 por millón de tokens (~4-5 centavos por conversación)",
+   "fuente": "QubitSuite",
+   "url": "https://qubitsuite.com/blog/meta-cobra-por-ia-en-whatsapp/",
+   "fecha": "2026-08-01",
+   "impacto": "alto",
+   "porque": "Impacto directo en costos: todas las conversiones actuales de Nuevo Norte son por WhatsApp, este cobro por token puede subir el CPA si se usa el agente de Meta."
   }
  ]
 }

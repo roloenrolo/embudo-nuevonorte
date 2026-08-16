@@ -1,80 +1,80 @@
 {
-  "fecha": "2026-08-15",
-  "generado": "2026-08-15T07:34:12-04:00",
+  "fecha": "2026-08-16",
+  "generado": "2026-08-16T07:33:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Congreso despacha a ley la ampliación del subsidio hipotecario y garantías estatales",
-      "fuente": "El America",
-      "url": "https://elamerica.cl/2026/08/13/congreso-despacha-a-ley-ampliacion-del-subsidio-hipotecario-y-garantias-estatales/",
+      "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria: pie de 10%, tasa baja de 4% a 3%, viviendas hasta 6.000 UF y 30 mil cupos nuevos",
+      "fuente": "24horas.cl",
+      "url": "https://www.24horas.cl/actualidad/nacional/viviendas-de-hasta-6-000-uf-y-30-mil-nuevos-cupos-senado-despacha-a-ley-subsidio-tasa",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Amplía a 80 mil cupos y hasta 6.000 UF el tope de vivienda subsidiada — impacta directo a las campañas 'subsidio_adjudicado' que hoy dominan el 55% del gasto de Nuevo Norte."
+      "porque": "Amplía directamente el universo de compradores elegibles para el subsidio a la tasa (hasta 6.000 UF), el ángulo que ya domina el 51% del gasto publicitario de Nuevo Norte."
     },
     {
-      "titulo": "CChC celebra extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
+      "titulo": "CChC celebra la extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
       "fuente": "BioBioChile",
       "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/13/cchc-celebra-extension-del-subsidio-a-la-tasa-ante-la-peor-crisis-que-atraviesa-la-vivienda-privada.shtml",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Confirma que el sector ve el subsidio como salvavidas ante la crisis de vivienda privada, lo que valida el mensaje de urgencia en los anuncios de subsidio."
+      "porque": "Confirma que el mercado privado seguirá dependiendo del subsidio como driver de venta, valida seguir invirtiendo en el mensaje de subsidio_adjudicado."
     },
     {
-      "titulo": "Gobierno presenta proyecto para ampliar subsidio hipotecario y garantía estatal para la primera vivienda",
-      "fuente": "El America",
-      "url": "https://elamerica.cl/2026/08/06/gobierno-presenta-proyecto-para-ampliar-subsidio-hipotecario-y-garantia-estatal-para-la-primera-vivienda/",
-      "fecha": "2026-08-06",
-      "impacto": "alto",
-      "porque": "Detalla el proyecto original (30 mil cupos nuevos, tope 6.000 UF) que dio origen a la ley despachada el 13-ago; contexto útil para explicar el beneficio en los creativos."
-    },
-    {
-      "titulo": "CChC pide acelerar medidas de inversión y recorta proyección de construcción para 2026",
-      "fuente": "Emol",
-      "url": "https://www.emol.com/noticias/Economia/2026/08/13/1208398/informe-camara-chilena-de-la.html",
+      "titulo": "CChC pide destrabar ocho concesiones por US$2.325 millones y acelerar inversión para reactivar el sector construcción",
+      "fuente": "The Clinic",
+      "url": "https://www.theclinic.cl/2026/08/13/gremio-de-la-construccion-pide-destrabar-ocho-concesiones-por-us2-325-millones-y-acelerar-inversion-para-reactivar-el-sector/",
       "fecha": "2026-08-13",
       "impacto": "medio",
-      "porque": "Inversión en vivienda privada cae 2,8% y faltan 198 mil empleos en el sector — el subsidio queda como casi la única palanca de demanda, refuerza la relevancia de las campañas de subsidio."
+      "porque": "Señal macro de que el sector sigue en modo reactivación, contexto útil para el tono de las campañas pero sin acción inmediata."
     },
     {
-      "titulo": "Minvu y Hacienda presentan proyecto para ampliar el subsidio hipotecario y garantías estatales",
-      "fuente": "Radio Gennesis",
-      "url": "https://www.radiogennesis.cl/2026/08/04/minvu-y-hacienda-presentan-proyecto-para-ampliar-el-subsidio-hipotecario-y-garantias-estatales/",
-      "fecha": "2026-08-04",
+      "titulo": "Hacienda y Minvu valoran la aprobación y despacho en solo una semana del proyecto que amplía el subsidio hipotecario y garantías estatales",
+      "fuente": "El America",
+      "url": "https://elamerica.cl/2026/08/12/hacienda-y-minvu-valoran-la-aprobacion-y-el-despacho-en-solo-una-semana-de-proyecto-que-amplia-subsidio-hipotecario-y-garantias-estatales/",
+      "fecha": "2026-08-12",
       "impacto": "medio",
-      "porque": "Primer anuncio oficial de la medida antes de su aprobación; útil para entender la cronología completa del beneficio que ahora es ley."
+      "porque": "Confirma el respaldo político y la rapidez del proceso, refuerza la vigencia del beneficio como mensaje de campaña por más tiempo."
+    },
+    {
+      "titulo": "Gobierno anuncia proyecto que amplía cupos para el Subsidio a la Tasa de Interés Hipotecaria y el FOGAES",
+      "fuente": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "fecha": "2026-08-04",
+      "impacto": "alto",
+      "porque": "Es el anuncio original que dio origen a la ley despachada el 13-ago; explica el porqué del aumento de cupos que ahora es ley."
     }
   ],
   "ia": [
     {
-      "titulo": "El despliegue de agentes de IA en las empresas se duplica en un año, según el Salesforce Agentic Enterprise Index",
-      "fuente": "Periódico Publicidad",
-      "url": "https://www.periodicopublicidad.com/articulo/negocios/despliegue-agentes-ia-empresas-duplica-ano/20260813104155177105.html",
-      "fecha": "2026-08-13",
-      "impacto": "alto",
-      "porque": "Los retailers que usan agentes de IA suben ventas 8% interanual vs 2% sin ellos — evidencia de ROI concreto que respalda el uso de agentes propios en domo IA."
-    },
-    {
-      "titulo": "Meta abre el código de su modelo de IA más potente, Muse Spark 1.2, y reta a OpenAI y Anthropic",
-      "fuente": "CNBC",
-      "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
-      "fecha": "2026-08-10",
-      "impacto": "medio",
-      "porque": "Modelos de punta gratuitos bajan el costo de construir agentes propios de ventas/marketing."
-    },
-    {
-      "titulo": "Meta lanza Muse Glimmer: modelo open source liviano que corre en un solo computador",
-      "fuente": "WWWhatsnew",
-      "url": "https://wwwhatsnew.com/2026/08/11/meta-muse-glimmer-30b-open-source-gpu-ordenador-local/",
+      "titulo": "Grok Bot: x.ai lanza agentes de IA con computadora propia que trabajan 24/7",
+      "fuente": "DiarioBitcoin",
+      "url": "https://www.diariobitcoin.com/software/grok-bot-x-ai-lanza-agentes-de-ia-con-computadora-propia-que-trabajan-24-7/",
       "fecha": "2026-08-11",
-      "impacto": "bajo",
-      "porque": "IA local más barata a mediano plazo, reduce dependencia de cómputo en la nube para automatizaciones internas."
+      "impacto": "medio",
+      "porque": "Nuevo competidor en agentes autónomos de trabajo; a vigilar como referencia de lo que la competencia podría ofrecer en atención de leads."
     },
     {
-      "titulo": "Comercio agéntico: cómo la IA multiplica tus ventas hoy",
-      "fuente": "IT Seller",
-      "url": "https://www.itseller.cl/2026/08/04/comercio-agentico-ia-aumentar-ventas/",
-      "fecha": "2026-08-04",
+      "titulo": "OpenAI Ads llega a Brasil: la plataforma de anuncios de ChatGPT se abre al mercado brasileño",
+      "fuente": "Stainen",
+      "url": "https://blog.stainen.com.br/inteligencia-artificial/openai-ads-brasil-plataforma-anuncios-chatgpt/",
+      "fecha": "2026-08-06",
       "impacto": "medio",
-      "porque": "Casos prácticos de IA agéntica aplicada directamente a ventas, tendencia comparable al enfoque de domo IA en Nuevo Norte."
+      "porque": "Señal de expansión regional de un canal publicitario nuevo (ads dentro de ChatGPT); potencial diversificación futura frente a la dependencia actual de Meta/WhatsApp."
+    },
+    {
+      "titulo": "Meta lanza su primer agente de IA para programación (Muse Code) para competir con Anthropic y OpenAI",
+      "fuente": "The Objective",
+      "url": "https://theobjective.com/tecnologia/2026-08-05/meta-ia-programacion-anthropic-openai/",
+      "fecha": "2026-08-05",
+      "impacto": "bajo",
+      "porque": "Herramienta de desarrollo, no de ventas o marketing; relevancia indirecta para el negocio."
+    },
+    {
+      "titulo": "Meta comienza a cobrar por uso de su agente de IA en WhatsApp Business: USD 2 por millón de tokens (~4-5 centavos por conversación)",
+      "fuente": "QubitSuite",
+      "url": "https://qubitsuite.com/blog/meta-cobra-por-ia-en-whatsapp/",
+      "fecha": "2026-08-01",
+      "impacto": "alto",
+      "porque": "Impacto directo en costos: todas las conversiones actuales de Nuevo Norte son por WhatsApp, este cobro por token puede subir el CPA si se usa el agente de Meta."
     }
   ]
 }
