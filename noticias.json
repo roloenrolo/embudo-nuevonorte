@@ -1,80 +1,88 @@
 {
-  "fecha": "2026-08-16",
-  "generado": "2026-08-16T07:33:00-04:00",
+  "fecha": "2026-08-17",
+  "generado": "2026-08-17T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Congreso despacha a ley la ampliación del subsidio a la tasa hipotecaria: pie de 10%, tasa baja de 4% a 3%, viviendas hasta 6.000 UF y 30 mil cupos nuevos",
+      "titulo": "Viviendas de hasta 6.000 UF y 30 mil nuevos cupos: Senado despacha a ley ampliación del subsidio hipotecario",
       "fuente": "24horas.cl",
       "url": "https://www.24horas.cl/actualidad/nacional/viviendas-de-hasta-6-000-uf-y-30-mil-nuevos-cupos-senado-despacha-a-ley-subsidio-tasa",
       "fecha": "2026-08-13",
       "impacto": "alto",
-      "porque": "Amplía directamente el universo de compradores elegibles para el subsidio a la tasa (hasta 6.000 UF), el ángulo que ya domina el 51% del gasto publicitario de Nuevo Norte."
+      "porque": "Sube el tope de 4.000 a 6.000 UF, suma 30 mil cupos y extiende Fogaes a 20 años: amplía directamente el universo de compradores elegibles para las campañas de 'vence subsidio' de Nuevo Norte."
     },
     {
-      "titulo": "CChC celebra la extensión del subsidio a la tasa ante \"la peor crisis\" que atraviesa la vivienda privada",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/13/cchc-celebra-extension-del-subsidio-a-la-tasa-ante-la-peor-crisis-que-atraviesa-la-vivienda-privada.shtml",
-      "fecha": "2026-08-13",
+      "titulo": "El Congreso chileno aprobó el último artículo del Plan de Reconstrucción Nacional del gobierno de Kast",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/america/america-latina/2026/08/05/el-congreso-chileno-aprobo-el-ultimo-articulo-del-plan-de-reconstruccion-nacional-del-gobierno-de-kast/",
+      "fecha": "2026-08-05",
       "impacto": "alto",
-      "porque": "Confirma que el mercado privado seguirá dependiendo del subsidio como driver de venta, valida seguir invirtiendo en el mensaje de subsidio_adjudicado."
+      "porque": "Incluye la exención transitoria de IVA (12 meses) a la venta de viviendas nuevas: puede bajar precios 10-15% y es un argumento de venta fuerte para los anuncios."
     },
     {
-      "titulo": "CChC pide destrabar ocho concesiones por US$2.325 millones y acelerar inversión para reactivar el sector construcción",
-      "fuente": "The Clinic",
-      "url": "https://www.theclinic.cl/2026/08/13/gremio-de-la-construccion-pide-destrabar-ocho-concesiones-por-us2-325-millones-y-acelerar-inversion-para-reactivar-el-sector/",
-      "fecha": "2026-08-13",
-      "impacto": "medio",
-      "porque": "Señal macro de que el sector sigue en modo reactivación, contexto útil para el tono de las campañas pero sin acción inmediata."
-    },
-    {
-      "titulo": "Hacienda y Minvu valoran la aprobación y despacho en solo una semana del proyecto que amplía el subsidio hipotecario y garantías estatales",
-      "fuente": "El America",
-      "url": "https://elamerica.cl/2026/08/12/hacienda-y-minvu-valoran-la-aprobacion-y-el-despacho-en-solo-una-semana-de-proyecto-que-amplia-subsidio-hipotecario-y-garantias-estatales/",
-      "fecha": "2026-08-12",
-      "impacto": "medio",
-      "porque": "Confirma el respaldo político y la rapidez del proceso, refuerza la vigencia del beneficio como mensaje de campaña por más tiempo."
-    },
-    {
-      "titulo": "Gobierno anuncia proyecto que amplía cupos para el Subsidio a la Tasa de Interés Hipotecaria y el FOGAES",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/04/gobierno-anuncia-proyecto-para-extender-el-subsidio-a-la-tasa-hipotecaria-y-el-fogaes.shtml",
+      "titulo": "Con viviendas de hasta 6.000 UF: Gobierno busca ampliar subsidio a la tasa hipotecaria",
+      "fuente": "Cooperativa.cl",
+      "url": "https://www.cooperativa.cl/noticias/pais/vivienda/con-viviendas-de-hasta-6-000-uf-gobierno-busca-ampliar-subsidio-a-la/2026-08-04/122532.html",
       "fecha": "2026-08-04",
       "impacto": "alto",
-      "porque": "Es el anuncio original que dio origen a la ley despachada el 13-ago; explica el porqué del aumento de cupos que ahora es ley."
+      "porque": "Anuncio original del proyecto que subió el subsidio a la tasa de 60 a 100 puntos base, antes de su despacho legislativo del 13-ago; da contexto de cuánto puede bajar el dividendo."
+    },
+    {
+      "titulo": "En qué consiste la exención de IVA para viviendas nuevas anunciada por Kast",
+      "fuente": "Mala Espina Check",
+      "url": "https://www.malaespinacheck.cl/pais/2026/08/07/en-que-consiste-la-exencion-de-iva-para-viviendas-nuevas-anunciada-por-kast/",
+      "fecha": "2026-08-07",
+      "impacto": "medio",
+      "porque": "Explica la letra chica de la exención de IVA (requisitos de recepción municipal, primera venta) útil para responder objeciones de clientes en conversaciones de venta."
+    },
+    {
+      "titulo": "Sector oriente lidera alzas de arriendo mientras el resto de la capital se mantiene estable (InfoRenta TOCTOC)",
+      "fuente": "MediaBanco",
+      "url": "https://www.mediabanco.com/sector-oriente-lidera-alzas-mientras-el-resto-de-la-capital-se-mantiene-estable/",
+      "fecha": "2026-08-05",
+      "impacto": "medio",
+      "porque": "Arriendos suben ~12% anual en el sector oriente con vacancia ~1%: refuerza el argumento 'deja de arrendar' frente a comprar con subsidio."
     }
   ],
   "ia": [
     {
-      "titulo": "Grok Bot: x.ai lanza agentes de IA con computadora propia que trabajan 24/7",
-      "fuente": "DiarioBitcoin",
-      "url": "https://www.diariobitcoin.com/software/grok-bot-x-ai-lanza-agentes-de-ia-con-computadora-propia-que-trabajan-24-7/",
-      "fecha": "2026-08-11",
-      "impacto": "medio",
-      "porque": "Nuevo competidor en agentes autónomos de trabajo; a vigilar como referencia de lo que la competencia podría ofrecer en atención de leads."
-    },
-    {
-      "titulo": "OpenAI Ads llega a Brasil: la plataforma de anuncios de ChatGPT se abre al mercado brasileño",
-      "fuente": "Stainen",
-      "url": "https://blog.stainen.com.br/inteligencia-artificial/openai-ads-brasil-plataforma-anuncios-chatgpt/",
-      "fecha": "2026-08-06",
-      "impacto": "medio",
-      "porque": "Señal de expansión regional de un canal publicitario nuevo (ads dentro de ChatGPT); potencial diversificación futura frente a la dependencia actual de Meta/WhatsApp."
-    },
-    {
-      "titulo": "Meta lanza su primer agente de IA para programación (Muse Code) para competir con Anthropic y OpenAI",
-      "fuente": "The Objective",
-      "url": "https://theobjective.com/tecnologia/2026-08-05/meta-ia-programacion-anthropic-openai/",
-      "fecha": "2026-08-05",
-      "impacto": "bajo",
-      "porque": "Herramienta de desarrollo, no de ventas o marketing; relevancia indirecta para el negocio."
-    },
-    {
-      "titulo": "Meta comienza a cobrar por uso de su agente de IA en WhatsApp Business: USD 2 por millón de tokens (~4-5 centavos por conversación)",
-      "fuente": "QubitSuite",
-      "url": "https://qubitsuite.com/blog/meta-cobra-por-ia-en-whatsapp/",
-      "fecha": "2026-08-01",
+      "titulo": "Google lanza herramientas de IA agéntica en Ads y Analytics (resúmenes automáticos y benchmarking)",
+      "fuente": "Google (blog oficial)",
+      "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
+      "fecha": "2026-08-10",
       "impacto": "alto",
-      "porque": "Impacto directo en costos: todas las conversiones actuales de Nuevo Norte son por WhatsApp, este cobro por token puede subir el CPA si se usa el agente de Meta."
+      "porque": "El agente 'Ask Advisor' compara campañas contra negocios similares y genera reportes con prompts de texto: aplicable directo a la optimización de las campañas Meta que corre Matías."
+    },
+    {
+      "titulo": "ChatGPT ya tendrá anuncios en México: quién los verá y cómo funciona el piloto",
+      "fuente": "Expansión (México)",
+      "url": "https://expansion.mx/tecnologia/2026/08/06/chatgpt-tendra-anuncios-en-mexico",
+      "fecha": "2026-08-06",
+      "impacto": "alto",
+      "porque": "OpenAI expande su modelo publicitario a LatAm (planes Free y Go); anticipa un canal de pauta nuevo a evaluar además de Meta para captar leads inmobiliarios."
+    },
+    {
+      "titulo": "Yelp lleva reservas y lista de espera a ChatGPT",
+      "fuente": "Yelp (blog oficial)",
+      "url": "https://blog.yelp.com/news/yelp-chatgpt-integration/",
+      "fecha": "2026-08-10",
+      "impacto": "medio",
+      "porque": "Muestra cómo la IA conversacional empieza a cerrar acciones (reservar, agendar) sin salir del chat, un patrón replicable para agendar visitas a proyectos."
+    },
+    {
+      "titulo": "Microsoft fusiona todas sus apps de Copilot y elimina las funciones que nadie usaba",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/08/14/microsoft-fusiona-copilot-apps-elimina-funciones-agosto-2026/",
+      "fecha": "2026-08-14",
+      "impacto": "medio",
+      "porque": "Consolida el ecosistema de asistentes de IA de Microsoft en una sola app desde el 18-ago; contexto de hacia dónde se mueve la competencia de herramientas de productividad con IA."
+    },
+    {
+      "titulo": "Líderes globales de IA llegarán a Chile para impulsar la economía digital",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/america/agencias/2026/08/13/lideres-globales-de-ia-llegaran-a-chile-para-impulsar-la-economia-digital/",
+      "fecha": "2026-08-13",
+      "impacto": "bajo",
+      "porque": "Congreso Latam de IA, Tecnología y Negocios (9-10 sept en Santiago) confirma que Chile sigue siendo foco de inversión en IA aplicada a negocios."
     }
   ]
 }

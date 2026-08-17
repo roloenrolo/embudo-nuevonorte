@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-16",
+ "actualizado": "2026-08-17",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1740,6 +1740,76 @@
    "fecha": "2026-08-01",
    "impacto": "alto",
    "porque": "Impacto directo en costos: todas las conversiones actuales de Nuevo Norte son por WhatsApp, este cobro por token puede subir el CPA si se usa el agente de Meta."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "inmobiliario",
+   "titulo": "En qué consiste la exención de IVA para viviendas nuevas anunciada por Kast",
+   "fuente": "Mala Espina Check",
+   "url": "https://www.malaespinacheck.cl/pais/2026/08/07/en-que-consiste-la-exencion-de-iva-para-viviendas-nuevas-anunciada-por-kast/",
+   "fecha": "2026-08-07",
+   "impacto": "medio",
+   "porque": "Explica la letra chica de la exención de IVA (requisitos de recepción municipal, primera venta) útil para responder objeciones de clientes en conversaciones de venta."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "inmobiliario",
+   "titulo": "Sector oriente lidera alzas de arriendo mientras el resto de la capital se mantiene estable (InfoRenta TOCTOC)",
+   "fuente": "MediaBanco",
+   "url": "https://www.mediabanco.com/sector-oriente-lidera-alzas-mientras-el-resto-de-la-capital-se-mantiene-estable/",
+   "fecha": "2026-08-05",
+   "impacto": "medio",
+   "porque": "Arriendos suben ~12% anual en el sector oriente con vacancia ~1%: refuerza el argumento 'deja de arrendar' frente a comprar con subsidio."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "ia",
+   "titulo": "Google lanza herramientas de IA agéntica en Ads y Analytics (resúmenes automáticos y benchmarking)",
+   "fuente": "Google (blog oficial)",
+   "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
+   "fecha": "2026-08-10",
+   "impacto": "alto",
+   "porque": "El agente 'Ask Advisor' compara campañas contra negocios similares y genera reportes con prompts de texto: aplicable directo a la optimización de las campañas Meta que corre Matías."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "ia",
+   "titulo": "ChatGPT ya tendrá anuncios en México: quién los verá y cómo funciona el piloto",
+   "fuente": "Expansión (México)",
+   "url": "https://expansion.mx/tecnologia/2026/08/06/chatgpt-tendra-anuncios-en-mexico",
+   "fecha": "2026-08-06",
+   "impacto": "alto",
+   "porque": "OpenAI expande su modelo publicitario a LatAm (planes Free y Go); anticipa un canal de pauta nuevo a evaluar además de Meta para captar leads inmobiliarios."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "ia",
+   "titulo": "Yelp lleva reservas y lista de espera a ChatGPT",
+   "fuente": "Yelp (blog oficial)",
+   "url": "https://blog.yelp.com/news/yelp-chatgpt-integration/",
+   "fecha": "2026-08-10",
+   "impacto": "medio",
+   "porque": "Muestra cómo la IA conversacional empieza a cerrar acciones (reservar, agendar) sin salir del chat, un patrón replicable para agendar visitas a proyectos."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "ia",
+   "titulo": "Microsoft fusiona todas sus apps de Copilot y elimina las funciones que nadie usaba",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/08/14/microsoft-fusiona-copilot-apps-elimina-funciones-agosto-2026/",
+   "fecha": "2026-08-14",
+   "impacto": "medio",
+   "porque": "Consolida el ecosistema de asistentes de IA de Microsoft en una sola app desde el 18-ago; contexto de hacia dónde se mueve la competencia de herramientas de productividad con IA."
+  },
+  {
+   "captura": "2026-08-17",
+   "area": "ia",
+   "titulo": "Líderes globales de IA llegarán a Chile para impulsar la economía digital",
+   "fuente": "Infobae",
+   "url": "https://www.infobae.com/america/agencias/2026/08/13/lideres-globales-de-ia-llegaran-a-chile-para-impulsar-la-economia-digital/",
+   "fecha": "2026-08-13",
+   "impacto": "bajo",
+   "porque": "Congreso Latam de IA, Tecnología y Negocios (9-10 sept en Santiago) confirma que Chile sigue siendo foco de inversión en IA aplicada a negocios."
   }
  ]
 }
