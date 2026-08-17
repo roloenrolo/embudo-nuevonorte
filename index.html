@@ -211,8 +211,8 @@ tr:last-child td{border-bottom:0}
 <div class="wrap">
   <div class="top">
     <div>
-      <span class="eyebrow">domo IA · Antonia v2 · Nuevo Norte</span>
-      <h1>Embudo de leads — dashboard en vivo</h1>
+      <span class="eyebrow" id="header-eyebrow"></span>
+      <h1 id="header-title"></h1>
     </div>
     <div class="status-wrap">
       <div class="status" id="status">…</div>
@@ -226,8 +226,8 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
     <button class="tab" data-target="noticias" id="tab-noticias" aria-selected="false" hidden>📰 Noticias del día</button>
     <button class="tab" data-target="economia" id="tab-economia" aria-selected="false" hidden>💰 Economía</button>
-    <a class="tab" style="text-decoration:none" href="buscador/" target="_blank" rel="noopener" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos ↗</a>
-    <a class="tab" style="text-decoration:none" href="https://antonia.domo-ia.com/feedback" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
+    <a class="tab" style="text-decoration:none" id="link-buscador" href="" target="_blank" rel="noopener" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos ↗</a>
+    <a class="tab" style="text-decoration:none" id="link-feedback" href="" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
   </nav>
 
   <section data-grp="agenda">
@@ -237,7 +237,7 @@ tr:last-child td{border-bottom:0}
         <h3>Calendario de reuniones</h3>
         <p class="hint m0">Vista privada con el detalle de cada reunión: lead, estado de la negociación y score V-E-N-D-E. Requiere clave.</p>
       </div>
-      <a class="btnmeta link-clean" href="https://antonia.domo-ia.com/agenda" target="_blank" rel="noopener">🗓️ Abrir agenda →</a>
+      <a class="btnmeta link-clean" id="link-agenda" href="" target="_blank" rel="noopener">🗓️ Abrir agenda →</a>
     </div>
   </section>
 
@@ -263,7 +263,7 @@ tr:last-child td{border-bottom:0}
   </section>
 
   <section id="sec-meta" data-grp="meta" hidden>
-    <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
+    <p class="sub" id="meta-kpis-title"></p>
     <div class="kpis" id="metakpis"></div>
     <div class="tblwrap mt16" id="metaadswrap" hidden><table id="metaads">
       <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th><th>Estado</th></tr></thead>
@@ -486,13 +486,41 @@ tr:last-child td{border-bottom:0}
 <script>
 // ============================================================================
 // CONFIG — modo en vivo
-// Deja CSV_URL vacío para ver el diseño con datos de ejemplo.
+// Deja CONFIG.data.csvUrl vacío para ver el diseño con datos de ejemplo.
 // Para conectar en vivo: publicar SOLO el tab AGREGADO (Archivo → Compartir →
 // Publicar en la web → ese tab → CSV) y pegar aquí la URL 2PACX resultante.
 // ⚠️ No publicar la Hoja 1 del CRM: tiene PII. Solo el tab de métricas agregadas.
 // ============================================================================
-const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT37zYih55JXCvAO49PhlSCDQGRk0SSOnVvzuVU_NNGE70-PKjXWHs3MYxjTaNc10daPLJVJCYIzpZM/pub?gid=144104198&single=true&output=csv";
-const TAB      = "embudo";
+const CONFIG = {
+  cliente: "Nuevo Norte",
+  header: {
+    eyebrow: "domo IA · Antonia v2 · Nuevo Norte",
+    title: "Embudo de leads — dashboard en vivo"
+  },
+  data: {
+    csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vT37zYih55JXCvAO49PhlSCDQGRk0SSOnVvzuVU_NNGE70-PKjXWHs3MYxjTaNc10daPLJVJCYIzpZM/pub?gid=144104198&single=true&output=csv",
+    tab: "embudo"
+  },
+  locale: "es-CL",
+  moneda: {
+    usdPrefix: "US$",
+    clpPrefix: "CLP $"
+  },
+  urls: {
+    agenda: "https://antonia.domo-ia.com/agenda",
+    feedback: "https://antonia.domo-ia.com/feedback",
+    buscador: "buscador/"
+  }
+};
+function aplicarConfig(){
+  document.getElementById("header-eyebrow").textContent = CONFIG.header.eyebrow;
+  document.getElementById("header-title").textContent = CONFIG.header.title;
+  document.getElementById("meta-kpis-title").textContent = `KPIs Meta Ads (últimos 30 días, cuenta ${CONFIG.cliente})`;
+  document.getElementById("link-agenda").href = CONFIG.urls.agenda;
+  document.getElementById("link-feedback").href = CONFIG.urls.feedback;
+  document.getElementById("link-buscador").href = CONFIG.urls.buscador;
+}
+aplicarConfig();
 // Layout esperado del tab (formato largo, 1ª fila = encabezados EXACTOS):
 //   tipo | orden | clave | etiqueta | n | extra1 | extra2
 //   funnel  | 1..4 |        | Escribieron / Presupuesto / Horario / Agendó | conteo |        |
@@ -572,12 +600,12 @@ const SAMPLE = {
 };
 
 const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const fmtUSD = n => n==null || isNaN(n) ? "—" : "US$"+Number(n).toLocaleString("es-CL",{minimumFractionDigits:2,maximumFractionDigits:2});
-const fmtPct = (a,b,dec=0) => !b ? "0%" : (a/b*100).toLocaleString("es-CL",{minimumFractionDigits:dec,maximumFractionDigits:dec})+"%";
+const fmtUSD = n => n==null || isNaN(n) ? "—" : CONFIG.moneda.usdPrefix+Number(n).toLocaleString(CONFIG.locale,{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtPct = (a,b,dec=0) => !b ? "0%" : (a/b*100).toLocaleString(CONFIG.locale,{minimumFractionDigits:dec,maximumFractionDigits:dec})+"%";
 const fmtDate = (s, opts) => {
   const raw = String(s??"");
   const d = /^\d{4}-\d{2}-\d{2}$/.test(raw) ? new Date(raw+"T00:00:00") : new Date(raw);
-  return isNaN(d) ? esc(raw) : d.toLocaleDateString("es-CL", opts || {day:"numeric",month:"short"});
+  return isNaN(d) ? esc(raw) : d.toLocaleDateString(CONFIG.locale, opts || {day:"numeric",month:"short"});
 };
 const sello = (ventana, fuente, actualizado="actualizado al cargar") =>
   `<span class="sello">${esc(ventana)} · ${esc(fuente)} · ${esc(actualizado)}</span>`;
@@ -663,7 +691,7 @@ function initSimulador(j){
 
     const pct1 = v => (v*100).toFixed(1).replace(".", ",")+"%";
     const dec2 = v => v.toFixed(2).replace(".", ",");
-    const fmtNum = v => (Math.round(v*10)/10).toLocaleString("es-CL", {maximumFractionDigits:1});
+    const fmtNum = v => (Math.round(v*10)/10).toLocaleString(CONFIG.locale, {maximumFractionDigits:1});
     const fmtDelta = (v, base, suffix) => {
       const d = v - base, sign = d > 0 ? "+" : "";
       return `${sign}${fmtNum(d)}${suffix||""} vs oficial`;
@@ -986,7 +1014,7 @@ function render(d){
   if (d.metaKpis){
     secMeta.hidden = false;
     const m = d.metaKpis;
-    const fmtN = n => (n==null||isNaN(n)) ? "—" : Math.round(n).toLocaleString("es-CL");
+    const fmtN = n => (n==null||isNaN(n)) ? "—" : Math.round(n).toLocaleString(CONFIG.locale);
     const ctr = m.impresiones ? fmtPct(m.clics, m.impresiones, 2) : "—";
     const cpc = m.clics ? fmtUSD(m.gasto/m.clics) : "—";
     const cpm = m.impresiones ? fmtUSD(m.gasto/m.impresiones*1000) : "—";
@@ -1186,7 +1214,7 @@ function fromRows(rows){
   };
 }
 async function fetchLive(){
-  const url=CSV_URL+(CSV_URL.includes("?")?"&":"?")+"_ts="+Date.now(); // cache-buster: pub CSV se cachea minutos
+  const url=CONFIG.data.csvUrl+(CONFIG.data.csvUrl.includes("?")?"&":"?")+"_ts="+Date.now(); // cache-buster: pub CSV se cachea minutos
   const res=await fetch(url,{cache:"no-store"});
   if(!res.ok) throw new Error("http "+res.status);
   const rows=parseCSV(await res.text());
@@ -1210,21 +1238,21 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   const setStatus = (state, msg) => {
     const now = new Date();
     if(state==="live"){
-      st.innerHTML = `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
+      st.innerHTML = `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString(CONFIG.locale,{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
     } else if(state==="error"){
-      st.innerHTML = `<span class="err">● ERROR DE REFRESH</span><br>${esc(msg||"no se pudo actualizar")} · ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
+      st.innerHTML = `<span class="err">● ERROR DE REFRESH</span><br>${esc(msg||"no se pudo actualizar")} · ${now.toLocaleString(CONFIG.locale,{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
     } else {
       st.innerHTML = `<span class="demo">◐ DATOS DE EJEMPLO</span><br>configura CSV_URL para datos en vivo`;
     }
   };
-  if(CSV_URL){
+  if(CONFIG.data.csvUrl){
     try { data = await fetchLive(); live = true; } catch(e){ data = SAMPLE; }
   }
   render(data);
   switchTab("meta");   // pestaña por defecto
   setStatus(live ? "live" : "demo");
   document.getElementById("foot").innerHTML =
-    `Fuente: tab agregado <code>${TAB}</code> de la planilla (publicado como CSV, sin API key). `+
+    `Fuente: tab agregado <code>${CONFIG.data.tab}</code> de la planilla (publicado como CSV, sin API key). `+
     `⚠️ No conectar a la Hoja 1 del CRM (tiene teléfonos/nombres); usar solo un tab de métricas agregadas. `+
     (live ? "Se actualiza cada 5 minutos." : "Ahora mismo se muestran datos de ejemplo.");
   if(live) setInterval(async()=>{
@@ -1381,10 +1409,10 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     document.getElementById("eco-alerta").innerHTML =
       `<b>⚠️ Cifras ESPERADAS, no reales:</b> ${esc(j.nota_supuestos||"con supuestos comerciales declarados.")}`;
 
-    const clp = v => fin(v)==null ? "—" : "CLP $"+v.toLocaleString("es-CL");
+    const clp = v => fin(v)==null ? "—" : CONFIG.moneda.clpPrefix+v.toLocaleString(CONFIG.locale);
     const s = j.sub||{};
     document.getElementById("eco-kpis").innerHTML = [
-      {lbl:"ROAS esperado (inversión)", val:`${c.roas_esperado.toLocaleString("es-CL")}×`, cls:"good",
+      {lbl:"ROAS esperado (inversión)", val:`${c.roas_esperado.toLocaleString(CONFIG.locale)}×`, cls:"good",
        sub:"ingreso esperado ÷ gasto WhatsApp · supuestos "+fmtDate(j.generado)},
       {lbl:"Costo por calificado", val:fmtUSD(c.costo_por_calificado_usd), cls:"",
        sub:`break-even ${fmtUSD(c.breakeven_por_calificado_usd)} por calificado`, sello:sello("acumulado","economia.json")},
@@ -1412,7 +1440,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     const base=pasos[0].n||1;
     document.getElementById("eco-cadena").innerHTML = pasos.map((p,i)=>{
       const w=Math.max(6,p.n/base*100), drop=i>0?pasos[i-1].n-p.n:0;
-      const nTxt=p.esp?("≈"+(Math.round(p.n*10)/10).toLocaleString("es-CL")):p.n;
+      const nTxt=p.esp?("≈"+(Math.round(p.n*10)/10).toLocaleString(CONFIG.locale)):p.n;
       return `<div class="row"><div class="name">${esc(p.name)}${p.esp?' <small>(supuesto)</small>':''}${drop>0&&!p.esp?`<span class="drop">−${Math.round(drop*10)/10}</span>`:""}</div>
         <div class="barwrap"><div class="bar" style="width:${w}%;background:${p.col}">${nTxt}</div>
         <span class="pct">${fmtPct(p.n,base,1)}</span></div></div>`;
