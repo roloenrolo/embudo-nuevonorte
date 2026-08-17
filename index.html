@@ -53,6 +53,7 @@ body{margin:0;background:var(--plane);color:var(--ink);
   font:15px/1.55 "IBM Plex Sans",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px}
 .top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:6px}
+.status-wrap{text-align:right}
 .eyebrow{font:600 11px/1 "IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
 h1{font-family:"Archivo",system-ui,sans-serif;font-size:clamp(24px,3.4vw,32px);line-height:1.12;letter-spacing:-.02em;font-weight:750;margin:.28em 0 0;font-variation-settings:"wdth" 118}
@@ -60,6 +61,7 @@ h2,h3,.sub{font-family:"Archivo",system-ui,sans-serif;letter-spacing:-.02em;font
 .status{font:600 12px/1.4 "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
 .status .live{color:var(--good-text)}
 .status .demo{color:var(--warn)}
+.status .err{color:var(--crit-text)}
 .btnmeta{margin-top:8px;font:700 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;padding:8px 14px;border-radius:9px;
   border:1px solid var(--hair-2);background:var(--card);color:var(--accent-ink);cursor:pointer}
 .btnmeta:hover{border-color:var(--accent)}
@@ -68,7 +70,13 @@ section{margin-top:26px}
 .sub{font-size:11px;line-height:1;font-weight:700;text-transform:uppercase;
   color:var(--ink-3);margin:0 0 12px;display:flex;align-items:center;gap:8px}
 .sub::after{content:"";flex:1;height:1px;background:var(--hair)}
+.hint{font-size:12.5px;color:var(--ink-3)}
+.hint.mt8,.mt8{margin-top:8px}.hint.mt10,.mt10{margin-top:10px}.hint.mt12,.mt12{margin-top:12px}.hint.mt14,.mt14{margin-top:14px}.mt16{margin-top:16px}
+.mb8{margin-bottom:8px}.ml2{margin-left:2px}.mx2{margin-left:2px;margin-right:2px}.m0{margin:0}.hide-scroll{overflow-x:auto;scrollbar-width:none}
+.hide-scroll::-webkit-scrollbar{display:none}
+.panel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpis.kpis-3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:720px){.kpis{grid-template-columns:repeat(2,1fr)}}
 .kpi{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:15px 16px}
 .kpi .lbl{font-size:11.5px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em}
@@ -80,7 +88,14 @@ section{margin-top:26px}
 @media(max-width:820px){.panels{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px}
 .card h3{margin:0 0 4px;font-size:15px;font-weight:700}
+.card h3.mb8{margin-bottom:8px}
 .card .hint{margin:0 0 14px;font-size:12.5px;color:var(--ink-3)}
+.card .hint.m0{margin:0}.card .hint.mt8{margin:8px 0 0}.card .hint.mt10{margin:10px 0 0}.card .hint.mt12{margin:12px 0 0}.card .hint.mt14{margin:14px 0 0}
+.agenda-card{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.link-clean{text-decoration:none;white-space:nowrap}
+.divider{margin:14px 0;border-top:1px solid var(--hair)}
+.sello{display:block;margin-top:7px;font:600 10.5px/1.35 "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--ink-3);letter-spacing:.02em;text-transform:none;font-variant-numeric:tabular-nums}
+.sello.th{margin-top:3px;font-size:9.5px;line-height:1.25;letter-spacing:0;text-transform:none}
 /* aviso de pauta pausada en el tab Pronóstico */
 .fcwarn{border:1px solid var(--warn);border-left-width:4px;border-radius:10px;padding:11px 14px;
   margin:0 0 14px;font-size:13px;line-height:1.5;color:var(--ink-2);
@@ -157,8 +172,10 @@ tr:last-child td{border-bottom:0}
   font:11.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--accent-ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 /* pestañas */
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 6px}
+.tabs{display:flex;gap:6px;flex-wrap:nowrap;margin:18px 0 6px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
 .tab{font:700 13px/1 "IBM Plex Sans",system-ui,-apple-system,sans-serif;padding:10px 16px;border-radius:11px;border:1px solid var(--hair-2);background:var(--card);color:var(--ink-2);cursor:pointer}
+.tabs .tab{flex:0 0 auto;scroll-snap-align:start;white-space:nowrap}
 .tab:hover{border-color:var(--accent)}
 .tab[aria-selected="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
 [data-grp].tab-off{display:none!important}
@@ -175,6 +192,17 @@ tr:last-child td{border-bottom:0}
 .sim-control input[type="range"]::-moz-range-thumb{width:18px;height:18px;border:1px solid var(--accent-ink);border-radius:999px;background:var(--accent);cursor:pointer}
 .sim-actions{display:flex;justify-content:flex-end;margin-top:12px}
 @media(max-width:520px){.sim-head{flex-direction:column;gap:4px}.sim-value{text-align:left}.sim-actions{justify-content:stretch}.sim-actions .tab{width:100%;min-height:44px}}
+.not-item{padding:8px 0;border-bottom:1px solid var(--hair)}
+.not-link{color:var(--accent-ink);text-decoration:none;font-weight:600}
+.not-meta{opacity:.7}
+.not-hist-details{margin-bottom:8px}
+.not-hist-details summary{cursor:pointer;font-weight:700;color:var(--accent-ink)}
+.not-hist-body{padding:6px 0 0 10px}
+.legend-strong{font-weight:700}
+.txt-good{color:var(--good-text)}
+.txt-warn{color:var(--warn)}
+.detail-note{font-weight:400;font-size:11.5px;color:var(--ink-3)}
+.empty-muted{opacity:.6}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 
@@ -186,7 +214,7 @@ tr:last-child td{border-bottom:0}
       <span class="eyebrow">domo IA · Antonia v2 · Nuevo Norte</span>
       <h1>Embudo de leads — dashboard en vivo</h1>
     </div>
-    <div style="text-align:right">
+    <div class="status-wrap">
       <div class="status" id="status">…</div>
     </div>
   </div>
@@ -204,12 +232,12 @@ tr:last-child td{border-bottom:0}
 
   <section data-grp="agenda">
     <p class="sub">Agenda y calendario</p>
-    <div class="card" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+    <div class="card agenda-card">
       <div>
-        <h3 style="margin:0 0 4px">Calendario de reuniones</h3>
-        <p class="hint" style="margin:0">Vista privada con el detalle de cada reunión: lead, estado de la negociación y score V-E-N-D-E. Requiere clave.</p>
+        <h3>Calendario de reuniones</h3>
+        <p class="hint m0">Vista privada con el detalle de cada reunión: lead, estado de la negociación y score V-E-N-D-E. Requiere clave.</p>
       </div>
-      <a class="btnmeta" href="https://antonia.domo-ia.com/agenda" target="_blank" rel="noopener" style="text-decoration:none;white-space:nowrap">🗓️ Abrir agenda →</a>
+      <a class="btnmeta link-clean" href="https://antonia.domo-ia.com/agenda" target="_blank" rel="noopener">🗓️ Abrir agenda →</a>
     </div>
   </section>
 
@@ -219,31 +247,31 @@ tr:last-child td{border-bottom:0}
 
   <section id="sec-form" data-grp="meta" hidden>
     <p class="sub">Campañas con formulario — carril propio</p>
-    <div class="kpis" id="formkpis" style="grid-template-columns:repeat(3,1fr)"></div>
-    <div class="tblwrap" style="margin-top:12px"><table id="formads">
+    <div class="kpis kpis-3" id="formkpis"></div>
+    <div class="tblwrap mt12"><table id="formads">
       <thead><tr><th>Anuncio</th><th>Leads</th><th>Gasto</th><th>Costo / lead</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <details id="formads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+    <details id="formads-paused-wrap" class="pausedads mt8" hidden>
       <summary>Pausados / Terminados (<span id="formads-paused-count">0</span>)</summary>
-      <div class="tblwrap" style="margin-top:8px"><table id="formads-paused">
+      <div class="tblwrap mt8"><table id="formads-paused">
         <thead><tr><th>Anuncio</th><th>Leads</th><th>Gasto</th><th>Costo / lead</th><th>Estado</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </details>
-    <p class="hint" style="margin:10px 2px 0">Estos leads llegan por formulario de Meta y <strong>no pasan por Antonia</strong> (por eso van en carril aparte y no se suman al embudo de WhatsApp: las personas pueden solaparse). Los mismos anuncios también generan conversaciones de WhatsApp, así que el gasto es compartido y el costo por lead no es aislado.</p>
+    <p class="hint mt10 mx2">Estos leads llegan por formulario de Meta y <strong>no pasan por Antonia</strong> (por eso van en carril aparte y no se suman al embudo de WhatsApp: las personas pueden solaparse). Los mismos anuncios también generan conversaciones de WhatsApp, así que el gasto es compartido y el costo por lead no es aislado.</p>
   </section>
 
   <section id="sec-meta" data-grp="meta" hidden>
     <p class="sub">KPIs Meta Ads (últimos 30 días, cuenta Nuevo Norte)</p>
     <div class="kpis" id="metakpis"></div>
-    <div class="tblwrap" id="metaadswrap" hidden style="margin-top:16px"><table id="metaads">
+    <div class="tblwrap mt16" id="metaadswrap" hidden><table id="metaads">
       <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <details id="metaads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+    <details id="metaads-paused-wrap" class="pausedads mt8" hidden>
       <summary>Pausados / Terminados (<span id="metaads-paused-count">0</span>)</summary>
-      <div class="tblwrap" style="margin-top:8px"><table id="metaads-paused">
+      <div class="tblwrap mt8"><table id="metaads-paused">
         <thead><tr><th>Anuncio</th><th>Gasto</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>CPC</th><th>Alcance</th><th>Conv. WA</th><th>Costo / conv.</th><th>Estado</th></tr></thead>
         <tbody></tbody>
       </table></div>
@@ -254,9 +282,9 @@ tr:last-child td{border-bottom:0}
     <div class="card">
       <h3>El embudo</h3>
       <div id="funnel15-wrap" hidden>
-        <p class="hint" style="margin:0 0 6px;font-weight:700">🕒 Últimos 15 días</p>
+        <p class="hint m0 mb8 legend-strong">🕒 Últimos 15 días</p>
         <div class="fn" id="funnel15"></div>
-        <div style="margin:14px 0;border-top:1px solid var(--hair)"></div>
+        <div class="divider"></div>
       </div>
       <p class="hint" id="fnhint">Histórico completo: de cada lead que escribe, cuántos avanzan a cada etapa.</p>
       <div class="fn" id="funnel"></div>
@@ -271,13 +299,13 @@ tr:last-child td{border-bottom:0}
   <section data-grp="meta">
     <p class="sub">Costo por agendamiento, por anuncio</p>
     <div class="tblwrap"><table id="ads">
-      <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th><th>Estado</th></tr></thead>
+      <thead><tr><th>Anuncio</th><th>Gasto<span class="sello th">30d · Meta</span></th><th>Conversaciones<span class="sello th">histórico · CRM</span></th><th>Agendados<span class="sello th">histórico · CRM</span></th><th>Costo / agend.<span class="sello th">30d ÷ histórico</span></th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <details id="ads-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+    <details id="ads-paused-wrap" class="pausedads mt8" hidden>
       <summary>Pausados / Terminados (<span id="ads-paused-count">0</span>)</summary>
-      <div class="tblwrap" style="margin-top:8px"><table id="ads-paused">
-        <thead><tr><th>Anuncio</th><th>Gasto</th><th>Conversaciones</th><th>Agendados</th><th>Costo / agend.</th><th>Estado</th></tr></thead>
+      <div class="tblwrap mt8"><table id="ads-paused">
+        <thead><tr><th>Anuncio</th><th>Gasto<span class="sello th">30d · Meta</span></th><th>Conversaciones<span class="sello th">histórico · CRM</span></th><th>Agendados<span class="sello th">histórico · CRM</span></th><th>Costo / agend.<span class="sello th">30d ÷ histórico</span></th><th>Estado</th></tr></thead>
         <tbody></tbody>
       </table></div>
     </details>
@@ -290,7 +318,7 @@ tr:last-child td{border-bottom:0}
         <h3>Resultado de la calificación</h3>
         <p class="hint">Todo lead que declara renta desde $1.6M califica y pasa a agendamiento.</p>
         <div class="bars wide" id="califres"></div>
-        <p class="hint" id="califnote" style="margin:14px 0 0"></p>
+        <p class="hint mt14" id="califnote"></p>
       </div>
       <div class="card">
         <h3>Tramo de renta declarado</h3>
@@ -307,7 +335,7 @@ tr:last-child td{border-bottom:0}
         <h3>Estado de las reuniones</h3>
         <p class="hint">Cada reunión agendada se cierra la misma noche con dos datos: ¿asistió? y ¿resultado?</p>
         <div class="bars wide" id="reunbars"></div>
-        <p class="hint" id="reunnote" style="margin:14px 0 0"></p>
+        <p class="hint mt14" id="reunnote"></p>
       </div>
       <div class="card">
         <h3>Resultado comercial</h3>
@@ -323,9 +351,9 @@ tr:last-child td{border-bottom:0}
       <thead><tr><th>Anuncio</th><th>Inicio</th><th>Días activo</th><th>Estado</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <details id="fechas-paused-wrap" class="pausedads" hidden style="margin-top:8px">
+    <details id="fechas-paused-wrap" class="pausedads mt8" hidden>
       <summary>Pausados / Terminados (<span id="fechas-paused-count">0</span>)</summary>
-      <div class="tblwrap" style="margin-top:8px"><table id="fechas-paused">
+      <div class="tblwrap mt8"><table id="fechas-paused">
         <thead><tr><th>Anuncio</th><th>Inicio</th><th>Días activo</th><th>Estado</th></tr></thead>
         <tbody></tbody>
       </table></div>
@@ -334,18 +362,18 @@ tr:last-child td{border-bottom:0}
 
   <section id="sec-adfun" data-grp="meta" hidden>
     <p class="sub">Dónde se caen, por anuncio</p>
-    <div class="panels" id="adfun" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"></div>
+    <div class="panel-grid" id="adfun"></div>
   </section>
 
   <section id="sec-roadmap-anuncios" data-grp="meta" hidden>
     <p class="sub">🗺️ Roadmap de anuncios</p>
     <div class="card">
       <h3 id="roadmap-title">Roadmap de anuncios</h3>
-      <p class="hint" id="roadmap-gen" style="margin:0 0 8px"></p>
+      <p class="hint m0 mb8" id="roadmap-gen"></p>
       <p class="hint" id="roadmap-desc"></p>
       <div class="roadmap" id="roadmap-ciclos"></div>
-      <p class="hint" id="roadmap-regla" style="margin:14px 0 0"></p>
-      <p class="hint" id="roadmap-cierre" style="margin:8px 0 0"></p>
+      <p class="hint mt14" id="roadmap-regla"></p>
+      <p class="hint mt8" id="roadmap-cierre"></p>
     </div>
   </section>
 
@@ -353,7 +381,7 @@ tr:last-child td{border-bottom:0}
     <p class="sub">⚡ Acciones propuestas por Matías</p>
     <div class="card">
       <h3 id="acciones-title">Acciones propuestas por Matías</h3>
-      <p class="hint" id="acciones-gen" style="margin:0 0 8px"></p>
+      <p class="hint m0 mb8" id="acciones-gen"></p>
       <p class="hint" id="acciones-desc"></p>
       <div class="tblwrap">
         <table id="acciones-matias" class="actions-table">
@@ -375,10 +403,10 @@ tr:last-child td{border-bottom:0}
       <div class="card"><h3>Por hora del día</h3><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
       <div class="card" id="card-dow" hidden><h3>Por día de la semana</h3><svg class="days" id="dow" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por día de la semana"></svg></div>
     </div>
-    <div class="card" id="card-hxd" hidden style="margin-top:16px">
+    <div class="card mt16" id="card-hxd" hidden>
       <h3>Día × hora</h3>
       <p class="hint">Cada celda = leads que escribieron ese día de la semana a esa hora.</p>
-      <div style="overflow-x:auto"><div class="hm" id="hxd"></div></div>
+      <div class="hide-scroll"><div class="hm" id="hxd"></div></div>
     </div>
   </section>
 
@@ -388,7 +416,7 @@ tr:last-child td{border-bottom:0}
     <p class="sub">Pronóstico próximos 14 días — TimesFM + simulación del embudo</p>
     <div class="fcwarn" id="fc-alerta" hidden></div>
     <div class="kpis" id="fc-kpis"></div>
-    <p class="hint" id="fc-gen" style="margin:10px 2px 0"></p>
+    <p class="hint mt10 mx2" id="fc-gen"></p>
   </section>
   <section id="sec-fc-chart" data-grp="forecast" hidden>
     <p class="sub">Leads por día: observado y pronóstico</p>
@@ -400,17 +428,17 @@ tr:last-child td{border-bottom:0}
   <section id="sec-fc-pal" data-grp="forecast" hidden>
     <p class="sub">Palancas de tracción — qué mueve el pronóstico (evidencia por agente)</p>
     <div class="tblwrap"><table id="fc-palancas">
-      <thead><tr><th style="text-align:left">Escenario</th><th>Según</th><th>Cierres esp.</th><th>P(≥1 cierre)</th></tr></thead>
+      <thead><tr><th>Escenario</th><th>Según</th><th>Cierres esp.</th><th>P(≥1 cierre)</th></tr></thead>
       <tbody></tbody>
     </table></div>
   </section>
   <section id="sec-fc-tasas" data-grp="forecast" hidden>
     <p class="sub">Tasas usadas en la simulación</p>
     <div class="tblwrap"><table id="fc-tasas">
-      <thead><tr><th style="text-align:left">Etapa</th><th>Tasa</th><th>Origen</th></tr></thead>
+      <thead><tr><th>Etapa</th><th>Tasa</th><th>Origen</th></tr></thead>
       <tbody></tbody>
     </table></div>
-    <p class="hint" id="fc-nota" style="margin:10px 2px 0"></p>
+    <p class="hint mt10 mx2" id="fc-nota"></p>
   </section>
   <section id="sec-fc-sim" data-grp="forecast" hidden>
     <p class="sub">Simulador — juega con las variables del pronóstico</p>
@@ -419,20 +447,20 @@ tr:last-child td{border-bottom:0}
       <div class="sim-controls" id="fc-sim-controls"></div>
       <div class="sim-actions"><button class="tab" type="button" id="fc-sim-reset">↺ Restablecer</button></div>
     </div>
-    <div class="kpis" id="fc-sim-kpis" style="margin-top:12px"></div>
-    <p class="hint" style="margin:10px 2px 0">Leads escalados del pronóstico TimesFM oficial; reuniones y cierres re-simulados con tus tasas (fijas, sin incertidumbre Beta) — por eso P(≥1)/P(≥2) pueden diferir ~10% del oficial incluso en base.</p>
+    <div class="kpis mt12" id="fc-sim-kpis"></div>
+    <p class="hint mt10 mx2">Leads escalados del pronóstico TimesFM oficial; reuniones y cierres re-simulados con tus tasas (fijas, sin incertidumbre Beta) — por eso P(≥1)/P(≥2) pueden diferir ~10% del oficial incluso en base.</p>
   </section>
 
   <!-- Noticias del día: noticias.json generado por Chucao (mini) cada mañana. Mismo patrón que forecast: el tab se revela solo si el JSON carga y valida. -->
   <section id="sec-noticias" data-grp="noticias" hidden>
     <p class="sub">Noticias relevantes de hoy — para decidir con contexto</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
-      <div class="card"><h3 style="margin:0 0 8px">🏢 Mercado inmobiliario</h3><div id="not-inmo"></div></div>
-      <div class="card"><h3 style="margin:0 0 8px">🤖 IA &amp; negocio</h3><div id="not-ia"></div></div>
+    <div class="panel-grid">
+      <div class="card"><h3 class="mb8">🏢 Mercado inmobiliario</h3><div id="not-inmo"></div></div>
+      <div class="card"><h3 class="mb8">🤖 IA &amp; negocio</h3><div id="not-ia"></div></div>
     </div>
-    <p class="hint" id="not-gen" style="margin:12px 2px 0"></p>
-    <button id="not-hist-btn" class="tab" style="margin-top:10px">📚 Ver histórico</button>
-    <div id="not-hist" hidden style="margin-top:12px"></div>
+    <p class="hint mt12 mx2" id="not-gen"></p>
+    <button id="not-hist-btn" class="tab mt10">📚 Ver histórico</button>
+    <div id="not-hist" class="mt12" hidden></div>
   </section>
 
   <!-- Economía e2e: economia.json (Fase 0 PRD Matías v3; lo automatiza la skill economia en Fase 1).
@@ -446,10 +474,10 @@ tr:last-child td{border-bottom:0}
     <p class="sub">Cadena end-to-end (segmento inversión · bucket WhatsApp)</p>
     <div class="card">
       <div class="fn" id="eco-cadena"></div>
-      <p class="hint" id="eco-cadena-nota" style="margin:10px 2px 0"></p>
+      <p class="hint mt10 mx2" id="eco-cadena-nota"></p>
     </div>
-    <div class="card" style="margin-top:16px"><h3>Segmento subsidios (SUB)</h3><p class="hint" id="eco-sub"></p></div>
-    <p class="hint" id="eco-gen" style="margin:12px 2px 0"></p>
+    <div class="card mt16"><h3>Segmento subsidios (SUB)</h3><p class="hint" id="eco-sub"></p></div>
+    <p class="hint mt12 mx2" id="eco-gen"></p>
   </section>
 
   <div class="foot" id="foot"></div>
@@ -543,8 +571,26 @@ const SAMPLE = {
   reunOrig: null     // se llena en vivo (filas 'reunorig': vía Antonia vs directas de Rodolfo)
 };
 
-const fmtUSD = n => n==null ? "—" : "US$"+n.toFixed(n<10?2:0).replace(/\.00$/,"");
-const pct = (a,b) => b ? Math.round(a/b*100) : 0;
+const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtUSD = n => n==null || isNaN(n) ? "—" : "US$"+Number(n).toLocaleString("es-CL",{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtPct = (a,b,dec=0) => !b ? "0%" : (a/b*100).toLocaleString("es-CL",{minimumFractionDigits:dec,maximumFractionDigits:dec})+"%";
+const fmtDate = (s, opts) => {
+  const raw = String(s??"");
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(raw) ? new Date(raw+"T00:00:00") : new Date(raw);
+  return isNaN(d) ? esc(raw) : d.toLocaleDateString("es-CL", opts || {day:"numeric",month:"short"});
+};
+const sello = (ventana, fuente, actualizado="actualizado al cargar") =>
+  `<span class="sello">${esc(ventana)} · ${esc(fuente)} · ${esc(actualizado)}</span>`;
+function setSelloAfter(id, ventana, fuente){
+  const el = document.getElementById(id);
+  if(!el) return;
+  const html = sello(ventana, fuente);
+  if(el.nextElementSibling && el.nextElementSibling.classList.contains("sello")){
+    el.nextElementSibling.outerHTML = html;
+  } else {
+    el.insertAdjacentHTML("afterend", html);
+  }
+}
 
 // Separa una lista de anuncios (cada uno con .estado) en activos/pausados y pinta
 // el bloque <details> colapsado de "Pausados / Terminados" con el mismo renderRow.
@@ -569,14 +615,14 @@ function renderAdsSplit(mainTbodySel, pausedWrapId, pausedTbodySel, pausedCountI
 function renderFcKpis(j, factor){
   const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
   const tot=j.tot||{}, ag=j.agendas||{}, ci=j.cierres||{};
-  const pctv = v => fin(v)==null ? "—" : Math.round(v*100)+"%";
+  const pctv = v => fin(v)==null ? "—" : fmtPct(v, 1);
   const f = factor || 1;
-  const esc = v => fin(v)==null ? "—" : Math.round(v*f*10)/10;
+  const adj = v => fin(v)==null ? "—" : Math.round(v*f*10)/10;
   document.getElementById("fc-kpis").innerHTML = [
-    {lbl:"Leads esperados (14 días)", val:esc(tot.p50), sub:`rango probable ${esc(tot.p10)}–${esc(tot.p90)}`},
-    {lbl:"Reuniones agendadas", val:esc(ag.media), sub:`rango probable ${fin(ag.p10)??"—"}–${fin(ag.p90)??"—"} (sin ajustar)`},
+    {lbl:"Leads esperados (14 días)", val:adj(tot.p50), sub:`rango probable ${adj(tot.p10)}–${adj(tot.p90)}`},
+    {lbl:"Reuniones agendadas", val:adj(ag.media), sub:`rango probable ${fin(ag.p10)??"—"}–${fin(ag.p90)??"—"} (sin ajustar)`},
     {lbl:"Prob. de ≥1 cierre", val:pctv(ci.p1), sub:`prob. de ≥2: ${pctv(ci.p2)} · sin ajustar por anuncios activos`},
-    {lbl:"Cierres esperados", val:esc(ci.esperados), sub:"simulación del embudo"+(f!==1?" · ajustado en vivo":"")}
+    {lbl:"Cierres esperados", val:adj(ci.esperados), sub:"simulación del embudo"+(f!==1?" · ajustado en vivo":"")}
   ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
 }
 
@@ -606,7 +652,6 @@ function aplicarAjusteForecast(){
 function initSimulador(j){
   try{
     const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
-    const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     const tot = j && j.tot ? j.tot : {}, ag = j && j.agendas ? j.agendas : {}, ci = j && j.cierres ? j.cierres : {};
     const tasas = Array.isArray(j && j.tasas) ? j.tasas.slice(0,4) : [];
     if([tot.p10,tot.p50,tot.p90,ag.media,ci.esperados,ci.p1,ci.p2].some(v=>fin(v)==null) || tasas.length!==4 || tasas.some(t=>fin(t.valor)==null)) return;
@@ -730,17 +775,21 @@ function initSimulador(j){
 
 function render(d){
   // KPIs
-  const kAgend = pct(d.funnel[3].count, d.totalLeads);
-  const kCalif = pct(d.funnel[1].count, d.totalLeads);
-  const cpa = d.funnel[3].count ? d.spendTotal / d.funnel[3].count : null;
+  const funnel = Array.isArray(d.funnel) ? d.funnel : [];
+  const f0 = funnel[0] || {count:d.totalLeads||0};
+  const f1 = funnel[1] || {count:0};
+  const f3 = funnel[3] || {count:0};
+  const kAgendNum = d.totalLeads ? Math.round(f3.count/d.totalLeads*100) : 0;
+  const kCalifNum = d.totalLeads ? Math.round(f1.count/d.totalLeads*100) : 0;
+  const cpa = f3.count ? d.spendTotal / f3.count : null;
   const kpis = [
-    { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período" },
-    { lbl:"Llegó a presupuesto", val:kCalif+"%", cls:kCalif<40?"crit":"warn", sub:d.funnel[1].count+" de "+d.totalLeads+" leads" },
-    { lbl:"Agendó",             val:kAgend+"%", cls:kAgend>=8?"good":"warn", sub:d.funnel[3].count+" reuniones creadas" },
-    { lbl:"Costo / agendamiento", val:fmtUSD(cpa), sub:"gasto total ÷ agendados" }
+    { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período", sello:sello("acumulado","CSV embudo") },
+    { lbl:"Llegó a presupuesto", val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<40?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
+    { lbl:"Agendó",             val:fmtPct(f3.count, d.totalLeads), cls:kAgendNum>=8?"good":"warn", sub:f3.count+" reuniones creadas", sello:sello("acumulado","CSV embudo") },
+    { lbl:"Costo / agendamiento", val:fmtUSD(cpa), sub:"gasto total ÷ agendados", sello:sello("acumulado","CSV embudo") }
   ];
   document.getElementById("kpis").innerHTML = kpis.map(k=>
-    `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls||""}">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+    `<div class="kpi"><div class="lbl">${esc(k.lbl)}</div><div class="val ${k.cls||""}">${esc(k.val)}</div><div class="sub2">${esc(k.sub)}</div>${k.sello||""}</div>`
   ).join("");
 
   // Campañas con formulario (carril propio, primero — estos leads no pasan por Antonia)
@@ -754,26 +803,27 @@ function render(d){
     const cpl = ft.leads ? ft.spend/ft.leads : null;
     document.getElementById("formkpis").innerHTML = [
       { lbl:"Leads de formulario", val:ft.leads, sub:"últimos 30 días" },
-      { lbl:"Gasto", val:fmtUSD(ft.spend), sub:"anuncios con formulario" },
-      { lbl:"Costo / lead", val:fmtUSD(cpl), sub:"gasto compartido con conv. WA" }
+      { lbl:"Gasto", val:fmtUSD(ft.spend), sub:"anuncios con formulario", sello:sello("30d","Meta Ads") },
+      { lbl:"Costo / lead", val:fmtUSD(cpl), sub:"gasto compartido con conv. WA", sello:sello("30d","Meta Ads") }
     ].map(k=>
-      `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+      `<div class="kpi"><div class="lbl">${esc(k.lbl)}</div><div class="val">${esc(k.val)}</div><div class="sub2">${esc(k.sub)}</div>${k.sello||""}</div>`
     ).join("");
     renderAdsSplit("#formads tbody", "formads-paused-wrap", "#formads-paused tbody", "formads-paused-count", d.formAds, a=>{
       const c = a.leads ? a.spend/a.leads : null;
       const cls = c==null ? "bad" : c<=2 ? "win" : c<=4 ? "mid" : "bad";
       const ecls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
-      return `<tr><td>${a.ad}</td><td>${a.leads}</td><td>${fmtUSD(a.spend)}</td>
+      return `<tr><td>${esc(a.ad)}</td><td>${a.leads}</td><td>${fmtUSD(a.spend)}</td>
         <td><span class="pill ${cls}">${c==null?"—":fmtUSD(c)}</span></td>
-        <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+        <td><span class="pill ${ecls}">${esc(a.estado||"—")}</span></td></tr>`;
     });
+    setSelloAfter("formads", "30d", "Meta Ads");
   } else secForm.hidden = true;
 
   // Versión del flujo bajo el título del funnel
   if (d.versiones){
     document.getElementById("fnhint").innerHTML =
       "De cada lead que escribe, cuántos avanzan a cada etapa. Histórico completo: " +
-      d.versiones.map(v=>`<strong>${v.n}</strong> ${v.lbl}`).join(" + ") + ".";
+      d.versiones.map(v=>`<strong>${v.n}</strong> ${esc(v.lbl)}`).join(" + ") + ".";
   }
 
   // Funnel de los últimos 15 días (mismo criterio del histórico, solo ventana de fecha)
@@ -784,18 +834,18 @@ function render(d){
     document.getElementById("funnel15").innerHTML = d.funnel15.map((s,i)=>{
       const w = Math.max(6, s.count/top15*100);
       const drop = i>0 ? d.funnel15[i-1].count - s.count : 0;
-      return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+      return `<div class="row"><div class="name">${esc(s.name)}${drop?`<span class="drop">−${drop}</span>`:""}</div>
         <div class="barwrap"><div class="bar" style="width:${w}%;background:var(--accent)">${s.count}</div>
-        <span class="pct">${pct(s.count, top15)}%</span></div></div>`;
+        <span class="pct">${fmtPct(s.count, top15)}</span></div></div>`;
     }).join("");
   } else wrap15.hidden = true;
 
   // Funnel (la barra de presupuesto se abre en califica/no califica si hay filas 'presu')
-  const top = d.funnel[0].count || 1;
-  document.getElementById("funnel").innerHTML = d.funnel.map((s,i)=>{
+  const top = f0.count || 1;
+  document.getElementById("funnel").innerHTML = funnel.map((s,i)=>{
     const w = Math.max(6, s.count/top*100);
-    const p = pct(s.count, top);
-    const drop = i>0 ? d.funnel[i-1].count - s.count : 0;
+    const p = fmtPct(s.count, top);
+    const drop = i>0 ? funnel[i-1].count - s.count : 0;
     let bar;
     if(i===1 && d.presu && s.count>0){
       const wc = d.presu.califica/s.count*100;
@@ -805,17 +855,17 @@ function render(d){
     } else {
       bar = `<div class="bar" style="width:${w}%;background:${s.color}">${s.count}</div>`;
     }
-    return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
-      <div class="barwrap">${bar}<span class="pct">${p}%</span></div></div>`;
+    return `<div class="row"><div class="name">${esc(s.name)}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+      <div class="barwrap">${bar}<span class="pct">${p}</span></div></div>`;
   }).join("");
 
   // Stalled
   const smax = Math.max(...d.stalled.map(s=>s.count),1);
   document.getElementById("stalled").innerHTML = d.stalled.map(s=>
-    `<div class="row"><div class="name">${s.step}</div>
+    `<div class="row"><div class="name">${esc(s.step)}</div>
      <div class="track"><div class="fill" style="width:${s.count/smax*100}%;${s.step==="No califica"?"background:var(--ink-3)":""}"></div></div>
      <div class="n">${s.count}</div></div>`
-  ).join("");
+  ).join("") + sello("acumulado","CSV embudo");
 
   // Ads table — el nombre acá es el titular del anuncio (CRM), NO el mismo texto que
   // usan formad/anunciofecha/metaad (ad_name de Meta); el estado se resuelve por ad_id.
@@ -825,9 +875,9 @@ function render(d){
     const cpb = a.booked ? a.spend/a.booked : null;
     const cls = cpb==null ? "bad" : cpb<=10 ? "win" : cpb<=16 ? "mid" : "bad";
     const ecls = a.estado==="ACTIVE" ? "win" : a.estado==null ? "mid" : a.estado==="PAUSED" ? "mid" : "bad";
-    return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
+    return `<tr><td>${esc(a.ad)}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
       <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td>
-      <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+      <td><span class="pill ${ecls}">${esc(a.estado||"—")}</span></td></tr>`;
   });
 
   // Calificación (el pilar)
@@ -842,18 +892,18 @@ function render(d){
     ];
     const cmx = Math.max(...rows.map(r=>r.n),1);
     document.getElementById("califres").innerHTML = rows.map(r=>
-      `<div class="row"><div class="name">${r.lbl}</div>
+      `<div class="row"><div class="name">${esc(r.lbl)}</div>
        <div class="track"><div class="fill" style="width:${r.n/cmx*100}%;background:${r.color}"></div></div>
-       <div class="n">${r.n} <small>· ${pct(r.n,tt)}%</small></div></div>`).join("");
+       <div class="n">${r.n} <small>· ${fmtPct(r.n,tt)}</small></div></div>`).join("") + sello("acumulado","CSV embudo");
     document.getElementById("califnote").innerHTML = c.calificados
-      ? `De los <strong>${c.calificados}</strong> calificados: <strong>${c.calif_horario||0}</strong> eligieron horario y <strong>${c.calif_agendo||0}</strong> agendaron (${pct(c.calif_agendo||0,c.calificados)}% de conversión calificado→cita).`
+      ? `De los <strong>${c.calificados}</strong> calificados: <strong>${c.calif_horario||0}</strong> eligieron horario y <strong>${c.calif_agendo||0}</strong> agendaron (${fmtPct(c.calif_agendo||0,c.calificados)} de conversión calificado→cita).`
       : "Aún no hay leads calificados en el período.";
     if (d.rentas && d.rentas.length){
       const rmx = Math.max(...d.rentas.map(r=>r.n),1);
       document.getElementById("rentas").innerHTML = d.rentas.map(r=>
-        `<div class="row"><div class="name">${r.lbl}</div>
+        `<div class="row"><div class="name">${esc(r.lbl)}</div>
          <div class="track"><div class="fill" style="width:${r.n/rmx*100}%;${r.k.includes("800")?"background:var(--ink-3)":"background:var(--f2)"}"></div></div>
-         <div class="n">${r.n} <small>· ${pct(r.n,c.calificados+c.no_califica||1)}%</small></div></div>`).join("");
+         <div class="n">${r.n} <small>· ${fmtPct(r.n,c.calificados+c.no_califica||1)}</small></div></div>`).join("") + sello("acumulado","CSV embudo");
     }
   } else secC.hidden = true;
 
@@ -870,24 +920,24 @@ function render(d){
     ];
     const rrmx = Math.max(...rrows.map(r=>r.n),1);
     document.getElementById("reunbars").innerHTML = rrows.map(r=>
-      `<div class="row"><div class="name">${r.lbl}</div>
+      `<div class="row"><div class="name">${esc(r.lbl)}</div>
        <div class="track"><div class="fill" style="width:${r.n/rrmx*100}%;background:${r.color}"></div></div>
-       <div class="n">${r.n}</div></div>`).join("");
+       <div class="n">${r.n}</div></div>`).join("") + sello("acumulado","CSV embudo");
     const cerradas = (q.realizadas||0)+(q.no_asistio||0);
     document.getElementById("reunnote").innerHTML =
       `<strong>${q.agendadas||0}</strong> reuniones agendadas en total` +
       (d.reunOrig ? ` (${d.reunOrig.antonia||0} vía Antonia · ${d.reunOrig.rodolfo||0} directa${(d.reunOrig.rodolfo||0)===1?"":"s"} del vendedor)` : "") +
-      (cerradas ? ` · asistencia <strong>${pct(q.realizadas||0,cerradas)}%</strong> sobre las cerradas` : "") +
+      (cerradas ? ` · asistencia <strong>${fmtPct(q.realizadas||0,cerradas)}</strong> sobre las cerradas` : "") +
       ((q.pendientes||0) ? ` · ${q.pendientes} histórica${q.pendientes===1?"":"s"} sin dato de cierre` : "") + ".";
     const resEl = document.getElementById("reunresbars");
     if (d.reunRes && d.reunRes.length){
       const colr = { reservo:"var(--f2)", cerro:"var(--f4)", en_curso:"var(--f3)", perdido:"var(--ink-3)", no_asistio:"var(--ink-3)" };
       const rmx2 = Math.max(...d.reunRes.map(r=>r.n),1);
       resEl.innerHTML = d.reunRes.map(r=>
-        `<div class="row"><div class="name">${r.lbl}</div>
+        `<div class="row"><div class="name">${esc(r.lbl)}</div>
          <div class="track"><div class="fill" style="width:${r.n/rmx2*100}%;background:${colr[r.k]||"var(--f3)"}"></div></div>
-         <div class="n">${r.n}</div></div>`).join("");
-    } else resEl.innerHTML = `<div class="row"><div class="name" style="opacity:.6">Aún sin resultados registrados</div></div>`;
+         <div class="n">${r.n}</div></div>`).join("") + sello("acumulado","CSV embudo");
+    } else resEl.innerHTML = `<div class="row"><div class="name empty-muted">Aún sin resultados registrados</div></div>` + sello("acumulado","CSV embudo");
   } else secR.hidden = true;
 
   // Ad funnels (dónde se caen, por anuncio) — solo anuncios activos hoy
@@ -902,29 +952,33 @@ function render(d){
     const col=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
     document.getElementById("adfun").innerHTML = adFunnelsActivos.map(a=>{
       const base = a.steps[0] ? a.steps[0].count : 0, b = base||1;
-      return `<div class="card"><h3>${a.name}</h3><p class="hint">${base} leads de este anuncio</p><div class="fn">`+
+      return `<div class="card"><h3>${esc(a.name)}</h3><p class="hint">${base} leads de este anuncio</p><div class="fn">`+
         a.steps.map((s,i)=>{
           const w=Math.max(6,s.count/b*100), drop=i>0?a.steps[i-1].count-s.count:0;
-          return `<div class="row"><div class="name">${s.name}${drop?`<span class="drop">−${drop}</span>`:""}</div>
+          return `<div class="row"><div class="name">${esc(s.name)}${drop?`<span class="drop">−${drop}</span>`:""}</div>
             <div class="barwrap"><div class="bar" style="width:${w}%;background:${col[i]||col[3]}">${s.count}</div>
-            <span class="pct">${pct(s.count,b)}%</span></div></div>`;
+            <span class="pct">${fmtPct(s.count,b)}</span></div></div>`;
         }).join("")+`</div></div>`;
     }).join("");
+    setSelloAfter("adfun", "acumulado", "CSV embudo");
   } else secAF.hidden = true;
 
   // Day chart (con fecha bajo cada barra)
-  barChart("days", d.byDay.map(v=>({lbl:v.d?v.d.slice(8,10)+"/"+v.d.slice(5,7):"", n:v.n, tip:(v.d||"")+": "+v.n+" leads"})), true);
+  barChart("days", d.byDay.map(v=>({lbl:v.d?fmtDate(v.d):"", n:v.n, tip:(v.d?fmtDate(v.d):"")+": "+v.n+" leads"})), true);
+  setSelloAfter("days", "diario", "CSV embudo");
 
   // Hour + day-of-week charts
   const secH = document.getElementById("sec-hours");
   if (d.byHour){
     secH.hidden = false;
     barChart("hours", d.byHour.map((n,h)=>({lbl:h%2===0?String(h):"", n, tip:h+":00 → "+n+" leads"})), false);
+    setSelloAfter("hours", "acumulado", "CSV embudo");
   } else secH.hidden = true;
   const cardDow = document.getElementById("card-dow");
   if (d.byDow){
     cardDow.hidden = false;
-    barChart("dow", d.byDow.map(x=>({lbl:x.lbl, n:x.n, tip:x.lbl+": "+x.n+" leads"})), true);
+    barChart("dow", d.byDow.map(x=>({lbl:esc(x.lbl), n:x.n, tip:esc(x.lbl)+": "+x.n+" leads"})), true);
+    setSelloAfter("dow", "acumulado", "CSV embudo");
   } else cardDow.hidden = true;
 
   // KPIs Meta (viven en la pestaña "Meta y anuncios")
@@ -933,7 +987,7 @@ function render(d){
     secMeta.hidden = false;
     const m = d.metaKpis;
     const fmtN = n => (n==null||isNaN(n)) ? "—" : Math.round(n).toLocaleString("es-CL");
-    const ctr = m.impresiones ? (m.clics/m.impresiones*100).toFixed(2)+"%" : "—";
+    const ctr = m.impresiones ? fmtPct(m.clics, m.impresiones, 2) : "—";
     const cpc = m.clics ? fmtUSD(m.gasto/m.clics) : "—";
     const cpm = m.impresiones ? fmtUSD(m.gasto/m.impresiones*1000) : "—";
     const cxc = m.conversaciones ? fmtUSD(m.gasto/m.conversaciones) : "—";
@@ -948,7 +1002,7 @@ function render(d){
       { lbl:"CPM", val:cpm, sub:"costo por mil impresiones" }
     ];
     document.getElementById("metakpis").innerHTML = cards.map(k=>
-      `<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val">${k.val}</div><div class="sub2">${k.sub}</div></div>`
+      `<div class="kpi"><div class="lbl">${esc(k.lbl)}</div><div class="val">${esc(k.val)}</div><div class="sub2">${esc(k.sub)}</div></div>`
     ).join("");
     // Tabla por anuncio
     const wrap = document.getElementById("metaadswrap");
@@ -958,13 +1012,13 @@ function render(d){
       const estadoPorNombre = Object.fromEntries((d.fechas||[]).map(f=>[f.ad, f.estado]));
       const metaAdsConEstado = d.metaAds.map(a=>({...a, estado: estadoPorNombre[a.ad] ?? null}));
       renderAdsSplit("#metaads tbody", "metaads-paused-wrap", "#metaads-paused tbody", "metaads-paused-count", metaAdsConEstado, a=>{
-        const actr = a.imp ? (a.cl/a.imp*100).toFixed(2)+"%" : "—";
+        const actr = a.imp ? fmtPct(a.cl, a.imp, 2) : "—";
         const acpc = a.cl ? fmtUSD(a.spend/a.cl) : "—";
         const acxc = a.convs ? fmtUSD(a.spend/a.convs) : "—";
         const ecls = a.estado==="ACTIVE" ? "win" : a.estado==null ? "mid" : a.estado==="PAUSED" ? "mid" : "bad";
-        return `<tr><td>${a.ad}</td><td>${fmtUSD(a.spend)}</td><td>${fmtN(a.imp)}</td><td>${fmtN(a.cl)}</td>
+        return `<tr><td>${esc(a.ad)}</td><td>${fmtUSD(a.spend)}</td><td>${fmtN(a.imp)}</td><td>${fmtN(a.cl)}</td>
           <td>${actr}</td><td>${acpc}</td><td>${fmtN(a.rch)}</td><td>${fmtN(a.convs)}</td><td>${acxc}</td>
-          <td><span class="pill ${ecls}">${a.estado||"—"}</span></td></tr>`;
+          <td><span class="pill ${ecls}">${esc(a.estado||"—")}</span></td></tr>`;
       });
     } else wrap.hidden = true;
   } else { document.getElementById("sec-meta").hidden = true; }
@@ -975,9 +1029,10 @@ function render(d){
     secF.hidden = false;
     renderAdsSplit("#fechas tbody", "fechas-paused-wrap", "#fechas-paused tbody", "fechas-paused-count", d.fechas, a=>{
       const cls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
-      return `<tr><td>${a.ad}</td><td>${a.inicio||"—"}</td><td>${a.dias} día${a.dias===1?"":"s"}</td>
-        <td><span class="pill ${cls}">${a.estado||"—"}</span></td></tr>`;
+      return `<tr><td>${esc(a.ad)}</td><td>${a.inicio?fmtDate(a.inicio):"—"}</td><td>${a.dias} día${a.dias===1?"":"s"}</td>
+        <td><span class="pill ${cls}">${esc(a.estado||"—")}</span></td></tr>`;
     });
+    setSelloAfter("fechas", "snapshot", "Meta Ads");
   } else secF.hidden = true;
 
   // Aviso en el tab Pronóstico cuando la pauta está (casi) apagada.
@@ -1022,6 +1077,7 @@ function render(d){
       }).join("");
     });
     document.getElementById("hxd").innerHTML = html;
+    setSelloAfter("hxd", "acumulado", "CSV embudo");
   } else cardHxd.hidden = true;
 }
 
@@ -1151,20 +1207,34 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 (async function(){
   const st = document.getElementById("status");
   let data = SAMPLE, live = false;
+  const setStatus = (state, msg) => {
+    const now = new Date();
+    if(state==="live"){
+      st.innerHTML = `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
+    } else if(state==="error"){
+      st.innerHTML = `<span class="err">● ERROR DE REFRESH</span><br>${esc(msg||"no se pudo actualizar")} · ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
+    } else {
+      st.innerHTML = `<span class="demo">◐ DATOS DE EJEMPLO</span><br>configura CSV_URL para datos en vivo`;
+    }
+  };
   if(CSV_URL){
     try { data = await fetchLive(); live = true; } catch(e){ data = SAMPLE; }
   }
   render(data);
   switchTab("meta");   // pestaña por defecto
-  const now = new Date();
-  st.innerHTML = live
-    ? `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString("es-CL",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`
-    : `<span class="demo">◐ DATOS DE EJEMPLO</span><br>configura CSV_URL para datos en vivo`;
+  setStatus(live ? "live" : "demo");
   document.getElementById("foot").innerHTML =
     `Fuente: tab agregado <code>${TAB}</code> de la planilla (publicado como CSV, sin API key). `+
     `⚠️ No conectar a la Hoja 1 del CRM (tiene teléfonos/nombres); usar solo un tab de métricas agregadas. `+
-    (live ? "Recarga la página para refrescar." : "Ahora mismo se muestran datos de ejemplo.");
-  if(live) setInterval(async()=>{ try{ render(await fetchLive()); }catch(e){} }, 5*60*1000);
+    (live ? "Se actualiza cada 5 minutos." : "Ahora mismo se muestran datos de ejemplo.");
+  if(live) setInterval(async()=>{
+    try{
+      render(await fetchLive());
+      setStatus("live");
+    }catch(e){
+      setStatus("error", e && e.message);
+    }
+  }, 5*60*1000);
 })();
 
 // ---- Tab Pronóstico: forecast.json (generado por forecast_timesfm.py) ----
@@ -1181,15 +1251,15 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     const tot=j.tot||{}, ag=j.agendas||{}, ci=j.cierres||{};
     if([tot.p10,tot.p50,tot.p90,ag.media,ci.p1,ci.esperados].some(v=>fin(v)==null)) throw new Error("forecast incompleto");
 
-    const pct = v => fin(v)==null ? "—" : Math.round(v*100)+"%";
+    const pct = v => fin(v)==null ? "—" : fmtPct(v, 1);
     window.__fcData = j; // disponible para aplicarAjusteForecast(), corra antes o después que render()
     renderFcKpis(j, 1);  // baseline sin ajustar; se re-pinta si hay ajuste en vivo aplicable
 
     const gen = new Date(j.generado);
     const dias = isNaN(gen) ? null : Math.floor((Date.now()-gen.getTime())/86400000);
     document.getElementById("fc-gen").innerHTML = isNaN(gen) ? "" :
-      `Pronóstico generado el ${gen.toLocaleDateString("es-CL")} con la serie real de leads del dashboard.`+
-      (dias>7 ? ` <b style="color:var(--warn)">Tiene ${dias} días — regenerar.</b>` : "");
+      `Pronóstico generado el ${fmtDate(j.generado)} con la serie real de leads del dashboard.`+
+      (dias>7 ? ` <b class="txt-warn">Tiene ${dias} días — regenerar.</b>` : "");
 
     // Chart: línea observada + banda P10–P90 + mediana punteada del pronóstico
     const W=700,H=190,PAD=10,BOT=8;
@@ -1204,24 +1274,25 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     let svg=`<polygon points="${bandTop.join(" ")} ${bandBot.join(" ")}" fill="var(--accent)" opacity=".16"/>`;
     svg+=`<polyline points="${serie.map((v,i)=>pt(i,v)).join(" ")}" fill="none" stroke="var(--f1)" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
     svg+=`<polyline points="${[pt(off,serie[off]),...pron.map((p,i)=>pt(off+1+i,fin(p.p50)??0))].join(" ")}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4" vector-effect="non-scaling-stroke"/>`;
-    j.serie.forEach((p,i)=>{svg+=`<circle cx="${X(i).toFixed(1)}" cy="${Y(fin(p.leads)??0).toFixed(1)}" r="3.5" fill="var(--f1)"><title>${esc(p.fecha)}: ${fin(p.leads)??"?"} leads</title></circle>`;});
-    pron.forEach((p,i)=>{svg+=`<circle cx="${X(off+1+i).toFixed(1)}" cy="${Y(fin(p.p50)??0).toFixed(1)}" r="3.5" fill="var(--accent)"><title>${esc(p.fecha)}: mediana ${p.p50} (P10 ${p.p10} · P90 ${p.p90})</title></circle>`;});
+    j.serie.forEach((p,i)=>{svg+=`<circle cx="${X(i).toFixed(1)}" cy="${Y(fin(p.leads)??0).toFixed(1)}" r="3.5" fill="var(--f1)"><title>${fmtDate(p.fecha)}: ${fin(p.leads)??"?"} leads</title></circle>`;});
+    pron.forEach((p,i)=>{svg+=`<circle cx="${X(off+1+i).toFixed(1)}" cy="${Y(fin(p.p50)??0).toFixed(1)}" r="3.5" fill="var(--accent)"><title>${fmtDate(p.fecha)}: mediana ${p.p50} (P10 ${p.p10} · P90 ${p.p90})</title></circle>`;});
     document.getElementById("fc-svg").innerHTML=svg;
     document.getElementById("fc-leyenda").innerHTML =
-      `<span style="color:var(--f1);font-weight:700">— observado</span> · <span style="color:var(--accent-ink);font-weight:700">╌ pronóstico (mediana)</span> · <span style="color:var(--accent-ink)">▉</span> banda P10–P90 · ${esc(j.serie[0].fecha)} → ${esc(pron[pron.length-1].fecha)}`;
+      `<span class="legend-strong">— observado</span> · <span class="legend-strong">╌ pronóstico (mediana)</span> · ▉ banda P10–P90 · ${fmtDate(j.serie[0].fecha)} → ${fmtDate(pron[pron.length-1].fecha)}`;
 
     document.querySelector("#fc-tasas tbody").innerHTML=(j.tasas||[]).map(t=>{
       const cal=t.origen==="calibrada";
-      return `<tr><td style="text-align:left">${esc(t.nombre)}</td><td>${fin(t.valor)==null?"—":(t.valor*100).toFixed(1)+"%"}</td>`+
-        `<td><span style="color:${cal?"var(--good-text)":"var(--warn)"};font-weight:700">${cal?"calibrada con datos":"supuesto declarado"}</span></td></tr>`;
+      return `<tr><td>${esc(t.nombre)}</td><td>${fin(t.valor)==null?"—":fmtPct(t.valor,1,1)}</td>`+
+        `<td><span class="${cal?"txt-good":"txt-warn"} legend-strong">${cal?"calibrada con datos":"supuesto declarado"}</span></td></tr>`;
     }).join("");
+    setSelloAfter("fc-tasas", "tasas calibradas", "forecast.json");
     document.getElementById("fc-nota").textContent=String(j.nota||"");
 
     const pal=(Array.isArray(j.palancas)?j.palancas:[]).filter(p=>fin(p.cierres_esperados)!=null);
     if(pal.length){
       document.querySelector("#fc-palancas tbody").innerHTML =
-        `<tr><td style="text-align:left"><b>Escenario actual (base)</b></td><td>calibrado</td><td>${ci.esperados}</td><td>${pct(ci.p1)}</td></tr>`+
-        pal.map(p=>`<tr><td style="text-align:left">${esc(p.nombre)}<div style="font-weight:400;font-size:11.5px;color:var(--ink-3)">${esc(p.detalle||"")}</div></td><td>${esc(p.segun)}</td><td>${p.cierres_esperados}</td><td>${pct(p.p1)}</td></tr>`).join("");
+        `<tr><td><b>Escenario actual (base)</b></td><td>calibrado</td><td>${ci.esperados}</td><td>${pct(ci.p1)}</td></tr>`+
+        pal.map(p=>`<tr><td>${esc(p.nombre)}<div class="detail-note">${esc(p.detalle||"")}</div></td><td>${esc(p.segun)}</td><td>${p.cierres_esperados}</td><td>${pct(p.p1)}</td></tr>`).join("");
       const sp=document.getElementById("sec-fc-pal"); sp.hidden=false; sp.classList.add("tab-off");
     }
 
@@ -1238,16 +1309,16 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 (async function(){
   const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const badge = imp => {
-    const m={alto:["var(--crit)","alto","#fff"],medio:["var(--accent)","medio","var(--ink)"],bajo:["var(--ink-3)","bajo","#fff"]}[String(imp||"").toLowerCase()]||["","",""];
-    return m[1] ? `<span style="font-size:10px;font-weight:700;text-transform:uppercase;color:${m[2]};background:${m[0]};border-radius:8px;padding:1px 6px;margin-left:6px">${m[1]}</span>` : "";
+    const m={alto:["bad","alto"],medio:["mid","medio"],bajo:["","bajo"]}[String(imp||"").toLowerCase()]||["",""];
+    return m[1] ? `<span class="pill ${m[0]} ml2">${m[1]}</span>` : "";
   };
   const item = x => {
     const t = esc(x.titulo);
-    const link = x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" style="color:var(--accent-ink);text-decoration:none;font-weight:600">${t} ↗</a>` : `<b>${t}</b>`;
-    const meta = [esc(x.fuente||""), x.fecha?esc(x.fecha):""].filter(Boolean).join(" · ");
-    return `<div style="padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)">${link}${badge(x.impacto)}`+
-      (x.porque?`<div class="hint" style="margin:3px 0 0">${esc(x.porque)}</div>`:"")+
-      (meta?`<div class="hint" style="margin:2px 0 0;opacity:.7">${meta}</div>`:"")+`</div>`;
+    const link = x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" class="not-link">${t} ↗</a>` : `<b>${t}</b>`;
+    const meta = [esc(x.fuente||""), x.fecha?fmtDate(x.fecha):""].filter(Boolean).join(" · ");
+    return `<div class="not-item">${link}${badge(x.impacto)}`+
+      (x.porque?`<div class="hint mt8">${esc(x.porque)}</div>`:"")+
+      (meta?`<div class="hint mt8 not-meta">${meta}</div>`:"")+`</div>`;
   };
   const render = arr => ((Array.isArray(arr)?arr:[]).slice(0,6).map(item).join("")) || '<p class="hint">Sin datos hoy.</p>';
   try{
@@ -1259,7 +1330,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     document.getElementById("not-ia").innerHTML=render(j.ia);
     const gen=new Date(j.generado||j.fecha);
     document.getElementById("not-gen").innerHTML = isNaN(gen)?"" :
-      `Actualizado el ${gen.toLocaleDateString("es-CL")} por Chucao. Cada titular enlaza a su fuente. Ventana: últimos ~10 días.`;
+      `Actualizado el ${fmtDate(j.generado||j.fecha)} por Chucao. Cada titular enlaza a su fuente. Ventana: últimos ~10 días.`;
     const sec=document.getElementById("sec-noticias"); sec.hidden=false; sec.classList.add("tab-off");
     document.getElementById("tab-noticias").hidden=false;
 
@@ -1276,10 +1347,10 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
           const dd=items.filter(x=>x.captura===d);
           const inmo=dd.filter(x=>x.area==="inmobiliario"), ia=dd.filter(x=>x.area==="ia");
           const dObj=new Date(d);
-          return `<details style="margin-bottom:8px"><summary style="cursor:pointer;font-weight:700;color:var(--accent-ink)">${isNaN(dObj)?esc(d):dObj.toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})} · ${dd.length} noticias</summary>`+
-            `<div style="padding:6px 0 0 10px">`+
-            (inmo.length?`<div class="hint" style="font-weight:700;margin:6px 0 2px">🏢 Inmobiliario</div>`+inmo.map(item).join(""):"")+
-            (ia.length?`<div class="hint" style="font-weight:700;margin:10px 0 2px">🤖 IA</div>`+ia.map(item).join(""):"")+
+          return `<details class="not-hist-details"><summary>${isNaN(dObj)?esc(d):fmtDate(d,{weekday:"long",day:"numeric",month:"long"})} · ${dd.length} noticias</summary>`+
+            `<div class="not-hist-body">`+
+            (inmo.length?`<div class="hint legend-strong mt8">🏢 Inmobiliario</div>`+inmo.map(item).join(""):"")+
+            (ia.length?`<div class="hint legend-strong mt10">🤖 IA</div>`+ia.map(item).join(""):"")+
             `</div></details>`;
         }).join("") || '<p class="hint">Aún no hay histórico acumulado.</p>';
         box.hidden=false; btn.textContent="📚 Ocultar histórico";
@@ -1293,7 +1364,12 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 (async function(){
   const esc = s => String(s??"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
-  const usd = v => fin(v)==null ? "—" : "US$"+v.toLocaleString("es-CL",{minimumFractionDigits:2,maximumFractionDigits:2});
+  const stale = s => {
+    const d = new Date(String(s)+"T00:00:00");
+    if(isNaN(d)) return "";
+    const dias = Math.floor((Date.now()-d.getTime())/86400000);
+    return dias>6 ? ` <b class="txt-warn">Dato generado hace ${dias} días; puede estar desactualizado.</b>` : "";
+  };
   try{
     const r = await fetch("./economia.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin economia.json");
@@ -1309,22 +1385,22 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     const s = j.sub||{};
     document.getElementById("eco-kpis").innerHTML = [
       {lbl:"ROAS esperado (inversión)", val:`${c.roas_esperado.toLocaleString("es-CL")}×`, cls:"good",
-       sub:"ingreso esperado ÷ gasto WhatsApp · supuestos "+esc(j.generado)},
-      {lbl:"Costo por calificado", val:usd(c.costo_por_calificado_usd), cls:"",
-       sub:`break-even ${usd(c.breakeven_por_calificado_usd)} por calificado`},
+       sub:"ingreso esperado ÷ gasto WhatsApp · supuestos "+fmtDate(j.generado)},
+      {lbl:"Costo por calificado", val:fmtUSD(c.costo_por_calificado_usd), cls:"",
+       sub:`break-even ${fmtUSD(c.breakeven_por_calificado_usd)} por calificado`, sello:sello("acumulado","economia.json")},
       {lbl:"Ventas esperadas", val:`≈${Math.round(c.ventas_esperadas??0)}`, cls:"",
        sub:`de los ${c.calificados} calificados acumulados (supuesto)`},
-      {lbl:"Ingreso esperado", val:usd(c.ingreso_esperado_usd), cls:"good",
-       sub:`≈${clp(Math.round((c.ingreso_esperado_usd??0)*(j.dolar&&j.dolar.valor||0)))} · gasto ${usd(c.gasto_usd)}`},
+      {lbl:"Ingreso esperado", val:fmtUSD(c.ingreso_esperado_usd), cls:"good",
+       sub:`≈${clp(Math.round((c.ingreso_esperado_usd??0)*(j.dolar&&j.dolar.valor||0)))} · gasto ${fmtUSD(c.gasto_usd)}`, sello:sello("acumulado + supuesto","economia.json")},
       {lbl:"Comisión inversión", val:clp(c.comision_clp), cls:"",
        sub:esc(c.nota_comision||"por depto vendido")},
-      {lbl:"Tasa calificado→venta", val:fin(c.tasa_calificado_venta)==null?"—":Math.round(c.tasa_calificado_venta*100)+"%", cls:"",
+      {lbl:"Tasa calificado→venta", val:fin(c.tasa_calificado_venta)==null?"—":fmtPct(c.tasa_calificado_venta,1), cls:"",
        sub:"benchmark del universo Capitalizarme (calificados que reservan y promesan)"},
       {lbl:"Comisión subsidios", val:clp(s.comision_clp), cls:"",
        sub:"por venta · tasa de cierre del segmento: desconocida (no se inventa)"},
-      {lbl:"CPL formulario", val:usd(f.cpl_usd), cls:"",
-       sub:esc(f.nota||`${f.leads??"—"} leads · ${usd(f.gasto_usd)}`)}
-    ].map(k=>`<div class="kpi"><div class="lbl">${k.lbl}</div><div class="val ${k.cls}">${k.val}</div><div class="sub2">${k.sub}</div></div>`).join("");
+      {lbl:"CPL formulario", val:fmtUSD(f.cpl_usd), cls:"",
+       sub:esc(f.nota||`${f.leads??"—"} leads · ${fmtUSD(f.gasto_usd)}`), sello:sello("acumulado","economia.json")}
+    ].map(k=>`<div class="kpi"><div class="lbl">${esc(k.lbl)}</div><div class="val ${k.cls}">${esc(k.val)}</div><div class="sub2">${k.sub}</div>${k.sello||""}</div>`).join("");
 
     // Cadena e2e en conteos (una sola escala; el gasto va en texto, no en las barras)
     const pasos=[
@@ -1337,16 +1413,16 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     document.getElementById("eco-cadena").innerHTML = pasos.map((p,i)=>{
       const w=Math.max(6,p.n/base*100), drop=i>0?pasos[i-1].n-p.n:0;
       const nTxt=p.esp?("≈"+(Math.round(p.n*10)/10).toLocaleString("es-CL")):p.n;
-      return `<div class="row"><div class="name">${p.name}${p.esp?' <small>(supuesto)</small>':''}${drop>0&&!p.esp?`<span class="drop">−${Math.round(drop*10)/10}</span>`:""}</div>
+      return `<div class="row"><div class="name">${esc(p.name)}${p.esp?' <small>(supuesto)</small>':''}${drop>0&&!p.esp?`<span class="drop">−${Math.round(drop*10)/10}</span>`:""}</div>
         <div class="barwrap"><div class="bar" style="width:${w}%;background:${p.col}">${nTxt}</div>
-        <span class="pct">${Math.round(p.n/base*1000)/10}%</span></div></div>`;
+        <span class="pct">${fmtPct(p.n,base,1)}</span></div></div>`;
     }).join("");
     document.getElementById("eco-cadena-nota").innerHTML =
-      `Gasto del bucket WhatsApp: <strong>${usd(c.gasto_usd)}</strong> (acumulado histórico). `+
+      `Gasto del bucket WhatsApp: <strong>${fmtUSD(c.gasto_usd)}</strong> (acumulado histórico). `+
       `La conversión calificado→venta es un supuesto fechado; se reemplaza por dato real cuando exista registro de cierres.`;
     document.getElementById("eco-sub").textContent = (j.sub&&(j.sub.estado+". "+(j.sub.nota||"")))||"—";
     document.getElementById("eco-gen").innerHTML =
-      `Generado el ${esc(j.generado)} · dólar ${fin(j.dolar&&j.dolar.valor)??"—"} CLP (${esc(j.dolar&&j.dolar.fuente||"")}) · ${esc(j.actualizacion||"")}`;
+      `Generado el ${fmtDate(j.generado)}.${stale(j.generado)} · dólar ${clp(fin(j.dolar&&j.dolar.valor)??null)} (${esc(j.dolar&&j.dolar.fuente||"")}) · ${esc(j.actualizacion||"")}`;
 
     ["sec-eco","sec-eco-cadena"].forEach(id=>{const el=document.getElementById(id); el.hidden=false; el.classList.add("tab-off");});
     document.getElementById("tab-economia").hidden=false;
@@ -1360,13 +1436,13 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   const validDate = s => typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(new Date(s+"T00:00:00").getTime());
   const fecha = s => {
     const d = new Date(String(s)+"T00:00:00");
-    return isNaN(d) ? esc(s) : d.toLocaleDateString("es-CL");
+    return isNaN(d) ? esc(s) : fmtDate(s);
   };
   const stale = s => {
     const d = new Date(String(s)+"T00:00:00");
     if(isNaN(d)) return "";
     const dias = Math.floor((Date.now()-d.getTime())/86400000);
-    return dias>10 ? ` <b style="color:var(--warn)">Dato generado hace ${dias} días; puede estar desactualizado.</b>` : "";
+    return dias>10 ? ` <b class="txt-warn">Dato generado hace ${dias} días; puede estar desactualizado.</b>` : "";
   };
   const showMetaSection = id => {
     const el = document.getElementById(id);
