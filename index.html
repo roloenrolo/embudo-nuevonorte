@@ -60,6 +60,7 @@ h1{font-family:"Archivo",system-ui,sans-serif;font-size:clamp(24px,3.4vw,32px);l
 h2,h3,.sub{font-family:"Archivo",system-ui,sans-serif;letter-spacing:-.02em;font-variation-settings:"wdth" 112}
 .status{font:600 12px/1.4 "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
 .status .live{color:var(--good-text)}
+.status .warn{color:var(--warn)}
 .status .demo{color:var(--warn)}
 .status .err{color:var(--crit-text)}
 .btnmeta{margin-top:8px;font:700 12px/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;padding:8px 14px;border-radius:9px;
@@ -317,12 +318,12 @@ tr:last-child td{border-bottom:0}
     <div class="panels">
       <div class="card">
         <h3>Resultado de la calificación</h3>
-        <p class="hint">Todo lead que declara renta desde $1.6M califica y pasa a agendamiento.</p>
+        <p class="hint" id="calif-regla"></p>
         <div class="bars wide" id="califres"></div>
         <p class="hint mt14" id="califnote"></p>
       </div>
       <div class="card">
-        <h3>Tramo de renta declarado</h3>
+        <h3 id="rentas-title"></h3>
         <p class="hint">Distribución de los que respondieron la pregunta de presupuesto.</p>
         <div class="bars wide" id="rentas"></div>
       </div>
@@ -399,7 +400,7 @@ tr:last-child td{border-bottom:0}
   </section>
 
   <section id="sec-hours" data-grp="antonia" hidden>
-    <p class="sub">Cuándo escriben (hora Chile)</p>
+    <p class="sub" id="hours-title"></p>
     <div class="panels">
       <div class="card"><h3>Por hora del día</h3><svg class="days" id="hours" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por hora del día"></svg></div>
       <div class="card" id="card-dow" hidden><h3>Por día de la semana</h3><svg class="days" id="dow" viewBox="0 0 700 150" preserveAspectRatio="none" role="img" aria-label="Leads por día de la semana"></svg></div>
@@ -456,7 +457,7 @@ tr:last-child td{border-bottom:0}
   <section id="sec-noticias" data-grp="noticias" hidden>
     <p class="sub">Noticias relevantes de hoy — para decidir con contexto</p>
     <div class="panel-grid">
-      <div class="card"><h3 class="mb8">🏢 Mercado inmobiliario</h3><div id="not-inmo"></div></div>
+      <div class="card"><h3 class="mb8" id="not-inmo-title"></h3><div id="not-inmo"></div></div>
       <div class="card"><h3 class="mb8">🤖 IA &amp; negocio</h3><div id="not-ia"></div></div>
     </div>
     <p class="hint mt12 mx2" id="not-gen"></p>
@@ -515,12 +516,23 @@ const CONFIG = {
     cplFormularioUsdWin: 2, // CPL de formulario en USD; hasta este valor es ganador.
     cplFormularioUsdMid: 4, // CPL de formulario en USD; hasta este valor es medio.
     costoAgendamientoUsdWin: 10, // Costo por agendamiento en USD; hasta este valor es ganador.
-    costoAgendamientoUsdMid: 16 // Costo por agendamiento en USD; hasta este valor es medio.
+    costoAgendamientoUsdMid: 16, // Costo por agendamiento en USD; hasta este valor es medio.
+    diasCsvViejo: 2 // Días de antigüedad del CSV antes de mostrar aviso de dato viejo.
+  },
+  textos: {
+    reglaCalificacion: "Todo lead que declara renta desde $1.6M califica y pasa a agendamiento.",
+    tituloRentas: "Tramo de renta declarado",
+    tituloHoras: "Cuándo escriben (hora Chile)",
+    tituloNoticiasInmobiliario: "🏢 Mercado inmobiliario",
+    kpiPresupuesto: "Llegó a presupuesto"
   },
   locale: "es-CL",
   moneda: {
     usdPrefix: "US$",
     clpPrefix: "CLP $"
+  },
+  reglas: {
+    tramoRentaNoCalifica: "800"
   },
   urls: {
     agenda: "https://antonia.domo-ia.com/agenda",
@@ -532,6 +544,10 @@ function aplicarConfig(){
   document.getElementById("header-eyebrow").textContent = CONFIG.header.eyebrow;
   document.getElementById("header-title").textContent = CONFIG.header.title;
   document.getElementById("meta-kpis-title").textContent = `KPIs Meta Ads (últimos 30 días, cuenta ${CONFIG.cliente})`;
+  document.getElementById("calif-regla").textContent = CONFIG.textos.reglaCalificacion;
+  document.getElementById("rentas-title").textContent = CONFIG.textos.tituloRentas;
+  document.getElementById("hours-title").textContent = CONFIG.textos.tituloHoras;
+  document.getElementById("not-inmo-title").textContent = CONFIG.textos.tituloNoticiasInmobiliario;
   document.getElementById("link-agenda").href = CONFIG.urls.agenda;
   document.getElementById("link-feedback").href = CONFIG.urls.feedback;
   document.getElementById("link-buscador").href = CONFIG.urls.buscador;
@@ -842,7 +858,7 @@ function render(d){
   if (typeof window.__renderEquipo === "function") window.__renderEquipo();
   const kpis = [
     { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período", sello:sello("acumulado","CSV embudo") },
-    { lbl:"Llegó a presupuesto", val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<CONFIG.umbrales.pctPresupuestoCritico?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
+    { lbl:CONFIG.textos.kpiPresupuesto, val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<CONFIG.umbrales.pctPresupuestoCritico?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
     { lbl:"Agendó",             val:fmtPct(f3.count, d.totalLeads), cls:kAgendNum>=CONFIG.umbrales.pctAgendamientoBueno?"good":"warn", sub:f3.count+" reuniones creadas", sello:sello("acumulado","CSV embudo") },
     { lbl:"Costo / agendamiento", val:fmtUSD(cpa), sub:"gasto total ÷ agendados", sello:sello("acumulado","CSV embudo") }
   ];
@@ -960,7 +976,7 @@ function render(d){
       const rmx = Math.max(...d.rentas.map(r=>r.n),1);
       document.getElementById("rentas").innerHTML = d.rentas.map(r=>
         `<div class="row"><div class="name">${esc(r.lbl)}</div>
-         <div class="track"><div class="fill" style="width:${r.n/rmx*100}%;${r.k.includes("800")?"background:var(--ink-3)":"background:var(--f2)"}"></div></div>
+         <div class="track"><div class="fill" style="width:${r.n/rmx*100}%;${r.k.includes(CONFIG.reglas.tramoRentaNoCalifica)?"background:var(--ink-3)":"background:var(--f2)"}"></div></div>
          <div class="n">${r.n} <small>· ${fmtPct(r.n,c.calificados+c.no_califica||1)}</small></div></div>`).join("") + sello("acumulado","CSV embudo");
     }
   } else secC.hidden = true;
@@ -1220,6 +1236,8 @@ function fromRows(rows){
   const reunResRows=of("reunres").map(r=>({k:g(r,"clave"),lbl:g(r,"etiqueta")||g(r,"clave"),n:nu(r,"n")}));
   const reunOrigRows=of("reunorig");
   const reunOrig=reunOrigRows.length?Object.fromEntries(reunOrigRows.map(r=>[g(r,"clave"),nu(r,"n")])):null;
+  const ventanaCrm=of("ventana").find(r=>g(r,"clave")==="crm");
+  const fechaDatoCsv=ventanaCrm ? g(ventanaCrm,"extra2") : "";
   let byHxD=null;
   of("hxd").forEach(r=>{
     const m=g(r,"clave").match(/^(\d)-(\d{1,2})$/); if(!m) return;
@@ -1241,6 +1259,7 @@ function fromRows(rows){
     fechas: fechas.length?fechas:null,
     formAds: formAds.length?formAds:null,
     formTot,
+    fechaDatoCsv,
     reun, reunRes: reunResRows.length?reunResRows:null, reunOrig
   };
 }
@@ -1266,9 +1285,14 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 (async function(){
   const st = document.getElementById("status");
   let data = SAMPLE, live = false;
-  const setStatus = (state, msg) => {
+  const setStatus = (state, msg, fechaDatoCsv) => {
     const now = new Date();
     if(state==="live"){
+      const edadCsv = diasDesde(fechaDatoCsv);
+      if(edadCsv!=null && edadCsv>CONFIG.umbrales.diasCsvViejo){
+        st.innerHTML = `<span class="warn">● CSV DESACTUALIZADO</span><br>dato de hace ${edadCsv} día${edadCsv===1?"":"s"}`;
+        return;
+      }
       st.innerHTML = `<span class="live">● EN VIVO</span><br>actualizado ${now.toLocaleString(CONFIG.locale,{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
     } else if(state==="error"){
       st.innerHTML = `<span class="err">● ERROR DE REFRESH</span><br>${esc(msg||"no se pudo actualizar")} · ${now.toLocaleString(CONFIG.locale,{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit"})}`;
@@ -1281,15 +1305,16 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   }
   render(data);
   switchTab("meta");   // pestaña por defecto
-  setStatus(live ? "live" : "demo");
+  setStatus(live ? "live" : "demo", null, data && data.fechaDatoCsv);
   document.getElementById("foot").innerHTML =
     `Fuente: tab agregado <code>${CONFIG.data.tab}</code> de la planilla (publicado como CSV, sin API key). `+
     `⚠️ No conectar a la Hoja 1 del CRM (tiene teléfonos/nombres); usar solo un tab de métricas agregadas. `+
     (live ? "Se actualiza cada 5 minutos." : "Ahora mismo se muestran datos de ejemplo.");
   if(live) setInterval(async()=>{
     try{
-      render(await fetchLive());
-      setStatus("live");
+      const fresh = await fetchLive();
+      render(fresh);
+      setStatus("live", null, fresh.fechaDatoCsv);
     }catch(e){
       setStatus("error", e && e.message);
     }

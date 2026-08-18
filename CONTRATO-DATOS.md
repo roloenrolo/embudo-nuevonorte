@@ -40,10 +40,11 @@ Cada fila debe declarar su familia en `tipo`. Las familias no listadas como cons
 | `reunorig` | acumulado | `clave`, `n` | Origen de reuniones. Claves usadas: `antonia`, `vendedor_directo` preferida; `rodolfo` se acepta por compatibilidad. |
 | `hxd` | acumulado | `clave`, `n` | Heatmap día x hora. `clave` debe tener formato `D-H`, donde `D` va de `0` a `6` y `H` de `0` a `23`; `n` leads. |
 | `kpi` | acumulado | `clave`, `n` | KPIs auxiliares. Claves usadas: `leads`, `spend_total`. |
+| `ventana` | snapshot | `clave`, `extra2` | Metadatos de ventana. La fila con `clave=crm` se consume: `extra2` debe traer la fecha del dato CRM y alimenta el aviso de vejez del CSV. |
 
 ### Familias no consumidas por esta versión
 
-El código actual no lee `adfun30`, `calif30`, `ventana` ni una familia `tipo` como valor de `tipo`. Si aparecen en el CSV publicado, se ignoran sin error.
+El código actual no lee `adfun30`, `calif30` ni una familia `tipo` como valor de `tipo`. Si aparecen en el CSV publicado, se ignoran sin error.
 
 ## `forecast.json`
 
