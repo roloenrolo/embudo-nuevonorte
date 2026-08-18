@@ -85,34 +85,11 @@ El histórico agrupa por `captura` y separa `area` en `inmobiliario` e `ia`.
 
 ## `economia.json`
 
-Fuente del tab Economía. El tab valida que existan métricas numéricas mínimas en `cap`.
-
-Campos consumidos:
-
-- `schema_version`: versión del schema.
-- `generado`: fecha de generación.
-- `actualizacion`: texto de actualización.
-- `nota_supuestos`: texto del aviso principal.
-- `dolar`: `{ valor, fuente, fecha }`.
-- `cap`: objeto del bucket principal:
-  - `bucket`
-  - `gasto_usd`
-  - `escribieron`
-  - `calificados`
-  - `agendaron`
-  - `ventas_esperadas`
-  - `costo_por_calificado_usd`
-  - `breakeven_por_calificado_usd`
-  - `roas_esperado`
-  - `comision_clp`
-  - `deptos_por_venta_max`
-  - `tasa_calificado_venta`
-  - `ingreso_esperado_usd`
-  - `nota_comision`
-- `formulario`: `{ gasto_usd, leads, cpl_usd, nota }`.
-- `sub`: `{ estado, comision_clp, tasa_calificado_venta, nota }`.
+Esta fuente fue retirada del dashboard público. El contrato público ya no describe su estructura.
 
 ## `acciones-matias.json`
+
+Esta fuente no se publica actualmente; por eso su sección no aparece en el dashboard.
 
 Fuente de la sección “Acciones propuestas por Matías” dentro del tab Meta. La sección valida título, bajada, fecha y lista no vacía de acciones.
 
@@ -131,6 +108,8 @@ Campos consumidos:
   - `fecha`: fecha de la acción.
 
 ## `roadmap-anuncios.json`
+
+Esta fuente no se publica actualmente; por eso su sección no aparece en el dashboard.
 
 Fuente de la sección “Roadmap de anuncios” dentro del tab Meta. La sección valida título, bajada, regla, fecha de generación, ciclos y cierre.
 
