@@ -37,7 +37,7 @@ Cada fila debe declarar su familia en `tipo`. Las familias no listadas como cons
 | `formtot` | 30d | `n`, `extra1` | Totales del carril formulario. `n` leads; `extra1` gasto USD. Si falta, el dashboard suma `formad`. |
 | `reun` | acumulado | `clave`, `n` | Estado de reuniones. Se convierte a objeto por clave. Claves usadas: `agendadas`, `realizadas`, `no_asistio`, `proximas`, `pendientes`. |
 | `reunres` | acumulado | `orden`, `clave`, `etiqueta`, `n` | Resultado comercial. `clave` clasifica; `etiqueta` o `clave` se muestra; `n` conteo. |
-| `reunorig` | acumulado | `clave`, `n` | Origen de reuniones. Claves usadas: `antonia`, `rodolfo`. |
+| `reunorig` | acumulado | `clave`, `n` | Origen de reuniones. Claves usadas: `antonia`, `vendedor_directo` preferida; `rodolfo` se acepta por compatibilidad. |
 | `hxd` | acumulado | `clave`, `n` | Heatmap día x hora. `clave` debe tener formato `D-H`, donde `D` va de `0` a `6` y `H` de `0` a `23`; `n` leads. |
 | `kpi` | acumulado | `clave`, `n` | KPIs auxiliares. Claves usadas: `leads`, `spend_total`. |
 

@@ -499,7 +499,16 @@ const CONFIG = {
   },
   data: {
     csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vT37zYih55JXCvAO49PhlSCDQGRk0SSOnVvzuVU_NNGE70-PKjXWHs3MYxjTaNc10daPLJVJCYIzpZM/pub?gid=144104198&single=true&output=csv",
-    tab: "embudo"
+    tab: "embudo",
+    jsonBase: "./"
+  },
+  umbrales: {
+    pctPresupuestoCritico: 40, // % de leads que llegan a presupuesto; bajo este valor es crítico.
+    pctAgendamientoBueno: 8, // % de leads que agendan; desde este valor es bueno.
+    cplFormularioUsdWin: 2, // CPL de formulario en USD; hasta este valor es ganador.
+    cplFormularioUsdMid: 4, // CPL de formulario en USD; hasta este valor es medio.
+    costoAgendamientoUsdWin: 10, // Costo por agendamiento en USD; hasta este valor es ganador.
+    costoAgendamientoUsdMid: 16 // Costo por agendamiento en USD; hasta este valor es medio.
   },
   locale: "es-CL",
   moneda: {
@@ -812,8 +821,8 @@ function render(d){
   const cpa = f3.count ? d.spendTotal / f3.count : null;
   const kpis = [
     { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período", sello:sello("acumulado","CSV embudo") },
-    { lbl:"Llegó a presupuesto", val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<40?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
-    { lbl:"Agendó",             val:fmtPct(f3.count, d.totalLeads), cls:kAgendNum>=8?"good":"warn", sub:f3.count+" reuniones creadas", sello:sello("acumulado","CSV embudo") },
+    { lbl:"Llegó a presupuesto", val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<CONFIG.umbrales.pctPresupuestoCritico?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
+    { lbl:"Agendó",             val:fmtPct(f3.count, d.totalLeads), cls:kAgendNum>=CONFIG.umbrales.pctAgendamientoBueno?"good":"warn", sub:f3.count+" reuniones creadas", sello:sello("acumulado","CSV embudo") },
     { lbl:"Costo / agendamiento", val:fmtUSD(cpa), sub:"gasto total ÷ agendados", sello:sello("acumulado","CSV embudo") }
   ];
   document.getElementById("kpis").innerHTML = kpis.map(k=>
@@ -838,7 +847,7 @@ function render(d){
     ).join("");
     renderAdsSplit("#formads tbody", "formads-paused-wrap", "#formads-paused tbody", "formads-paused-count", d.formAds, a=>{
       const c = a.leads ? a.spend/a.leads : null;
-      const cls = c==null ? "bad" : c<=2 ? "win" : c<=4 ? "mid" : "bad";
+      const cls = c==null ? "bad" : c<=CONFIG.umbrales.cplFormularioUsdWin ? "win" : c<=CONFIG.umbrales.cplFormularioUsdMid ? "mid" : "bad";
       const ecls = a.estado==="ACTIVE" ? "win" : a.estado==="PAUSED" ? "mid" : "bad";
       return `<tr><td>${esc(a.ad)}</td><td>${a.leads}</td><td>${fmtUSD(a.spend)}</td>
         <td><span class="pill ${cls}">${c==null?"—":fmtUSD(c)}</span></td>
@@ -901,7 +910,7 @@ function render(d){
   const adsConEstado = d.ads.map(a=>({...a, estado: a.id!=null ? (estadoPorId[a.id] ?? null) : null}));
   renderAdsSplit("#ads tbody", "ads-paused-wrap", "#ads-paused tbody", "ads-paused-count", adsConEstado, a=>{
     const cpb = a.booked ? a.spend/a.booked : null;
-    const cls = cpb==null ? "bad" : cpb<=10 ? "win" : cpb<=16 ? "mid" : "bad";
+    const cls = cpb==null ? "bad" : cpb<=CONFIG.umbrales.costoAgendamientoUsdWin ? "win" : cpb<=CONFIG.umbrales.costoAgendamientoUsdMid ? "mid" : "bad";
     const ecls = a.estado==="ACTIVE" ? "win" : a.estado==null ? "mid" : a.estado==="PAUSED" ? "mid" : "bad";
     return `<tr><td>${esc(a.ad)}</td><td>${fmtUSD(a.spend)}</td><td>${a.convs}</td><td>${a.booked}</td>
       <td><span class="pill ${cls}">${cpb==null?"sin agend.":fmtUSD(cpb)}</span></td>
@@ -952,9 +961,10 @@ function render(d){
        <div class="track"><div class="fill" style="width:${r.n/rrmx*100}%;background:${r.color}"></div></div>
        <div class="n">${r.n}</div></div>`).join("") + sello("acumulado","CSV embudo");
     const cerradas = (q.realizadas||0)+(q.no_asistio||0);
+    const reunionesDirectasVendedor = d.reunOrig ? ((d.reunOrig.vendedor_directo ?? d.reunOrig.rodolfo) || 0) : 0;
     document.getElementById("reunnote").innerHTML =
       `<strong>${q.agendadas||0}</strong> reuniones agendadas en total` +
-      (d.reunOrig ? ` (${d.reunOrig.antonia||0} vía Antonia · ${d.reunOrig.rodolfo||0} directa${(d.reunOrig.rodolfo||0)===1?"":"s"} del vendedor)` : "") +
+      (d.reunOrig ? ` (${d.reunOrig.antonia||0} vía Antonia · ${reunionesDirectasVendedor} directa${reunionesDirectasVendedor===1?"":"s"} del vendedor)` : "") +
       (cerradas ? ` · asistencia <strong>${fmtPct(q.realizadas||0,cerradas)}</strong> sobre las cerradas` : "") +
       ((q.pendientes||0) ? ` · ${q.pendientes} histórica${q.pendientes===1?"":"s"} sin dato de cierre` : "") + ".";
     const resEl = document.getElementById("reunresbars");
@@ -1272,7 +1282,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fin = v => (typeof v === "number" && isFinite(v)) ? v : null;
   try{
-    const r = await fetch("./forecast.json?_ts="+Date.now(), {cache:"no-store"});
+    const r = await fetch(CONFIG.data.jsonBase+"forecast.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin forecast.json");
     const j = await r.json();
     if(!Array.isArray(j.serie) || j.serie.length<2 || !Array.isArray(j.pron) || !j.pron.length) throw new Error("forecast vacío");
@@ -1350,7 +1360,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   };
   const render = arr => ((Array.isArray(arr)?arr:[]).slice(0,6).map(item).join("")) || '<p class="hint">Sin datos hoy.</p>';
   try{
-    const r = await fetch("./noticias.json?_ts="+Date.now(), {cache:"no-store"});
+    const r = await fetch(CONFIG.data.jsonBase+"noticias.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin noticias.json");
     const j = await r.json();
     if(!Array.isArray(j.inmobiliario) && !Array.isArray(j.ia)) throw new Error("noticias vacío");
@@ -1368,7 +1378,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
       if(!box.hidden){ box.hidden=true; btn.textContent="📚 Ver histórico"; return; }
       btn.textContent="Cargando…";
       try{
-        const h=await (await fetch("./noticias-historico.json?_ts="+Date.now(),{cache:"no-store"})).json();
+        const h=await (await fetch(CONFIG.data.jsonBase+"noticias-historico.json?_ts="+Date.now(),{cache:"no-store"})).json();
         const items=Array.isArray(h.items)?h.items:[];
         const dias=[...new Set(items.map(x=>x.captura))].sort().reverse();
         box.innerHTML = dias.map(d=>{
@@ -1399,7 +1409,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
     return dias>6 ? ` <b class="txt-warn">Dato generado hace ${dias} días; puede estar desactualizado.</b>` : "";
   };
   try{
-    const r = await fetch("./economia.json?_ts="+Date.now(), {cache:"no-store"});
+    const r = await fetch(CONFIG.data.jsonBase+"economia.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin economia.json");
     const j = await r.json();
     const c = j.cap||{}, f = j.formulario||{};
@@ -1481,7 +1491,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   const pillCls = tipo => ({pausar:"bad", decidir:"mid", revisar:"win"}[tipo] || "mid");
 
   try{
-    const r = await fetch("./roadmap-anuncios.json?_ts="+Date.now(), {cache:"no-store"});
+    const r = await fetch(CONFIG.data.jsonBase+"roadmap-anuncios.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin roadmap-anuncios.json");
     const j = await r.json();
     if(typeof j.titulo!=="string" || typeof j.bajada!=="string" || typeof j.regla!=="string" || !validDate(j.generado) || !Array.isArray(j.ciclos) || !j.ciclos.length || !j.cierre)
@@ -1510,7 +1520,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   }catch(e){ /* sin roadmap válido: la sección queda oculta */ }
 
   try{
-    const r = await fetch("./acciones-matias.json?_ts="+Date.now(), {cache:"no-store"});
+    const r = await fetch(CONFIG.data.jsonBase+"acciones-matias.json?_ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw new Error("sin acciones-matias.json");
     const j = await r.json();
     if(typeof j.titulo!=="string" || typeof j.bajada!=="string" || !validDate(j.generado) || !Array.isArray(j.acciones) || !j.acciones.length)
