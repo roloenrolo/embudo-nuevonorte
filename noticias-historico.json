@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-17",
+ "actualizado": "2026-08-18",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1810,6 +1810,26 @@
    "fecha": "2026-08-13",
    "impacto": "bajo",
    "porque": "Congreso Latam de IA, Tecnología y Negocios (9-10 sept en Santiago) confirma que Chile sigue siendo foco de inversión en IA aplicada a negocios."
+  },
+  {
+   "captura": "2026-08-18",
+   "area": "ia",
+   "titulo": "Google Ads deja de \"superar\" las metas de Target CPA y Target ROAS en campañas limitadas por presupuesto",
+   "fuente": "Keyweo",
+   "url": "https://www.keyweo.com/en/blog/google-ads-update-august-17-2026/",
+   "fecha": "2026-08-17",
+   "impacto": "medio",
+   "porque": "Desde ayer 17-ago, cualquier campaña Search/Shopping/PMax con meta de CPA o ROAS y presupuesto limitado converge al valor configurado en vez de rendir mejor por su cuenta: relevante si se evalúa diversificar pauta fuera de Meta."
+  },
+  {
+   "captura": "2026-08-18",
+   "area": "ia",
+   "titulo": "Anthropic, la creadora de Claude, prepara una de las mayores salidas a bolsa de la historia",
+   "fuente": "Economía 3",
+   "url": "https://economia3.com/2026/08/16/759613-anthropic-la-creadora-de-claude-prepara-una-de-las-mayores-salidas-a-bolsa-de-la-historia/",
+   "fecha": "2026-08-16",
+   "impacto": "bajo",
+   "porque": "Señal de madurez de la industria de IA de negocio; no cambia la operación diaria pero da contexto de hacia dónde va la inversión del sector."
   }
  ]
 }
