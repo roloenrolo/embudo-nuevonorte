@@ -226,6 +226,7 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="forecast" id="tab-forecast" aria-selected="false" hidden>🔮 Pronóstico</button>
     <button class="tab" data-target="noticias" id="tab-noticias" aria-selected="false" hidden>📰 Noticias del día</button>
     <button class="tab" data-target="economia" id="tab-economia" aria-selected="false" hidden>💰 Economía</button>
+    <button class="tab" data-target="equipo" aria-selected="false">🦾 El equipo IA</button>
     <a class="tab" style="text-decoration:none" id="link-buscador" href="" target="_blank" rel="noopener" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos ↗</a>
     <a class="tab" style="text-decoration:none" id="link-feedback" href="" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
   </nav>
@@ -480,6 +481,12 @@ tr:last-child td{border-bottom:0}
     <p class="hint mt12 mx2" id="eco-gen"></p>
   </section>
 
+  <section data-grp="equipo">
+    <p class="sub">Los agentes de IA que operan este embudo</p>
+    <p class="hint">Cada agente trabaja con su propia cadencia. Los números salen de las mismas fuentes que alimentan las otras pestañas.</p>
+    <div class="panel-grid" id="equipo-grid"></div>
+  </section>
+
   <div class="foot" id="foot"></div>
 </div>
 
@@ -615,6 +622,14 @@ const fmtDate = (s, opts) => {
   const raw = String(s??"");
   const d = /^\d{4}-\d{2}-\d{2}$/.test(raw) ? new Date(raw+"T00:00:00") : new Date(raw);
   return isNaN(d) ? esc(raw) : d.toLocaleDateString(CONFIG.locale, opts || {day:"numeric",month:"short"});
+};
+const diasDesde = s => {
+  const d = new Date(String(s||"").match(/^\d{4}-\d{2}-\d{2}$/) ? String(s)+"T00:00:00" : String(s||""));
+  return isNaN(d) ? null : Math.floor((Date.now()-d.getTime())/86400000);
+};
+const haceDias = s => {
+  const d = diasDesde(s);
+  return d==null ? "sin fecha" : `hace ${d} día${d===1?"":"s"}`;
 };
 const sello = (ventana, fuente, actualizado="actualizado al cargar") =>
   `<span class="sello">${esc(ventana)} · ${esc(fuente)} · ${esc(actualizado)}</span>`;
@@ -819,6 +834,12 @@ function render(d){
   const kAgendNum = d.totalLeads ? Math.round(f3.count/d.totalLeads*100) : 0;
   const kCalifNum = d.totalLeads ? Math.round(f1.count/d.totalLeads*100) : 0;
   const cpa = f3.count ? d.spendTotal / f3.count : null;
+  window.__equipoCSV = {
+    leadsAtendidos: f0.count || d.totalLeads || 0,
+    reunionesAgendadas: d.reun && d.reun.agendadas != null ? d.reun.agendadas : null,
+    agendadasAntonia: d.reunOrig && d.reunOrig.antonia != null ? d.reunOrig.antonia : null
+  };
+  if (typeof window.__renderEquipo === "function") window.__renderEquipo();
   const kpis = [
     { lbl:"Leads",              val:d.totalLeads, sub:"escribieron en el período", sello:sello("acumulado","CSV embudo") },
     { lbl:"Llegó a presupuesto", val:fmtPct(f1.count, d.totalLeads), cls:kCalifNum<CONFIG.umbrales.pctPresupuestoCritico?"crit":"warn", sub:f1.count+" de "+d.totalLeads+" leads", sello:sello("acumulado","CSV embudo") },
@@ -1275,6 +1296,83 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
   }, 5*60*1000);
 })();
 
+// ---- Tab Equipo IA: resumen de fuentes ya existentes (CSV + JSON locales) ----
+(async function(){
+  const state = { acciones:null, roadmap:null, noticias:null, forecast:null };
+  const grid = document.getElementById("equipo-grid");
+  const metric = (k,v) => `<span class="numchip"><b>${esc(k)}</b>${esc(typeof v==="number" ? v.toLocaleString(CONFIG.locale) : v)}</span>`;
+  const tabBtn = (target, label) => `<button class="btnmeta" type="button" data-equipo-tab="${esc(target)}">${esc(label)}</button>`;
+  const fetchJson = async file => {
+    const r = await fetch(`${CONFIG.data.jsonBase}${file}?_ts=${Date.now()}`, {cache:"no-store"});
+    if(!r.ok) throw new Error(file);
+    return r.json();
+  };
+  const matiasCiclo = roadmap => {
+    const ciclos = Array.isArray(roadmap && roadmap.ciclos) ? roadmap.ciclos : [];
+    const c = ciclos.find(x=>x.estado==="en_curso") || ciclos.find(x=>x.estado==="proximo") || ciclos[0];
+    return c ? `Ciclo ${c.n} — ${c.titulo}` : "—";
+  };
+  const renderEquipo = () => {
+    if(!grid) return;
+    const csv = window.__equipoCSV;
+    const acciones = state.acciones && Array.isArray(state.acciones.acciones) ? state.acciones.acciones : null;
+    const pendientes = acciones ? acciones.filter(a=>String(a.estado||"").toLowerCase()==="pendiente").length : null;
+    const noticiasInmo = state.noticias && Array.isArray(state.noticias.inmobiliario) ? state.noticias.inmobiliario : null;
+    const noticiasIa = state.noticias && Array.isArray(state.noticias.ia) ? state.noticias.ia : null;
+    const noticiasTotal = (noticiasInmo?noticiasInmo.length:0) + (noticiasIa?noticiasIa.length:0);
+    const fc = window.__fcData || state.forecast;
+    grid.innerHTML = [
+      csv ? `<div class="card"><h3>💬 Antonia</h3><p class="hint">Vendedora digital · WhatsApp 24/7</p>`+
+        `<p class="hint">Responde cada lead que escribe, lo califica y agenda la reunión.</p>`+
+        `<div class="numchips">`+
+          metric("leads atendidos", csv.leadsAtendidos) +
+          metric("reuniones agendadas", csv.reunionesAgendadas==null?"—":csv.reunionesAgendadas) +
+          metric("agendadas por Antonia", csv.agendadasAntonia==null?"—":csv.agendadasAntonia) +
+          `</div>${sello("acumulado","CSV embudo")}`+
+      `</div>` : "",
+      (acciones || state.roadmap) ? `<div class="card"><h3>📊 Matías</h3><p class="hint">Analista de pauta</p>`+
+        `<p class="hint">Revisa los anuncios todos los días y propone qué pausar y qué reforzar. Ninguna acción se aplica sin aprobación humana.</p>`+
+        `<div class="numchips">`+
+          metric("acciones propuestas", acciones ? acciones.length : "—")+
+          metric("pendientes", pendientes==null?"—":pendientes)+
+          metric("ciclo vigente", state.roadmap ? matiasCiclo(state.roadmap) : "—")+
+          `</div>`+
+          (state.acciones&&state.acciones.generado?sello("acciones", "acciones-matias.json", haceDias(state.acciones.generado)):"")+
+          (state.roadmap&&state.roadmap.generado?sello("roadmap", "roadmap-anuncios.json", haceDias(state.roadmap.generado)):"")+
+      `</div>` : "",
+      state.noticias ? `<div class="card"><h3>📰 Chucao</h3><p class="hint">Radar de noticias</p>`+
+        `<p class="hint">Barre la prensa cada mañana y destaca lo que afecta al negocio.</p>`+
+        `<div class="numchips">`+
+          metric("noticias de hoy", noticiasTotal)+
+          metric("fecha", fmtDate(state.noticias.generado||state.noticias.fecha))+
+          `</div>${tabBtn("noticias","📰 Ver noticias")}`+
+      `</div>` : "",
+      fc&&fc.tot ? `<div class="card"><h3>🔮 Pronóstico semanal</h3><p class="hint">Modelo estadístico que proyecta los leads de los próximos 14 días. Se recalcula cada lunes.</p>`+
+        `<div class="numchips">${metric("leads esperados 14d", fc.tot.p50==null?"—":Math.round(fc.tot.p50))}</div>${tabBtn("forecast","🔮 Ver pronóstico")}`+
+      `</div>` : "",
+      `<div class="card"><h3>🧠 Lucas</h3><p class="hint">Analista de reuniones</p>`+
+        `<p class="hint">Convierte cada reunión realizada en un informe V-E-N-D-E con recomendaciones para el equipo.</p>`+
+        `<a class="btnmeta link-clean" href="${esc(CONFIG.urls.feedback)}" target="_blank" rel="noopener">🧠 Ver informes →</a>`+
+      `</div>`
+    ].filter(Boolean).join("");
+    grid.querySelectorAll("[data-equipo-tab]").forEach(btn=>{
+      btn.addEventListener("click", ()=>switchTab(btn.dataset.equipoTab));
+    });
+  };
+  window.__renderEquipo = renderEquipo;
+  renderEquipo();
+  try{ state.acciones = await fetchJson("acciones-matias.json"); }catch(e){}
+  renderEquipo();
+  try{ state.roadmap = await fetchJson("roadmap-anuncios.json"); }catch(e){}
+  renderEquipo();
+  try{ state.noticias = await fetchJson("noticias.json"); }catch(e){}
+  renderEquipo();
+  if(!window.__fcData){
+    try{ state.forecast = await fetchJson("forecast.json"); }catch(e){}
+    renderEquipo();
+  }
+})();
+
 // ---- Tab Pronóstico: forecast.json (generado por forecast_timesfm.py) ----
 // Carga AISLADA del loader principal: si el JSON falta o viene malo, el botón del
 // tab ni aparece y las otras pestañas siguen intactas. Cache-bust igual que el CSV.
@@ -1291,6 +1389,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
 
     const pct = v => fin(v)==null ? "—" : fmtPct(v, 1);
     window.__fcData = j; // disponible para aplicarAjusteForecast(), corra antes o después que render()
+    if (typeof window.__renderEquipo === "function") window.__renderEquipo();
     renderFcKpis(j, 1);  // baseline sin ajustar; se re-pinta si hay ajuste en vivo aplicable
 
     const gen = new Date(j.generado);
