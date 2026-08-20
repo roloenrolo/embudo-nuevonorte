@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-08-19",
-  "generado": "2026-08-19T07:35:00-04:00",
+  "fecha": "2026-08-20",
+  "generado": "2026-08-20T07:35:00-04:00",
   "inmobiliario": [
+    {
+      "titulo": "Minería y energía empujan, cae inversión pública y vivienda privada sigue débil: el panorama de la construcción",
+      "fuente": "Emol",
+      "url": "https://www.emol.com/noticias/Economia/2026/08/13/1208398/informe-camara-chilena-de-la.html",
+      "fecha": "2026-08-13",
+      "impacto": "alto",
+      "porque": "El informe MACh 70 de la CChC confirma que la vivienda privada sigue débil pese al repunte general: valida que el subsidio siga siendo el ángulo de venta más fuerte, no la recuperación general del sector."
+    },
     {
       "titulo": "Amplían subsidio hipotecario y Fogaes: cuánto puede bajar el dividendo y a qué tasa acceder",
       "fuente": "Duplos",
       "url": "https://duplos.cl/dato-util/congreso-nacional-fogaes-subsidio-hipotecario-viviendas-nuevas-92/276726/2026/08/12/",
       "fecha": "2026-08-12",
       "impacto": "alto",
-      "porque": "El Congreso amplió el tope a 6.000 UF y sumó 30 mil cupos: agranda directamente el universo de compradores al que apuntan los anuncios de subsidio de Nuevo Norte."
-    },
-    {
-      "titulo": "Gobierno anuncia proyecto que extiende subsidio hipotecario y sube tope de viviendas a 6.000 UF",
-      "fuente": "Chócale",
-      "url": "https://chocale.cl/2026/08/gobierno-anuncia-proyecto-que-extiende-subsidio-hipotecario-y-sube-tope-de-viviendas-a-6000-uf/",
-      "fecha": "2026-08-11",
-      "impacto": "alto",
-      "porque": "Con el nuevo tope, casi 9 de cada 10 viviendas nuevas del país califican para el subsidio: valida el ángulo 'subsidio' que ya es el mejor performer de la cuenta."
+      "porque": "El Senado despachó la ampliación del subsidio a la tasa vía Fogaes (30 mil cupos más, tope 6.000 UF), bajando el dividendo hasta $770.000: impacta directo el mensaje de los ads 'subsidio-vence' de Nuevo Norte."
     },
     {
       "titulo": "Gobierno busca extender el subsidio a la tasa de interés del crédito hipotecario para viviendas de hasta 6.000 UF",
@@ -24,15 +24,15 @@
       "url": "https://www.latercera.com/pulso/noticia/gobierno-busca-extender-el-subsidio-a-la-tasa-de-interes-del-credito-hipotecario-para-viviendas-de-hasta-6000-uf/",
       "fecha": "2026-08-11",
       "impacto": "alto",
-      "porque": "Confirma que el beneficio se extiende 12 meses más (hasta mayo 2028): da piso de vigencia para seguir invirtiendo en los ad sets de subsidio."
+      "porque": "Confirma que el beneficio se extiende hasta mayo 2028: da piso de vigencia para seguir invirtiendo en los ad sets de subsidio."
     },
     {
-      "titulo": "Ministerio de Hacienda valora el respaldo unánime de la Cámara al proyecto que amplía el subsidio hipotecario y la garantía Fogaes",
-      "fuente": "En La Ciudad",
-      "url": "https://www.enlaciudad.cl/2026/08/ministerio-de-hacienda-valora-el.html",
+      "titulo": "CBRE: inversión inmobiliaria alcanza su mayor optimismo para este 2026",
+      "fuente": "La Tercera (Pulso)",
+      "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
       "fecha": "",
       "impacto": "medio",
-      "porque": "El respaldo unánime en la Cámara reduce el riesgo de que el beneficio se caiga o se recorte antes de tiempo."
+      "porque": "El reporte CBRE-ACAFI 2026 registra el mayor optimismo inversor desde 2022 (65% proyecta más compras): señal de contexto de mercado más favorable para la captación."
     },
     {
       "titulo": "¿Cómo es el nuevo Fogaes? Sube la garantía para comprar vivienda",
@@ -45,44 +45,44 @@
   ],
   "ia": [
     {
+      "titulo": "La IA dejó de ser una apuesta: startup Vambe abre el debate sobre el futuro de los negocios en un streaming abierto el 20 de agosto",
+      "fuente": "Forbes Chile",
+      "url": "https://forbes.cl/brandvoice/2026-07-31/la-ia-dejo-de-ser-una-apuesta-startup-vambe-abre-el-debate-sobre-el-futuro-de-los-negocios-en-un-streaming-abierto-el-20-de-agosto/",
+      "fecha": "2026-08-20",
+      "impacto": "medio",
+      "porque": "Vambe (agentes de IA para ventas, chilena) presenta hoy nuevas funcionalidades de IA conversacional para todo el flujo comercial: referencia directa para el roadmap de agentes de domo IA."
+    },
+    {
+      "titulo": "Anthropic añade una marca de agua invisible a todo lo que escribe Claude — y algunos usuarios cancelaron su suscripción",
+      "fuente": "WWWhatsnew",
+      "url": "https://wwwhatsnew.com/2026/08/19/anthropic-claude-marca-agua-synthid-texto-invisible-eu-ai-act-agosto-202/",
+      "fecha": "2026-08-19",
+      "impacto": "bajo",
+      "porque": "Los textos generados por Claude (usados en copy y creativos) ahora llevan marca de agua invisible por el EU AI Act: sin impacto funcional, pero relevante para trazabilidad de contenido IA."
+    },
+    {
       "titulo": "OpenAI ya gana más por empresas que por ChatGPT — y anunció el cruce de forma casi casual",
       "fuente": "WWWhatsnew",
       "url": "https://wwwhatsnew.com/2026/08/18/openai-enterprise-supera-consumer-arr-40-mil-millones-agosto-2026/",
       "fecha": "2026-08-18",
       "impacto": "medio",
-      "porque": "Confirma que el gasto corporativo en IA (agentes, automatización de ventas) ya supera al consumo: la adopción B2B de IA es la corriente dominante, no la excepción."
+      "porque": "Confirma que el gasto corporativo en IA (agentes, automatización de ventas) ya supera al consumo masivo: la adopción B2B de IA es la corriente dominante, no la excepción."
     },
     {
-      "titulo": "Deloitte anuncia el lanzamiento de una red unificada de inteligencia basada en agentes en Deloitte Omnia",
-      "fuente": "IT Ahora",
-      "url": "https://itahora.com/2026/08/07/deloitte-anuncia-el-lanzamiento-de-una-red-unificada-de-inteligencia-basada-en-agentes-en-deloitte-omnia/",
-      "fecha": "2026-08-07",
-      "impacto": "medio",
-      "porque": "Otra consultora grande estandariza agentes de IA en su operación: sube el piso de lo que un cliente espera de una empresa 'con IA'."
-    },
-    {
-      "titulo": "Meta lanza su primer agente de IA para programación para competir con Anthropic y OpenAI",
-      "fuente": "Forbes México",
-      "url": "https://forbes.com.mx/meta-lanza-su-primer-agente-de-ia-para-programacion-para-competir-con-anthropic-y-openai/",
-      "fecha": "2026-08-05",
+      "titulo": "Anthropic prepara una de las mayores salidas a bolsa de la historia",
+      "fuente": "Economía 3",
+      "url": "https://economia3.com/2026/08/16/759613-anthropic-la-creadora-de-claude-prepara-una-de-las-mayores-salidas-a-bolsa-de-la-historia/",
+      "fecha": "2026-08-16",
       "impacto": "bajo",
-      "porque": "No toca ventas ni marketing directamente, pero muestra que Meta sigue invirtiendo agresivo en IA propia mientras opera la plataforma de anuncios que usa Nuevo Norte."
+      "porque": "Anthropic (proveedor detrás de Claude/Matías) cierra financiamiento a valorización ~US$965.000M y evalúa IPO: señal de estabilidad del proveedor de base."
     },
     {
-      "titulo": "Meta refuerza su apuesta por la IA para captar a pymes y pequeños anunciantes",
-      "fuente": "PuroMarketing",
-      "url": "https://www.puromarketing.com/16/215631/meta-refuerza-apuesta-para-captar-pymes-pequenos-anunciantes-quedaran-fuera-ecuacion-agencias-publicitarias",
-      "fecha": "",
-      "impacto": "alto",
-      "porque": "Meta está empujando IA propia (creación de campañas, optimización) directo a los anunciantes pyme: afecta cómo se arman y optimizan los ad sets de Nuevo Norte en la misma plataforma."
-    },
-    {
-      "titulo": "Solo una de cada cinco agencias ha integrado la IA en todos sus canales",
-      "fuente": "PuroMarketing",
-      "url": "https://www.puromarketing.com/146/216967/solo-cada-cinco-agencias-integrado-todos-canales",
-      "fecha": "",
+      "titulo": "Cloudflare lanza el AEO Visibility Dashboard dentro de su suite de Answer Engine Optimization",
+      "fuente": "Agile Brand Guide",
+      "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-10-2026/",
+      "fecha": "2026-08-06",
       "impacto": "medio",
-      "porque": "La mayoría del mercado todavía no unifica IA entre canales: ventaja competitiva para quien sí lo haga en la operación de ads y CRM."
+      "porque": "Mide si asistentes de IA (ChatGPT, Gemini) citan o ignoran un sitio ante preguntas de categoría: relevante para la visibilidad de domo IA/Nuevo Norte en búsquedas con IA."
     }
   ]
 }

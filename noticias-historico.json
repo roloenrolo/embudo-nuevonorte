@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-19",
+ "actualizado": "2026-08-20",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1930,6 +1930,26 @@
    "fecha": "",
    "impacto": "medio",
    "porque": "La mayoría del mercado todavía no unifica IA entre canales: ventaja competitiva para quien sí lo haga en la operación de ads y CRM."
+  },
+  {
+   "captura": "2026-08-20",
+   "area": "ia",
+   "titulo": "Anthropic añade una marca de agua invisible a todo lo que escribe Claude — y algunos usuarios cancelaron su suscripción",
+   "fuente": "WWWhatsnew",
+   "url": "https://wwwhatsnew.com/2026/08/19/anthropic-claude-marca-agua-synthid-texto-invisible-eu-ai-act-agosto-202/",
+   "fecha": "2026-08-19",
+   "impacto": "bajo",
+   "porque": "Los textos generados por Claude (usados en copy y creativos) ahora llevan marca de agua invisible por el EU AI Act: sin impacto funcional, pero relevante para trazabilidad de contenido IA."
+  },
+  {
+   "captura": "2026-08-20",
+   "area": "ia",
+   "titulo": "Cloudflare lanza el AEO Visibility Dashboard dentro de su suite de Answer Engine Optimization",
+   "fuente": "Agile Brand Guide",
+   "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-10-2026/",
+   "fecha": "2026-08-06",
+   "impacto": "medio",
+   "porque": "Mide si asistentes de IA (ChatGPT, Gemini) citan o ignoran un sitio ante preguntas de categoría: relevante para la visibilidad de domo IA/Nuevo Norte en búsquedas con IA."
   }
  ]
 }
