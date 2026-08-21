@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-20",
+ "actualizado": "2026-08-21",
  "items": [
   {
    "captura": "2026-07-21",
@@ -1950,6 +1950,56 @@
    "fecha": "2026-08-06",
    "impacto": "medio",
    "porque": "Mide si asistentes de IA (ChatGPT, Gemini) citan o ignoran un sitio ante preguntas de categoría: relevante para la visibilidad de domo IA/Nuevo Norte en búsquedas con IA."
+  },
+  {
+   "captura": "2026-08-21",
+   "area": "inmobiliario",
+   "titulo": "Subsidio al Crédito Hipotecario ahora tiene tope de 6 mil UF: revisa cuánto podrías pagar de dividendo",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/08/17/subsidio-al-credito-hipotecario-ahora-tiene-tope-de-6-mil-uf-revisa-cuanto-podrias-pagar-de-dividendo.shtml",
+   "fecha": "2026-08-17",
+   "impacto": "medio",
+   "porque": "Explica en simulaciones el ahorro real en dividendo con el nuevo tope: material útil para argumentos de venta con leads de asesoría hipotecaria."
+  },
+  {
+   "captura": "2026-08-21",
+   "area": "ia",
+   "titulo": "Más de 1.500 expedientes revisados: IA de la CChC agiliza la aprobación de permisos en municipalidades",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/08/19/mas-de-1-500-expedientes-revisados-ia-de-la-cchc-agiliza-la-aprobacion-de-permisos-en-municipalidades.shtml",
+   "fecha": "2026-08-19",
+   "impacto": "medio",
+   "porque": "Ejemplo concreto de IA acelerando trámites del sector inmobiliario chileno: si escala, más proyectos nuevos entran más rápido al mercado que alimenta a Nuevo Norte."
+  },
+  {
+   "captura": "2026-08-21",
+   "area": "ia",
+   "titulo": "El 50% de los trabajadores en Chile usa IA semanalmente",
+   "fuente": "Mundo en Línea",
+   "url": "https://mundoenlinea.cl/2026/08/19/el-50-de-los-trabajadores-en-chile-usa-ia-semanalmente/",
+   "fecha": "2026-08-19",
+   "impacto": "medio",
+   "porque": "Confirma adopción masiva de IA en el mercado laboral chileno: normaliza el uso de IA en procesos comerciales frente a clientes y equipos, favorable para domo IA."
+  },
+  {
+   "captura": "2026-08-21",
+   "area": "ia",
+   "titulo": "U. de Chile presenta dashAI, primera plataforma chilena de IA de código abierto pensada para pymes",
+   "fuente": "Diario y Radio Universidad de Chile / CENIA",
+   "url": "https://radio.uchile.cl/2026/08/12/u-de-chile-presenta-dashai-primera-plataforma-chilena-de-inteligencia-artificial-de-codigo-abierto/",
+   "fecha": "2026-08-12",
+   "impacto": "bajo",
+   "porque": "Herramienta gratuita de IA para manejo de datos en pymes: señal de que el ecosistema local está bajando la barrera de entrada a IA aplicada a negocio."
+  },
+  {
+   "captura": "2026-08-21",
+   "area": "ia",
+   "titulo": "DeepSeek sube precios hasta 4,7x con tarifas peak/off-peak desde el 16 de agosto",
+   "fuente": "El Ecosistema Startup",
+   "url": "https://ecosistemastartup.com/deepseek-sube-precios-x4-en-2026-de-087-a-396-dolares-por-millon-de-tokens/",
+   "fecha": "2026-08-13",
+   "impacto": "bajo",
+   "porque": "El proveedor de IA más barato del mercado encarece su API: presiona al alza el costo de herramientas de IA usadas para operar campañas y atención."
   }
  ]
 }
