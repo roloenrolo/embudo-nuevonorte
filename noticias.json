@@ -1,64 +1,88 @@
 {
-  "fecha": "2026-08-21",
-  "generado": "2026-08-21T07:35:00-04:00",
+  "fecha": "2026-08-22",
+  "generado": "2026-08-22T07:45:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Senado aprueba y despacha la ampliación del subsidio a la tasa hipotecaria y el FOGAES hasta 6.000 UF",
-      "fuente": "Diario y Radio Universidad de Chile",
-      "url": "https://duplos.cl/dato-util/congreso-nacional-fogaes-subsidio-hipotecario-viviendas-nuevas-92/276726/2026/08/12/",
-      "fecha": "2026-08-12",
+      "titulo": "Ya es Ley: el subsidio a la tasa hipotecaria se amplía a viviendas de hasta 6.000 UF",
+      "fuente": "RadioGennesis",
+      "url": "https://www.radiogennesis.cl/2026/08/21/ya-es-ley-gobierno-amplia-subsidio-a-la-tasa-hipotecaria-con-beneficio-que-llegara-a-viviendas-nuevas-de-hasta-6-000-uf/",
+      "fecha": "2026-08-21",
       "impacto": "alto",
-      "porque": "Amplía el tope de 4.000 a 6.000 UF y suma 30.000 cupos (80.000 en total, vigente hasta mayo-2028): agranda el público objetivo de las campañas de subsidio adjudicado de Nuevo Norte."
+      "porque": "La Ley 21.836 sube los cupos de 50.000 a 80.000, el tope de 4.000 a 6.000 UF y extiende el beneficio hasta mayo-2028: el mensaje 'el subsidio vence' de las campañas pierde urgencia, hay que revisar el ángulo subsidio-vence-a2/video-a1."
     },
     {
-      "titulo": "Subsidio al Crédito Hipotecario ahora tiene tope de 6 mil UF: revisa cuánto podrías pagar de dividendo",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/08/17/subsidio-al-credito-hipotecario-ahora-tiene-tope-de-6-mil-uf-revisa-cuanto-podrias-pagar-de-dividendo.shtml",
-      "fecha": "2026-08-17",
+      "titulo": "Reporte Inmobiliario CBRE-ACAFI 2026: 65% de administradoras de fondos proyecta más compras este año",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
+      "fecha": "2026-08-11",
       "impacto": "medio",
-      "porque": "Explica en simulaciones el ahorro real en dividendo con el nuevo tope: material útil para argumentos de venta con leads de asesoría hipotecaria."
+      "porque": "Nivel de optimismo inversionista más alto desde 2022 (vs 38% en 2025): contexto de reactivación de demanda que respalda la campaña de Nuevo Norte."
     },
     {
-      "titulo": "Minería y energía empujan, cae inversión pública y vivienda privada sigue débil: el panorama de la construcción",
-      "fuente": "Emol",
-      "url": "https://www.emol.com/noticias/Economia/2026/08/13/1208398/informe-camara-chilena-de-la.html",
-      "fecha": "2026-08-13",
+      "titulo": "IPC de julio 2026: inflación anual modera a 3,5% y el arriendo sube 0,6% mensual",
+      "fuente": "Simpli",
+      "url": "https://simpli.cl/blog/educacion-financiera/ipc-julio-2026-inflacion-en-35-y-la-uf-vuelve-a-subir/",
+      "fecha": "2026-08-08",
       "impacto": "medio",
-      "porque": "El informe MACh de la CChC confirma que la vivienda privada sigue contrayéndose pese al repunte de otros sectores: contexto para calibrar expectativas de demanda de las campañas."
+      "porque": "Inflación moderándose refuerza el escenario de tasas hipotecarias a la baja, tesis central del pitch 'comprar es mejor que arrendar' de las campañas."
+    },
+    {
+      "titulo": "La ampliación del subsidio al crédito hipotecario cubre un tercio del stock disponible de viviendas de hasta 6.000 UF",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/ampliacion-del-subsidio-al-credito-hipotecario-cubre-un-tercio-del-stock-disponible-de-viviendas-de-hasta-6000-uf/",
+      "fecha": "",
+      "impacto": "alto",
+      "porque": "Cuantifica el alcance real del nuevo tope de 6.000 UF sobre el stock disponible: dato útil para calibrar cuántas propiedades del catálogo de Nuevo Norte ahora califican."
+    },
+    {
+      "titulo": "TOCTOC: la tasa de preevaluaciones hipotecarias exitosas sube cerca de 60% anual en agosto",
+      "fuente": "El Diario Inmobiliario",
+      "url": "https://eldiarioinmobiliario.cl/noticias/economistas-ajustan-expectativas-y-ven-senales-claras-de-reactivacion-inmobiliaria/",
+      "fecha": "",
+      "impacto": "medio",
+      "porque": "Más compradores calificando para crédito por mayor estabilidad de financiamiento: más leads de las campañas con probabilidad real de avanzar a firma."
     }
   ],
   "ia": [
     {
-      "titulo": "Más de 1.500 expedientes revisados: IA de la CChC agiliza la aprobación de permisos en municipalidades",
-      "fuente": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/08/19/mas-de-1-500-expedientes-revisados-ia-de-la-cchc-agiliza-la-aprobacion-de-permisos-en-municipalidades.shtml",
-      "fecha": "2026-08-19",
+      "titulo": "Inteligencia artificial en empresas chilenas: 88% ya la usa, según estudio SONDA Tech Trends",
+      "fuente": "ANDA",
+      "url": "https://anda.cl/inteligencia-artificial-empresas-chilenas-adopcion-2026/",
+      "fecha": "2026-08-21",
+      "impacto": "alto",
+      "porque": "Nueve de cada diez empresas chilenas ya interactúan con IA: valida el pitch de domo IA de que usar IA en el proceso comercial ya es la norma, no la excepción."
+    },
+    {
+      "titulo": "OpenAI expande el test de anuncios de ChatGPT a Reino Unido, México, Brasil, Japón y Corea del Sur",
+      "fuente": "gHacks",
+      "url": "https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/",
+      "fecha": "2026-08-13",
       "impacto": "medio",
-      "porque": "Ejemplo concreto de IA acelerando trámites del sector inmobiliario chileno: si escala, más proyectos nuevos entran más rápido al mercado que alimenta a Nuevo Norte."
+      "porque": "Nuevo canal pago disponible en un mercado hispano (México): candidato a evaluar como test de diversificación fuera de Meta."
     },
     {
-      "titulo": "El 50% de los trabajadores en Chile usa IA semanalmente",
-      "fuente": "Mundo en Línea",
-      "url": "https://mundoenlinea.cl/2026/08/19/el-50-de-los-trabajadores-en-chile-usa-ia-semanalmente/",
-      "fecha": "2026-08-19",
-      "impacto": "medio",
-      "porque": "Confirma adopción masiva de IA en el mercado laboral chileno: normaliza el uso de IA en procesos comerciales frente a clientes y equipos, favorable para domo IA."
-    },
-    {
-      "titulo": "U. de Chile presenta dashAI, primera plataforma chilena de IA de código abierto pensada para pymes",
-      "fuente": "Diario y Radio Universidad de Chile / CENIA",
-      "url": "https://radio.uchile.cl/2026/08/12/u-de-chile-presenta-dashai-primera-plataforma-chilena-de-inteligencia-artificial-de-codigo-abierto/",
-      "fecha": "2026-08-12",
-      "impacto": "bajo",
-      "porque": "Herramienta gratuita de IA para manejo de datos en pymes: señal de que el ecosistema local está bajando la barrera de entrada a IA aplicada a negocio."
-    },
-    {
-      "titulo": "DeepSeek sube precios hasta 4,7x con tarifas peak/off-peak desde el 16 de agosto",
-      "fuente": "El Ecosistema Startup",
-      "url": "https://ecosistemastartup.com/deepseek-sube-precios-x4-en-2026-de-087-a-396-dolares-por-millon-de-tokens/",
+      "titulo": "Google lanza Gemini 3.7 Flash, más rápido y con precio a la mitad para tareas de código y agentes",
+      "fuente": "9to5Google",
+      "url": "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/",
       "fecha": "2026-08-13",
       "impacto": "bajo",
-      "porque": "El proveedor de IA más barato del mercado encarece su API: presiona al alza el costo de herramientas de IA usadas para operar campañas y atención."
+      "porque": "Abarata las herramientas de IA usadas para automatizar análisis y reportes internos del negocio."
+    },
+    {
+      "titulo": "OpenAI suma bidding oCPC (optimizado a conversión) a ChatGPT Ads",
+      "fuente": "ALM Corp",
+      "url": "https://almcorp.com/news/openai-chatgpt-ads-ocpc-bidding-campaign-tools-2026/",
+      "fecha": "2026-08-03",
+      "impacto": "medio",
+      "porque": "ChatGPT Ads gana madurez de optimización a nivel de conversión, acercándose a Meta como alternativa real de canal pago."
+    },
+    {
+      "titulo": "Meta lanza su servidor MCP oficial para Ads y suma IA que reescribe texto dentro de las imágenes de los anuncios",
+      "fuente": "AdMake AI",
+      "url": "https://admakeai.com/blog/meta-ads-updates-august-2026",
+      "fecha": "",
+      "impacto": "alto",
+      "porque": "Impacta directo la operación de Meta Ads de Nuevo Norte: el servidor MCP permite gestionar campañas desde herramientas de IA, y el rewrite automático de texto en creativos puede alterar los DCO en curso."
     }
   ]
 }
