@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-22",
+ "actualizado": "2026-08-23",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2080,6 +2080,56 @@
    "fecha": "",
    "impacto": "alto",
    "porque": "Impacta directo la operación de Meta Ads de Nuevo Norte: el servidor MCP permite gestionar campañas desde herramientas de IA, y el rewrite automático de texto en creativos puede alterar los DCO en curso."
+  },
+  {
+   "captura": "2026-08-23",
+   "area": "inmobiliario",
+   "titulo": "Senado aprueba y despacha a ley extensión del subsidio a la tasa hipotecaria hasta 2028",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/economia-y-politica/congreso/senado-aprueba-y-despacha-a-ley-proyecto-que-extiende-el-subsidio-a-la-tasa",
+   "fecha": "2026-08-11",
+   "impacto": "alto",
+   "porque": "Sube el tope de vivienda subsidiada a 6.000 UF y los cupos a 80.000 hasta 2028: más compradores calificarán con tasa rebajada, ampliando el público objetivo de las campañas."
+  },
+  {
+   "captura": "2026-08-23",
+   "area": "inmobiliario",
+   "titulo": "Suspensión del IVA a la vivienda: plazos y efectos",
+   "fuente": "Diario Financiero",
+   "url": "https://www.df.cl/df-stream/podcast/ruta-tributaria-suspension-del-iva-a-la-vivienda-plazos-y-efectos",
+   "fecha": "2026-08-17",
+   "impacto": "alto",
+   "porque": "Rebaja de precio esperada de ~10% en vivienda nueva por 12 meses: puede acelerar decisiones de compra y cambiar el mensaje de urgencia en los anuncios."
+  },
+  {
+   "captura": "2026-08-23",
+   "area": "ia",
+   "titulo": "OpenAI abre la puerta a anuncios en ChatGPT: el negocio de la IA entra en otra fase",
+   "fuente": "El Digital",
+   "url": "https://www.eldigital.media/texto-diario/mostrar/5983769/openai-abre-puerta-anuncios-chatgpt-negocio-ia-entra-otra-fase",
+   "fecha": "2026-08-20",
+   "impacto": "alto",
+   "porque": "OpenAI empezará a mostrar anuncios en ChatGPT en 31 mercados europeos desde el 24-ago: nuevo canal publicitario que compite por presupuesto con Meta Ads."
+  },
+  {
+   "captura": "2026-08-23",
+   "area": "ia",
+   "titulo": "Cartagena, sede del Google News AI Summit 2026: El Universal mostró cómo la IA ya acelera sus ventas",
+   "fuente": "El Universal (Colombia)",
+   "url": "https://www.eluniversal.com.co/cartagena/2026/08/20/cartagena-sede-del-google-news-ai-summit-2026-el-universal-mostro-como-la-ia-ya-acelera-sus-ventas/",
+   "fecha": "2026-08-20",
+   "impacto": "medio",
+   "porque": "Caso real de un medio usando IA para acelerar ventas: referencia aplicable a cómo medir el impacto comercial de la IA en el negocio."
+  },
+  {
+   "captura": "2026-08-23",
+   "area": "ia",
+   "titulo": "Claude Academy: qué incluye y qué no",
+   "fuente": "DataPath",
+   "url": "https://www.datapath.ai/blog/claude-academy-anthropic-agosto-2026",
+   "fecha": "2026-08-20",
+   "impacto": "medio",
+   "porque": "Anthropic lanza formación estructurada por rol/industria para adopción de IA en empresas: oportunidad de upskilling del equipo en el uso de agentes."
   }
  ]
 }

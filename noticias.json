@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-08-22",
-  "generado": "2026-08-22T07:45:00-04:00",
+  "fecha": "2026-08-23",
+  "generado": "2026-08-23T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Ya es Ley: el subsidio a la tasa hipotecaria se amplía a viviendas de hasta 6.000 UF",
-      "fuente": "RadioGennesis",
-      "url": "https://www.radiogennesis.cl/2026/08/21/ya-es-ley-gobierno-amplia-subsidio-a-la-tasa-hipotecaria-con-beneficio-que-llegara-a-viviendas-nuevas-de-hasta-6-000-uf/",
-      "fecha": "2026-08-21",
-      "impacto": "alto",
-      "porque": "La Ley 21.836 sube los cupos de 50.000 a 80.000, el tope de 4.000 a 6.000 UF y extiende el beneficio hasta mayo-2028: el mensaje 'el subsidio vence' de las campañas pierde urgencia, hay que revisar el ángulo subsidio-vence-a2/video-a1."
-    },
-    {
-      "titulo": "Reporte Inmobiliario CBRE-ACAFI 2026: 65% de administradoras de fondos proyecta más compras este año",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/cbre-actividad-de-inversion-inmobiliaria-alcanza-su-mayor-optimismo-para-este-2026/",
+      "titulo": "Senado aprueba y despacha a ley extensión del subsidio a la tasa hipotecaria hasta 2028",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/economia-y-politica/congreso/senado-aprueba-y-despacha-a-ley-proyecto-que-extiende-el-subsidio-a-la-tasa",
       "fecha": "2026-08-11",
-      "impacto": "medio",
-      "porque": "Nivel de optimismo inversionista más alto desde 2022 (vs 38% en 2025): contexto de reactivación de demanda que respalda la campaña de Nuevo Norte."
-    },
-    {
-      "titulo": "IPC de julio 2026: inflación anual modera a 3,5% y el arriendo sube 0,6% mensual",
-      "fuente": "Simpli",
-      "url": "https://simpli.cl/blog/educacion-financiera/ipc-julio-2026-inflacion-en-35-y-la-uf-vuelve-a-subir/",
-      "fecha": "2026-08-08",
-      "impacto": "medio",
-      "porque": "Inflación moderándose refuerza el escenario de tasas hipotecarias a la baja, tesis central del pitch 'comprar es mejor que arrendar' de las campañas."
-    },
-    {
-      "titulo": "La ampliación del subsidio al crédito hipotecario cubre un tercio del stock disponible de viviendas de hasta 6.000 UF",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/ampliacion-del-subsidio-al-credito-hipotecario-cubre-un-tercio-del-stock-disponible-de-viviendas-de-hasta-6000-uf/",
-      "fecha": "",
       "impacto": "alto",
-      "porque": "Cuantifica el alcance real del nuevo tope de 6.000 UF sobre el stock disponible: dato útil para calibrar cuántas propiedades del catálogo de Nuevo Norte ahora califican."
+      "porque": "Sube el tope de vivienda subsidiada a 6.000 UF y los cupos a 80.000 hasta 2028: más compradores calificarán con tasa rebajada, ampliando el público objetivo de las campañas."
     },
     {
-      "titulo": "TOCTOC: la tasa de preevaluaciones hipotecarias exitosas sube cerca de 60% anual en agosto",
-      "fuente": "El Diario Inmobiliario",
-      "url": "https://eldiarioinmobiliario.cl/noticias/economistas-ajustan-expectativas-y-ven-senales-claras-de-reactivacion-inmobiliaria/",
+      "titulo": "Suspensión del IVA a la vivienda: plazos y efectos",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/df-stream/podcast/ruta-tributaria-suspension-del-iva-a-la-vivienda-plazos-y-efectos",
+      "fecha": "2026-08-17",
+      "impacto": "alto",
+      "porque": "Rebaja de precio esperada de ~10% en vivienda nueva por 12 meses: puede acelerar decisiones de compra y cambiar el mensaje de urgencia en los anuncios."
+    },
+    {
+      "titulo": "Mercado inmobiliario en Santiago: estudio detecta \"reequilibrio\" hacia la vivienda para uso propio",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/construccion/mercado-inmobiliario-en-santiago-estudio-detecta-reequilibrio-hacia-la",
+      "fecha": "2026-08-12",
+      "impacto": "medio",
+      "porque": "Si la demanda gira de inversión a uso propio, cambia el perfil de lead a targetear: familias que comprarán para vivir, no para arrendar."
+    },
+    {
+      "titulo": "Nuevo actor apuesta por las viviendas sobre UF 10 mil y anticipa que el mercado acelerará recién en 2027",
+      "fuente": "Diario Financiero",
+      "url": "https://www.df.cl/empresas/industria/nuevo-actor-apuesta-por-las-viviendas-sobre-uf-10-mil-y-anticipa-que-el",
+      "fecha": "2026-08-10",
+      "impacto": "medio",
+      "porque": "Señal de que el segmento premium ve recuperación más lenta (recién 2027): matiza el optimismo de las cifras de venta agregadas."
+    },
+    {
+      "titulo": "Hay casi 100 permisos de edificación de viviendas aprobados en Santiago Centro, pero más de la mitad no ha iniciado obras",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/hay-casi-100-permisos-de-edificacion-de-viviendas-aprobados-en-santiago-centro-pero-mas-de-la-mitad-no-ha-iniciado-obras/",
       "fecha": "",
       "impacto": "medio",
-      "porque": "Más compradores calificando para crédito por mayor estabilidad de financiamiento: más leads de las campañas con probabilidad real de avanzar a firma."
+      "porque": "Oferta futura estancada por permisos sin ejecutar: riesgo de escasez de stock nuevo para vender en Santiago Centro a mediano plazo."
     }
   ],
   "ia": [
     {
-      "titulo": "Inteligencia artificial en empresas chilenas: 88% ya la usa, según estudio SONDA Tech Trends",
-      "fuente": "ANDA",
-      "url": "https://anda.cl/inteligencia-artificial-empresas-chilenas-adopcion-2026/",
-      "fecha": "2026-08-21",
-      "impacto": "alto",
-      "porque": "Nueve de cada diez empresas chilenas ya interactúan con IA: valida el pitch de domo IA de que usar IA en el proceso comercial ya es la norma, no la excepción."
-    },
-    {
-      "titulo": "OpenAI expande el test de anuncios de ChatGPT a Reino Unido, México, Brasil, Japón y Corea del Sur",
-      "fuente": "gHacks",
-      "url": "https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/",
-      "fecha": "2026-08-13",
-      "impacto": "medio",
-      "porque": "Nuevo canal pago disponible en un mercado hispano (México): candidato a evaluar como test de diversificación fuera de Meta."
-    },
-    {
-      "titulo": "Google lanza Gemini 3.7 Flash, más rápido y con precio a la mitad para tareas de código y agentes",
-      "fuente": "9to5Google",
-      "url": "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/",
-      "fecha": "2026-08-13",
-      "impacto": "bajo",
-      "porque": "Abarata las herramientas de IA usadas para automatizar análisis y reportes internos del negocio."
-    },
-    {
-      "titulo": "OpenAI suma bidding oCPC (optimizado a conversión) a ChatGPT Ads",
-      "fuente": "ALM Corp",
-      "url": "https://almcorp.com/news/openai-chatgpt-ads-ocpc-bidding-campaign-tools-2026/",
-      "fecha": "2026-08-03",
-      "impacto": "medio",
-      "porque": "ChatGPT Ads gana madurez de optimización a nivel de conversión, acercándose a Meta como alternativa real de canal pago."
-    },
-    {
-      "titulo": "Meta lanza su servidor MCP oficial para Ads y suma IA que reescribe texto dentro de las imágenes de los anuncios",
-      "fuente": "AdMake AI",
-      "url": "https://admakeai.com/blog/meta-ads-updates-august-2026",
+      "titulo": "Meta Ads Updates (agosto de 2026): qué está cambiando y qué hacer",
+      "fuente": "AdsUploader",
+      "url": "https://adsuploader.com/es/blog/meta-ads-updates",
       "fecha": "",
       "impacto": "alto",
-      "porque": "Impacta directo la operación de Meta Ads de Nuevo Norte: el servidor MCP permite gestionar campañas desde herramientas de IA, y el rewrite automático de texto en creativos puede alterar los DCO en curso."
+      "porque": "Los mensajes de marketing de WhatsApp llegaron a la Marketing API y el agente de IA nativo de Meta ahora se cobra por token: afecta directamente el costo y la gestión programática de las campañas de WhatsApp."
+    },
+    {
+      "titulo": "OpenAI abre la puerta a anuncios en ChatGPT: el negocio de la IA entra en otra fase",
+      "fuente": "El Digital",
+      "url": "https://www.eldigital.media/texto-diario/mostrar/5983769/openai-abre-puerta-anuncios-chatgpt-negocio-ia-entra-otra-fase",
+      "fecha": "2026-08-20",
+      "impacto": "alto",
+      "porque": "OpenAI empezará a mostrar anuncios en ChatGPT en 31 mercados europeos desde el 24-ago: nuevo canal publicitario que compite por presupuesto con Meta Ads."
+    },
+    {
+      "titulo": "Cartagena, sede del Google News AI Summit 2026: El Universal mostró cómo la IA ya acelera sus ventas",
+      "fuente": "El Universal (Colombia)",
+      "url": "https://www.eluniversal.com.co/cartagena/2026/08/20/cartagena-sede-del-google-news-ai-summit-2026-el-universal-mostro-como-la-ia-ya-acelera-sus-ventas/",
+      "fecha": "2026-08-20",
+      "impacto": "medio",
+      "porque": "Caso real de un medio usando IA para acelerar ventas: referencia aplicable a cómo medir el impacto comercial de la IA en el negocio."
+    },
+    {
+      "titulo": "Claude Academy: qué incluye y qué no",
+      "fuente": "DataPath",
+      "url": "https://www.datapath.ai/blog/claude-academy-anthropic-agosto-2026",
+      "fecha": "2026-08-20",
+      "impacto": "medio",
+      "porque": "Anthropic lanza formación estructurada por rol/industria para adopción de IA en empresas: oportunidad de upskilling del equipo en el uso de agentes."
+    },
+    {
+      "titulo": "Anthropic prepara una de las mayores salidas a bolsa de la historia",
+      "fuente": "Economía 3",
+      "url": "https://economia3.com/2026/08/16/759613-anthropic-la-creadora-de-claude-prepara-una-de-las-mayores-salidas-a-bolsa-de-la-historia/",
+      "fecha": "2026-08-16",
+      "impacto": "bajo",
+      "porque": "Señal de madurez y capital del sector IA: indica hacia dónde va la inversión en la industria que sostiene las herramientas usadas por el negocio."
     }
   ]
 }
