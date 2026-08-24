@@ -1,88 +1,56 @@
 {
-  "fecha": "2026-08-23",
-  "generado": "2026-08-23T07:35:00-04:00",
+  "fecha": "2026-08-24",
+  "generado": "2026-08-24T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Senado aprueba y despacha a ley extensión del subsidio a la tasa hipotecaria hasta 2028",
+      "titulo": "Senado despacha a ley extensión del subsidio a la tasa hipotecaria hasta 2028: 30 mil cupos nuevos y tope sube a 6.000 UF",
       "fuente": "Diario Financiero",
       "url": "https://www.df.cl/economia-y-politica/congreso/senado-aprueba-y-despacha-a-ley-proyecto-que-extiende-el-subsidio-a-la-tasa",
       "fecha": "2026-08-11",
       "impacto": "alto",
-      "porque": "Sube el tope de vivienda subsidiada a 6.000 UF y los cupos a 80.000 hasta 2028: más compradores calificarán con tasa rebajada, ampliando el público objetivo de las campañas."
+      "porque": "Golpea directo el ángulo 'subsidio-vence' — el mejor agendador de Matías (10.1%) — porque el beneficio ya no vence: se extendió a mayo 2028 y subió el tope de 4.000 a 6.000 UF. El copy debería dejar de hablar de urgencia por vencimiento."
     },
     {
-      "titulo": "Suspensión del IVA a la vivienda: plazos y efectos",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/df-stream/podcast/ruta-tributaria-suspension-del-iva-a-la-vivienda-plazos-y-efectos",
-      "fecha": "2026-08-17",
-      "impacto": "alto",
-      "porque": "Rebaja de precio esperada de ~10% en vivienda nueva por 12 meses: puede acelerar decisiones de compra y cambiar el mensaje de urgencia en los anuncios."
-    },
-    {
-      "titulo": "Mercado inmobiliario en Santiago: estudio detecta \"reequilibrio\" hacia la vivienda para uso propio",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/construccion/mercado-inmobiliario-en-santiago-estudio-detecta-reequilibrio-hacia-la",
-      "fecha": "2026-08-12",
-      "impacto": "medio",
-      "porque": "Si la demanda gira de inversión a uso propio, cambia el perfil de lead a targetear: familias que comprarán para vivir, no para arrendar."
-    },
-    {
-      "titulo": "Nuevo actor apuesta por las viviendas sobre UF 10 mil y anticipa que el mercado acelerará recién en 2027",
-      "fuente": "Diario Financiero",
-      "url": "https://www.df.cl/empresas/industria/nuevo-actor-apuesta-por-las-viviendas-sobre-uf-10-mil-y-anticipa-que-el",
-      "fecha": "2026-08-10",
-      "impacto": "medio",
-      "porque": "Señal de que el segmento premium ve recuperación más lenta (recién 2027): matiza el optimismo de las cifras de venta agregadas."
-    },
-    {
-      "titulo": "Hay casi 100 permisos de edificación de viviendas aprobados en Santiago Centro, pero más de la mitad no ha iniciado obras",
+      "titulo": "Ampliación del subsidio al crédito hipotecario cubre un tercio del stock disponible de viviendas de hasta 6.000 UF",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/hay-casi-100-permisos-de-edificacion-de-viviendas-aprobados-en-santiago-centro-pero-mas-de-la-mitad-no-ha-iniciado-obras/",
-      "fecha": "",
+      "url": "https://www.latercera.com/pulso/noticia/ampliacion-del-subsidio-al-credito-hipotecario-cubre-un-tercio-del-stock-disponible-de-viviendas-de-hasta-6000-uf/",
+      "fecha": "2026-08-11",
+      "impacto": "alto",
+      "porque": "Amplía el universo de propiedades elegibles para el ángulo subsidio (ahora 1 de cada 3 viviendas del stock califica); abre espacio a mensajes tipo 'tu depto de hasta 6.000 UF también entra'."
+    },
+    {
+      "titulo": "Extensión del subsidio a la tasa hipotecaria: más de la mitad del stock de viviendas del nuevo tramo está en regiones",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/extension-del-subsidio-a-la-tasa-hipotecaria-mas-de-la-mitad-del-stock-de-viviendas-disponible-en-el-nuevo-tramo-esta-en-regiones/",
+      "fecha": "2026-08-11",
       "impacto": "medio",
-      "porque": "Oferta futura estancada por permisos sin ejecutar: riesgo de escasez de stock nuevo para vender en Santiago Centro a mediano plazo."
+      "porque": "Si la pauta de Matías se concentra en RM, se puede estar perdiendo más de la mitad del universo recién habilitado por el nuevo tramo del subsidio; vale evaluar targeting geográfico."
     }
   ],
   "ia": [
     {
-      "titulo": "Meta Ads Updates (agosto de 2026): qué está cambiando y qué hacer",
-      "fuente": "AdsUploader",
-      "url": "https://adsuploader.com/es/blog/meta-ads-updates",
-      "fecha": "",
-      "impacto": "alto",
-      "porque": "Los mensajes de marketing de WhatsApp llegaron a la Marketing API y el agente de IA nativo de Meta ahora se cobra por token: afecta directamente el costo y la gestión programática de las campañas de WhatsApp."
-    },
-    {
-      "titulo": "OpenAI abre la puerta a anuncios en ChatGPT: el negocio de la IA entra en otra fase",
-      "fuente": "El Digital",
-      "url": "https://www.eldigital.media/texto-diario/mostrar/5983769/openai-abre-puerta-anuncios-chatgpt-negocio-ia-entra-otra-fase",
+      "titulo": "ChatGPT empieza a mostrar anuncios en más de 30 países europeos desde el 24 de agosto",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/america/agencias/2026/08/20/los-consumidores-ya-le-preguntan-a-chatgpt-que-comprar-openai-abre-la-puerta-a-los-anuncios-y-tiendanube-prepara-a-las-tiendas/",
       "fecha": "2026-08-20",
       "impacto": "alto",
-      "porque": "OpenAI empezará a mostrar anuncios en ChatGPT en 31 mercados europeos desde el 24-ago: nuevo canal publicitario que compite por presupuesto con Meta Ads."
+      "porque": "OpenAI entra al negocio de ads conversacionales (con segmentación y CAPI propios); si el patrón se repite en LatAm, es un canal de adquisición nuevo a monitorear más allá de Meta."
     },
     {
-      "titulo": "Cartagena, sede del Google News AI Summit 2026: El Universal mostró cómo la IA ya acelera sus ventas",
-      "fuente": "El Universal (Colombia)",
-      "url": "https://www.eluniversal.com.co/cartagena/2026/08/20/cartagena-sede-del-google-news-ai-summit-2026-el-universal-mostro-como-la-ia-ya-acelera-sus-ventas/",
-      "fecha": "2026-08-20",
+      "titulo": "OpenAI paraliza el entrenamiento de su IA más avanzada tras la 'rebelión' de sus agentes",
+      "fuente": "La Nación",
+      "url": "https://www.lanacion.com.ar/tecnologia/openai-paraliza-el-entrenamiento-de-su-ia-mas-avanzada-tras-la-rebelion-de-sus-agentes-nid19082026/",
+      "fecha": "2026-08-19",
       "impacto": "medio",
-      "porque": "Caso real de un medio usando IA para acelerar ventas: referencia aplicable a cómo medir el impacto comercial de la IA en el negocio."
+      "porque": "Señal de que los agentes autónomos de IA pueden comportarse de forma inesperada; refuerza por qué el motor F2 de Matías debe seguir con gate humano (Rodolfo) antes de ejecutar acciones."
     },
     {
-      "titulo": "Claude Academy: qué incluye y qué no",
-      "fuente": "DataPath",
-      "url": "https://www.datapath.ai/blog/claude-academy-anthropic-agosto-2026",
-      "fecha": "2026-08-20",
+      "titulo": "PymeDay 2026 (Chile) cierra su primera edición: el 'Cyber AI Agent' recomendador logró hasta 30% de CTR, 7,2x más que la navegación tradicional",
+      "fuente": "G5noticias",
+      "url": "https://g5noticias.cl/2026/08/12/pymeday-2026-cierra-su-primera-edicion-con-mas-de-354-mil-usuarios-y-42-mil-clics-hacia-las-marcas-participantes-2/",
+      "fecha": "2026-08-12",
       "impacto": "medio",
-      "porque": "Anthropic lanza formación estructurada por rol/industria para adopción de IA en empresas: oportunidad de upskilling del equipo en el uso de agentes."
-    },
-    {
-      "titulo": "Anthropic prepara una de las mayores salidas a bolsa de la historia",
-      "fuente": "Economía 3",
-      "url": "https://economia3.com/2026/08/16/759613-anthropic-la-creadora-de-claude-prepara-una-de-las-mayores-salidas-a-bolsa-de-la-historia/",
-      "fecha": "2026-08-16",
-      "impacto": "bajo",
-      "porque": "Señal de madurez y capital del sector IA: indica hacia dónde va la inversión en la industria que sostiene las herramientas usadas por el negocio."
+      "porque": "Prueba local (Chile) de que un agente de IA recomendando productos multiplica el CTR frente a navegación normal; inspira testear un recomendador similar en el embudo de WhatsApp."
     }
   ]
 }
