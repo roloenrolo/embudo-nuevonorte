@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-24",
+ "actualizado": "2026-08-25",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2170,6 +2170,46 @@
    "fecha": "2026-08-12",
    "impacto": "medio",
    "porque": "Prueba local (Chile) de que un agente de IA recomendando productos multiplica el CTR frente a navegación normal; inspira testear un recomendador similar en el embudo de WhatsApp."
+  },
+  {
+   "captura": "2026-08-25",
+   "area": "inmobiliario",
+   "titulo": "Reporte CBRE-ACAFI: optimismo inversionista inmobiliario en su punto más alto desde 2023",
+   "fuente": "ACAFI",
+   "url": "https://acafi.cl/reporte-inmobiliario-2026-aumenta-el-apetito-por-invertir-en-el-sector/",
+   "fecha": "2026-08-12",
+   "impacto": "medio",
+   "porque": "65% de las administradoras de fondos planea comprar más activos inmobiliarios este año (vs 38% en 2025): señal de que vuelve capital institucional al sector."
+  },
+  {
+   "captura": "2026-08-25",
+   "area": "ia",
+   "titulo": "Claude Opus 5 alcanza el primer puesto en los rankings de inteligencia de IA",
+   "fuente": "Cryptonomist",
+   "url": "https://en.cryptonomist.ch/2026/08/17/anthropic-claude-opus-ai-ranking/",
+   "fecha": "2026-08-17",
+   "impacto": "medio",
+   "porque": "Anthropic consolida su liderazgo frente a modelos rivales: referencia útil al elegir el motor de IA para reportes y creativos del negocio."
+  },
+  {
+   "captura": "2026-08-25",
+   "area": "ia",
+   "titulo": "Crece el debate sobre una posible burbuja de la IA y su impacto en Chile",
+   "fuente": "BioBioChile",
+   "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/08/24/explotara-la-burbuja-de-la-ia-las-millonarias-apuestas-que-tambien-podrian-remecer-a-chile.shtml",
+   "fecha": "2026-08-24",
+   "impacto": "medio",
+   "porque": "Llama a la cautela en decisiones de inversión en herramientas y proveedores de IA para el negocio ante una eventual corrección del mercado."
+  },
+  {
+   "captura": "2026-08-25",
+   "area": "ia",
+   "titulo": "Empleados de Anthropic presionan por una pausa pública coordinada de RL frontier junto a OpenAI",
+   "fuente": "The Neuron",
+   "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-august-20-2026/",
+   "fecha": "2026-08-20",
+   "impacto": "bajo",
+   "porque": "Señal de fricción interna en los grandes labs de IA; relevancia indirecta, más informativa que accionable para el negocio."
   }
  ]
 }
