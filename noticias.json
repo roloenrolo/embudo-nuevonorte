@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-08-27",
-  "generado": "2026-08-27T07:40:00-04:00",
+  "fecha": "2026-08-28",
+  "generado": "2026-08-28T07:35:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
-      "fecha": "2026-08-26",
-      "impacto": "alto",
-      "porque": "Subsidio nuevo a la tasa cambia el pitch de venta de Nuevo Norte, sobre todo para el ad sin_pie-C que hoy está sin tracción."
-    },
     {
       "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Pie más barato reduce la barrera de entrada que hoy frena leads como deja_de_arrendar y sin_pie."
+      "porque": "Pie más bajo ataca directo la objeción que enfrentan los tests sin_pie y asesoria_datos de Nuevo Norte."
+    },
+    {
+      "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
+      "fecha": "2026-08-26",
+      "impacto": "alto",
+      "porque": "Nuevo subsidio estatal a la tasa es material de campaña directo para los anuncios 'sub-subsidio-vence' que hoy concentran el gasto."
     },
     {
       "titulo": "Chile es el tercer país de la Ocde donde más han subido los precios de las viviendas en últimos 16 años",
@@ -24,65 +24,65 @@
       "url": "https://www.latercera.com/pulso/noticia/chile-es-el-tercer-pais-de-la-ocde-donde-mas-han-crecido-los-precios-de-las-viviendas-en-ultimos-16-anos/",
       "fecha": "2026-08-26",
       "impacto": "medio",
-      "porque": "Contexto de mercado que respalda el mensaje de 'compra antes de que suba más' en los anuncios activos."
+      "porque": "Contexto de mercado que refuerza el mensaje de urgencia de comprar antes de que suba más."
     },
     {
-      "titulo": "Banco Central renovó línea de crédito con el FMI, pero redujo el monto",
+      "titulo": "Presidenta de la Fed de Cleveland dice que hay que subir la tasa de interés: “Creo que ahora es el momento de actuar”",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/banco-central-renovo-linea-de-credito-con-el-fmi-pero-redujo-el-monto/",
-      "fecha": "2026-08-26",
-      "impacto": "bajo",
-      "porque": "Macro financiero de fondo, sin efecto directo inmediato en la operación de leads inmobiliarios."
+      "url": "https://www.latercera.com/pulso/noticia/presidenta-de-la-fed-de-cleveland-dice-que-hay-que-subir-la-tasa-de-interes-creo-que-ahora-es-el-momento-de-actuar/",
+      "fecha": "2026-08-27",
+      "impacto": "medio",
+      "porque": "Presión al alza en tasas de interés en EE.UU. puede encarecer el crédito hipotecario local a mediano plazo."
     },
     {
-      "titulo": "El trabajo en tiempos de máquinas",
+      "titulo": "BID y Tasa Máxima Convencional: “El impacto sobre el crédito suele ser importante, terminas racionando clientes por un tema de oferta”",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/opinion/noticia/el-trabajo-en-tiempos-de-maquinas/",
-      "fecha": "2026-08-26",
-      "impacto": "bajo",
-      "porque": "Columna de opinión sobre automatización, más relevante como contexto general que como dato accionable."
+      "url": "https://www.latercera.com/pulso/noticia/bid-y-tasa-maxima-convencional-el-impacto-sobre-el-credito-suele-ser-importante-terminas-racionando-clientes-por-un-tema-de-oferta/",
+      "fecha": "2026-08-27",
+      "impacto": "medio",
+      "porque": "Racionamiento de crédito por tasa máxima afecta directo a los leads con perfil dicom/allegado que trabaja Nuevo Norte."
     }
   ],
   "ia": [
     {
-      "titulo": "Anthropic continues compute-gobbling streak in $45B deal with Nscale",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
-      "fecha": "2026-08-26",
+      "titulo": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
+      "fecha": "2026-08-27",
       "impacto": "alto",
-      "porque": "Anthropic es el proveedor detrás de Claude, que corre toda la operación de domo IA — capacidad de cómputo afecta estabilidad y costos futuros."
+      "porque": "Nuevo estándar de Anthropic para agentes IA es directamente relevante a la arquitectura de agentes que usa domo IA."
     },
     {
-      "titulo": "AI agents meant to replace Meta workers made \"large-scale, disruptive actions\"",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
-      "fecha": "2026-08-26",
+      "titulo": "A Judge Has Blocked the Pentagon's Attempt to Blacklist Anthropic",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/",
+      "fecha": "2026-08-27",
       "impacto": "alto",
-      "porque": "Caso de falla de agentes autónomos operando sin supervisión — advertencia directa para una operación como Matías/Chucao que corre sin humano en el loop."
+      "porque": "Reduce riesgo regulatorio sobre el proveedor de IA (Anthropic/Claude) del que depende la operación diaria de domo."
     },
     {
-      "titulo": "The inside story on why OpenAI agents hacked Hugging Face",
-      "fuente": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-      "fecha": "2026-08-26",
-      "impacto": "alto",
-      "porque": "Otro incidente de agentes de IA actuando fuera de control — refuerza la necesidad de límites duros y fail-safes en agentes propios."
-    },
-    {
-      "titulo": "Nvidia closes in on Hugging Face acquisition",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
+      "titulo": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
       "fecha": "2026-08-27",
       "impacto": "medio",
-      "porque": "Consolidación de infraestructura de IA en pocos actores, relevante para dependencias de la industria a mediano plazo."
+      "porque": "Agentes IA autónomos operando sin supervisión suben el estándar de seguridad esperado para stacks como el de domo."
     },
     {
-      "titulo": "Bill Gates says we've passed AI's danger thresholds. Now what?",
-      "fuente": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
-      "fecha": "2026-08-26",
+      "titulo": "OpenAI Is Developing a 'Persistent' AI Agent",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "fecha": "2026-08-27",
       "impacto": "medio",
-      "porque": "Voz de peso en la industria marcando el tono de riesgo de la IA agéntica, tema directamente ligado al negocio."
+      "porque": "Competidor directo del enfoque de agentes persistentes que ya opera domo con su flota de agentes diarios."
+    },
+    {
+      "titulo": "OpenAI, Anthropic, Google, and 100 other companies call for action to defend against rogue AI",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
+      "fecha": "2026-08-27",
+      "impacto": "medio",
+      "porque": "Señala hacia dónde va la gobernanza de agentes IA, con implicancias futuras de cumplimiento para operaciones basadas en agentes."
     }
   ]
 }
