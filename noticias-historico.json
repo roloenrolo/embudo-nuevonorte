@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-28",
+ "actualizado": "2026-08-29",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2440,6 +2440,56 @@
    "fecha": "2026-08-27",
    "impacto": "medio",
    "porque": "Señala hacia dónde va la gobernanza de agentes IA, con implicancias futuras de cumplimiento para operaciones basadas en agentes."
+  },
+  {
+   "captura": "2026-08-29",
+   "area": "inmobiliario",
+   "titulo": "Ministro Quiroz: “No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía”",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/ministro-quiroz-no-hay-ninguna-necesidad-de-bajar-la-tasa-de-interes-para-reactivar-la-economia/",
+   "fecha": "2026-08-28",
+   "impacto": "medio",
+   "porque": "Tasas altas por más tiempo mantienen la presión sobre el CPA de las campañas hipotecarias."
+  },
+  {
+   "captura": "2026-08-29",
+   "area": "ia",
+   "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+   "fecha": "2026-08-28",
+   "impacto": "alto",
+   "porque": "Anthropic es el proveedor detrás de domo IA: su rumbo técnico marca lo que viene para el stack de agentes."
+  },
+  {
+   "captura": "2026-08-29",
+   "area": "ia",
+   "titulo": "Anthropic's new hardware standard lets AI agents control the physical world",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
+   "fecha": "2026-08-27",
+   "impacto": "alto",
+   "porque": "Estándar de Anthropic para agentes físicos abre terreno nuevo más allá de marketing y CRM."
+  },
+  {
+   "captura": "2026-08-29",
+   "area": "ia",
+   "titulo": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
+   "fuente": "WIRED",
+   "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
+   "fecha": "2026-08-29",
+   "impacto": "alto",
+   "porque": "Advertencia de los mismos labs que dan servicio a domo IA sobre riesgo de seguridad inminente en sistemas con agentes."
+  },
+  {
+   "captura": "2026-08-29",
+   "area": "ia",
+   "titulo": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+   "fecha": "2026-08-28",
+   "impacto": "medio",
+   "porque": "Consolidación del mercado de modelos abiertos puede mover costos y opciones de proveedor a mediano plazo."
   }
  ]
 }
