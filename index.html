@@ -535,6 +535,7 @@ const CONFIG = {
     tramoRentaNoCalifica: "800"
   },
   urls: {
+    inboxAntonia: "https://antonia.domo-ia.com/inbox",   // panel de chats en vivo (basic auth; NO embeber: tiene PII)
     agenda: "https://antonia.domo-ia.com/agenda",
     feedback: "https://antonia.domo-ia.com/feedback",
     buscador: "buscador/"
@@ -1354,6 +1355,7 @@ document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () =>
           metric("reuniones agendadas", csv.reunionesAgendadas==null?"—":csv.reunionesAgendadas) +
           metric("agendadas por Antonia", csv.agendadasAntonia==null?"—":csv.agendadasAntonia) +
           `</div>${sello("acumulado","CSV embudo")}`+
+        `<p class="mt10"><a class="btnmeta" href="${esc(CONFIG.urls.inboxAntonia)}" target="_blank" rel="noopener">💬 Ver los chats en vivo</a> <span class="hint">acceso con clave · Rodolfo puede tomar el control y responder desde ahí</span></p>`+
       `</div>` : "",
       (acciones || state.roadmap) ? `<div class="card"><h3>📊 Matías</h3><p class="hint">Analista de pauta</p>`+
         `<p class="hint">Revisa los anuncios todos los días y propone qué pausar y qué reforzar. Ninguna acción se aplica sin aprobación humana.</p>`+
