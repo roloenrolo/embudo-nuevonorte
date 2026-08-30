@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-29",
+ "actualizado": "2026-08-30",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2490,6 +2490,36 @@
    "fecha": "2026-08-28",
    "impacto": "medio",
    "porque": "Consolidación del mercado de modelos abiertos puede mover costos y opciones de proveedor a mediano plazo."
+  },
+  {
+   "captura": "2026-08-30",
+   "area": "ia",
+   "titulo": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+   "fecha": "2026-08-29",
+   "impacto": "alto",
+   "porque": "Demanda de gran escala contra Anthropic, el proveedor del stack de IA que opera domo IA."
+  },
+  {
+   "captura": "2026-08-30",
+   "area": "ia",
+   "titulo": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+   "fecha": "2026-08-27",
+   "impacto": "alto",
+   "porque": "Fallo judicial que despeja un riesgo regulatorio sobre Anthropic, reduce incertidumbre sobre la continuidad del proveedor."
+  },
+  {
+   "captura": "2026-08-30",
+   "area": "ia",
+   "titulo": "Report: Nvidia to acquire AI model repository Hugging Face for $13 billion",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
+   "fecha": "2026-08-27",
+   "impacto": "bajo",
+   "porque": "Movimiento de consolidación grande en la industria IA, contexto de hacia dónde se mueve la infraestructura del sector."
   }
  ]
 }

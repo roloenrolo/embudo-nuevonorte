@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-08-29",
-  "generado": "2026-08-29T07:35:00-04:00",
+  "fecha": "2026-08-30",
+  "generado": "2026-08-30T07:40:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
-      "fecha": "2026-08-26",
-      "impacto": "alto",
-      "porque": "Nuevo subsidio hipotecario estatal compite directo con la promesa de campaña 'subsidio-vence' de Nuevo Norte."
-    },
     {
       "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Un pie más bajo por norma regulatoria toca directo el ángulo de la campaña sin_pie."
+      "porque": "Un pie más bajo reduce la barrera de entrada del comprador, tema central en los ángulos de subsidio que corre Nuevo Norte."
+    },
+    {
+      "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
+      "fecha": "2026-08-26",
+      "impacto": "alto",
+      "porque": "Entrada en operación del subsidio que sostiene el gasto de la cuenta (39% del 7d en subsidio_adjudicado): refuerza el mensaje de los anuncios activos."
     },
     {
       "titulo": "Chile es el tercer país de la Ocde donde más han subido los precios de las viviendas en últimos 16 años",
@@ -24,7 +24,7 @@
       "url": "https://www.latercera.com/pulso/noticia/chile-es-el-tercer-pais-de-la-ocde-donde-mas-han-crecido-los-precios-de-las-viviendas-en-ultimos-16-anos/",
       "fecha": "2026-08-26",
       "impacto": "medio",
-      "porque": "Contexto de mercado que refuerza el mensaje de 'compra ahora antes de que suba más'."
+      "porque": "Contexto de mercado que respalda el argumento de comprar ahora antes de que suban más los precios."
     },
     {
       "titulo": "Ministro Quiroz: “No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía”",
@@ -32,57 +32,57 @@
       "url": "https://www.latercera.com/pulso/noticia/ministro-quiroz-no-hay-ninguna-necesidad-de-bajar-la-tasa-de-interes-para-reactivar-la-economia/",
       "fecha": "2026-08-28",
       "impacto": "medio",
-      "porque": "Tasas altas por más tiempo mantienen la presión sobre el CPA de las campañas hipotecarias."
+      "porque": "Señal de que la TPM se mantendría, lo que sostiene el atractivo de los subsidios a la tasa como argumento de venta."
     },
     {
       "titulo": "BID y Tasa Máxima Convencional: “El impacto sobre el crédito suele ser importante, terminas racionando clientes por un tema de oferta”",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/bid-y-tasa-maxima-convencional-el-impacto-sobre-el-credito-suele-ser-importante-terminas-racionando-clientes-por-un-tema-de-oferta/",
       "fecha": "2026-08-27",
-      "impacto": "medio",
-      "porque": "Racionamiento de crédito hipotecario afecta directamente el embudo de agendas de Nuevo Norte."
+      "impacto": "bajo",
+      "porque": "Advierte sobre restricción de acceso al crédito, relevante como riesgo de fondo para la demanda financiada."
     }
   ],
   "ia": [
     {
-      "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "titulo": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
       "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "fecha": "2026-08-28",
+      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+      "fecha": "2026-08-29",
       "impacto": "alto",
-      "porque": "Anthropic es el proveedor detrás de domo IA: su rumbo técnico marca lo que viene para el stack de agentes."
+      "porque": "Demanda de gran escala contra Anthropic, el proveedor del stack de IA que opera domo IA."
+    },
+    {
+      "titulo": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+      "fecha": "2026-08-27",
+      "impacto": "alto",
+      "porque": "Fallo judicial que despeja un riesgo regulatorio sobre Anthropic, reduce incertidumbre sobre la continuidad del proveedor."
     },
     {
       "titulo": "Anthropic's new hardware standard lets AI agents control the physical world",
       "fuente": "Ars Technica",
       "url": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
       "fecha": "2026-08-27",
-      "impacto": "alto",
-      "porque": "Estándar de Anthropic para agentes físicos abre terreno nuevo más allá de marketing y CRM."
+      "impacto": "medio",
+      "porque": "Anthropic amplía las capacidades de los agentes IA más allá del software, relevante para el roadmap de automatización de domo IA."
     },
     {
-      "titulo": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
-      "fuente": "WIRED",
-      "url": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
-      "fecha": "2026-08-27",
-      "impacto": "alto",
-      "porque": "Agentes autónomos atacando sistemas es el mismo patrón operativo que corre domo IA a diario, con riesgos que hay que vigilar."
-    },
-    {
-      "titulo": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
-      "fuente": "WIRED",
-      "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
-      "fecha": "2026-08-29",
-      "impacto": "alto",
-      "porque": "Advertencia de los mismos labs que dan servicio a domo IA sobre riesgo de seguridad inminente en sistemas con agentes."
-    },
-    {
-      "titulo": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+      "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
       "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
       "fecha": "2026-08-28",
       "impacto": "medio",
-      "porque": "Consolidación del mercado de modelos abiertos puede mover costos y opciones de proveedor a mediano plazo."
+      "porque": "Adelanto de mejoras de capacidad en los modelos que usa el stack de agentes de la operación."
+    },
+    {
+      "titulo": "Report: Nvidia to acquire AI model repository Hugging Face for $13 billion",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
+      "fecha": "2026-08-27",
+      "impacto": "bajo",
+      "porque": "Movimiento de consolidación grande en la industria IA, contexto de hacia dónde se mueve la infraestructura del sector."
     }
   ]
 }
