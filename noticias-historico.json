@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-30",
+ "actualizado": "2026-08-31",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2520,6 +2520,36 @@
    "fecha": "2026-08-27",
    "impacto": "bajo",
    "porque": "Movimiento de consolidación grande en la industria IA, contexto de hacia dónde se mueve la infraestructura del sector."
+  },
+  {
+   "captura": "2026-08-31",
+   "area": "inmobiliario",
+   "titulo": "Ganancias de Ripley suben 59% ante positivo efecto de revalorización de propiedades",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/ganancias-de-ripley-suben-59-ante-positivo-efecto-de-revalorizacion-de-propiedades/",
+   "fecha": "2026-08-28",
+   "impacto": "bajo",
+   "porque": "Señal de que el activo inmobiliario sigue revalorizándose, útil como dato de respaldo en conversaciones de venta."
+  },
+  {
+   "captura": "2026-08-31",
+   "area": "ia",
+   "titulo": "Nvidia's AI advantage is moving beyond the GPU",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+   "fecha": "2026-08-29",
+   "impacto": "bajo",
+   "porque": "Tendencia de infraestructura IA que afecta costos y disponibilidad de cómputo a mediano plazo."
+  },
+  {
+   "captura": "2026-08-31",
+   "area": "ia",
+   "titulo": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+   "fecha": "2026-08-30",
+   "impacto": "bajo",
+   "porque": "Caso de despliegue de IA a escala en operaciones reales, comparable al enfoque de agentes operando la cuenta."
   }
  ]
 }

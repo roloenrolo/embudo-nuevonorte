@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-08-30",
-  "generado": "2026-08-30T07:40:00-04:00",
+  "fecha": "2026-08-31",
+  "generado": "2026-08-31T07:35:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
-      "fecha": "2026-08-26",
-      "impacto": "alto",
-      "porque": "Un pie más bajo reduce la barrera de entrada del comprador, tema central en los ángulos de subsidio que corre Nuevo Norte."
-    },
     {
       "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Entrada en operación del subsidio que sostiene el gasto de la cuenta (39% del 7d en subsidio_adjudicado): refuerza el mensaje de los anuncios activos."
+      "porque": "Subsidio nuevo a la tasa hipotecaria: impacta directo el mensaje de las campañas 'subsidio-vence' de Matías."
+    },
+    {
+      "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
+      "fecha": "2026-08-26",
+      "impacto": "alto",
+      "porque": "Pie más bajo choca con el mensaje del anuncio 'sin_pie', que hoy está sin entrega — puede cambiar su relevancia."
     },
     {
       "titulo": "Chile es el tercer país de la Ocde donde más han subido los precios de las viviendas en últimos 16 años",
@@ -24,65 +24,65 @@
       "url": "https://www.latercera.com/pulso/noticia/chile-es-el-tercer-pais-de-la-ocde-donde-mas-han-crecido-los-precios-de-las-viviendas-en-ultimos-16-anos/",
       "fecha": "2026-08-26",
       "impacto": "medio",
-      "porque": "Contexto de mercado que respalda el argumento de comprar ahora antes de que suban más los precios."
+      "porque": "Contexto de mercado: precios altos refuerzan el argumento de comprar ahora con subsidio."
     },
     {
-      "titulo": "Ministro Quiroz: “No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía”",
+      "titulo": "Ministro Quiroz: \"No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía\"",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/ministro-quiroz-no-hay-ninguna-necesidad-de-bajar-la-tasa-de-interes-para-reactivar-la-economia/",
       "fecha": "2026-08-28",
       "impacto": "medio",
-      "porque": "Señal de que la TPM se mantendría, lo que sostiene el atractivo de los subsidios a la tasa como argumento de venta."
+      "porque": "Si la tasa no baja pronto, el subsidio a la tasa hipotecaria sigue siendo el gancho principal de venta."
     },
     {
-      "titulo": "BID y Tasa Máxima Convencional: “El impacto sobre el crédito suele ser importante, terminas racionando clientes por un tema de oferta”",
+      "titulo": "Ganancias de Ripley suben 59% ante positivo efecto de revalorización de propiedades",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/bid-y-tasa-maxima-convencional-el-impacto-sobre-el-credito-suele-ser-importante-terminas-racionando-clientes-por-un-tema-de-oferta/",
-      "fecha": "2026-08-27",
+      "url": "https://www.latercera.com/pulso/noticia/ganancias-de-ripley-suben-59-ante-positivo-efecto-de-revalorizacion-de-propiedades/",
+      "fecha": "2026-08-28",
       "impacto": "bajo",
-      "porque": "Advierte sobre restricción de acceso al crédito, relevante como riesgo de fondo para la demanda financiada."
+      "porque": "Señal de que el activo inmobiliario sigue revalorizándose, útil como dato de respaldo en conversaciones de venta."
     }
   ],
   "ia": [
     {
-      "titulo": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+      "fecha": "2026-08-28",
+      "impacto": "alto",
+      "porque": "Directo al proveedor detrás de Chucao y Matías: anticipa hacia dónde va la capacidad de los agentes que ya operan la cuenta."
+    },
+    {
+      "titulo": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft",
       "fuente": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
       "fecha": "2026-08-29",
-      "impacto": "alto",
-      "porque": "Demanda de gran escala contra Anthropic, el proveedor del stack de IA que opera domo IA."
+      "impacto": "medio",
+      "porque": "Riesgo legal sobre el proveedor de IA que usa domo IA a diario; vale monitorear cómo evoluciona."
     },
     {
       "titulo": "Anthropic was illegally blacklisted by the Trump administration, court rules",
       "fuente": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
       "fecha": "2026-08-27",
-      "impacto": "alto",
-      "porque": "Fallo judicial que despeja un riesgo regulatorio sobre Anthropic, reduce incertidumbre sobre la continuidad del proveedor."
-    },
-    {
-      "titulo": "Anthropic's new hardware standard lets AI agents control the physical world",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
-      "fecha": "2026-08-27",
       "impacto": "medio",
-      "porque": "Anthropic amplía las capacidades de los agentes IA más allá del software, relevante para el roadmap de automatización de domo IA."
+      "porque": "Resuelve una amenaza regulatoria sobre el proveedor de la infraestructura de agentes de la flota."
     },
     {
-      "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "titulo": "Nvidia's AI advantage is moving beyond the GPU",
       "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "fecha": "2026-08-28",
-      "impacto": "medio",
-      "porque": "Adelanto de mejoras de capacidad en los modelos que usa el stack de agentes de la operación."
+      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "fecha": "2026-08-29",
+      "impacto": "bajo",
+      "porque": "Tendencia de infraestructura IA que afecta costos y disponibilidad de cómputo a mediano plazo."
     },
     {
-      "titulo": "Report: Nvidia to acquire AI model repository Hugging Face for $13 billion",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
-      "fecha": "2026-08-27",
+      "titulo": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+      "fecha": "2026-08-30",
       "impacto": "bajo",
-      "porque": "Movimiento de consolidación grande en la industria IA, contexto de hacia dónde se mueve la infraestructura del sector."
+      "porque": "Caso de despliegue de IA a escala en operaciones reales, comparable al enfoque de agentes operando la cuenta."
     }
   ]
 }
