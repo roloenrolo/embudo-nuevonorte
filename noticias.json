@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-08-31",
-  "generado": "2026-08-31T07:35:00-04:00",
+  "fecha": "2026-09-01",
+  "generado": "2026-09-01T07:35:00-04:00",
   "inmobiliario": [
     {
       "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
@@ -8,7 +8,7 @@
       "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Subsidio nuevo a la tasa hipotecaria: impacta directo el mensaje de las campañas 'subsidio-vence' de Matías."
+      "porque": "Nuevo subsidio a la tasa golpea directo el mensaje de las campañas 'subsidio-vence' de domo IA."
     },
     {
       "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
@@ -16,7 +16,7 @@
       "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Pie más bajo choca con el mensaje del anuncio 'sin_pie', que hoy está sin entrega — puede cambiar su relevancia."
+      "porque": "Si baja el pie exigido puede revivir el ángulo 'sin_pie', hoy sin conversaciones."
     },
     {
       "titulo": "Chile es el tercer país de la Ocde donde más han subido los precios de las viviendas en últimos 16 años",
@@ -24,7 +24,7 @@
       "url": "https://www.latercera.com/pulso/noticia/chile-es-el-tercer-pais-de-la-ocde-donde-mas-han-crecido-los-precios-de-las-viviendas-en-ultimos-16-anos/",
       "fecha": "2026-08-26",
       "impacto": "medio",
-      "porque": "Contexto de mercado: precios altos refuerzan el argumento de comprar ahora con subsidio."
+      "porque": "Contexto de precios que sustenta el mensaje de urgencia en las campañas de subsidio."
     },
     {
       "titulo": "Ministro Quiroz: \"No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía\"",
@@ -32,57 +32,57 @@
       "url": "https://www.latercera.com/pulso/noticia/ministro-quiroz-no-hay-ninguna-necesidad-de-bajar-la-tasa-de-interes-para-reactivar-la-economia/",
       "fecha": "2026-08-28",
       "impacto": "medio",
-      "porque": "Si la tasa no baja pronto, el subsidio a la tasa hipotecaria sigue siendo el gancho principal de venta."
+      "porque": "Tasa estancada mantiene la presión de costo del crédito hipotecario que enfrentan los leads."
     },
     {
-      "titulo": "Ganancias de Ripley suben 59% ante positivo efecto de revalorización de propiedades",
+      "titulo": "BID y Tasa Máxima Convencional: \"El impacto sobre el crédito suele ser importante, terminas racionando clientes por un tema de oferta\"",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/ganancias-de-ripley-suben-59-ante-positivo-efecto-de-revalorizacion-de-propiedades/",
-      "fecha": "2026-08-28",
-      "impacto": "bajo",
-      "porque": "Señal de que el activo inmobiliario sigue revalorizándose, útil como dato de respaldo en conversaciones de venta."
+      "url": "https://www.latercera.com/pulso/noticia/bid-y-tasa-maxima-convencional-el-impacto-sobre-el-credito-suele-ser-importante-terminas-racionando-clientes-por-un-tema-de-oferta/",
+      "fecha": "2026-08-27",
+      "impacto": "medio",
+      "porque": "El racionamiento de crédito puede afectar a quién le aprueban el financiamiento entre los leads captados."
     }
   ],
   "ia": [
-    {
-      "titulo": "An Anthropic researcher just gave us a peek at self-improving AI",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "fecha": "2026-08-28",
-      "impacto": "alto",
-      "porque": "Directo al proveedor detrás de Chucao y Matías: anticipa hacia dónde va la capacidad de los agentes que ya operan la cuenta."
-    },
     {
       "titulo": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft",
       "fuente": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
       "fecha": "2026-08-29",
-      "impacto": "medio",
-      "porque": "Riesgo legal sobre el proveedor de IA que usa domo IA a diario; vale monitorear cómo evoluciona."
+      "impacto": "alto",
+      "porque": "Riesgo legal sobre Anthropic, proveedor detrás del stack de agentes que opera la cuenta."
     },
     {
-      "titulo": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+      "titulo": "Instagram puts new limits on undisclosed AI profiles",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "fecha": "2026-08-31",
+      "impacto": "alto",
+      "porque": "Meta endurece reglas sobre contenido de IA sin etiquetar, puede afectar los creativos DCO generados por Sofía."
+    },
+    {
+      "titulo": "ChatGPT to face tougher regulation in the EU",
       "fuente": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
-      "fecha": "2026-08-27",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+      "fecha": "2026-08-31",
       "impacto": "medio",
-      "porque": "Resuelve una amenaza regulatoria sobre el proveedor de la infraestructura de agentes de la flota."
+      "porque": "Marca la tendencia regulatoria que tarde o temprano llega a otras plataformas de IA usadas en el negocio."
     },
     {
-      "titulo": "Nvidia's AI advantage is moving beyond the GPU",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "titulo": "The Cybersecurity Apocalypse Is Coming in 'Months,' AI Giants Warn",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
       "fecha": "2026-08-29",
-      "impacto": "bajo",
-      "porque": "Tendencia de infraestructura IA que afecta costos y disponibilidad de cómputo a mediano plazo."
+      "impacto": "medio",
+      "porque": "Alerta de seguridad de los mismos labs que proveen los modelos que usa la flota de agentes."
     },
     {
-      "titulo": "Caterpillar is bringing to AI deployment what it learned from automating mining",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
-      "fecha": "2026-08-30",
+      "titulo": "\"Zlibrary my beloved\": Anthropic staff chats extolling piracy cited in Sony suit",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+      "fecha": "2026-08-31",
       "impacto": "bajo",
-      "porque": "Caso de despliegue de IA a escala en operaciones reales, comparable al enfoque de agentes operando la cuenta."
+      "porque": "Detalle del litigio contra Anthropic que puede escalar el riesgo reputacional del proveedor."
     }
   ]
 }

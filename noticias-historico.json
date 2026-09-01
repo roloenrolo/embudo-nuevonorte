@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-31",
+ "actualizado": "2026-09-01",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2550,6 +2550,36 @@
    "fecha": "2026-08-30",
    "impacto": "bajo",
    "porque": "Caso de despliegue de IA a escala en operaciones reales, comparable al enfoque de agentes operando la cuenta."
+  },
+  {
+   "captura": "2026-09-01",
+   "area": "ia",
+   "titulo": "Instagram puts new limits on undisclosed AI profiles",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+   "fecha": "2026-08-31",
+   "impacto": "alto",
+   "porque": "Meta endurece reglas sobre contenido de IA sin etiquetar, puede afectar los creativos DCO generados por Sofía."
+  },
+  {
+   "captura": "2026-09-01",
+   "area": "ia",
+   "titulo": "ChatGPT to face tougher regulation in the EU",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+   "fecha": "2026-08-31",
+   "impacto": "medio",
+   "porque": "Marca la tendencia regulatoria que tarde o temprano llega a otras plataformas de IA usadas en el negocio."
+  },
+  {
+   "captura": "2026-09-01",
+   "area": "ia",
+   "titulo": "\"Zlibrary my beloved\": Anthropic staff chats extolling piracy cited in Sony suit",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+   "fecha": "2026-08-31",
+   "impacto": "bajo",
+   "porque": "Detalle del litigio contra Anthropic que puede escalar el riesgo reputacional del proveedor."
   }
  ]
 }
