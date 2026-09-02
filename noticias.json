@@ -1,14 +1,30 @@
 {
-  "fecha": "2026-09-01",
-  "generado": "2026-09-01T07:35:00-04:00",
+  "fecha": "2026-09-02",
+  "generado": "2026-09-02T07:42:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Kast pone en marcha Fogaes ampliado y nuevo subsidio a la tasa hipotecaria para comprar viviendas",
+      "titulo": "Reforma al mercado de capitales incluirá un subsidio que incentiva el ahorro para el pie de un crédito hipotecario",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/nacional/noticia/kast-pone-en-marcha-fogaes-ampliado-y-nuevo-subsidio-a-la-tasa-hipotecaria-para-comprar-viviendas/",
-      "fecha": "2026-08-26",
+      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-incluira-un-subsidio-que-incentiva-el-ahorro-para-el-pie-de-un-credito-hipotecario/",
+      "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Nuevo subsidio a la tasa golpea directo el mensaje de las campañas 'subsidio-vence' de domo IA."
+      "porque": "Pega directo en el mensaje de las campañas de subsidio para el pie de Nuevo Norte."
+    },
+    {
+      "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
+      "fecha": "2026-09-01",
+      "impacto": "alto",
+      "porque": "Confirma tracción masiva del subsidio a la tasa, contexto favorable para las campañas actuales."
+    },
+    {
+      "titulo": "“Estamos revisando”: Minvu reconoce fallas en controles del Serviu tras auditoría de Contraloría por subsidios de arriendo",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/nacional/noticia/estamos-revisando-minvu-reconoce-fallas-en-controles-del-serviu-tras-auditoria-de-contraloria-por-subsidios-de-arriendo/",
+      "fecha": "2026-09-01",
+      "impacto": "medio",
+      "porque": "Puede sembrar desconfianza pública en subsidios de arriendo, tema sensible para el mensaje de campaña."
     },
     {
       "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
@@ -16,7 +32,7 @@
       "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
       "fecha": "2026-08-26",
       "impacto": "alto",
-      "porque": "Si baja el pie exigido puede revivir el ángulo 'sin_pie', hoy sin conversaciones."
+      "porque": "Un pie más barato podría revivir la relevancia del anuncio sin_pie, hoy casi sin entrega."
     },
     {
       "titulo": "Chile es el tercer país de la Ocde donde más han subido los precios de las viviendas en últimos 16 años",
@@ -24,65 +40,49 @@
       "url": "https://www.latercera.com/pulso/noticia/chile-es-el-tercer-pais-de-la-ocde-donde-mas-han-crecido-los-precios-de-las-viviendas-en-ultimos-16-anos/",
       "fecha": "2026-08-26",
       "impacto": "medio",
-      "porque": "Contexto de precios que sustenta el mensaje de urgencia en las campañas de subsidio."
-    },
-    {
-      "titulo": "Ministro Quiroz: \"No hay ninguna necesidad de bajar la tasa de interés para reactivar la economía\"",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/ministro-quiroz-no-hay-ninguna-necesidad-de-bajar-la-tasa-de-interes-para-reactivar-la-economia/",
-      "fecha": "2026-08-28",
-      "impacto": "medio",
-      "porque": "Tasa estancada mantiene la presión de costo del crédito hipotecario que enfrentan los leads."
-    },
-    {
-      "titulo": "BID y Tasa Máxima Convencional: \"El impacto sobre el crédito suele ser importante, terminas racionando clientes por un tema de oferta\"",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/bid-y-tasa-maxima-convencional-el-impacto-sobre-el-credito-suele-ser-importante-terminas-racionando-clientes-por-un-tema-de-oferta/",
-      "fecha": "2026-08-27",
-      "impacto": "medio",
-      "porque": "El racionamiento de crédito puede afectar a quién le aprueban el financiamiento entre los leads captados."
+      "porque": "Refuerza el argumento de urgencia de compra que usan las campañas de Nuevo Norte."
     }
   ],
   "ia": [
     {
-      "titulo": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
-      "fecha": "2026-08-29",
-      "impacto": "alto",
-      "porque": "Riesgo legal sobre Anthropic, proveedor detrás del stack de agentes que opera la cuenta."
-    },
-    {
-      "titulo": "Instagram puts new limits on undisclosed AI profiles",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-      "fecha": "2026-08-31",
-      "impacto": "alto",
-      "porque": "Meta endurece reglas sobre contenido de IA sin etiquetar, puede afectar los creativos DCO generados por Sofía."
-    },
-    {
-      "titulo": "ChatGPT to face tougher regulation in the EU",
+      "titulo": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
       "fuente": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
-      "fecha": "2026-08-31",
-      "impacto": "medio",
-      "porque": "Marca la tendencia regulatoria que tarde o temprano llega a otras plataformas de IA usadas en el negocio."
+      "url": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+      "fecha": "2026-09-01",
+      "impacto": "alto",
+      "porque": "Baja el costo del proveedor detrás de la flota de agentes de domo IA."
     },
     {
-      "titulo": "The Cybersecurity Apocalypse Is Coming in 'Months,' AI Giants Warn",
+      "titulo": "OpenAI’s Astra model is on the way — and very good at breaking into computer systems",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+      "fecha": "2026-09-01",
+      "impacto": "alto",
+      "porque": "Salto de capacidad relevante para el panorama competitivo de la IA agéntica."
+    },
+    {
+      "titulo": "Google’s answer to Canva is an AI tool where you prompt instead of design",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+      "fecha": "2026-09-01",
+      "impacto": "medio",
+      "porque": "Nuevo competidor directo en diseño con IA, categoría cercana a los creativos de domo IA."
+    },
+    {
+      "titulo": "Pangram Has Emerged as the Gold Standard of AI Detection. Should You Trust It?",
       "fuente": "WIRED",
-      "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
-      "fecha": "2026-08-29",
+      "url": "https://www.wired.com/story/pangram-has-emerged-as-the-gold-standard-of-ai-detection/",
+      "fecha": "2026-09-02",
       "impacto": "medio",
-      "porque": "Alerta de seguridad de los mismos labs que proveen los modelos que usa la flota de agentes."
+      "porque": "Toca la autenticidad de contenido generado por IA, relevante para los creativos que produce la flota."
     },
     {
-      "titulo": "\"Zlibrary my beloved\": Anthropic staff chats extolling piracy cited in Sony suit",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
-      "fecha": "2026-08-31",
+      "titulo": "AfterQuery reportedly becomes Y Combinator’s fastest-ever unicorn, now valued at $3.2B",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
+      "fecha": "2026-09-01",
       "impacto": "bajo",
-      "porque": "Detalle del litigio contra Anthropic que puede escalar el riesgo reputacional del proveedor."
+      "porque": "Contexto de inversión en el ecosistema de IA, sin impacto directo inmediato."
     }
   ]
 }
