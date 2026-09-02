@@ -230,6 +230,7 @@ tr:last-child td{border-bottom:0}
     <button class="tab" data-target="equipo" aria-selected="false">🦾 El equipo IA</button>
     <a class="tab" style="text-decoration:none" id="link-buscador" href="" target="_blank" rel="noopener" title="Calificador, mapa e inventario de proyectos">🏘️ Buscador de proyectos ↗</a>
     <a class="tab" style="text-decoration:none" id="link-feedback" href="" target="_blank" rel="noopener" title="Informes V-E-N-D-E de Lucas">🧠 Feedback reuniones ↗</a>
+    <a class="tab" style="text-decoration:none" id="link-socios" href="" target="_blank" rel="noopener" title="Panel privado de socios: operaciones y costos">🤝 Socios ↗</a>
   </nav>
 
   <section data-grp="agenda">
@@ -538,6 +539,7 @@ const CONFIG = {
     inboxAntonia: "https://antonia.domo-ia.com/inbox",   // panel de chats en vivo (basic auth; NO embeber: tiene PII)
     agenda: "https://antonia.domo-ia.com/agenda",
     feedback: "https://antonia.domo-ia.com/feedback",
+    socios: "https://claude.ai/code/artifact/a8b7a1df-c0dc-4e68-b034-1c40644a1ead", // panel privado de socios (costos y operaciones); requiere acceso compartido
     buscador: "buscador/"
   }
 };
@@ -551,6 +553,7 @@ function aplicarConfig(){
   document.getElementById("not-inmo-title").textContent = CONFIG.textos.tituloNoticiasInmobiliario;
   document.getElementById("link-agenda").href = CONFIG.urls.agenda;
   document.getElementById("link-feedback").href = CONFIG.urls.feedback;
+  document.getElementById("link-socios").href = CONFIG.urls.socios;
   document.getElementById("link-buscador").href = CONFIG.urls.buscador;
 }
 aplicarConfig();
