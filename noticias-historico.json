@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-02",
+ "actualizado": "2026-09-03",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2660,6 +2660,76 @@
    "fecha": "2026-09-01",
    "impacto": "bajo",
    "porque": "Contexto de inversión en el ecosistema de IA, sin impacto directo inmediato."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "inmobiliario",
+   "titulo": "Reforma al mercado de capitales: cómo va a operar el fondo con garantía estatal para financiar créditos hipotecarios",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-como-va-a-operar-el-fondo-con-garantia-estatal-para-financiar-creditos-hipotecarios/",
+   "fecha": "2026-09-02",
+   "impacto": "alto",
+   "porque": "Un fondo estatal que respalda hipotecas puede destrabar más crédito y ampliar el público objetivo de Nuevo Norte."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "inmobiliario",
+   "titulo": "Permisos de edificación: tiempo de tramitación disminuye a la mitad en el primer semestre y aumentan las aprobaciones",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/tiempo-de-tramitacion-de-permisos-de-edificacion-disminuye-a-la-mitad-y-aumentan-las-aprobaciones/",
+   "fecha": "2026-09-02",
+   "impacto": "medio",
+   "porque": "Más permisos aprobados más rápido anticipa mayor oferta de proyectos nuevos en el mercado."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "ia",
+   "titulo": "Scaling agentic AI pilots across the enterprise",
+   "fuente": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
+   "fecha": "2026-09-03",
+   "impacto": "alto",
+   "porque": "Habla directo del problema de domo IA: llevar pilotos de agentes a producción a escala."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "ia",
+   "titulo": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
+   "fecha": "2026-09-02",
+   "impacto": "medio",
+   "porque": "Cambios de modelo tan seguidos obligan a revisar qué motor conviene usar en los agentes de la flota."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "ia",
+   "titulo": "Google says its new Gemini 3.8 Flash model 'works harder' but might cost more",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+   "fecha": "2026-09-02",
+   "impacto": "medio",
+   "porque": "Un posible alza de costo por uso afecta directamente el margen de los agentes que corren sobre Gemini."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "ia",
+   "titulo": "OpenAI's new reasoning technique alarms AI safety experts",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
+   "fecha": "2026-09-02",
+   "impacto": "medio",
+   "porque": "Señal de hacia dónde va el razonamiento de los modelos y qué riesgos vigilar al adoptarlo."
+  },
+  {
+   "captura": "2026-09-03",
+   "area": "ia",
+   "titulo": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
+   "fuente": "WIRED",
+   "url": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+   "fecha": "2026-09-02",
+   "impacto": "bajo",
+   "porque": "Referencia de cómo un gigante ajusta el uso interno de agentes, útil como comparación de adopción."
   }
  ]
 }
