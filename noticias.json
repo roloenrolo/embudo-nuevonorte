@@ -1,22 +1,30 @@
 {
-  "fecha": "2026-09-03",
-  "generado": "2026-09-03T07:31:00-04:00",
+  "fecha": "2026-09-04",
+  "generado": "2026-09-04T07:35:00-04:00",
   "inmobiliario": [
+    {
+      "titulo": "Reforma al mercado de capitales: las inquietudes de la banca sobre el fondo para financiar créditos hipotecarios",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/las-inquietudes-de-la-banca-sobre-el-fondo-para-financiar-creditos-hipotecarios/",
+      "fecha": "2026-09-03",
+      "impacto": "alto",
+      "porque": "Si la banca traba el fondo de garantía estatal, se retrasa el financiamiento hipotecario que sostiene la demanda de Nuevo Norte."
+    },
+    {
+      "titulo": "La tasa de interés permanecerá en el nivel actual por un buen tiempo, según los operadores financieros",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/la-tasa-de-interes-permanecera-en-el-nivel-actual-por-un-buen-tiempo-segun-los-operadores-financieros/",
+      "fecha": "2026-09-03",
+      "impacto": "alto",
+      "porque": "Tasas estables sin baja a la vista mantienen el costo del crédito como principal freno de compra para leads inmobiliarios."
+    },
     {
       "titulo": "Reforma al mercado de capitales: cómo va a operar el fondo con garantía estatal para financiar créditos hipotecarios",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-como-va-a-operar-el-fondo-con-garantia-estatal-para-financiar-creditos-hipotecarios/",
       "fecha": "2026-09-02",
       "impacto": "alto",
-      "porque": "Un fondo estatal que respalda hipotecas puede destrabar más crédito y ampliar el público objetivo de Nuevo Norte."
-    },
-    {
-      "titulo": "Reforma al mercado de capitales incluirá un subsidio que incentiva el ahorro para el pie de un crédito hipotecario",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-incluira-un-subsidio-que-incentiva-el-ahorro-para-el-pie-de-un-credito-hipotecario/",
-      "fecha": "2026-09-01",
-      "impacto": "alto",
-      "porque": "Baja la barrera del pie, el freno más citado por leads que hoy arriendan en vez de comprar."
+      "porque": "Detalla el mecanismo que podría ampliar el acceso a crédito hipotecario, relevante para el argumento de venta de Nuevo Norte."
     },
     {
       "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
@@ -24,15 +32,7 @@
       "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
       "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Demanda masiva por el subsidio confirma apetito comprador real, argumento de venta directo para los anuncios."
-    },
-    {
-      "titulo": "CMF recalibrará parámetros de créditos hipotecarios, lo que abarataría el pie de la vivienda",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/cmf-recalibrara-parametros-de-hipotecarios-que-abaratarian-el-pie/",
-      "fecha": "2026-08-26",
-      "impacto": "medio",
-      "porque": "Otro cambio regulatorio que apunta a abaratar el pie, tema recurrente para nutrir mensajes de campaña."
+      "porque": "Señal directa de demanda activa por el subsidio a la tasa, el mismo gancho que usan los anuncios de subsidio_adjudicado."
     },
     {
       "titulo": "Permisos de edificación: tiempo de tramitación disminuye a la mitad en el primer semestre y aumentan las aprobaciones",
@@ -40,49 +40,49 @@
       "url": "https://www.latercera.com/pulso/noticia/tiempo-de-tramitacion-de-permisos-de-edificacion-disminuye-a-la-mitad-y-aumentan-las-aprobaciones/",
       "fecha": "2026-09-02",
       "impacto": "medio",
-      "porque": "Más permisos aprobados más rápido anticipa mayor oferta de proyectos nuevos en el mercado."
+      "porque": "Menos demora en permisos acelera la oferta de proyectos nuevos que Nuevo Norte podría comercializar."
     }
   ],
   "ia": [
+    {
+      "titulo": "OpenAI launches Astra, its powerful (and controversial) new model",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+      "fecha": "2026-09-03",
+      "impacto": "alto",
+      "porque": "Mueve el terreno competitivo de modelos que domo IA evalúa para sus agentes y automatizaciones."
+    },
+    {
+      "titulo": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
+      "fecha": "2026-09-03",
+      "impacto": "alto",
+      "porque": "Consolidación mayor en la cadena de herramientas de IA, con posible impacto en costos y disponibilidad de modelos abiertos."
+    },
     {
       "titulo": "Scaling agentic AI pilots across the enterprise",
       "fuente": "MIT Technology Review",
       "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
       "fecha": "2026-09-03",
       "impacto": "alto",
-      "porque": "Habla directo del problema de domo IA: llevar pilotos de agentes a producción a escala."
+      "porque": "Habla directo del negocio de domo IA: qué frena a las empresas al pasar de pilotos a agentes IA en producción."
     },
     {
-      "titulo": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks",
+      "titulo": "Four major AI models suffer rare overlapping downtime",
       "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
-      "fecha": "2026-09-02",
+      "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
+      "fecha": "2026-09-03",
       "impacto": "medio",
-      "porque": "Cambios de modelo tan seguidos obligan a revisar qué motor conviene usar en los agentes de la flota."
+      "porque": "Caída simultánea de varios proveedores (incluido Claude) expone el riesgo de depender de un solo modelo para los agentes de la flota."
     },
     {
-      "titulo": "Google says its new Gemini 3.8 Flash model 'works harder' but might cost more",
+      "titulo": "Google now lets you chat with Gmail, Docs, and Keep",
       "fuente": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
-      "fecha": "2026-09-02",
+      "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+      "fecha": "2026-09-03",
       "impacto": "medio",
-      "porque": "Un posible alza de costo por uso afecta directamente el margen de los agentes que corren sobre Gemini."
-    },
-    {
-      "titulo": "OpenAI's new reasoning technique alarms AI safety experts",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-      "fecha": "2026-09-02",
-      "impacto": "medio",
-      "porque": "Señal de hacia dónde va el razonamiento de los modelos y qué riesgos vigilar al adoptarlo."
-    },
-    {
-      "titulo": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
-      "fuente": "WIRED",
-      "url": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
-      "fecha": "2026-09-02",
-      "impacto": "bajo",
-      "porque": "Referencia de cómo un gigante ajusta el uso interno de agentes, útil como comparación de adopción."
+      "porque": "Google empuja asistentes IA integrados a su suite, competencia directa para ofertas de agentes conversacionales tipo domo IA."
     }
   ]
 }

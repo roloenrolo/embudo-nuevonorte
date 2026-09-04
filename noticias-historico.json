@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-03",
+ "actualizado": "2026-09-04",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2730,6 +2730,66 @@
    "fecha": "2026-09-02",
    "impacto": "bajo",
    "porque": "Referencia de cómo un gigante ajusta el uso interno de agentes, útil como comparación de adopción."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "inmobiliario",
+   "titulo": "Reforma al mercado de capitales: las inquietudes de la banca sobre el fondo para financiar créditos hipotecarios",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/las-inquietudes-de-la-banca-sobre-el-fondo-para-financiar-creditos-hipotecarios/",
+   "fecha": "2026-09-03",
+   "impacto": "alto",
+   "porque": "Si la banca traba el fondo de garantía estatal, se retrasa el financiamiento hipotecario que sostiene la demanda de Nuevo Norte."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "inmobiliario",
+   "titulo": "La tasa de interés permanecerá en el nivel actual por un buen tiempo, según los operadores financieros",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/la-tasa-de-interes-permanecera-en-el-nivel-actual-por-un-buen-tiempo-segun-los-operadores-financieros/",
+   "fecha": "2026-09-03",
+   "impacto": "alto",
+   "porque": "Tasas estables sin baja a la vista mantienen el costo del crédito como principal freno de compra para leads inmobiliarios."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "ia",
+   "titulo": "OpenAI launches Astra, its powerful (and controversial) new model",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+   "fecha": "2026-09-03",
+   "impacto": "alto",
+   "porque": "Mueve el terreno competitivo de modelos que domo IA evalúa para sus agentes y automatizaciones."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "ia",
+   "titulo": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
+   "fecha": "2026-09-03",
+   "impacto": "alto",
+   "porque": "Consolidación mayor en la cadena de herramientas de IA, con posible impacto en costos y disponibilidad de modelos abiertos."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "ia",
+   "titulo": "Four major AI models suffer rare overlapping downtime",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
+   "fecha": "2026-09-03",
+   "impacto": "medio",
+   "porque": "Caída simultánea de varios proveedores (incluido Claude) expone el riesgo de depender de un solo modelo para los agentes de la flota."
+  },
+  {
+   "captura": "2026-09-04",
+   "area": "ia",
+   "titulo": "Google now lets you chat with Gmail, Docs, and Keep",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+   "fecha": "2026-09-03",
+   "impacto": "medio",
+   "porque": "Google empuja asistentes IA integrados a su suite, competencia directa para ofertas de agentes conversacionales tipo domo IA."
   }
  ]
 }
