@@ -1,30 +1,14 @@
 {
-  "fecha": "2026-09-04",
-  "generado": "2026-09-04T07:35:00-04:00",
+  "fecha": "2026-09-05",
+  "generado": "2026-09-05T07:35:00-04:00",
   "inmobiliario": [
     {
-      "titulo": "Reforma al mercado de capitales: las inquietudes de la banca sobre el fondo para financiar créditos hipotecarios",
+      "titulo": "Sube venta de departamentos nuevos en la RM y en tres comunas el precio ya supera las UF 100 por metro cuadrado",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/las-inquietudes-de-la-banca-sobre-el-fondo-para-financiar-creditos-hipotecarios/",
-      "fecha": "2026-09-03",
+      "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/",
+      "fecha": "2026-09-04",
       "impacto": "alto",
-      "porque": "Si la banca traba el fondo de garantía estatal, se retrasa el financiamiento hipotecario que sostiene la demanda de Nuevo Norte."
-    },
-    {
-      "titulo": "La tasa de interés permanecerá en el nivel actual por un buen tiempo, según los operadores financieros",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/la-tasa-de-interes-permanecera-en-el-nivel-actual-por-un-buen-tiempo-segun-los-operadores-financieros/",
-      "fecha": "2026-09-03",
-      "impacto": "alto",
-      "porque": "Tasas estables sin baja a la vista mantienen el costo del crédito como principal freno de compra para leads inmobiliarios."
-    },
-    {
-      "titulo": "Reforma al mercado de capitales: cómo va a operar el fondo con garantía estatal para financiar créditos hipotecarios",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-como-va-a-operar-el-fondo-con-garantia-estatal-para-financiar-creditos-hipotecarios/",
-      "fecha": "2026-09-02",
-      "impacto": "alto",
-      "porque": "Detalla el mecanismo que podría ampliar el acceso a crédito hipotecario, relevante para el argumento de venta de Nuevo Norte."
+      "porque": "Precio y demanda al alza en la RM son termómetro directo del mercado donde opera Nuevo Norte."
     },
     {
       "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
@@ -32,7 +16,23 @@
       "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
       "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Señal directa de demanda activa por el subsidio a la tasa, el mismo gancho que usan los anuncios de subsidio_adjudicado."
+      "porque": "Alta demanda del subsidio sostiene el motor de agendas de créditos que Nuevo Norte capta por WhatsApp."
+    },
+    {
+      "titulo": "Reforma al mercado de capitales: las inquietudes de la banca sobre el fondo para financiar créditos hipotecarios",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/las-inquietudes-de-la-banca-sobre-el-fondo-para-financiar-creditos-hipotecarios/",
+      "fecha": "2026-09-03",
+      "impacto": "medio",
+      "porque": "Resistencia de la banca al fondo estatal podría frenar el financiamiento hipotecario a futuro."
+    },
+    {
+      "titulo": "Reforma al mercado de capitales incluirá un subsidio que incentiva el ahorro para el pie de un crédito hipotecario",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-incluira-un-subsidio-que-incentiva-el-ahorro-para-el-pie-de-un-credito-hipotecario/",
+      "fecha": "2026-09-01",
+      "impacto": "medio",
+      "porque": "Nuevo incentivo al pie amplía el universo de compradores primerizos que Nuevo Norte busca captar."
     },
     {
       "titulo": "Permisos de edificación: tiempo de tramitación disminuye a la mitad en el primer semestre y aumentan las aprobaciones",
@@ -40,49 +40,49 @@
       "url": "https://www.latercera.com/pulso/noticia/tiempo-de-tramitacion-de-permisos-de-edificacion-disminuye-a-la-mitad-y-aumentan-las-aprobaciones/",
       "fecha": "2026-09-02",
       "impacto": "medio",
-      "porque": "Menos demora en permisos acelera la oferta de proyectos nuevos que Nuevo Norte podría comercializar."
+      "porque": "Más permisos aprobados más rápido anticipa mayor oferta de proyectos nuevos para vender."
     }
   ],
   "ia": [
     {
-      "titulo": "OpenAI launches Astra, its powerful (and controversial) new model",
+      "titulo": "OpenAI's rogue agents keep escaping, with no formal process to investigate them",
       "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
-      "fecha": "2026-09-03",
+      "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+      "fecha": "2026-09-04",
       "impacto": "alto",
-      "porque": "Mueve el terreno competitivo de modelos que domo IA evalúa para sus agentes y automatizaciones."
+      "porque": "Riesgo de gobernanza de agentes autónomos, tema directo para una flota de agentes IA como domo IA."
     },
     {
-      "titulo": "Nvidia buys Hugging Face, the GitHub of AI, for $13 billion",
+      "titulo": "Anthropic's $2 trillion IPO puts powerful external trustees in spotlight",
       "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
-      "fecha": "2026-09-03",
+      "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
+      "fecha": "2026-09-04",
       "impacto": "alto",
-      "porque": "Consolidación mayor en la cadena de herramientas de IA, con posible impacto en costos y disponibilidad de modelos abiertos."
+      "porque": "Anthropic es el proveedor del modelo detrás de la flota; su gobernanza y valorización importan directamente."
     },
     {
-      "titulo": "Scaling agentic AI pilots across the enterprise",
-      "fuente": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
-      "fecha": "2026-09-03",
-      "impacto": "alto",
-      "porque": "Habla directo del negocio de domo IA: qué frena a las empresas al pasar de pilotos a agentes IA en producción."
-    },
-    {
-      "titulo": "Four major AI models suffer rare overlapping downtime",
+      "titulo": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
       "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
-      "fecha": "2026-09-03",
+      "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
+      "fecha": "2026-09-04",
       "impacto": "medio",
-      "porque": "Caída simultánea de varios proveedores (incluido Claude) expone el riesgo de depender de un solo modelo para los agentes de la flota."
+      "porque": "Vector de inyección de prompts relevante para la seguridad de agentes que procesan contenido externo."
     },
     {
-      "titulo": "Google now lets you chat with Gmail, Docs, and Keep",
-      "fuente": "The Verge",
-      "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
-      "fecha": "2026-09-03",
-      "impacto": "medio",
-      "porque": "Google empuja asistentes IA integrados a su suite, competencia directa para ofertas de agentes conversacionales tipo domo IA."
+      "titulo": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+      "fecha": "2026-09-04",
+      "impacto": "bajo",
+      "porque": "Señal de expansión de capacidad de cómputo IA, contexto de mercado para costos futuros."
+    },
+    {
+      "titulo": "Google's Gemini Spark can now manage your Google Photos library",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
+      "fecha": "2026-09-04",
+      "impacto": "bajo",
+      "porque": "Ejemplo de agentes IA asumiendo tareas cotidianas de gestión, tendencia del sector."
     }
   ]
 }

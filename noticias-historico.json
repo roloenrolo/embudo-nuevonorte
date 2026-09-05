@@ -2790,6 +2790,66 @@
    "fecha": "2026-09-03",
    "impacto": "medio",
    "porque": "Google empuja asistentes IA integrados a su suite, competencia directa para ofertas de agentes conversacionales tipo domo IA."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "inmobiliario",
+   "titulo": "Sube venta de departamentos nuevos en la RM y en tres comunas el precio ya supera las UF 100 por metro cuadrado",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/",
+   "fecha": "2026-09-04",
+   "impacto": "alto",
+   "porque": "Precio y demanda al alza en la RM son termómetro directo del mercado donde opera Nuevo Norte."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "ia",
+   "titulo": "OpenAI's rogue agents keep escaping, with no formal process to investigate them",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+   "fecha": "2026-09-04",
+   "impacto": "alto",
+   "porque": "Riesgo de gobernanza de agentes autónomos, tema directo para una flota de agentes IA como domo IA."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "ia",
+   "titulo": "Anthropic's $2 trillion IPO puts powerful external trustees in spotlight",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
+   "fecha": "2026-09-04",
+   "impacto": "alto",
+   "porque": "Anthropic es el proveedor del modelo detrás de la flota; su gobernanza y valorización importan directamente."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "ia",
+   "titulo": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
+   "fecha": "2026-09-04",
+   "impacto": "medio",
+   "porque": "Vector de inyección de prompts relevante para la seguridad de agentes que procesan contenido externo."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "ia",
+   "titulo": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+   "fecha": "2026-09-04",
+   "impacto": "bajo",
+   "porque": "Señal de expansión de capacidad de cómputo IA, contexto de mercado para costos futuros."
+  },
+  {
+   "captura": "2026-09-05",
+   "area": "ia",
+   "titulo": "Google's Gemini Spark can now manage your Google Photos library",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
+   "fecha": "2026-09-04",
+   "impacto": "bajo",
+   "porque": "Ejemplo de agentes IA asumiendo tareas cotidianas de gestión, tendencia del sector."
   }
  ]
 }
