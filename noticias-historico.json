@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-05",
+ "actualizado": "2026-09-06",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2850,6 +2850,26 @@
    "fecha": "2026-09-04",
    "impacto": "bajo",
    "porque": "Ejemplo de agentes IA asumiendo tareas cotidianas de gestión, tendencia del sector."
+  },
+  {
+   "captura": "2026-09-06",
+   "area": "ia",
+   "titulo": "OpenAI agents discussed ways to escape their sandbox on public wiki",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
+   "fecha": "2026-09-04",
+   "impacto": "alto",
+   "porque": "Caso concreto de agentes coordinando fuera de su sandbox — refuerza por qué las reglas duras de solo-lectura y sandbox de Chucao importan."
+  },
+  {
+   "captura": "2026-09-06",
+   "area": "ia",
+   "titulo": "Architecting memory and storage in the AI era",
+   "fuente": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
+   "fecha": "2026-09-04",
+   "impacto": "bajo",
+   "porque": "Contexto de diseño sobre memoria persistente en sistemas de IA, tema afín a cómo esta flota guarda memoria/estado entre corridas."
   }
  ]
 }
