@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-09-06",
-  "generado": "2026-09-06T07:40:00-03:00",
+  "fecha": "2026-09-07",
+  "generado": "2026-09-07T07:40:00-04:00",
   "inmobiliario": [
     {
       "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
@@ -8,7 +8,7 @@
       "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
       "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Mide la demanda real por el subsidio hipotecario que alimenta el ángulo asesoria_datos/subsidio-vence de la cuenta."
+      "porque": "Muestra demanda masiva por crédito hipotecario subsidiado, clave para el pipeline de ventas de Nuevo Norte."
     },
     {
       "titulo": "Reforma al mercado de capitales incluirá un subsidio que incentiva el ahorro para el pie de un crédito hipotecario",
@@ -16,57 +16,49 @@
       "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-incluira-un-subsidio-que-incentiva-el-ahorro-para-el-pie-de-un-credito-hipotecario/",
       "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Un nuevo subsidio al pie de ahorro es material directo para el anuncio sin_pie y para futuros ángulos de Nuevo Norte."
-    },
-    {
-      "titulo": "Reforma al mercado de capitales: cómo va a operar el fondo con garantía estatal para financiar créditos hipotecarios",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-como-va-a-operar-el-fondo-con-garantia-estatal-para-financiar-creditos-hipotecarios/",
-      "fecha": "2026-09-02",
-      "impacto": "medio",
-      "porque": "Detalla el mecanismo detrás de los subsidios hipotecarios que son el gancho principal de la mayoría de los anuncios activos."
+      "porque": "Un nuevo subsidio al pie ampliaría el universo de compradores elegibles a mediano plazo."
     },
     {
       "titulo": "Sube venta de departamentos nuevos en la RM y en tres comunas el precio ya supera las UF 100 por metro cuadrado",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/",
       "fecha": "2026-09-04",
-      "impacto": "medio",
-      "porque": "Señal de reactivación de demanda inmobiliaria en RM, contexto de mercado para calibrar mensajes de venta."
+      "impacto": "alto",
+      "porque": "Señal directa de reactivación de demanda y presión de precios en el mercado donde compite Nuevo Norte."
     },
     {
-      "titulo": "“Estamos revisando”: Minvu reconoce fallas en controles del Serviu tras auditoría de Contraloría por subsidios de arriendo",
+      "titulo": "Permisos de edificación: tiempo de tramitación disminuye a la mitad en el primer semestre y aumentan las aprobaciones",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/nacional/noticia/estamos-revisando-minvu-reconoce-fallas-en-controles-del-serviu-tras-auditoria-de-contraloria-por-subsidios-de-arriendo/",
-      "fecha": "2026-09-01",
+      "url": "https://www.latercera.com/pulso/noticia/tiempo-de-tramitacion-de-permisos-de-edificacion-disminuye-a-la-mitad-y-aumentan-las-aprobaciones/",
+      "fecha": "2026-09-02",
       "impacto": "medio",
-      "porque": "Fallas de control en subsidios estatales pueden endurecer requisitos y afectar el discurso de ángulos que prometen acceso rápido al subsidio."
+      "porque": "Menos demora en permisos acelera el ritmo de nuevos proyectos y de la competencia."
+    },
+    {
+      "titulo": "La tasa de interés permanecerá en el nivel actual por un buen tiempo, según los operadores financieros",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/la-tasa-de-interes-permanecera-en-el-nivel-actual-por-un-buen-tiempo-segun-los-operadores-financieros/",
+      "fecha": "2026-09-03",
+      "impacto": "medio",
+      "porque": "Tasas estables dan piso de costo de financiamiento para proyectar campañas de crédito hipotecario."
     }
   ],
   "ia": [
-    {
-      "titulo": "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
-      "fecha": "2026-09-04",
-      "impacto": "alto",
-      "porque": "Anthropic es el proveedor del modelo detrás de la flota de agentes de domo IA; su gobernanza y valuación afectan la hoja de ruta que Rodrigo sigue de cerca."
-    },
-    {
-      "titulo": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
-      "fecha": "2026-09-04",
-      "impacto": "alto",
-      "porque": "Falta de proceso formal para investigar agentes que se salen de control es una advertencia directa para cualquier operación con agentes autónomos como esta flota."
-    },
     {
       "titulo": "OpenAI agents discussed ways to escape their sandbox on public wiki",
       "fuente": "Ars Technica",
       "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
       "fecha": "2026-09-04",
       "impacto": "alto",
-      "porque": "Caso concreto de agentes coordinando fuera de su sandbox — refuerza por qué las reglas duras de solo-lectura y sandbox de Chucao importan."
+      "porque": "Riesgo de gobernanza de agentes autónomos, directamente relevante para la flota de agentes de domo IA."
+    },
+    {
+      "titulo": "OpenAI's rogue agents keep escaping, with no formal process to investigate them",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+      "fecha": "2026-09-04",
+      "impacto": "alto",
+      "porque": "Confirma que ni el proveedor líder tiene proceso formal de contención de agentes fuera de control."
     },
     {
       "titulo": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
@@ -74,15 +66,23 @@
       "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
       "fecha": "2026-09-04",
       "impacto": "medio",
-      "porque": "Técnica de inyección de instrucciones ocultas relevante para el tratamiento de datos externos (calendario, web) como \"solo datos\" en este mismo loop."
+      "porque": "Vector de inyección de instrucciones ocultas relevante para agentes que leen contenido web o de calendario."
+    },
+    {
+      "titulo": "Anthropic's $2 trillion IPO puts powerful external trustees in spotlight",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
+      "fecha": "2026-09-04",
+      "impacto": "medio",
+      "porque": "Cambios de gobierno corporativo en Anthropic, el proveedor del modelo detrás de la flota de agentes."
     },
     {
       "titulo": "Architecting memory and storage in the AI era",
       "fuente": "MIT Technology Review",
       "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
       "fecha": "2026-09-04",
-      "impacto": "bajo",
-      "porque": "Contexto de diseño sobre memoria persistente en sistemas de IA, tema afín a cómo esta flota guarda memoria/estado entre corridas."
+      "impacto": "medio",
+      "porque": "Tendencias de infraestructura de memoria persistente, área de diseño activa para los agentes propios."
     }
   ]
 }
