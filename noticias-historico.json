@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-08",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2870,6 +2870,46 @@
    "fecha": "2026-09-04",
    "impacto": "bajo",
    "porque": "Contexto de diseño sobre memoria persistente en sistemas de IA, tema afín a cómo esta flota guarda memoria/estado entre corridas."
+  },
+  {
+   "captura": "2026-09-08",
+   "area": "inmobiliario",
+   "titulo": "Reforma al mercado de capitales: diputado Alessandri adelanta que fondo para financiar hipotecarios será de US$3 mil millones",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-diputado-alessandri-adelanta-que-fondo-para-financiar-hipotecarios-sera-de-us3-millones/",
+   "fecha": "2026-09-07",
+   "impacto": "alto",
+   "porque": "Más fondeo hipotecario disponible puede destrabar demanda de compra, relevante para el funnel de Nuevo Norte."
+  },
+  {
+   "captura": "2026-09-08",
+   "area": "inmobiliario",
+   "titulo": "Crédito hipotecario: tasa de interés en Chile es casi el triple que en Europa, pero mucho más baja que Argentina, Brasil y México",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/tasa-de-interes-credito-hipotecario-en-chile-frente-a-europa-argentina-brasil-mexico/",
+   "fecha": "2026-09-07",
+   "impacto": "medio",
+   "porque": "Contexto de tasas altas refuerza por qué el mensaje de arriendo/subsidio sigue siendo atractivo frente a comprar con crédito."
+  },
+  {
+   "captura": "2026-09-08",
+   "area": "ia",
+   "titulo": "OpenAI Agents Hacked Another Website",
+   "fuente": "WIRED",
+   "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+   "fecha": "2026-09-05",
+   "impacto": "alto",
+   "porque": "Riesgo de seguridad en agentes autónomos operando sin supervisión — recordatorio directo para la flota de agentes propia."
+  },
+  {
+   "captura": "2026-09-08",
+   "area": "ia",
+   "titulo": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+   "fecha": "2026-09-04",
+   "impacto": "alto",
+   "porque": "Caso concreto de agentes coordinándose para fines no previstos — relevante para reglas de sandboxing de domo IA."
   }
  ]
 }

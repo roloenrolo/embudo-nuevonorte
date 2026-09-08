@@ -1,80 +1,80 @@
 {
-  "fecha": "2026-09-07",
-  "generado": "2026-09-07T07:40:00-04:00",
+  "fecha": "2026-09-08",
+  "generado": "2026-09-08T07:35:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
-      "fecha": "2026-09-01",
-      "impacto": "alto",
-      "porque": "Muestra demanda masiva por crédito hipotecario subsidiado, clave para el pipeline de ventas de Nuevo Norte."
-    },
     {
       "titulo": "Reforma al mercado de capitales incluirá un subsidio que incentiva el ahorro para el pie de un crédito hipotecario",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-incluira-un-subsidio-que-incentiva-el-ahorro-para-el-pie-de-un-credito-hipotecario/",
       "fecha": "2026-09-01",
       "impacto": "alto",
-      "porque": "Un nuevo subsidio al pie ampliaría el universo de compradores elegibles a mediano plazo."
+      "porque": "Toca directo el dolor 'sin pie' que Nuevo Norte usa como ángulo publicitario — puede cambiar el mensaje de venta."
+    },
+    {
+      "titulo": "Subsidio a la tasa hipotecaria: bancos reciben más de 100 mil solicitudes y han cursado un tercio de los cupos tras ampliación",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/subsidio-a-la-tasa-hipotecaria-bancos-reciben-mas-de-100-mil-solicitudes-y-han-cursado-mas-30000-creditos/",
+      "fecha": "2026-09-01",
+      "impacto": "alto",
+      "porque": "Demanda masiva por subsidio confirma que el ángulo 'subsidio_adjudicado' (39% del gasto de Matías) sigue vigente y con público grande."
+    },
+    {
+      "titulo": "Reforma al mercado de capitales: diputado Alessandri adelanta que fondo para financiar hipotecarios será de US$3 mil millones",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales-diputado-alessandri-adelanta-que-fondo-para-financiar-hipotecarios-sera-de-us3-millones/",
+      "fecha": "2026-09-07",
+      "impacto": "alto",
+      "porque": "Más fondeo hipotecario disponible puede destrabar demanda de compra, relevante para el funnel de Nuevo Norte."
+    },
+    {
+      "titulo": "Crédito hipotecario: tasa de interés en Chile es casi el triple que en Europa, pero mucho más baja que Argentina, Brasil y México",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/tasa-de-interes-credito-hipotecario-en-chile-frente-a-europa-argentina-brasil-mexico/",
+      "fecha": "2026-09-07",
+      "impacto": "medio",
+      "porque": "Contexto de tasas altas refuerza por qué el mensaje de arriendo/subsidio sigue siendo atractivo frente a comprar con crédito."
     },
     {
       "titulo": "Sube venta de departamentos nuevos en la RM y en tres comunas el precio ya supera las UF 100 por metro cuadrado",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/",
       "fecha": "2026-09-04",
-      "impacto": "alto",
-      "porque": "Señal directa de reactivación de demanda y presión de precios en el mercado donde compite Nuevo Norte."
-    },
-    {
-      "titulo": "Permisos de edificación: tiempo de tramitación disminuye a la mitad en el primer semestre y aumentan las aprobaciones",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/tiempo-de-tramitacion-de-permisos-de-edificacion-disminuye-a-la-mitad-y-aumentan-las-aprobaciones/",
-      "fecha": "2026-09-02",
       "impacto": "medio",
-      "porque": "Menos demora en permisos acelera el ritmo de nuevos proyectos y de la competencia."
-    },
-    {
-      "titulo": "La tasa de interés permanecerá en el nivel actual por un buen tiempo, según los operadores financieros",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/la-tasa-de-interes-permanecera-en-el-nivel-actual-por-un-buen-tiempo-segun-los-operadores-financieros/",
-      "fecha": "2026-09-03",
-      "impacto": "medio",
-      "porque": "Tasas estables dan piso de costo de financiamiento para proyectar campañas de crédito hipotecario."
+      "porque": "Señal de mercado inmobiliario reactivándose en RM, útil como contexto de mercado para Nuevo Norte."
     }
   ],
   "ia": [
-    {
-      "titulo": "OpenAI agents discussed ways to escape their sandbox on public wiki",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
-      "fecha": "2026-09-04",
-      "impacto": "alto",
-      "porque": "Riesgo de gobernanza de agentes autónomos, directamente relevante para la flota de agentes de domo IA."
-    },
-    {
-      "titulo": "OpenAI's rogue agents keep escaping, with no formal process to investigate them",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
-      "fecha": "2026-09-04",
-      "impacto": "alto",
-      "porque": "Confirma que ni el proveedor líder tiene proceso formal de contención de agentes fuera de control."
-    },
-    {
-      "titulo": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
-      "fecha": "2026-09-04",
-      "impacto": "medio",
-      "porque": "Vector de inyección de instrucciones ocultas relevante para agentes que leen contenido web o de calendario."
-    },
     {
       "titulo": "Anthropic's $2 trillion IPO puts powerful external trustees in spotlight",
       "fuente": "Ars Technica",
       "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
       "fecha": "2026-09-04",
+      "impacto": "alto",
+      "porque": "Anthropic es la base de la flota de agentes de domo IA — su gobierno corporativo puede afectar estabilidad y roadmap del stack."
+    },
+    {
+      "titulo": "OpenAI Agents Hacked Another Website",
+      "fuente": "WIRED",
+      "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+      "fecha": "2026-09-05",
+      "impacto": "alto",
+      "porque": "Riesgo de seguridad en agentes autónomos operando sin supervisión — recordatorio directo para la flota de agentes propia."
+    },
+    {
+      "titulo": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+      "fecha": "2026-09-04",
+      "impacto": "alto",
+      "porque": "Caso concreto de agentes coordinándose para fines no previstos — relevante para reglas de sandboxing de domo IA."
+    },
+    {
+      "titulo": "OpenAI agents discussed ways to escape their sandbox on public wiki",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
+      "fecha": "2026-09-04",
       "impacto": "medio",
-      "porque": "Cambios de gobierno corporativo en Anthropic, el proveedor del modelo detrás de la flota de agentes."
+      "porque": "Refuerza la necesidad de reglas duras de solo-lectura y permisos acotados como las que usa esta flota."
     },
     {
       "titulo": "Architecting memory and storage in the AI era",
@@ -82,7 +82,7 @@
       "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
       "fecha": "2026-09-04",
       "impacto": "medio",
-      "porque": "Tendencias de infraestructura de memoria persistente, área de diseño activa para los agentes propios."
+      "porque": "Diseño de memoria persistente para agentes, tema directo para cómo evoluciona el sistema de memoria de esta flota."
     }
   ]
 }
