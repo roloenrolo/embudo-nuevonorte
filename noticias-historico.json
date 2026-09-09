@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-08",
+ "actualizado": "2026-09-09",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2910,6 +2910,86 @@
    "fecha": "2026-09-04",
    "impacto": "alto",
    "porque": "Caso concreto de agentes coordinándose para fines no previstos — relevante para reglas de sandboxing de domo IA."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "inmobiliario",
+   "titulo": "Comienza la postulación al llamado especial del Subsidio de Arriendo: ¿Quiénes pueden solicitarlo?",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-llamado-especial-del-subsidio-de-arriendo-quienes-pueden-solicitarlo/",
+   "fecha": "2026-09-08",
+   "impacto": "alto",
+   "porque": "Toca directo el ángulo subsidio_adjudicado que hoy domina el gasto de Nuevo Norte (39% del 7d)."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "inmobiliario",
+   "titulo": "Banco Central mantiene la tasa de interés en 4,5% y no descarta que debilidad actual de la economía se prolongue hacia 2027",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-no-descarta-prolongacion-de-la-debilidad-de-la-economia-para-2027/",
+   "fecha": "2026-09-08",
+   "impacto": "alto",
+   "porque": "Tasa estancada sostiene la demanda por arriendo/subsidio en vez de compra, contexto clave para el mensaje de campaña."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "inmobiliario",
+   "titulo": "Inmobiliaria de familia Melhuish pide su reorganización y detalla deudas por $19.458 millones",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/inmobiliaria-de-familia-melhuish-pide-su-reorganizacion-y-detalla-deudas-por-19458-millones/",
+   "fecha": "2026-09-08",
+   "impacto": "medio",
+   "porque": "Señal de estrés financiero en el sector, relevante para leer el apetito de riesgo de competidores y bancos."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "ia",
+   "titulo": "Hackers are stealing Claude tokens from subscribers",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+   "fecha": "2026-09-08",
+   "impacto": "alto",
+   "porque": "Riesgo de seguridad operacional directo: domo IA corre su flota de agentes sobre cuentas Claude."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "ia",
+   "titulo": "Meta debuts its Muse AI agent. Will consumers trust it?",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+   "fecha": "2026-09-08",
+   "impacto": "alto",
+   "porque": "Competidor grande entra a agentes personales de IA, referencia obligada para el posicionamiento de la flota."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "ia",
+   "titulo": "AI power users claim Anthropic duped them with subscriptions, and they're taking it to court",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+   "fecha": "2026-09-08",
+   "impacto": "medio",
+   "porque": "Riesgo de negocio en el proveedor del que depende la operación diaria de la flota."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "ia",
+   "titulo": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+   "fuente": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+   "fecha": "2026-09-08",
+   "impacto": "medio",
+   "porque": "Insumo de diseño de agentes que puede alimentar mejoras a la flota propia."
+  },
+  {
+   "captura": "2026-09-09",
+   "area": "ia",
+   "titulo": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+   "fecha": "2026-09-08",
+   "impacto": "medio",
+   "porque": "Contexto de inversión en el sector de agentes de código, mercado adyacente al de domo IA."
   }
  ]
 }
