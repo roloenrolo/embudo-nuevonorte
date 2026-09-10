@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-09",
+ "actualizado": "2026-09-10",
  "items": [
   {
    "captura": "2026-07-21",
@@ -2990,6 +2990,76 @@
    "fecha": "2026-09-08",
    "impacto": "medio",
    "porque": "Contexto de inversión en el sector de agentes de código, mercado adyacente al de domo IA."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "inmobiliario",
+   "titulo": "Gobierno ingresa reforma al mercado de capitales: el Estado aportará hasta US$ 2 mil millones a nuevo fondo para la vivienda",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales/",
+   "fecha": "2026-09-09",
+   "impacto": "alto",
+   "porque": "Un fondo estatal de US$2.000M para vivienda puede destrabar demanda hipotecaria, justo el cuello de botella que hoy limita conversión en Nuevo Norte."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "inmobiliario",
+   "titulo": "Kast anuncia reforma al mercado de capitales con medidas para dar más acceso a hipotecarios: “Menos pie, tasas de interés más bajas y más plazo”",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/kast-anuncia-reforma-al-mercado-de-capitales-con-medidas-para-dar-mas-acceso-a-hipotecarios-menos-pie-tasas-de-interes-mas-bajas-y-mas-plazo/",
+   "fecha": "2026-09-09",
+   "impacto": "alto",
+   "porque": "\"Menos pie\" es exactamente el ángulo del test sin_pie de Nuevo Norte: si la medida avanza, ese mensaje gana vigencia y respaldo noticioso."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "ia",
+   "titulo": "Anthropic researcher quits with a warning: Self-improving AI could \"kill us all\"",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
+   "fecha": "2026-09-09",
+   "impacto": "alto",
+   "porque": "Advertencia pública de un ex-investigador de Anthropic sobre riesgos de auto-mejora en modelos: relevante para domo IA como operador de agentes basados en esta tecnología."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "ia",
+   "titulo": "Man told ChatGPT he was feeling delusional. ChatGPT insisted he was Jesus.",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
+   "fecha": "2026-09-09",
+   "impacto": "alto",
+   "porque": "Caso concreto de un chatbot reforzando un delirio: recordatorio directo del riesgo de mal manejo en conversaciones de agentes IA con usuarios reales, como los de WhatsApp de domo IA."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "ia",
+   "titulo": "OpenAI adds a prominent AI doomer to its board of directors",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+   "fecha": "2026-09-09",
+   "impacto": "medio",
+   "porque": "Cambio de gobernanza en OpenAI hacia mayor foco en seguridad, indicador de hacia dónde se mueve la conversación regulatoria del sector."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "ia",
+   "titulo": "Six Chinese AI firms accused of aggressively copying US frontier models",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
+   "fecha": "2026-09-09",
+   "impacto": "medio",
+   "porque": "Tensión geopolítica en modelos frontera puede afectar disponibilidad y costos de las APIs de IA que sostienen productos como domo IA."
+  },
+  {
+   "captura": "2026-09-10",
+   "area": "ia",
+   "titulo": "Healthcare AI's next test is integration",
+   "fuente": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
+   "fecha": "2026-09-10",
+   "impacto": "bajo",
+   "porque": "Caso de otra industria mostrando que el cuello de botella de la IA ya no es el modelo sino la integración operativa, paralelo útil para domo IA."
   }
  ]
 }

@@ -1,30 +1,30 @@
 {
-  "fecha": "2026-09-09",
-  "generado": "2026-09-09T07:40:00-04:00",
+  "fecha": "2026-09-10",
+  "generado": "2026-09-10T07:31:00-03:00",
   "inmobiliario": [
+    {
+      "titulo": "Gobierno ingresa reforma al mercado de capitales: el Estado aportará hasta US$ 2 mil millones a nuevo fondo para la vivienda",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales/",
+      "fecha": "2026-09-09",
+      "impacto": "alto",
+      "porque": "Un fondo estatal de US$2.000M para vivienda puede destrabar demanda hipotecaria, justo el cuello de botella que hoy limita conversión en Nuevo Norte."
+    },
+    {
+      "titulo": "Kast anuncia reforma al mercado de capitales con medidas para dar más acceso a hipotecarios: “Menos pie, tasas de interés más bajas y más plazo”",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/kast-anuncia-reforma-al-mercado-de-capitales-con-medidas-para-dar-mas-acceso-a-hipotecarios-menos-pie-tasas-de-interes-mas-bajas-y-mas-plazo/",
+      "fecha": "2026-09-09",
+      "impacto": "alto",
+      "porque": "\"Menos pie\" es exactamente el ángulo del test sin_pie de Nuevo Norte: si la medida avanza, ese mensaje gana vigencia y respaldo noticioso."
+    },
     {
       "titulo": "Comienza la postulación al llamado especial del Subsidio de Arriendo: ¿Quiénes pueden solicitarlo?",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-llamado-especial-del-subsidio-de-arriendo-quienes-pueden-solicitarlo/",
       "fecha": "2026-09-08",
-      "impacto": "alto",
-      "porque": "Toca directo el ángulo subsidio_adjudicado que hoy domina el gasto de Nuevo Norte (39% del 7d)."
-    },
-    {
-      "titulo": "Banco Central mantiene la tasa de interés en 4,5% y no descarta que debilidad actual de la economía se prolongue hacia 2027",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-no-descarta-prolongacion-de-la-debilidad-de-la-economia-para-2027/",
-      "fecha": "2026-09-08",
-      "impacto": "alto",
-      "porque": "Tasa estancada sostiene la demanda por arriendo/subsidio en vez de compra, contexto clave para el mensaje de campaña."
-    },
-    {
-      "titulo": "Inmobiliaria de familia Melhuish pide su reorganización y detalla deudas por $19.458 millones",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/inmobiliaria-de-familia-melhuish-pide-su-reorganizacion-y-detalla-deudas-por-19458-millones/",
-      "fecha": "2026-09-08",
       "impacto": "medio",
-      "porque": "Señal de estrés financiero en el sector, relevante para leer el apetito de riesgo de competidores y bancos."
+      "porque": "Ventana de postulación activa a subsidio de arriendo: material directo para los angulos de subsidio_adjudicado que hoy dominan el gasto de Nuevo Norte."
     },
     {
       "titulo": "Crédito hipotecario: tasa de interés en Chile es casi el triple que en Europa, pero mucho más baja que Argentina, Brasil y México",
@@ -32,57 +32,57 @@
       "url": "https://www.latercera.com/pulso/noticia/tasa-de-interes-credito-hipotecario-en-chile-frente-a-europa-argentina-brasil-mexico/",
       "fecha": "2026-09-07",
       "impacto": "medio",
-      "porque": "Contexto de costo de financiamiento que refuerza por qué el arriendo/subsidio sigue siendo la puerta de entrada más barata."
+      "porque": "Contexto de tasas altas explica la fricción que enfrenta el comprador objetivo de Nuevo Norte y por qué el ángulo de financiamiento sigue siendo sensible."
     },
     {
-      "titulo": "Sube venta de departamentos nuevos en la RM y en tres comunas el precio ya supera las UF 100 por metro cuadrado",
+      "titulo": "Inmobiliaria de familia Melhuish pide su reorganización y detalla deudas por $19.458 millones",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/",
-      "fecha": "2026-09-04",
+      "url": "https://www.latercera.com/pulso/noticia/inmobiliaria-de-familia-melhuish-pide-su-reorganizacion-y-detalla-deudas-por-19458-millones/",
+      "fecha": "2026-09-08",
       "impacto": "medio",
-      "porque": "Termómetro de precios que ayuda a calibrar el mensaje de accesibilidad frente a la RM."
+      "porque": "Señal de estrés financiero en el sector inmobiliario chileno, relevante como contexto de riesgo al evaluar competidores y proyectos comparables."
     }
   ],
   "ia": [
     {
-      "titulo": "Hackers are stealing Claude tokens from subscribers",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-      "fecha": "2026-09-08",
+      "titulo": "Anthropic researcher quits with a warning: Self-improving AI could \"kill us all\"",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
+      "fecha": "2026-09-09",
       "impacto": "alto",
-      "porque": "Riesgo de seguridad operacional directo: domo IA corre su flota de agentes sobre cuentas Claude."
+      "porque": "Advertencia pública de un ex-investigador de Anthropic sobre riesgos de auto-mejora en modelos: relevante para domo IA como operador de agentes basados en esta tecnología."
     },
     {
-      "titulo": "Meta debuts its Muse AI agent. Will consumers trust it?",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-      "fecha": "2026-09-08",
+      "titulo": "Man told ChatGPT he was feeling delusional. ChatGPT insisted he was Jesus.",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
+      "fecha": "2026-09-09",
       "impacto": "alto",
-      "porque": "Competidor grande entra a agentes personales de IA, referencia obligada para el posicionamiento de la flota."
+      "porque": "Caso concreto de un chatbot reforzando un delirio: recordatorio directo del riesgo de mal manejo en conversaciones de agentes IA con usuarios reales, como los de WhatsApp de domo IA."
     },
     {
-      "titulo": "AI power users claim Anthropic duped them with subscriptions, and they're taking it to court",
-      "fuente": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-      "fecha": "2026-09-08",
+      "titulo": "OpenAI adds a prominent AI doomer to its board of directors",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "fecha": "2026-09-09",
       "impacto": "medio",
-      "porque": "Riesgo de negocio en el proveedor del que depende la operación diaria de la flota."
+      "porque": "Cambio de gobernanza en OpenAI hacia mayor foco en seguridad, indicador de hacia dónde se mueve la conversación regulatoria del sector."
     },
     {
-      "titulo": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+      "titulo": "Six Chinese AI firms accused of aggressively copying US frontier models",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
+      "fecha": "2026-09-09",
+      "impacto": "medio",
+      "porque": "Tensión geopolítica en modelos frontera puede afectar disponibilidad y costos de las APIs de IA que sostienen productos como domo IA."
+    },
+    {
+      "titulo": "Healthcare AI's next test is integration",
       "fuente": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
-      "fecha": "2026-09-08",
-      "impacto": "medio",
-      "porque": "Insumo de diseño de agentes que puede alimentar mejoras a la flota propia."
-    },
-    {
-      "titulo": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      "fecha": "2026-09-08",
-      "impacto": "medio",
-      "porque": "Contexto de inversión en el sector de agentes de código, mercado adyacente al de domo IA."
+      "url": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
+      "fecha": "2026-09-10",
+      "impacto": "bajo",
+      "porque": "Caso de otra industria mostrando que el cuello de botella de la IA ya no es el modelo sino la integración operativa, paralelo útil para domo IA."
     }
   ]
 }
