@@ -1,88 +1,88 @@
 {
-  "fecha": "2026-09-10",
-  "generado": "2026-09-10T07:31:00-03:00",
+  "fecha": "2026-09-11",
+  "generado": "2026-09-11T07:40:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "Gobierno ingresa reforma al mercado de capitales: el Estado aportará hasta US$ 2 mil millones a nuevo fondo para la vivienda",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales/",
-      "fecha": "2026-09-09",
-      "impacto": "alto",
-      "porque": "Un fondo estatal de US$2.000M para vivienda puede destrabar demanda hipotecaria, justo el cuello de botella que hoy limita conversión en Nuevo Norte."
-    },
     {
       "titulo": "Kast anuncia reforma al mercado de capitales con medidas para dar más acceso a hipotecarios: “Menos pie, tasas de interés más bajas y más plazo”",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/kast-anuncia-reforma-al-mercado-de-capitales-con-medidas-para-dar-mas-acceso-a-hipotecarios-menos-pie-tasas-de-interes-mas-bajas-y-mas-plazo/",
       "fecha": "2026-09-09",
       "impacto": "alto",
-      "porque": "\"Menos pie\" es exactamente el ángulo del test sin_pie de Nuevo Norte: si la medida avanza, ese mensaje gana vigencia y respaldo noticioso."
+      "porque": "Cambia directamente las condiciones de crédito hipotecario al comprador subsidio, tema central de la campaña de Nuevo Norte."
+    },
+    {
+      "titulo": "Gobierno ingresa reforma al mercado de capitales: el Estado aportará hasta US$ 2 mil millones a nuevo fondo para la vivienda",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales/",
+      "fecha": "2026-09-09",
+      "impacto": "alto",
+      "porque": "Nueva fuente de financiamiento estatal para vivienda puede ampliar el universo de compradores con subsidio."
     },
     {
       "titulo": "Comienza la postulación al llamado especial del Subsidio de Arriendo: ¿Quiénes pueden solicitarlo?",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-llamado-especial-del-subsidio-de-arriendo-quienes-pueden-solicitarlo/",
       "fecha": "2026-09-08",
-      "impacto": "medio",
-      "porque": "Ventana de postulación activa a subsidio de arriendo: material directo para los angulos de subsidio_adjudicado que hoy dominan el gasto de Nuevo Norte."
+      "impacto": "alto",
+      "porque": "Afecta directamente al público objetivo de las campañas de subsidio de Nuevo Norte."
     },
     {
-      "titulo": "Crédito hipotecario: tasa de interés en Chile es casi el triple que en Europa, pero mucho más baja que Argentina, Brasil y México",
+      "titulo": "Banco Central mantiene la tasa de interés en 4,5% y no descarta que debilidad actual de la economía se prolongue hacia 2027",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/tasa-de-interes-credito-hipotecario-en-chile-frente-a-europa-argentina-brasil-mexico/",
-      "fecha": "2026-09-07",
-      "impacto": "medio",
-      "porque": "Contexto de tasas altas explica la fricción que enfrenta el comprador objetivo de Nuevo Norte y por qué el ángulo de financiamiento sigue siendo sensible."
-    },
-    {
-      "titulo": "Inmobiliaria de familia Melhuish pide su reorganización y detalla deudas por $19.458 millones",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/inmobiliaria-de-familia-melhuish-pide-su-reorganizacion-y-detalla-deudas-por-19458-millones/",
+      "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-no-descarta-prolongacion-de-la-debilidad-de-la-economia-para-2027/",
       "fecha": "2026-09-08",
       "impacto": "medio",
-      "porque": "Señal de estrés financiero en el sector inmobiliario chileno, relevante como contexto de riesgo al evaluar competidores y proyectos comparables."
+      "porque": "La tasa de referencia influye en el costo hipotecario que enfrentan los leads de las campañas."
+    },
+    {
+      "titulo": "Desempleo, créditos elevados y prioridades que cambiaron: la ruta cada vez más prolongada hacia la casa propia",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/nacional/noticia/desempleo-creditos-elevados-y-una-vida-que-cambio-la-ruta-cada-vez-mas-prolongada-hacia-la-casa-propia/",
+      "fecha": "2026-09-10",
+      "impacto": "medio",
+      "porque": "Retrata el contexto económico del comprador objetivo, útil para ajustar mensajes de campaña."
     }
   ],
   "ia": [
     {
-      "titulo": "Anthropic researcher quits with a warning: Self-improving AI could \"kill us all\"",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
-      "fecha": "2026-09-09",
-      "impacto": "alto",
-      "porque": "Advertencia pública de un ex-investigador de Anthropic sobre riesgos de auto-mejora en modelos: relevante para domo IA como operador de agentes basados en esta tecnología."
-    },
-    {
-      "titulo": "Man told ChatGPT he was feeling delusional. ChatGPT insisted he was Jesus.",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
-      "fecha": "2026-09-09",
-      "impacto": "alto",
-      "porque": "Caso concreto de un chatbot reforzando un delirio: recordatorio directo del riesgo de mal manejo en conversaciones de agentes IA con usuarios reales, como los de WhatsApp de domo IA."
-    },
-    {
-      "titulo": "OpenAI adds a prominent AI doomer to its board of directors",
+      "titulo": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
       "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-      "fecha": "2026-09-09",
-      "impacto": "medio",
-      "porque": "Cambio de gobernanza en OpenAI hacia mayor foco en seguridad, indicador de hacia dónde se mueve la conversación regulatoria del sector."
+      "url": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+      "fecha": "2026-09-10",
+      "impacto": "alto",
+      "porque": "Limitaciones reales de agentes autónomos, directamente relevante para el diseño de la flota de agentes de domo."
     },
     {
-      "titulo": "Six Chinese AI firms accused of aggressively copying US frontier models",
-      "fuente": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
-      "fecha": "2026-09-09",
+      "titulo": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+      "fecha": "2026-09-10",
       "impacto": "medio",
-      "porque": "Tensión geopolítica en modelos frontera puede afectar disponibilidad y costos de las APIs de IA que sostienen productos como domo IA."
+      "porque": "Panorama competitivo de modelos que domo evalúa para sus agentes."
     },
     {
-      "titulo": "Healthcare AI's next test is integration",
-      "fuente": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/10/1141421/healthcare-ais-next-test-is-integration/",
+      "titulo": "Meta’s AI agent Muse is now the No. 2 app in the US",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+      "fecha": "2026-09-10",
+      "impacto": "medio",
+      "porque": "Meta empuja agentes propios justo en la plataforma donde Nuevo Norte concentra su gasto publicitario."
+    },
+    {
+      "titulo": "Slack can now vibe-code interactive charts and reports inside chats",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+      "fecha": "2026-09-10",
+      "impacto": "medio",
+      "porque": "Idea directa aplicable al dashboard y reportes que la flota de domo genera a diario."
+    },
+    {
+      "titulo": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+      "fuente": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "fecha": "2026-09-10",
       "impacto": "bajo",
-      "porque": "Caso de otra industria mostrando que el cuello de botella de la IA ya no es el modelo sino la integración operativa, paralelo útil para domo IA."
+      "porque": "Señal de tensión de capacidad en el mercado de IA que puede afectar precios/disponibilidad de proveedores."
     }
   ]
 }

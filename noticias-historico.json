@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-10",
+ "actualizado": "2026-09-11",
  "items": [
   {
    "captura": "2026-07-21",
@@ -3060,6 +3060,66 @@
    "fecha": "2026-09-10",
    "impacto": "bajo",
    "porque": "Caso de otra industria mostrando que el cuello de botella de la IA ya no es el modelo sino la integración operativa, paralelo útil para domo IA."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "inmobiliario",
+   "titulo": "Desempleo, créditos elevados y prioridades que cambiaron: la ruta cada vez más prolongada hacia la casa propia",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/nacional/noticia/desempleo-creditos-elevados-y-una-vida-que-cambio-la-ruta-cada-vez-mas-prolongada-hacia-la-casa-propia/",
+   "fecha": "2026-09-10",
+   "impacto": "medio",
+   "porque": "Retrata el contexto económico del comprador objetivo, útil para ajustar mensajes de campaña."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "ia",
+   "titulo": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+   "fecha": "2026-09-10",
+   "impacto": "alto",
+   "porque": "Limitaciones reales de agentes autónomos, directamente relevante para el diseño de la flota de agentes de domo."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "ia",
+   "titulo": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+   "fecha": "2026-09-10",
+   "impacto": "medio",
+   "porque": "Panorama competitivo de modelos que domo evalúa para sus agentes."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "ia",
+   "titulo": "Meta’s AI agent Muse is now the No. 2 app in the US",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+   "fecha": "2026-09-10",
+   "impacto": "medio",
+   "porque": "Meta empuja agentes propios justo en la plataforma donde Nuevo Norte concentra su gasto publicitario."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "ia",
+   "titulo": "Slack can now vibe-code interactive charts and reports inside chats",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+   "fecha": "2026-09-10",
+   "impacto": "medio",
+   "porque": "Idea directa aplicable al dashboard y reportes que la flota de domo genera a diario."
+  },
+  {
+   "captura": "2026-09-11",
+   "area": "ia",
+   "titulo": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+   "fuente": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+   "fecha": "2026-09-10",
+   "impacto": "bajo",
+   "porque": "Señal de tensión de capacidad en el mercado de IA que puede afectar precios/disponibilidad de proveedores."
   }
  ]
 }
