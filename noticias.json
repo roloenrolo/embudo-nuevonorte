@@ -1,30 +1,30 @@
 {
-  "fecha": "2026-09-11",
-  "generado": "2026-09-11T07:40:00-04:00",
+  "fecha": "2026-09-12",
+  "generado": "2026-09-12T07:35:00-04:00",
   "inmobiliario": [
-    {
-      "titulo": "Kast anuncia reforma al mercado de capitales con medidas para dar más acceso a hipotecarios: “Menos pie, tasas de interés más bajas y más plazo”",
-      "fuente": "La Tercera",
-      "url": "https://www.latercera.com/pulso/noticia/kast-anuncia-reforma-al-mercado-de-capitales-con-medidas-para-dar-mas-acceso-a-hipotecarios-menos-pie-tasas-de-interes-mas-bajas-y-mas-plazo/",
-      "fecha": "2026-09-09",
-      "impacto": "alto",
-      "porque": "Cambia directamente las condiciones de crédito hipotecario al comprador subsidio, tema central de la campaña de Nuevo Norte."
-    },
     {
       "titulo": "Gobierno ingresa reforma al mercado de capitales: el Estado aportará hasta US$ 2 mil millones a nuevo fondo para la vivienda",
       "fuente": "La Tercera",
       "url": "https://www.latercera.com/pulso/noticia/reforma-al-mercado-de-capitales/",
       "fecha": "2026-09-09",
       "impacto": "alto",
-      "porque": "Nueva fuente de financiamiento estatal para vivienda puede ampliar el universo de compradores con subsidio."
+      "porque": "Un fondo estatal de US$2.000M para financiar vivienda puede destrabar demanda de créditos hipotecarios, terreno directo para leads de Nuevo Norte."
     },
     {
-      "titulo": "Comienza la postulación al llamado especial del Subsidio de Arriendo: ¿Quiénes pueden solicitarlo?",
+      "titulo": "Kast anuncia reforma al mercado de capitales con medidas para dar más acceso a hipotecarios: \"Menos pie, tasas de interés más bajas y más plazo\"",
       "fuente": "La Tercera",
-      "url": "https://www.latercera.com/servicios/noticia/comienza-la-postulacion-al-llamado-especial-del-subsidio-de-arriendo-quienes-pueden-solicitarlo/",
-      "fecha": "2026-09-08",
+      "url": "https://www.latercera.com/pulso/noticia/kast-anuncia-reforma-al-mercado-de-capitales-con-medidas-para-dar-mas-acceso-a-hipotecarios-menos-pie-tasas-de-interes-mas-bajas-y-mas-plazo/",
+      "fecha": "2026-09-09",
       "impacto": "alto",
-      "porque": "Afecta directamente al público objetivo de las campañas de subsidio de Nuevo Norte."
+      "porque": "Menos pie y tasas más bajas ablandan la principal barrera de entrada que hoy frena a los prospectos de Nuevo Norte."
+    },
+    {
+      "titulo": "Jorge Quiroz abre la puerta para adquirir viviendas con créditos en pesos y no en UF: \"Soñemos un poquito\"",
+      "fuente": "La Tercera",
+      "url": "https://www.latercera.com/pulso/noticia/jorge-quiroz-adquirir-viviendas-con-creditos-en-pesos-y-no-la-uf/",
+      "fecha": "2026-09-11",
+      "impacto": "medio",
+      "porque": "Créditos en pesos cambiarían el cálculo de cuota que hoy espanta a compradores primerizos, tema recurrente en objeciones de venta."
     },
     {
       "titulo": "Banco Central mantiene la tasa de interés en 4,5% y no descarta que debilidad actual de la economía se prolongue hacia 2027",
@@ -32,7 +32,7 @@
       "url": "https://www.latercera.com/pulso/noticia/banco-central-mantiene-la-tasa-de-interes-en-45-y-no-descarta-prolongacion-de-la-debilidad-de-la-economia-para-2027/",
       "fecha": "2026-09-08",
       "impacto": "medio",
-      "porque": "La tasa de referencia influye en el costo hipotecario que enfrentan los leads de las campañas."
+      "porque": "Tasa estable da piso a las condiciones hipotecarias, pero el aviso de debilidad hasta 2027 pesa sobre el ritmo de decisión de compra."
     },
     {
       "titulo": "Desempleo, créditos elevados y prioridades que cambiaron: la ruta cada vez más prolongada hacia la casa propia",
@@ -40,49 +40,49 @@
       "url": "https://www.latercera.com/nacional/noticia/desempleo-creditos-elevados-y-una-vida-que-cambio-la-ruta-cada-vez-mas-prolongada-hacia-la-casa-propia/",
       "fecha": "2026-09-10",
       "impacto": "medio",
-      "porque": "Retrata el contexto económico del comprador objetivo, útil para ajustar mensajes de campaña."
+      "porque": "Retrata al mismo comprador que persigue Nuevo Norte: ciclos de decisión más largos, relevante para ajustar mensajes y expectativas de CPA."
     }
   ],
   "ia": [
     {
-      "titulo": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-      "fecha": "2026-09-10",
+      "titulo": "Anthropic spent this week in hot water over cybersecurity",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "fecha": "2026-09-11",
       "impacto": "alto",
-      "porque": "Limitaciones reales de agentes autónomos, directamente relevante para el diseño de la flota de agentes de domo."
+      "porque": "Anthropic es el proveedor detrás de domo IA; un problema de seguridad ahí es riesgo directo de continuidad operativa."
     },
     {
-      "titulo": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-      "fecha": "2026-09-10",
-      "impacto": "medio",
-      "porque": "Panorama competitivo de modelos que domo evalúa para sus agentes."
+      "titulo": "Claude users found ways around safeguards for bioweapons research",
+      "fuente": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "fecha": "2026-09-11",
+      "impacto": "alto",
+      "porque": "Falla de safeguards en Claude, el modelo que corre domo IA, puede traer endurecimiento de políticas que afecte el uso diario."
     },
     {
-      "titulo": "Meta’s AI agent Muse is now the No. 2 app in the US",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-      "fecha": "2026-09-10",
+      "titulo": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "fecha": "2026-09-11",
       "impacto": "medio",
-      "porque": "Meta empuja agentes propios justo en la plataforma donde Nuevo Norte concentra su gasto publicitario."
+      "porque": "Recordatorio del costo real de confiar output de IA sin verificar, aplica directo a los reportes automatizados que usa el equipo."
+    },
+    {
+      "titulo": "Meta says it's changing AI suggestions after posing invasive personal questions",
+      "fuente": "The Verge",
+      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "fecha": "2026-09-11",
+      "impacto": "medio",
+      "porque": "Meta es la plataforma donde corren los anuncios de Nuevo Norte; cambios en su IA pueden afectar targeting o creatividades."
     },
     {
       "titulo": "Slack can now vibe-code interactive charts and reports inside chats",
       "fuente": "The Verge",
       "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "fecha": "2026-09-10",
-      "impacto": "medio",
-      "porque": "Idea directa aplicable al dashboard y reportes que la flota de domo genera a diario."
-    },
-    {
-      "titulo": "OpenAI puts Pro subscriptions on hold due to Astra demand",
-      "fuente": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "fecha": "2026-09-10",
       "impacto": "bajo",
-      "porque": "Señal de tensión de capacidad en el mercado de IA que puede afectar precios/disponibilidad de proveedores."
+      "porque": "Muestra hacia dónde va la generación de reportes con IA dentro de chat, referencia útil para la evolución de los briefings del equipo."
     }
   ]
 }

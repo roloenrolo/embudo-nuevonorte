@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-09-11",
+ "actualizado": "2026-09-12",
  "items": [
   {
    "captura": "2026-07-21",
@@ -3120,6 +3120,56 @@
    "fecha": "2026-09-10",
    "impacto": "bajo",
    "porque": "Señal de tensión de capacidad en el mercado de IA que puede afectar precios/disponibilidad de proveedores."
+  },
+  {
+   "captura": "2026-09-12",
+   "area": "inmobiliario",
+   "titulo": "Jorge Quiroz abre la puerta para adquirir viviendas con créditos en pesos y no en UF: \"Soñemos un poquito\"",
+   "fuente": "La Tercera",
+   "url": "https://www.latercera.com/pulso/noticia/jorge-quiroz-adquirir-viviendas-con-creditos-en-pesos-y-no-la-uf/",
+   "fecha": "2026-09-11",
+   "impacto": "medio",
+   "porque": "Créditos en pesos cambiarían el cálculo de cuota que hoy espanta a compradores primerizos, tema recurrente en objeciones de venta."
+  },
+  {
+   "captura": "2026-09-12",
+   "area": "ia",
+   "titulo": "Anthropic spent this week in hot water over cybersecurity",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+   "fecha": "2026-09-11",
+   "impacto": "alto",
+   "porque": "Anthropic es el proveedor detrás de domo IA; un problema de seguridad ahí es riesgo directo de continuidad operativa."
+  },
+  {
+   "captura": "2026-09-12",
+   "area": "ia",
+   "titulo": "Claude users found ways around safeguards for bioweapons research",
+   "fuente": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+   "fecha": "2026-09-11",
+   "impacto": "alto",
+   "porque": "Falla de safeguards en Claude, el modelo que corre domo IA, puede traer endurecimiento de políticas que afecte el uso diario."
+  },
+  {
+   "captura": "2026-09-12",
+   "area": "ia",
+   "titulo": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+   "fecha": "2026-09-11",
+   "impacto": "medio",
+   "porque": "Recordatorio del costo real de confiar output de IA sin verificar, aplica directo a los reportes automatizados que usa el equipo."
+  },
+  {
+   "captura": "2026-09-12",
+   "area": "ia",
+   "titulo": "Meta says it's changing AI suggestions after posing invasive personal questions",
+   "fuente": "The Verge",
+   "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+   "fecha": "2026-09-11",
+   "impacto": "medio",
+   "porque": "Meta es la plataforma donde corren los anuncios de Nuevo Norte; cambios en su IA pueden afectar targeting o creatividades."
   }
  ]
 }
